@@ -1,0 +1,15 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Popover
+        id="ovpCardAdditionalActions"
+        placement="Bottom"
+        showHeader="false">
+            <Button 
+                text="{= ${ovpCardProperties>/bInsightRTEnabled} ? ${ovplibResourceBundle>INT_PREVIEW_POPOVER_BUTTON_TITLE_RT} : ${ovplibResourceBundle>INT_PREVIEW_POPOVER_BUTTON_TITLE_DT} }"
+                iconFirst="true"
+                icon="sap-icon://add-folder"
+                press="onShowInsightCardPreview"
+                type="Transparent" />
+    </Popover>
+</core:FragmentDefinition>

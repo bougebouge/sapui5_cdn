@@ -1,0 +1,206 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".library",
+			"size": 1339
+		},
+		{
+			"name": ".theming",
+			"size": 101
+		},
+		{
+			"name": "NavError-dbg.js",
+			"module": "sap/fe/navigation/NavError.js",
+			"size": 1256,
+			"isDebug": true,
+			"required": [
+				"sap/ui/base/Object.js"
+			]
+		},
+		{
+			"name": "NavError.js",
+			"module": "sap/fe/navigation/NavError.js",
+			"size": 482,
+			"required": [
+				"sap/ui/base/Object.js"
+			]
+		},
+		{
+			"name": "NavError.js.map",
+			"size": 540,
+			"isDebug": true
+		},
+		{
+			"name": "NavigationHandler-dbg.js",
+			"module": "sap/fe/navigation/NavigationHandler.js",
+			"size": 113978,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/assert.js",
+				"sap/base/util/extend.js",
+				"sap/base/util/isEmptyObject.js",
+				"sap/base/util/merge.js",
+				"sap/fe/navigation/NavError.js",
+				"sap/fe/navigation/SelectionVariant.js",
+				"sap/fe/navigation/library.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/routing/HashChanger.js",
+				"sap/ui/thirdparty/URI.js",
+				"sap/ui/util/openWindow.js"
+			]
+		},
+		{
+			"name": "NavigationHandler.js",
+			"module": "sap/fe/navigation/NavigationHandler.js",
+			"size": 28221,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/assert.js",
+				"sap/base/util/extend.js",
+				"sap/base/util/isEmptyObject.js",
+				"sap/base/util/merge.js",
+				"sap/fe/navigation/NavError.js",
+				"sap/fe/navigation/SelectionVariant.js",
+				"sap/fe/navigation/library.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/routing/HashChanger.js",
+				"sap/ui/thirdparty/URI.js",
+				"sap/ui/util/openWindow.js"
+			]
+		},
+		{
+			"name": "NavigationHandler.js.map",
+			"size": 35059,
+			"isDebug": true
+		},
+		{
+			"name": "PresentationVariant-dbg.js",
+			"module": "sap/fe/navigation/PresentationVariant.js",
+			"size": 12113,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/each.js",
+				"sap/base/util/extend.js",
+				"sap/fe/navigation/NavError.js",
+				"sap/ui/base/Object.js"
+			]
+		},
+		{
+			"name": "PresentationVariant.js",
+			"module": "sap/fe/navigation/PresentationVariant.js",
+			"size": 3430,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/each.js",
+				"sap/base/util/extend.js",
+				"sap/fe/navigation/NavError.js",
+				"sap/ui/base/Object.js"
+			]
+		},
+		{
+			"name": "PresentationVariant.js.map",
+			"size": 3944,
+			"isDebug": true
+		},
+		{
+			"name": "SelectionVariant-dbg.js",
+			"module": "sap/fe/navigation/SelectionVariant.js",
+			"size": 34122,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/each.js",
+				"sap/fe/navigation/NavError.js",
+				"sap/ui/base/Object.js"
+			]
+		},
+		{
+			"name": "SelectionVariant.js",
+			"module": "sap/fe/navigation/SelectionVariant.js",
+			"size": 7834,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/each.js",
+				"sap/fe/navigation/NavError.js",
+				"sap/ui/base/Object.js"
+			]
+		},
+		{
+			"name": "SelectionVariant.js.map",
+			"size": 8558,
+			"isDebug": true
+		},
+		{
+			"name": "library-dbg.js",
+			"module": "sap/fe/navigation/library.js",
+			"size": 5203,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library.js"
+			]
+		},
+		{
+			"name": "library-preload.js",
+			"module": "sap/fe/navigation/library-preload.js",
+			"size": 41637,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/assert.js",
+				"sap/base/util/each.js",
+				"sap/base/util/extend.js",
+				"sap/base/util/isEmptyObject.js",
+				"sap/base/util/merge.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/routing/HashChanger.js",
+				"sap/ui/thirdparty/URI.js",
+				"sap/ui/util/openWindow.js"
+			],
+			"included": [
+				"sap/fe/navigation/NavError.js",
+				"sap/fe/navigation/NavigationHandler.js",
+				"sap/fe/navigation/PresentationVariant.js",
+				"sap/fe/navigation/SelectionVariant.js",
+				"sap/fe/navigation/library.js",
+				"sap/fe/navigation/manifest.json"
+			]
+		},
+		{
+			"name": "library-preload.js.map",
+			"size": 49450,
+			"isDebug": true
+		},
+		{
+			"name": "library.js",
+			"module": "sap/fe/navigation/library.js",
+			"size": 876,
+			"required": [
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library.js"
+			]
+		},
+		{
+			"name": "library.js.map",
+			"size": 931,
+			"isDebug": true
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/fe/navigation/manifest.json",
+			"size": 941
+		},
+		{
+			"name": "resources.json",
+			"size": 4605
+		}
+	]
+}

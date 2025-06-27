@@ -1,0 +1,33 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	xmlns:fl="sap.ui.fl"
+	xmlns:w="sap.ui.integration.widgets"
+	xmlns:unittest="http://schemas.sap.com/sapui5/preprocessorextension/sap.fe.unittesting/1"
+	xmlns:log="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns:macrodata="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	template:require="{
+		macroLibrary: 'sap/fe/macros/macroLibrary',
+		MODEL: 'sap/ui/model/odata/v4/AnnotationHelper',
+		COMMON: 'sap/fe/macros/CommonHelper'
+	}"
+>
+	<GenericTag
+		id="{= 'kpiTag-' + ${this>id}}"
+		text="{this>label}"
+		design="StatusIconHidden"
+		status="{= '{kpiModel>/' + ${this>id} + '/manifest/sap.card/data/json/mainCriticality}'}"
+		class="sapUiTinyMarginBegin"
+		tooltip="{this>tooltip}"
+		press="{= '.kpiManagement.onKPIPressed(${$source>},\'' + ${this>id} + '\')'}"
+	>
+		<ObjectNumber
+			state="{= '{kpiModel>/' + ${this>id} + '/manifest/sap.card/data/json/mainCriticality}'}"
+			emphasized="false"
+			number="{= '{kpiModel>/' + ${this>id} + '/manifest/sap.card/data/json/mainValue}'}"
+			unit="{= '{kpiModel>/' + ${this>id} + '/manifest/sap.card/data/json/mainUnit}'}"
+		/>
+	</GenericTag>
+</core:FragmentDefinition>

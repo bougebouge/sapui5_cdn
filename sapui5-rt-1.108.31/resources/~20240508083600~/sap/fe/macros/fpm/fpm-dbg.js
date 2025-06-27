@@ -1,0 +1,12 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *      (c) Copyright 2009-2021 SAP SE. All rights reserved
+ */
+sap.ui.define(["sap/fe/core/buildingBlocks/BuildingBlockRuntime", "sap/fe/macros/fpm/CustomFragment.metadata", "sap/fe/macros/fpm/CustomSection.metadata"], function (BuildingBlockRuntime, CustomFragment, CustomSection) {
+  "use strict";
+
+  var registerBuildingBlock = BuildingBlockRuntime.registerBuildingBlock;
+  registerBuildingBlock(CustomSection);
+  registerBuildingBlock(CustomFragment);
+}, false);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJyZWdpc3RlckJ1aWxkaW5nQmxvY2siLCJDdXN0b21TZWN0aW9uIiwiQ3VzdG9tRnJhZ21lbnQiXSwic291cmNlUm9vdCI6Ii4iLCJzb3VyY2VzIjpbImZwbS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyByZWdpc3RlckJ1aWxkaW5nQmxvY2sgfSBmcm9tIFwic2FwL2ZlL2NvcmUvYnVpbGRpbmdCbG9ja3MvQnVpbGRpbmdCbG9ja1J1bnRpbWVcIjtcbmltcG9ydCBDdXN0b21GcmFnbWVudCBmcm9tIFwic2FwL2ZlL21hY3Jvcy9mcG0vQ3VzdG9tRnJhZ21lbnQubWV0YWRhdGFcIjtcbmltcG9ydCBDdXN0b21TZWN0aW9uIGZyb20gXCJzYXAvZmUvbWFjcm9zL2ZwbS9DdXN0b21TZWN0aW9uLm1ldGFkYXRhXCI7XG5yZWdpc3RlckJ1aWxkaW5nQmxvY2soQ3VzdG9tU2VjdGlvbik7XG5yZWdpc3RlckJ1aWxkaW5nQmxvY2soQ3VzdG9tRnJhZ21lbnQpO1xuIl0sIm1hcHBpbmdzIjoiO0FBQUE7QUFBQTtBQUFBOzs7OztFQUdBQSxxQkFBcUIsQ0FBQ0MsYUFBYSxDQUFDO0VBQ3BDRCxxQkFBcUIsQ0FBQ0UsY0FBYyxDQUFDO0FBQUMifQ==

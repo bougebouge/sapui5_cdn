@@ -1,0 +1,87 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 90,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "SearchBarChart.less",
+			"size": 714,
+			"designtime": true,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "SearchFacet.less",
+			"size": 521,
+			"designtime": true,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "SearchFieldGroup.less",
+			"size": 4945,
+			"designtime": true,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "css_variables.css",
+			"size": 895,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "css_variables.less",
+			"size": 141787,
+			"designtime": true,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "css_variables.source.less",
+			"size": 141413,
+			"designtime": true,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 66845,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "library-parameters.json",
+			"module": "sap/esh/search/ui/themes/sap_horizon/library-parameters.json",
+			"size": 245,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "library.css",
+			"size": 66838,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "library.less",
+			"size": 6830,
+			"designtime": true,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "library.source.less",
+			"size": 350,
+			"designtime": true,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "library_skeleton-RTL.css",
+			"size": 69047,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "library_skeleton.css",
+			"size": 69040,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "resources.json",
+			"size": 1522
+		}
+	]
+}

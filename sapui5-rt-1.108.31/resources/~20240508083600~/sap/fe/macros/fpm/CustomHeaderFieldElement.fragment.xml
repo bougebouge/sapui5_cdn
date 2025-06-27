@@ -1,0 +1,17 @@
+<core:FragmentDefinition
+	xmlns:l="sap.ui.layout"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:core="sap.ui.core"
+	xmlns:fpm="sap.fe.macros.fpm"
+	xmlns="sap.m"
+	template:require="{
+		fpm: 'sap/fe/macros/fpm/fpm'
+	}"
+>
+	<l:HorizontalLayout class="sapUiTinyMarginBottom">
+		<template:if test="{formElement>label}">
+			<Label text="{formElement>label}:" class="sapUiTinyMarginEnd" />
+		</template:if>
+		<fpm:CustomFragment id="{formElement>key}" fragmentName="{formElement>template}" contextPath="{entitySet>}" />
+	</l:HorizontalLayout>
+</core:FragmentDefinition>

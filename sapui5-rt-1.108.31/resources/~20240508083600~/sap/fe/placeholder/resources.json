@@ -1,0 +1,913 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".library",
+			"size": 1283
+		},
+		{
+			"name": ".theming",
+			"size": 83
+		},
+		{
+			"name": "library-dbg.js",
+			"module": "sap/fe/placeholder/library.js",
+			"size": 833,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library.js"
+			]
+		},
+		{
+			"name": "library-preload.js",
+			"module": "sap/fe/placeholder/library-preload.js",
+			"size": 77377,
+			"merged": true,
+			"required": [
+				"sap/fe/placeholder/controller/Placeholder.controller.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/HTML.js",
+				"sap/ui/core/library.js"
+			],
+			"included": [
+				"sap/fe/placeholder/library.js",
+				"sap/fe/placeholder/manifest.json",
+				"sap/fe/placeholder/view/PlaceholderALP.fragment.html",
+				"sap/fe/placeholder/view/PlaceholderALP.view.xml",
+				"sap/fe/placeholder/view/PlaceholderLR.fragment.html",
+				"sap/fe/placeholder/view/PlaceholderLR.view.xml",
+				"sap/fe/placeholder/view/PlaceholderOP.fragment.html",
+				"sap/fe/placeholder/view/PlaceholderOP.view.xml",
+				"sap/fe/placeholder/view/PlaceholderOVP.fragment.html",
+				"sap/fe/placeholder/view/PlaceholderOVP.view.xml"
+			]
+		},
+		{
+			"name": "library-preload.js.map",
+			"size": 714,
+			"isDebug": true
+		},
+		{
+			"name": "library.js",
+			"module": "sap/fe/placeholder/library.js",
+			"size": 434,
+			"required": [
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library.js"
+			]
+		},
+		{
+			"name": "library.js.map",
+			"size": 432,
+			"isDebug": true
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/fe/placeholder/manifest.json",
+			"size": 1078
+		},
+		{
+			"name": "resources.json",
+			"size": 20701
+		},
+		{
+			"name": "themes/base/.theming",
+			"size": 64,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/Placeholder.less",
+			"size": 11509,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/css_variables.css",
+			"size": 122,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/css_variables.less",
+			"size": 240,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/css_variables.source.less",
+			"size": 135313,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-RTL.css",
+			"size": 10133,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-parameters.json",
+			"module": "sap/fe/placeholder/themes/base/library-parameters.json",
+			"size": 2,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.css",
+			"size": 10138,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.less",
+			"size": 11884,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.source.less",
+			"size": 149,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library_skeleton-RTL.css",
+			"size": 10293,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library_skeleton.css",
+			"size": 10297,
+			"theme": "base"
+		},
+		{
+			"name": "themes/sap_belize/.theming",
+			"size": 650,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/css_variables.css",
+			"size": 195,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/css_variables.less",
+			"size": 141523,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/css_variables.source.less",
+			"size": 141157,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-RTL.css",
+			"size": 12243,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-parameters.json",
+			"module": "sap/fe/placeholder/themes/sap_belize/library-parameters.json",
+			"size": 42,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.css",
+			"size": 12249,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.less",
+			"size": 358,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.source.less",
+			"size": 172,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library_skeleton-RTL.css",
+			"size": 12523,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library_skeleton.css",
+			"size": 12527,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize_hcb/.theming",
+			"size": 93,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/css_variables.css",
+			"size": 122,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/css_variables.less",
+			"size": 134911,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/css_variables.source.less",
+			"size": 134537,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library-RTL.css",
+			"size": 10130,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library-parameters.json",
+			"module": "sap/fe/placeholder/themes/sap_belize_hcb/library-parameters.json",
+			"size": 2,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library.css",
+			"size": 10135,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library.less",
+			"size": 370,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library.source.less",
+			"size": 180,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library_skeleton-RTL.css",
+			"size": 10293,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library_skeleton.css",
+			"size": 10297,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcw/.theming",
+			"size": 93,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/css_variables.css",
+			"size": 122,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/css_variables.less",
+			"size": 134977,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/css_variables.source.less",
+			"size": 134603,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library-RTL.css",
+			"size": 10133,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library-parameters.json",
+			"module": "sap/fe/placeholder/themes/sap_belize_hcw/library-parameters.json",
+			"size": 2,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library.css",
+			"size": 10138,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library.less",
+			"size": 370,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library.source.less",
+			"size": 180,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library_skeleton-RTL.css",
+			"size": 10293,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library_skeleton.css",
+			"size": 10297,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_plus/.theming",
+			"size": 611,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/css_variables.css",
+			"size": 199,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/css_variables.less",
+			"size": 141533,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/css_variables.source.less",
+			"size": 141157,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-RTL.css",
+			"size": 12415,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-parameters.json",
+			"module": "sap/fe/placeholder/themes/sap_belize_plus/library-parameters.json",
+			"size": 46,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.css",
+			"size": 12421,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.less",
+			"size": 379,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.source.less",
+			"size": 188,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library_skeleton-RTL.css",
+			"size": 12691,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library_skeleton.css",
+			"size": 12695,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_fiori_3/.theming",
+			"size": 90,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/css_variables.css",
+			"size": 122,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/css_variables.less",
+			"size": 140315,
+			"designtime": true,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/css_variables.source.less",
+			"size": 139947,
+			"designtime": true,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library-RTL.css",
+			"size": 10136,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library-parameters.json",
+			"module": "sap/fe/placeholder/themes/sap_fiori_3/library-parameters.json",
+			"size": 2,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library.css",
+			"size": 10141,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library.less",
+			"size": 361,
+			"designtime": true,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library.source.less",
+			"size": 174,
+			"designtime": true,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library_skeleton-RTL.css",
+			"size": 10293,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library_skeleton.css",
+			"size": 10297,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/.theming",
+			"size": 95,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/css_variables.css",
+			"size": 122,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/css_variables.less",
+			"size": 137694,
+			"designtime": true,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/css_variables.source.less",
+			"size": 137316,
+			"designtime": true,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library-RTL.css",
+			"size": 10178,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library-parameters.json",
+			"module": "sap/fe/placeholder/themes/sap_fiori_3_dark/library-parameters.json",
+			"size": 2,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library.css",
+			"size": 10183,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library.less",
+			"size": 376,
+			"designtime": true,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library.source.less",
+			"size": 184,
+			"designtime": true,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library_skeleton-RTL.css",
+			"size": 10293,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library_skeleton.css",
+			"size": 10297,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/.theming",
+			"size": 94,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/css_variables.css",
+			"size": 122,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/css_variables.less",
+			"size": 134918,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/css_variables.source.less",
+			"size": 134542,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library-RTL.css",
+			"size": 10130,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library-parameters.json",
+			"module": "sap/fe/placeholder/themes/sap_fiori_3_hcb/library-parameters.json",
+			"size": 2,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library.css",
+			"size": 10135,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library.less",
+			"size": 373,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library.source.less",
+			"size": 182,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library_skeleton-RTL.css",
+			"size": 10293,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library_skeleton.css",
+			"size": 10297,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/.theming",
+			"size": 94,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/css_variables.css",
+			"size": 122,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/css_variables.less",
+			"size": 134984,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/css_variables.source.less",
+			"size": 134608,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library-RTL.css",
+			"size": 10133,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library-parameters.json",
+			"module": "sap/fe/placeholder/themes/sap_fiori_3_hcw/library-parameters.json",
+			"size": 2,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library.css",
+			"size": 10138,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library.less",
+			"size": 373,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library.source.less",
+			"size": 182,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library_skeleton-RTL.css",
+			"size": 10293,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library_skeleton.css",
+			"size": 10297,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_horizon/.theming",
+			"size": 90,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/css_variables.css",
+			"size": 122,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/css_variables.less",
+			"size": 140398,
+			"designtime": true,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/css_variables.source.less",
+			"size": 140030,
+			"designtime": true,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/library-RTL.css",
+			"size": 10130,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/library-parameters.json",
+			"module": "sap/fe/placeholder/themes/sap_horizon/library-parameters.json",
+			"size": 2,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/library.css",
+			"size": 10135,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/library.less",
+			"size": 361,
+			"designtime": true,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/library.source.less",
+			"size": 174,
+			"designtime": true,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/library_skeleton-RTL.css",
+			"size": 10293,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/library_skeleton.css",
+			"size": 10297,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon_dark/.theming",
+			"size": 95,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/css_variables.css",
+			"size": 122,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/css_variables.less",
+			"size": 137548,
+			"designtime": true,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/css_variables.source.less",
+			"size": 137170,
+			"designtime": true,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/library-RTL.css",
+			"size": 10178,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/library-parameters.json",
+			"module": "sap/fe/placeholder/themes/sap_horizon_dark/library-parameters.json",
+			"size": 2,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/library.css",
+			"size": 10183,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/library.less",
+			"size": 376,
+			"designtime": true,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/library.source.less",
+			"size": 184,
+			"designtime": true,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/library_skeleton-RTL.css",
+			"size": 10293,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/library_skeleton.css",
+			"size": 10297,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/.theming",
+			"size": 94,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/css_variables.css",
+			"size": 122,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/css_variables.less",
+			"size": 134349,
+			"designtime": true,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/css_variables.source.less",
+			"size": 133973,
+			"designtime": true,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/library-RTL.css",
+			"size": 10130,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/library-parameters.json",
+			"module": "sap/fe/placeholder/themes/sap_horizon_hcb/library-parameters.json",
+			"size": 2,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/library.css",
+			"size": 10135,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/library.less",
+			"size": 373,
+			"designtime": true,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/library.source.less",
+			"size": 182,
+			"designtime": true,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/library_skeleton-RTL.css",
+			"size": 10293,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/library_skeleton.css",
+			"size": 10297,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/.theming",
+			"size": 94,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/css_variables.css",
+			"size": 122,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/css_variables.less",
+			"size": 134395,
+			"designtime": true,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/css_variables.source.less",
+			"size": 134019,
+			"designtime": true,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/library-RTL.css",
+			"size": 10133,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/library-parameters.json",
+			"module": "sap/fe/placeholder/themes/sap_horizon_hcw/library-parameters.json",
+			"size": 2,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/library.css",
+			"size": 10138,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/library.less",
+			"size": 373,
+			"designtime": true,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/library.source.less",
+			"size": 182,
+			"designtime": true,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/library_skeleton-RTL.css",
+			"size": 10293,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/library_skeleton.css",
+			"size": 10297,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "view/PlaceholderALP.fragment.html",
+			"size": 22636
+		},
+		{
+			"name": "view/PlaceholderALP.view.xml",
+			"module": "sap/fe/placeholder/view/PlaceholderALP.view.xml",
+			"size": 458,
+			"required": [
+				"sap/fe/placeholder/controller/Placeholder.controller.js",
+				"sap/ui/core/HTML.js"
+			]
+		},
+		{
+			"name": "view/PlaceholderLR.fragment.html",
+			"size": 19700
+		},
+		{
+			"name": "view/PlaceholderLR.view.xml",
+			"module": "sap/fe/placeholder/view/PlaceholderLR.view.xml",
+			"size": 457,
+			"required": [
+				"sap/fe/placeholder/controller/Placeholder.controller.js",
+				"sap/ui/core/HTML.js"
+			]
+		},
+		{
+			"name": "view/PlaceholderOP.fragment.html",
+			"size": 16226
+		},
+		{
+			"name": "view/PlaceholderOP.view.xml",
+			"module": "sap/fe/placeholder/view/PlaceholderOP.view.xml",
+			"size": 457,
+			"required": [
+				"sap/fe/placeholder/controller/Placeholder.controller.js",
+				"sap/ui/core/HTML.js"
+			]
+		},
+		{
+			"name": "view/PlaceholderOVP.fragment.html",
+			"size": 15097
+		},
+		{
+			"name": "view/PlaceholderOVP.view.xml",
+			"module": "sap/fe/placeholder/view/PlaceholderOVP.view.xml",
+			"size": 457,
+			"required": [
+				"sap/fe/placeholder/controller/Placeholder.controller.js",
+				"sap/ui/core/HTML.js"
+			]
+		}
+	]
+}

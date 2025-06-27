@@ -1,0 +1,1 @@
+{"version":3,"file":"fpm.js","names":["sap","ui","define","BuildingBlockRuntime","CustomFragment","CustomSection","registerBuildingBlock"],"sources":["fpm-dbg.js"],"mappings":";;;;AAIAA,IAAIC,GAAGC,OAAO,CAAC,kDAAmD,4CAA6C,4CAA6C,SAAUC,EAAsBC,EAAgBC,GAC1M,aAEA,IAAIC,EAAwBH,EAAqBG,sBACjDA,EAAsBD,GACtBC,EAAsBF,EACxB,EAAG"}

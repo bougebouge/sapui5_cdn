@@ -1,0 +1,22 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:control="sap.fe.core.controls"
+	template:require="{
+		MODEL: 'sap/ui/model/odata/v4/AnnotationHelper',
+		ID: 'sap/fe/core/helpers/StableIdHelper',
+		UI: 'sap/fe/core/templating/UIFormatters',
+		FieldTemplating: 'sap/fe/macros/field/FieldTemplating'
+	 }"
+>
+	<control:FormElementWrapper visible="{= FieldTemplating.getVisibleExpression(${dataField>@@UI.getDataModelObjectPath})}">
+		<Avatar
+			id="{= ${this>_flexId} || (${this>idPrefix} ? ID.generate([${this>idPrefix}, 'Field-content']) : undefined) }"
+			src="{property>@@MODEL.value}"
+			displaySize="S"
+			class="sapUiSmallMarginEnd"
+			displayShape="Square"
+		/>
+	</control:FormElementWrapper>
+</core:FragmentDefinition>

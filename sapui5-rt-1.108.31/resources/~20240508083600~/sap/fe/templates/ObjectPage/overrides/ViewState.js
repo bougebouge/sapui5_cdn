@@ -1,0 +1,6 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *      (c) Copyright 2009-2021 SAP SE. All rights reserved
+ */
+sap.ui.define(["sap/fe/core/helpers/KeepAliveHelper","sap/fe/core/library"],function(e,t){"use strict";var a=t.VariantManagement;var n={applyInitialStateOnly:function(){return false},adaptStateControls:function(e){var t=this.getView(),n=t.getController(),r=t.getViewData();var i=false;switch(r.variantManagement){case a.Control:i=true;break;case a.Page:case a.None:break;default:throw new Error("unhandled variant setting: ".concat(r.getVariantManagement()))}n._findTables().forEach(function(t){var a=t.getQuickFilter();if(a){e.push(a)}if(i){e.push(t.getVariant())}e.push(t)});n._findCharts().forEach(function(t){e.push(t)});e.push(t.byId("fe::ObjectPage"))},adaptBindingRefreshControls:function(t){var a=this.getView(),n=e.getViewRefreshInfo(a),r=a.getController();var i=[];if(n){var o=r._getObjectPageLayoutControl();i.push(o)}if(n!=="includingDependents"){var s=r._findTables();i=i.concat(e.getControlsForRefresh(a,s)||[])}return i.reduce(function(e,t){if(e.indexOf(t)===-1){e.push(t)}return e},t)}};return n},false);
+//# sourceMappingURL=ViewState.js.map

@@ -1,0 +1,36 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".library",
+			"size": 885
+		},
+		{
+			"name": ".theming",
+			"size": 96
+		},
+		{
+			"name": "library-preload.js",
+			"module": "sap/fe/tools/library-preload.js",
+			"size": 578,
+			"merged": true,
+			"included": [
+				"sap/fe/tools/manifest.json"
+			]
+		},
+		{
+			"name": "library-preload.js.map",
+			"size": 241,
+			"isDebug": true
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/fe/tools/manifest.json",
+			"size": 609
+		},
+		{
+			"name": "resources.json",
+			"size": 545
+		}
+	]
+}

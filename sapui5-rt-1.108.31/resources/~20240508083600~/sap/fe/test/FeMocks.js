@@ -1,0 +1,6 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *      (c) Copyright 2009-2021 SAP SE. All rights reserved
+ */
+sap.ui.define(["@sap-ux/jest-mock-ui5/dist/generic","sap/fe/core/controllerextensions/InternalEditFlow","sap/fe/core/PageController","sap/ui/mdc/FilterBar"],function(t,e,n,r){"use strict";var i={};var o=t.mock;function s(){var t={_getFilterBarControl:jest.fn(),_getControls:jest.fn(),_isFilterBarHidden:jest.fn(),_isMultiMode:jest.fn(),_getMultiModeControl:jest.fn(),_getFilterBarVariantControl:jest.fn(),_hasMultiVisualizations:jest.fn(),_shouldAutoTriggerSearch:jest.fn(),_getTable:jest.fn(),getExtensionAPI:jest.fn(),_editFlow:o(e)};return Object.assign(o(n),t)}i.mockListReportController=s;function a(){var t={getStickyEditMode:jest.fn(),getExtensionAPI:jest.fn(),_editFlow:o(e)};return Object.assign(o(n),t)}i.mockObjectPageController=a;function l(t,e,n){var r=e.getView();t.getView=function(){return r};var i=o(n||{});return Object.assign(i,t)}i.mockContextForExtension=l;function c(){var t=o(r);t.mock.waitForInitialization=jest.fn();return t}i.mockFilterBar=c;return i},false);
+//# sourceMappingURL=FeMocks.js.map

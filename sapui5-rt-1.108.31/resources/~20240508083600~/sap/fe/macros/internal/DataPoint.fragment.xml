@@ -1,0 +1,188 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:unittest="http://schemas.sap.com/sapui5/preprocessorextension/sap.fe.unittesting/1"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:macro="sap.fe.macros"
+	xmlns:control="sap.fe.core.controls"
+	template:require="{
+                        ID: 'sap/fe/core/helpers/StableIdHelper',
+						FIELD: 'sap/fe/macros/field/FieldHelper',
+						MODEL: 'sap/ui/model/odata/v4/AnnotationHelper',
+						COMMON: 'sap/fe/macros/CommonHelper',
+						UI: 'sap/fe/core/templating/UIFormatters',
+						TEMPLATE: 'sap/fe/macros/internal/helpers/DataPointTemplating',
+						FieldTemplating: 'sap/fe/macros/field/FieldTemplating'
+					  }"
+	core:require="{MESSAGE: 'sap/base/strings/formatMessage' }"
+>
+	<template:with path="metaPath>Value" var="property">
+		<template:if test="{= ${this>visualization} === 'Rating'}">
+			<template:then>
+				<template:if test="{this>formatOptions/showLabels}">
+					<Label
+						text="{path: 'metaPath>', formatter: 'TEMPLATE.getHeaderRatingIndicatorText'}"
+						visible="{= (${metaPath>SampleSize} || ${metaPath>Description}) ? true : false}"
+					/>
+				</template:if>
+				<RatingIndicator
+					id="{= ${this>idPrefix} ? ID.generate([${this>idPrefix}, 'RatingIndicator-Field-display']) : undefined }"
+					maxValue="{metaPath>TargetValue@@MODEL.format}"
+					value="{metaPath>Value@@MODEL.format}"
+					tooltip="{metaPath>@com.sap.vocabularies.Common.v1.QuickInfo@@MODEL.value}"
+					iconSize="{this>formatOptions/iconSize}"
+					class="{= ${this>formatOptions/showLabels} ? 'sapUiTinyMarginTopBottom' : undefined}"
+					editable="false"
+				/>
+				<template:if test="{this>formatOptions/showLabels}">
+					<Label core:require="{MESSAGE: 'sap/base/strings/formatMessage' }" text="{this>targetLabel}" visible="true" />
+				</template:if>
+			</template:then>
+			<template:elseif test="{= ${this>visualization} === 'Progress'}">
+				<template:if test="{this>formatOptions/showLabels}">
+					<Label
+						unittest:id="HeaderProgressIndicatorTestTop"
+						text="{path:'metaPath>Description@@MODEL.value'}"
+						visible="{= !!${metaPath>Description@@MODEL.value}}"
+					/>
+				</template:if>
+				<ProgressIndicator
+					id="{= ${this>idPrefix} ? ID.generate([${this>idPrefix}, 'ProgressIndicator-Field-display']) : undefined }"
+					displayValue="{this>displayValue}"
+					percentValue="{this>percentValue}"
+					state="{this>criticalityColorExpression}"
+					tooltip="{metaPath>@com.sap.vocabularies.Common.v1.QuickInfo@@MODEL.value}"
+				/>
+				<template:if test="{this>formatOptions/showLabels}">
+					<Label
+						text="{path:'property>$Path@com.sap.vocabularies.Common.v1.Label@@MODEL.value'}"
+						visible="{= !!${property>$Path@com.sap.vocabularies.Common.v1.Label@@MODEL.value} }"
+					/>
+				</template:if>
+			</template:elseif>
+			<template:elseif test="{= ${this>visualization} === 'LinkWithQuickViewForm' || ${this>visualization} === 'LinkWrapper'}">
+				<template:with path="metaPath>" var="dataField">
+					<template:with path="metaPath>Value" var="property">
+						<template:with path="property>$Path" var="propertyPath">
+							<core:Fragment fragmentName="sap.fe.macros.internal.field.displayStyle.{this>visualization}" type="XML" />
+						</template:with>
+					</template:with>
+				</template:with>
+			</template:elseif>
+			<template:elseif test="{= ${this>visualization} === 'ObjectNumber'}">
+				<template:if test="{this>formatOptions/isAnalytics}">
+					<template:then>
+						<control:ConditionalWrapper
+							condition="{= UI.hasValidAnalyticalCurrencyOrUnit(${property>$Path@@UI.getDataModelObjectPath})}"
+						>
+							<control:contentTrue>
+								<ObjectNumber
+									id="{= ${this>idPrefix} ? ID.generate([${this>idPrefix}, 'ObjectNumber-Field-display']) : undefined }"
+									core:require="{FieldRuntime: 'sap/fe/macros/field/FieldRuntime'}"
+									state="{this>criticalityColorExpression}"
+									number="{this>objectStatusNumber}"
+									unit="{this>unit}"
+									visible="{this>visible}"
+									emphasized="false"
+									class="{= ${this>formatOptions/dataPointStyle} ==='large' ? 'sapMObjectNumberLarge' : undefined}"
+									tooltip="{metaPath>@com.sap.vocabularies.Common.v1.QuickInfo@@MODEL.value}"
+									emptyIndicatorMode="{this>emptyIndicatorMode}"
+								/>
+							</control:contentTrue>
+							<control:contentFalse>
+								<ObjectNumber
+									id="{= ${this>idPrefix} ? ID.generate([${this>idPrefix}, 'ObjectNumber-Field-display-differentUnit']) : undefined }"
+									number="*"
+									unit=""
+									visible="{this>visible}"
+									emphasized="false"
+									class="{= ${this>formatOptions/dataPointStyle} ==='large' ? 'sapMObjectNumberLarge' : undefined}"
+								/>
+							</control:contentFalse>
+						</control:ConditionalWrapper>
+					</template:then>
+					<template:else>
+						<ObjectNumber
+							id="{= ${this>idPrefix} ? ID.generate([${this>idPrefix}, 'ObjectNumber-Field-display']) : undefined }"
+							core:require="{FieldRuntime: 'sap/fe/macros/field/FieldRuntime'}"
+							state="{this>criticalityColorExpression}"
+							number="{this>objectStatusNumber}"
+							unit="{this>unit}"
+							visible="{this>visible}"
+							emphasized="false"
+							class="{= ${this>formatOptions/dataPointStyle} ==='large' ? 'sapMObjectNumberLarge' : undefined}"
+							tooltip="{metaPath>@com.sap.vocabularies.Common.v1.QuickInfo@@MODEL.value}"
+							emptyIndicatorMode="{this>emptyIndicatorMode}"
+						/>
+					</template:else>
+				</template:if>
+			</template:elseif>
+			<template:else>
+				<template:with path="metaPath>Value" var="property">
+					<ObjectStatus
+						id="{= ${this>idPrefix} ? ID.generate([${this>idPrefix}, 'ObjectStatus-Field-display']) : undefined }"
+						core:require="{ FieldRuntime: 'sap/fe/macros/field/FieldRuntime' }"
+						class="{= ${this>formatOptions/dataPointStyle} ==='large' ? 'sapMObjectStatusLarge' : undefined}"
+						icon="{=${this>formatOptions/dataPointStyle} ==='large' ? undefined: ${this>iconExpression}}"
+						tooltip="{metaPath>@com.sap.vocabularies.Common.v1.QuickInfo@@MODEL.value}"
+						state="{this>criticalityColorExpression}"
+						text="{this>objectStatusText}"
+						emptyIndicatorMode="{this>emptyIndicatorMode}"
+						active="{= ${this>hasQuickViewFacets} || FIELD.hasSemanticObjectTargets( ${property>$Path@@UI.getDataModelObjectPath} )}"
+						press="FieldRuntime.pressLink"
+						ariaLabelledBy="{this>ariaLabelledBy}"
+						modelContextChange="{= FIELD.hasSemanticObjectsWithPath(${semanticObjects>}) ? FIELD.computeSemanticLinkModelContextChange(${semanticObjects>}, ${property>$Path@@UI.getDataModelObjectPath}) : undefined }"
+					>
+						<template:if test="{= ${this>hasQuickViewFacets}}">
+							<template:then>
+								<template:if test="{property>@@FIELD.getNavigationEntity}">
+									<template:then>
+										<template:with path="property>" helper="FIELD.getNavigationEntity" var="entityType">
+											<dependents>
+												<macro:QuickViewForm
+													propertypath="{property>$Path}"
+													dataField="{metaPath>}"
+													entityType="{entityType>}"
+													semanticObject="{this>semanticObject}"
+													hasSemanticOnNavigation="{this>hasSemanticObjectOnNavigation}"
+													hasQuickViewFacets="{this>hasQuickViewFacets}"
+													semanticObjectsToResolve="{semanticObjects>}"
+													contextPath="{contextPath>}"
+												/>
+											</dependents>
+										</template:with>
+									</template:then>
+									<template:else>
+										<dependents>
+											<macro:QuickViewForm
+												propertypath="{property>$Path}"
+												dataField="{metaPath>}"
+												semanticObject="{this>semanticObject}"
+												hasSemanticOnNavigation="{this>hasSemanticObjectOnNavigation}"
+												hasQuickViewFacets="{this>hasQuickViewFacets}"
+												semanticObjectsToResolve="{semanticObjects>}"
+												contextPath="{contextPath>}"
+											/>
+										</dependents>
+									</template:else>
+								</template:if>
+							</template:then>
+							<template:elseif test="{property>$Path@com.sap.vocabularies.Common.v1.SemanticObject}">
+								<dependents>
+									<macro:QuickViewForm
+										propertypath="{property>$Path}"
+										dataField="{metaPath>}"
+										semanticObject="{this>semanticObject}"
+										hasQuickViewFacets="{this>hasQuickViewFacets}"
+										semanticObjectsToResolve="{semanticObjects>}"
+										contextPath="{contextPath>}"
+									/>
+								</dependents>
+							</template:elseif>
+						</template:if>
+					</ObjectStatus>
+				</template:with>
+			</template:else>
+		</template:if>
+	</template:with>
+</core:FragmentDefinition>

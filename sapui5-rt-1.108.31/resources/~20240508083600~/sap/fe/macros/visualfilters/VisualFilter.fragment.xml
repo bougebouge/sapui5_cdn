@@ -1,0 +1,89 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:macrodata="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns:control="sap.fe.core.controls.filterbar"
+	template:require="{
+		MODEL: 'sap/ui/model/odata/v4/AnnotationHelper',
+		ID: 'sap/fe/core/helpers/StableIdHelper',
+		HELPER: 'sap/fe/macros/visualfilters/InteractiveChartHelper',
+		MACRO: 'sap/fe/macros/MacroTemplating'
+	}"
+>
+	<template:with path="metaPath>" helper="HELPER.getChart" var="chartAnnotation">
+		<control:VisualFilter
+			core:require="{VisualFilterRuntime: 'sap/fe/macros/visualfilters/VisualFilterRuntime'}"
+			id="{this>id}"
+			height="10rem"
+			width="20.5rem"
+			class="sapUiSmallMarginBeginEnd"
+			macrodata:infoPath="{= ID.generate([${metaPath>@@MACRO.getPath}]) }"
+		>
+			<VBox height="2rem" class="sapUiSmallMarginBottom">
+				<OverflowToolbar style="Clear">
+					<template:if test="{= ${this>required} }">
+						<Label text="" width="0.5rem" required="true">
+							<layoutData>
+								<OverflowToolbarLayoutData priority="Never" />
+							</layoutData>
+						</Label>
+					</template:if>
+					<Title
+						id="{= ID.generate([${this>id},'MeasureDimensionTitle']) }"
+						text="{parts:[{path:'chartAnnotation>'},{path:'contextPath>'},{path:'this>bCustomAggregate'},{path:'this>aggregateProperties'}],formatter:'HELPER.getMeasureDimensionTitle'}"
+						tooltip="{parts:[{path:'chartAnnotation>'},{path:'contextPath>'},{path:'metaPath>@@MACRO.getPath'},{path:'this>bCustomAggregate'},{path:'this>aggregateProperties'},{path:'this>renderLineChart'}],formatter:'HELPER.getToolTip'}"
+						titleStyle="H6"
+						level="H3"
+						class="sapUiTinyMarginEnd sapUiNoMarginBegin"
+					/>
+
+					<template:if test="{parts:[{path:'chartAnnotation>'},{path:'this>showError'}],formatter:'HELPER.getUoMVisiblity'}">
+						<template:then>
+							<Title
+								id="{= ID.generate([${this>id},'ScaleUoMTitle']) }"
+								visible="{= '{= !${internal>' + ID.generate([${metaPath>@@MACRO.getPath}]) + '/showError}}'}"
+								text="{parts:[{path:'chartAnnotation>'},{path:'contextPath>'},{path:'metaPath>@@MACRO.getPath'},{path:'this>bCustomAggregate'}, {path:'this>aggregateProperties'}],formatter:'HELPER.getScaleUoMTitle'}"
+								titleStyle="H6"
+								level="H3"
+								width="4.15rem"
+							/>
+						</template:then>
+					</template:if>
+					<template:if test="{= ${this>showValueHelp}}">
+						<ToolbarSpacer />
+						<Button
+							id="{= ID.generate([${this>id},'VisualFilterValueHelpButton']) }"
+							type="Transparent"
+							ariaHasPopup="Dialog"
+							text="{parts:[{path:'chartAnnotation>'},{path:'contextPath>'}],formatter:'HELPER.getfilterCountBinding'}"
+							press="VisualFilterRuntime.fireValueHelp"
+							enabled="{= '{= !${internal>' + ID.generate([${metaPath>@@MACRO.getPath}]) + '/showError}}'}"
+						>
+							<layoutData>
+								<OverflowToolbarLayoutData priority="Never" />
+							</layoutData>
+						</Button>
+					</template:if>
+				</OverflowToolbar>
+			</VBox>
+			<VBox height="100%" width="100%">
+				<template:if test="{= ${this>showError}}">
+					<template:then>
+						<core:Fragment fragmentName="sap.fe.macros.visualfilters.fragments.InteractiveChartWithError" type="XML" />
+					</template:then>
+					<template:else>
+						<template:if test="{= ${chartAnnotation>ChartType/$EnumMember} === 'com.sap.vocabularies.UI.v1.ChartType/Bar'}">
+							<template:then>
+								<core:Fragment fragmentName="sap.fe.macros.visualfilters.fragments.InteractiveBarChart" type="XML" />
+							</template:then>
+							<template:else>
+								<core:Fragment fragmentName="sap.fe.macros.visualfilters.fragments.InteractiveLineChart" type="XML" />
+							</template:else>
+						</template:if>
+					</template:else>
+				</template:if>
+			</VBox>
+		</control:VisualFilter>
+	</template:with>
+</core:FragmentDefinition>

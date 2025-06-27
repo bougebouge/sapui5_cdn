@@ -1,0 +1,6 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *      (c) Copyright 2009-2021 SAP SE. All rights reserved
+ */
+sap.ui.define([],function(){"use strict";var e=function(){function e(){this._issues=[]}var s=e.prototype;s.addIssue=function e(s,t,r,i,u){var n=this.checkIfIssueExists(s,t,r,i,u);if(!n){this._issues.push({category:s,severity:t,details:r,subCategory:u})}};s.getIssues=function e(){return this._issues};s.getIssuesByCategory=function e(s,t){if(t){return this._issues.filter(function(e){return e.category===s&&e.subCategory===t})}else{return this._issues.filter(function(e){return e.category===s})}};s.checkIfIssueExists=function e(s,t,r,i,u){if(i&&i[s]&&u){return this._issues.some(function(e){return e.category===s&&e.severity===t&&e.details.replace(/\n/g,"")===r.replace(/\n/g,"")&&e.subCategory===u})}return this._issues.some(function(e){return e.category===s&&e.severity===t&&e.details.replace(/\n/g,"")===r.replace(/\n/g,"")})};return e}();return e},false);
+//# sourceMappingURL=Diagnostics.js.map

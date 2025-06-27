@@ -1,0 +1,6 @@
+/*!
+ * SAPUI5
+ * (c) Copyright 2009-2022 SAP SE. All rights reserved.
+ */
+sap.ui.define(["sap/ui/core/Control"],function(e){"use strict";var a=e.extend("sap.ndc.BarcodeScannerUIContainer",{metadata:{properties:{prefixId:"string"}},renderer:{apiVersion:2,render:function(e,a){e.openStart("div",a);e.class("sapNdcRTCDialogVideo");e.openEnd();e.openStart("video",a.getId()+"-video");e.attr("autoplay","autoplay");e.attr("webkit-playsinline","webkit-playsinline");e.attr("playsinline","playsinline");e.class("sapNdcRTCDialogVideoContainer");e.openEnd();e.close("video");e.close("div");e.openStart("div",a.getId()+"-overlay");e.class("sapNdcRTCDialogOverlay");e.openEnd();e.openStart("div",a.getId()+"-overlay-box");e.class("sapNdcRTCDialogOverlayBox");e.openEnd();e.openStart("div",a.getId()+"-overlay-line");e.class("sapNdcRTCDialogOverlayLine");e.openEnd();e.close("div");e.close("div");e.close("div");e.openStart("div",a.getId()+"-highlight");e.attr("hidden",true);e.class("sapNdcRTCDialogHighlight");e.openEnd();e.close("div")}}});return a});
+//# sourceMappingURL=BarcodeScannerUIContainer.js.map

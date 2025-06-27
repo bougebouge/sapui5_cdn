@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<OverflowToolbarButton
+		type="Transparent"
+		icon="{fclhelper>/actionButtonsInfo/switchIcon}"
+		visible="{fclhelper>/actionButtonsInfo/switchVisible}"
+		press="._routing.switchFullScreen()"
+	/>
+	<OverflowToolbarButton
+		type="Transparent"
+		icon="sap-icon://decline"
+		tooltip="{= ${sap.fe.i18n>C_COMMON_SAPFE_CLOSE} }"
+		visible="{= ${fclhelper>/actionButtonsInfo/closeColumn} !== null }"
+		press="._routing.closeColumn()"
+	/>
+</core:FragmentDefinition>

@@ -1,0 +1,25 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:core="sap.ui.core"
+	xmlns:macro="sap.fe.macros"
+	template:require="{
+		ID: 'sap/fe/core/helpers/StableIdHelper',
+		FIELD: 'sap/fe/macros/field/FieldHelper',
+		UI: 'sap/fe/core/templating/UIFormatters'
+	}"
+>
+	<f:FormElement id="{this>id}" key="{this>key}" label="{this>label}" visible="{this>visible}">
+		<f:fields>
+			<template:if test="{= !${this>fieldsAvailable}}">
+				<template:then>
+					<macro:Field metaPath="{metaPath>}" id="{= ${this>id} ? ID.generate([${this>id}, 'FormElementField']) : ''}" />
+				</template:then>
+				<template:else>
+					<slot name="fields" />
+				</template:else>
+			</template:if>
+		</f:fields>
+	</f:FormElement>
+</core:FragmentDefinition>

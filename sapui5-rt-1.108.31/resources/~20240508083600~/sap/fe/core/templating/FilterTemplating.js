@@ -1,0 +1,6 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *      (c) Copyright 2009-2021 SAP SE. All rights reserved
+ */
+sap.ui.define(["sap/fe/core/helpers/ModelHelper"],function(i){"use strict";var e={};function n(e,n){var o,r;var t=e.getEntitySet();var v=t===null||t===void 0?void 0:t.annotations;var l;if(!i.isSingleton(t)){l=v===null||v===void 0?void 0:v.Capabilities}var a=(o=l)===null||o===void 0?void 0:(r=o.FilterRestrictions)===null||r===void 0?void 0:r.RequiredProperties;var d=false;if(a){a.forEach(function(i){if(n===(i===null||i===void 0?void 0:i.value)){d=true}})}return d}e.getIsRequired=n;function o(e,n){var o,r;var t,v;var l=e.getEntityType();var a=e.getEntitySet();var d=a===null||a===void 0?void 0:a.annotations;var u;if(!i.isSingleton(a)){u=d===null||d===void 0?void 0:d.Capabilities}var s=(o=u)===null||o===void 0?void 0:(r=o.FilterRestrictions)===null||r===void 0?void 0:r.NonFilterableProperties;var f=l.entityProperties;f.forEach(function(i){var e=i.name;if(e===n){var o,r,t;v=(o=i.annotations)===null||o===void 0?void 0:(r=o.UI)===null||r===void 0?void 0:(t=r.Hidden)===null||t===void 0?void 0:t.valueOf()}});if(s&&s.length>0){for(var c=0;c<s.length;c++){var p;var g=(p=s[c])===null||p===void 0?void 0:p.value;if(g===n){t=true}}}return t||v}e.isPropertyFilterable=o;return e},false);
+//# sourceMappingURL=FilterTemplating.js.map

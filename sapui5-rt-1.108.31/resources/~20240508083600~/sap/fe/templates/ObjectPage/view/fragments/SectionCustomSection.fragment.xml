@@ -1,0 +1,18 @@
+<core:FragmentDefinition
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+	xmlns:fpm="sap.fe.macros.fpm"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	template:require="{
+	ID: 'sap/fe/core/helpers/StableIdHelper'
+	}"
+>
+	<fpm:CustomSection
+		id="{subSection>id}"
+		contextPath="{entitySet>}"
+		section="{subSection>}"
+		editMode="{ui>/editMode}"
+		fragmentName="{subSection>template}"
+		fragmentType="XML"
+	/>
+</core:FragmentDefinition>

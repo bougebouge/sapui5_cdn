@@ -1,0 +1,6 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *      (c) Copyright 2009-2021 SAP SE. All rights reserved
+ */
+sap.ui.define(["sap/fe/core/helpers/BindingToolkit","sap/fe/macros/MacroMetadata"],function(e,a){"use strict";var t=e.resolveBindingString;var r=e.ifElse;var i=e.equal;var o=e.compileExpression;var s=a.extend("sap.fe.macros.form.FormElement",{name:"FormElement",namespace:"sap.fe.macros",fragment:"sap.fe.macros.form.FormElement",metadata:{stereotype:"xmlmacro",properties:{metaPath:{type:"sap.ui.model.Context",required:true},contextPath:{type:"sap.ui.model.Context",required:true},id:{type:"string",required:true},label:{type:"string",required:false},visible:{type:"boolean",required:false},key:{type:"string"}},aggregations:{fields:{type:"sap.ui.core.Control",isDefault:true}}},create:function(e,a,s,n){if(e.label===undefined){e.label=e.metaPath.getModel().getProperty("".concat(e.metaPath.sPath,"@com.sap.vocabularies.Common.v1.Label"))}if(e.editable!==undefined){e.editModeExpression=o(r(i(t(e.editable,"boolean"),true),"Editable","Display"))}else{e.editModeExpression=undefined}e.fieldsAvailable=n.fields!==undefined;return e}});return s},false);
+//# sourceMappingURL=FormElement.metadata.js.map

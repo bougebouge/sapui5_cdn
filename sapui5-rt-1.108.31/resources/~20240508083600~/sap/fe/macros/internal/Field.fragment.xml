@@ -1,0 +1,26 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:core="sap.ui.core"
+	xmlns:macroField="sap.fe.macros.field"
+	template:require="{
+							FIELD: 'sap/fe/macros/field/FieldHelper',
+							ID: 'sap/fe/core/helpers/StableIdHelper'
+						 }"
+>
+	<template:if test="{= (${this>formatOptions/fieldMode} === 'nowrapper') &amp;&amp; (${this>editMode}==='Display') }">
+		<template:then>
+			<core:Fragment fragmentName="sap.fe.macros.internal.field.FieldContent" type="XML" />
+		</template:then>
+		<template:else>
+			<macroField:FieldAPI
+				change="{this>onChange}"
+				id="{= ${this>_apiId} ? ${this>_apiId} : (${this>idPrefix} ? ID.generate([${this>idPrefix}, 'Field']) : undefined )}"
+				required="{this>requiredExpression}"
+				editable="{this>editableExpression}"
+				collaborationEnabled="{this>collaborationEnabled}"
+			>
+				<core:Fragment fragmentName="sap.fe.macros.internal.field.FieldContent" type="XML" />
+			</macroField:FieldAPI>
+		</template:else>
+	</template:if>
+</core:FragmentDefinition>

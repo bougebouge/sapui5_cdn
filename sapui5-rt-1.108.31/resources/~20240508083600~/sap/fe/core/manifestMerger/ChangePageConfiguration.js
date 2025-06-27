@@ -1,0 +1,6 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *      (c) Copyright 2009-2021 SAP SE. All rights reserved
+ */
+sap.ui.define(["sap/base/Log","sap/base/util/ObjectPath"],function(t,i){"use strict";var r={};function o(r,o){var n,e;var a=o.getContent();var l=a===null||a===void 0?void 0:a.page;var v=((n=r["sap.ui5"])===null||n===void 0?void 0:(e=n.routing)===null||e===void 0?void 0:e.targets)||{};var u;var d=a===null||a===void 0?void 0:a.entityPropertyChange;if((d===null||d===void 0?void 0:d.operation)!=="UPSERT"||!(d!==null&&d!==void 0&&d.propertyPath)||(d===null||d===void 0?void 0:d.propertyValue)===undefined||d!==null&&d!==void 0&&d.propertyPath.startsWith("/")){t.error("Change content is not a valid");return r}for(var s in v){if(v[s].id===l){var p;if((p=v[s].name)!==null&&p!==void 0&&p.startsWith("sap.fe.templates.")){var f,g;u=((f=v[s])===null||f===void 0?void 0:(g=f.options)===null||g===void 0?void 0:g.settings)||{};break}}}if(!u){t.error("No Fiori elements page with ID ".concat(l," found in routing targets."));return r}var c=d.propertyPath.split("/");if(c[0]==="controlConfiguration"){var h="";for(var y=1;y<c.length;y++){h+=(y>1?"/":"")+c[y];if(h.indexOf("@")>-1){c=["controlConfiguration",h].concat(c.slice(y+1));break}}}i.set(c,d.propertyValue,u);return r}r.applyChange=o;return r},false);
+//# sourceMappingURL=ChangePageConfiguration.js.map

@@ -1,0 +1,48 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:unittest="http://schemas.sap.com/sapui5/preprocessorextension/sap.fe.unittesting/1"
+	xmlns:macrodata="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns:core="sap.ui.core"
+	xmlns:macros="sap.fe.macros"
+	xmlns:macroTable="sap.fe.macros.table"
+	xmlns:mdcat="sap.ui.mdc.actiontoolbar"
+	xmlns="sap.m"
+	template:require="{
+		ID: 'sap/fe/core/helpers/StableIdHelper',
+		MODEL: 'sap/ui/model/odata/v4/AnnotationHelper',
+		COMMON: 'sap/fe/macros/CommonHelper',
+		FIELD: 'sap/fe/macros/field/FieldHelper',
+		TABLE: 'sap/fe/macros/table/TableHelper'
+	}"
+	xmlns:control="sap.fe.core.controls"
+>
+	<template:with path="action>annotationPath" var="dataField">
+		<template:if test="{= ${action>type} === 'ForAction'}">
+			<template:then>
+				<control:CommandExecution
+					execute="{this>onExecuteAction}"
+					enabled="{= ${this>isActionEnabled} ? ${this>isActionEnabled} : ${action>enabled}}"
+					visible="{= ${this>visible} ? ${this>visible} : ${action>visible}}"
+					command="{action>command}"
+				/>
+			</template:then>
+			<template:elseif test="{= ${action>type} === 'ForNavigation'}">
+				<control:CommandExecution
+					execute="{this>onExecuteIBN}"
+					enabled="{= ${this>isIBNEnabled} ? ${this>isIBNEnabled} : ${action>enabled}}"
+					visible="{= ${this>visible} ? ${this>visible} : ${action>visible}}"
+					command="{action>command}"
+				/>
+			</template:elseif>
+			<template:else>
+				<control:CommandExecution
+					core:require="{FPM: 'sap/fe/core/helpers/FPMHelper'}"
+					execute="{this>onExecuteManifest}"
+					visible="{= ${this>visible} ? ${this>visible} : ${action>visible}}"
+					enabled="{action>enabled}"
+					command="{action>command}"
+				/>
+			</template:else>
+		</template:if>
+	</template:with>
+</core:FragmentDefinition>

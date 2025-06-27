@@ -1,0 +1,51 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:macro="sap.fe.macros"
+	xmlns:log="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	template:require="{
+							FIELD: 'sap/fe/macros/field/FieldHelper'
+						 }"
+>
+	<Link
+		id="{this>noWrapperId}"
+		core:require="{FieldRuntime: 'sap/fe/macros/field/FieldRuntime', WSR: 'sap/base/strings/whitespaceReplacer'}"
+		text="{= ${this>formatOptions/retrieveTextFromValueList} ? FIELD.retrieveTextFromValueList( ${this>entitySet}, ${propertyPath>}, ${this>formatOptions} ) : ${this>text} }"
+		visible="{this>displayVisible}"
+		wrapping="{= ${this>wrap} || 'true' }"
+		press="FieldRuntime.pressLink"
+		ariaLabelledBy="{this>ariaLabelledBy}"
+		emptyIndicatorMode="{this>emptyIndicatorMode}"
+	>
+		<dependents>
+			<template:if test="{property>@@FIELD.getNavigationEntity}">
+				<template:then>
+					<template:with path="property>" helper="FIELD.getNavigationEntity" var="entityType">
+						<macro:QuickViewForm
+							propertypath="{property>$Path}"
+							dataField="{dataField>}"
+							entityType="{entityType>}"
+							semanticObject="{this>semanticObject}"
+							hasSemanticOnNavigation="{this>hasSemanticObjectOnNavigation}"
+							hasQuickViewFacets="{this>hasQuickViewFacets}"
+							contextPath="{entitySet>}"
+							semanticObjectsToResolve="{semanticObjects>}"
+						/>
+					</template:with>
+				</template:then>
+				<template:else>
+					<macro:QuickViewForm
+						propertypath="{property>$Path}"
+						dataField="{dataField>}"
+						semanticObject="{this>semanticObject}"
+						hasSemanticOnNavigation="{this>hasSemanticObjectOnNavigation}"
+						hasQuickViewFacets="{this>hasQuickViewFacets}"
+						semanticObjectsToResolve="{semanticObjects>}"
+						contextPath="{entitySet>}"
+					/>
+				</template:else>
+			</template:if>
+		</dependents>
+	</Link>
+</core:FragmentDefinition>

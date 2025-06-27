@@ -1,0 +1,4069 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".eslintrc",
+			"size": 370
+		},
+		{
+			"name": ".library",
+			"size": 2645
+		},
+		{
+			"name": ".theming",
+			"size": 75
+		},
+		{
+			"name": "DFKernel-dbg.js",
+			"module": "sap/sac/df/DFKernel.js",
+			"size": 6073,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/firefly/library.js",
+				"sap/ui/model/Model.js"
+			]
+		},
+		{
+			"name": "DFKernel.js",
+			"module": "sap/sac/df/DFKernel.js",
+			"size": 3224,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/firefly/library.js",
+				"sap/ui/model/Model.js"
+			]
+		},
+		{
+			"name": "DFKernel.js.map",
+			"size": 4205,
+			"isDebug": true
+		},
+		{
+			"name": "DFProgram-dbg.js",
+			"module": "sap/sac/df/DFProgram.js",
+			"size": 7153,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/base/Log.js",
+				"sap/sac/df/DFKernel.js",
+				"sap/sac/df/firefly/library.js",
+				"sap/ui/core/Control.js"
+			]
+		},
+		{
+			"name": "DFProgram.js",
+			"module": "sap/sac/df/DFProgram.js",
+			"size": 3770,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/base/Log.js",
+				"sap/sac/df/DFKernel.js",
+				"sap/sac/df/firefly/library.js",
+				"sap/ui/core/Control.js"
+			]
+		},
+		{
+			"name": "DFProgram.js.map",
+			"size": 5088,
+			"isDebug": true
+		},
+		{
+			"name": "FlexAnalysis-dbg.js",
+			"module": "sap/sac/df/FlexAnalysis.js",
+			"size": 20344,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/base/Log.js",
+				"sap/sac/df/fa/FlexAnalysisContextMenuProvider.js",
+				"sap/sac/df/firefly/library.js",
+				"sap/sac/df/olap/MultiDimModel.js",
+				"sap/sac/df/types/SystemType.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "FlexAnalysis.js",
+			"module": "sap/sac/df/FlexAnalysis.js",
+			"size": 10346,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/base/Log.js",
+				"sap/sac/df/fa/FlexAnalysisContextMenuProvider.js",
+				"sap/sac/df/firefly/library.js",
+				"sap/sac/df/olap/MultiDimModel.js",
+				"sap/sac/df/types/SystemType.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "FlexAnalysis.js.map",
+			"size": 12749,
+			"isDebug": true
+		},
+		{
+			"name": "FlexAnalysisPanel-dbg.js",
+			"module": "sap/sac/df/FlexAnalysisPanel.js",
+			"size": 2222,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "FlexAnalysisPanel.js",
+			"module": "sap/sac/df/FlexAnalysisPanel.js",
+			"size": 895,
+			"required": [
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "FlexAnalysisPanel.js.map",
+			"size": 1123,
+			"isDebug": true
+		},
+		{
+			"name": "InACard/Component-dbg.js",
+			"module": "sap/sac/df/InACard/Component.js",
+			"size": 6651,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/library.js",
+				"sap/ovp/cards/custom/Component.js",
+				"sap/ovp/library.js",
+				"sap/sac/df/library.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/model/resource/ResourceModel.js",
+				"sap/viz/library.js",
+				"sap/viz/ui5/controls/common/feeds/FeedItem.js"
+			]
+		},
+		{
+			"name": "InACard/Component.js",
+			"module": "sap/sac/df/InACard/Component.js",
+			"size": 3184,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/library.js",
+				"sap/ovp/cards/custom/Component.js",
+				"sap/ovp/library.js",
+				"sap/sac/df/library.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/model/resource/ResourceModel.js",
+				"sap/viz/library.js",
+				"sap/viz/ui5/controls/common/feeds/FeedItem.js"
+			]
+		},
+		{
+			"name": "InACard/Component.js.map",
+			"size": 3504,
+			"isDebug": true
+		},
+		{
+			"name": "InACard/controller/InACard-dbg.controller.js",
+			"module": "sap/sac/df/InACard/controller/InACard.controller.js",
+			"size": 2609,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/base/Log.js",
+				"sap/ui/core/mvc/Controller.js"
+			]
+		},
+		{
+			"name": "InACard/controller/InACard.controller.js",
+			"module": "sap/sac/df/InACard/controller/InACard.controller.js",
+			"size": 1470,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/base/Log.js",
+				"sap/ui/core/mvc/Controller.js"
+			]
+		},
+		{
+			"name": "InACard/controller/InACard.controller.js.map",
+			"size": 1770,
+			"isDebug": true
+		},
+		{
+			"name": "InACard/fragment/InACard.fragment.xml",
+			"module": "sap/sac/df/InACard/fragment/InACard.fragment.xml",
+			"size": 2014,
+			"required": [
+				"sap/m/VBox.js",
+				"sap/sac/df/PivotTable.js"
+			]
+		},
+		{
+			"name": "InACard/manifest.json",
+			"module": "sap/sac/df/InACard/manifest.json",
+			"size": 1503
+		},
+		{
+			"name": "PivotTable-dbg.js",
+			"module": "sap/sac/df/PivotTable.js",
+			"size": 9046,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/utils/ErrorHandler.js",
+				"sap/sac/df/utils/ResourceModel.js",
+				"sap/sac/grid/Format.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "PivotTable.js",
+			"module": "sap/sac/df/PivotTable.js",
+			"size": 3323,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/utils/ErrorHandler.js",
+				"sap/sac/df/utils/ResourceModel.js",
+				"sap/sac/grid/Format.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "PivotTable.js.map",
+			"size": 4267,
+			"isDebug": true
+		},
+		{
+			"name": "controller/Pivot-dbg.controller.js",
+			"module": "sap/sac/df/controller/Pivot.controller.js",
+			"size": 5398,
+			"isDebug": true,
+			"required": [
+				"sap/m/MessageBox.js",
+				"sap/sac/df/types/Axis.js",
+				"sap/sac/df/types/CellValueType.js",
+				"sap/sac/df/types/DimensionType.js",
+				"sap/sac/df/types/NavigationCommandType.js",
+				"sap/sac/df/utils/ErrorHandler.js",
+				"sap/sac/df/utils/ResourceBundle.js",
+				"sap/sac/grid/CellType.js",
+				"sap/ui/core/mvc/Controller.js"
+			]
+		},
+		{
+			"name": "controller/Pivot.controller.js",
+			"module": "sap/sac/df/controller/Pivot.controller.js",
+			"size": 3063,
+			"required": [
+				"sap/m/MessageBox.js",
+				"sap/sac/df/types/Axis.js",
+				"sap/sac/df/types/CellValueType.js",
+				"sap/sac/df/types/DimensionType.js",
+				"sap/sac/df/types/NavigationCommandType.js",
+				"sap/sac/df/utils/ErrorHandler.js",
+				"sap/sac/df/utils/ResourceBundle.js",
+				"sap/sac/grid/CellType.js",
+				"sap/ui/core/mvc/Controller.js"
+			]
+		},
+		{
+			"name": "controller/Pivot.controller.js.map",
+			"size": 3595,
+			"isDebug": true
+		},
+		{
+			"name": "fa/FlexAnalysisContextMenuProvider-dbg.js",
+			"module": "sap/sac/df/fa/FlexAnalysisContextMenuProvider.js",
+			"size": 4646,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/library.js",
+				"sap/ui/base/Object.js"
+			]
+		},
+		{
+			"name": "fa/FlexAnalysisContextMenuProvider.js",
+			"module": "sap/sac/df/fa/FlexAnalysisContextMenuProvider.js",
+			"size": 2344,
+			"required": [
+				"sap/sac/df/firefly/library.js",
+				"sap/ui/base/Object.js"
+			]
+		},
+		{
+			"name": "fa/FlexAnalysisContextMenuProvider.js.map",
+			"size": 3429,
+			"isDebug": true
+		},
+		{
+			"name": "fa/sap-ui5-config.json",
+			"module": "sap/sac/df/fa/sap-ui5-config.json",
+			"size": 28257
+		},
+		{
+			"name": "firefly/ff0000.language.native-dbg.js",
+			"module": "sap/sac/df/firefly/ff0000.language.native.js",
+			"size": 29486,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff0000.language.native.js",
+			"module": "sap/sac/df/firefly/ff0000.language.native.js",
+			"size": 13368
+		},
+		{
+			"name": "firefly/ff0000.language.native.js.map",
+			"size": 17343,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff0005.language.ext-dbg.js",
+			"module": "sap/sac/df/firefly/ff0005.language.ext.js",
+			"size": 81603,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0000.language.native.js"
+			]
+		},
+		{
+			"name": "firefly/ff0005.language.ext.js",
+			"module": "sap/sac/df/firefly/ff0005.language.ext.js",
+			"size": 62258,
+			"required": [
+				"sap/sac/df/firefly/ff0000.language.native.js"
+			]
+		},
+		{
+			"name": "firefly/ff0005.language.ext.js.map",
+			"size": 72069,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff0010.core-dbg.js",
+			"module": "sap/sac/df/firefly/ff0010.core.js",
+			"size": 16538,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0005.language.ext.js"
+			]
+		},
+		{
+			"name": "firefly/ff0010.core.js",
+			"module": "sap/sac/df/firefly/ff0010.core.js",
+			"size": 11785,
+			"required": [
+				"sap/sac/df/firefly/ff0005.language.ext.js"
+			]
+		},
+		{
+			"name": "firefly/ff0010.core.js.map",
+			"size": 14094,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff0020.core.native-dbg.js",
+			"module": "sap/sac/df/firefly/ff0020.core.native.js",
+			"size": 38596,
+			"requiresTopLevelScope": true,
+			"exposedGlobalNames": [
+				"_typeof"
+			],
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0010.core.js"
+			]
+		},
+		{
+			"name": "firefly/ff0020.core.native.js",
+			"module": "sap/sac/df/firefly/ff0020.core.native.js",
+			"size": 23561,
+			"requiresTopLevelScope": true,
+			"exposedGlobalNames": [
+				"_typeof"
+			],
+			"required": [
+				"sap/sac/df/firefly/ff0010.core.js"
+			]
+		},
+		{
+			"name": "firefly/ff0020.core.native.js.map",
+			"size": 26369,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff0030.core.ext-dbg.js",
+			"module": "sap/sac/df/firefly/ff0030.core.ext.js",
+			"size": 57732,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0020.core.native.js"
+			]
+		},
+		{
+			"name": "firefly/ff0030.core.ext.js",
+			"module": "sap/sac/df/firefly/ff0030.core.ext.js",
+			"size": 43443,
+			"required": [
+				"sap/sac/df/firefly/ff0020.core.native.js"
+			]
+		},
+		{
+			"name": "firefly/ff0030.core.ext.js.map",
+			"size": 47789,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff0040.commons-dbg.js",
+			"module": "sap/sac/df/firefly/ff0040.commons.js",
+			"size": 27797,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0030.core.ext.js"
+			]
+		},
+		{
+			"name": "firefly/ff0040.commons.js",
+			"module": "sap/sac/df/firefly/ff0040.commons.js",
+			"size": 22527,
+			"required": [
+				"sap/sac/df/firefly/ff0030.core.ext.js"
+			]
+		},
+		{
+			"name": "firefly/ff0040.commons.js.map",
+			"size": 22822,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff0050.commons.native-dbg.js",
+			"module": "sap/sac/df/firefly/ff0050.commons.native.js",
+			"size": 23807,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0040.commons.js"
+			]
+		},
+		{
+			"name": "firefly/ff0050.commons.native.js",
+			"module": "sap/sac/df/firefly/ff0050.commons.native.js",
+			"size": 12102,
+			"required": [
+				"sap/sac/df/firefly/ff0040.commons.js"
+			]
+		},
+		{
+			"name": "firefly/ff0050.commons.native.js.map",
+			"size": 17793,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff0060.commons.ext-dbg.js",
+			"module": "sap/sac/df/firefly/ff0060.commons.ext.js",
+			"size": 395289,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0050.commons.native.js"
+			]
+		},
+		{
+			"name": "firefly/ff0060.commons.ext.js",
+			"module": "sap/sac/df/firefly/ff0060.commons.ext.js",
+			"size": 294594,
+			"required": [
+				"sap/sac/df/firefly/ff0050.commons.native.js"
+			]
+		},
+		{
+			"name": "firefly/ff0060.commons.ext.js.map",
+			"size": 324015,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff0070.structures-dbg.js",
+			"module": "sap/sac/df/firefly/ff0070.structures.js",
+			"size": 205147,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0060.commons.ext.js"
+			]
+		},
+		{
+			"name": "firefly/ff0070.structures.js",
+			"module": "sap/sac/df/firefly/ff0070.structures.js",
+			"size": 141688,
+			"required": [
+				"sap/sac/df/firefly/ff0060.commons.ext.js"
+			]
+		},
+		{
+			"name": "firefly/ff0070.structures.js.map",
+			"size": 165765,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff0080.structures.native-dbg.js",
+			"module": "sap/sac/df/firefly/ff0080.structures.native.js",
+			"size": 40481,
+			"requiresTopLevelScope": true,
+			"exposedGlobalNames": [
+				"_typeof"
+			],
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0070.structures.js"
+			]
+		},
+		{
+			"name": "firefly/ff0080.structures.native.js",
+			"module": "sap/sac/df/firefly/ff0080.structures.native.js",
+			"size": 27912,
+			"requiresTopLevelScope": true,
+			"exposedGlobalNames": [
+				"_typeof"
+			],
+			"required": [
+				"sap/sac/df/firefly/ff0070.structures.js"
+			]
+		},
+		{
+			"name": "firefly/ff0080.structures.native.js.map",
+			"size": 28151,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff0200.io-dbg.js",
+			"module": "sap/sac/df/firefly/ff0200.io.js",
+			"size": 450978,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0080.structures.native.js"
+			]
+		},
+		{
+			"name": "firefly/ff0200.io.js",
+			"module": "sap/sac/df/firefly/ff0200.io.js",
+			"size": 336388,
+			"required": [
+				"sap/sac/df/firefly/ff0080.structures.native.js"
+			]
+		},
+		{
+			"name": "firefly/ff0200.io.js.map",
+			"size": 371710,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff0210.io.native-dbg.js",
+			"module": "sap/sac/df/firefly/ff0210.io.native.js",
+			"size": 84875,
+			"requiresTopLevelScope": true,
+			"exposedGlobalNames": [
+				"_typeof"
+			],
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0200.io.js"
+			]
+		},
+		{
+			"name": "firefly/ff0210.io.native.js",
+			"module": "sap/sac/df/firefly/ff0210.io.native.js",
+			"size": 51243,
+			"requiresTopLevelScope": true,
+			"exposedGlobalNames": [
+				"_typeof"
+			],
+			"required": [
+				"sap/sac/df/firefly/ff0200.io.js"
+			]
+		},
+		{
+			"name": "firefly/ff0210.io.native.js.map",
+			"size": 59592,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff0230.io.ext-dbg.js",
+			"module": "sap/sac/df/firefly/ff0230.io.ext.js",
+			"size": 801,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0210.io.native.js"
+			]
+		},
+		{
+			"name": "firefly/ff0230.io.ext.js",
+			"module": "sap/sac/df/firefly/ff0230.io.ext.js",
+			"size": 721,
+			"required": [
+				"sap/sac/df/firefly/ff0210.io.native.js"
+			]
+		},
+		{
+			"name": "firefly/ff0230.io.ext.js.map",
+			"size": 758,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff1000.kernel.api-dbg.js",
+			"module": "sap/sac/df/firefly/ff1000.kernel.api.js",
+			"size": 40311,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0230.io.ext.js"
+			]
+		},
+		{
+			"name": "firefly/ff1000.kernel.api.js",
+			"module": "sap/sac/df/firefly/ff1000.kernel.api.js",
+			"size": 34884,
+			"required": [
+				"sap/sac/df/firefly/ff0230.io.ext.js"
+			]
+		},
+		{
+			"name": "firefly/ff1000.kernel.api.js.map",
+			"size": 31888,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff1010.kernel.api.base-dbg.js",
+			"module": "sap/sac/df/firefly/ff1010.kernel.api.base.js",
+			"size": 1550,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff1000.kernel.api.js"
+			]
+		},
+		{
+			"name": "firefly/ff1010.kernel.api.base.js",
+			"module": "sap/sac/df/firefly/ff1010.kernel.api.base.js",
+			"size": 1337,
+			"required": [
+				"sap/sac/df/firefly/ff1000.kernel.api.js"
+			]
+		},
+		{
+			"name": "firefly/ff1010.kernel.api.base.js.map",
+			"size": 1335,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff1030.kernel.impl-dbg.js",
+			"module": "sap/sac/df/firefly/ff1030.kernel.impl.js",
+			"size": 817646,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff1010.kernel.api.base.js"
+			]
+		},
+		{
+			"name": "firefly/ff1030.kernel.impl.js",
+			"module": "sap/sac/df/firefly/ff1030.kernel.impl.js",
+			"size": 615276,
+			"required": [
+				"sap/sac/df/firefly/ff1010.kernel.api.base.js"
+			]
+		},
+		{
+			"name": "firefly/ff1030.kernel.impl.js.map",
+			"size": 581475,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff1040.kernel.native-dbg.js",
+			"module": "sap/sac/df/firefly/ff1040.kernel.native.js",
+			"size": 15344,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff1030.kernel.impl.js"
+			]
+		},
+		{
+			"name": "firefly/ff1040.kernel.native.js",
+			"module": "sap/sac/df/firefly/ff1040.kernel.native.js",
+			"size": 8972,
+			"required": [
+				"sap/sac/df/firefly/ff1030.kernel.impl.js"
+			]
+		},
+		{
+			"name": "firefly/ff1040.kernel.native.js.map",
+			"size": 10235,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff2010.binding-dbg.js",
+			"module": "sap/sac/df/firefly/ff2010.binding.js",
+			"size": 31387,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff1040.kernel.native.js"
+			]
+		},
+		{
+			"name": "firefly/ff2010.binding.js",
+			"module": "sap/sac/df/firefly/ff2010.binding.js",
+			"size": 22676,
+			"required": [
+				"sap/sac/df/firefly/ff1040.kernel.native.js"
+			]
+		},
+		{
+			"name": "firefly/ff2010.binding.js.map",
+			"size": 25370,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff2100.runtime-dbg.js",
+			"module": "sap/sac/df/firefly/ff2100.runtime.js",
+			"size": 268469,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0210.io.native.js",
+				"sap/sac/df/firefly/ff0230.io.ext.js",
+				"sap/sac/df/firefly/ff1040.kernel.native.js",
+				"sap/sac/df/firefly/ff2010.binding.js"
+			]
+		},
+		{
+			"name": "firefly/ff2100.runtime.js",
+			"module": "sap/sac/df/firefly/ff2100.runtime.js",
+			"size": 183953,
+			"required": [
+				"sap/sac/df/firefly/ff0210.io.native.js",
+				"sap/sac/df/firefly/ff0230.io.ext.js",
+				"sap/sac/df/firefly/ff1040.kernel.native.js",
+				"sap/sac/df/firefly/ff2010.binding.js"
+			]
+		},
+		{
+			"name": "firefly/ff2100.runtime.js.map",
+			"size": 203178,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff2200.ui-dbg.js",
+			"module": "sap/sac/df/firefly/ff2200.ui.js",
+			"size": 944742,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff1040.kernel.native.js",
+				"sap/sac/df/firefly/ff2010.binding.js"
+			]
+		},
+		{
+			"name": "firefly/ff2200.ui.js",
+			"module": "sap/sac/df/firefly/ff2200.ui.js",
+			"size": 759775,
+			"required": [
+				"sap/sac/df/firefly/ff1040.kernel.native.js",
+				"sap/sac/df/firefly/ff2010.binding.js"
+			]
+		},
+		{
+			"name": "firefly/ff2200.ui.js.map",
+			"size": 776053,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff2210.ui.native-dbg.js",
+			"module": "sap/sac/df/firefly/ff2210.ui.native.js",
+			"size": 662255,
+			"requiresTopLevelScope": true,
+			"exposedGlobalNames": [
+				"_createForOfIteratorHelper",
+				"_unsupportedIterableToArray",
+				"_arrayLikeToArray"
+			],
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2200.ui.js"
+			]
+		},
+		{
+			"name": "firefly/ff2210.ui.native.js",
+			"module": "sap/sac/df/firefly/ff2210.ui.native.js",
+			"size": 415095,
+			"requiresTopLevelScope": true,
+			"exposedGlobalNames": [
+				"_createForOfIteratorHelper",
+				"_unsupportedIterableToArray",
+				"_arrayLikeToArray"
+			],
+			"required": [
+				"sap/sac/df/firefly/ff2200.ui.js"
+			]
+		},
+		{
+			"name": "firefly/ff2210.ui.native.js.map",
+			"size": 449664,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff2220.ui.tools-dbg.js",
+			"module": "sap/sac/df/firefly/ff2220.ui.tools.js",
+			"size": 201145,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2100.runtime.js",
+				"sap/sac/df/firefly/ff2200.ui.js"
+			]
+		},
+		{
+			"name": "firefly/ff2220.ui.tools.js",
+			"module": "sap/sac/df/firefly/ff2220.ui.tools.js",
+			"size": 158498,
+			"required": [
+				"sap/sac/df/firefly/ff2100.runtime.js",
+				"sap/sac/df/firefly/ff2200.ui.js"
+			]
+		},
+		{
+			"name": "firefly/ff2220.ui.tools.js.map",
+			"size": 158350,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff2240.ui.program-dbg.js",
+			"module": "sap/sac/df/firefly/ff2240.ui.program.js",
+			"size": 160645,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2220.ui.tools.js"
+			]
+		},
+		{
+			"name": "firefly/ff2240.ui.program.js",
+			"module": "sap/sac/df/firefly/ff2240.ui.program.js",
+			"size": 116460,
+			"required": [
+				"sap/sac/df/firefly/ff2220.ui.tools.js"
+			]
+		},
+		{
+			"name": "firefly/ff2240.ui.program.js.map",
+			"size": 134627,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff2260.ui.remote-dbg.js",
+			"module": "sap/sac/df/firefly/ff2260.ui.remote.js",
+			"size": 239977,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2240.ui.program.js"
+			]
+		},
+		{
+			"name": "firefly/ff2260.ui.remote.js",
+			"module": "sap/sac/df/firefly/ff2260.ui.remote.js",
+			"size": 171598,
+			"required": [
+				"sap/sac/df/firefly/ff2240.ui.program.js"
+			]
+		},
+		{
+			"name": "firefly/ff2260.ui.remote.js.map",
+			"size": 197453,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff2600.visualization.abstract-dbg.js",
+			"module": "sap/sac/df/firefly/ff2600.visualization.abstract.js",
+			"size": 40554,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0200.io.js"
+			]
+		},
+		{
+			"name": "firefly/ff2600.visualization.abstract.js",
+			"module": "sap/sac/df/firefly/ff2600.visualization.abstract.js",
+			"size": 36830,
+			"required": [
+				"sap/sac/df/firefly/ff0200.io.js"
+			]
+		},
+		{
+			"name": "firefly/ff2600.visualization.abstract.js.map",
+			"size": 30837,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff2610.visualization.internal-dbg.js",
+			"module": "sap/sac/df/firefly/ff2610.visualization.internal.js",
+			"size": 3348,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2600.visualization.abstract.js"
+			]
+		},
+		{
+			"name": "firefly/ff2610.visualization.internal.js",
+			"module": "sap/sac/df/firefly/ff2610.visualization.internal.js",
+			"size": 2791,
+			"required": [
+				"sap/sac/df/firefly/ff2600.visualization.abstract.js"
+			]
+		},
+		{
+			"name": "firefly/ff2610.visualization.internal.js.map",
+			"size": 2920,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff2650.visualization.impl-dbg.js",
+			"module": "sap/sac/df/firefly/ff2650.visualization.impl.js",
+			"size": 218569,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2610.visualization.internal.js"
+			]
+		},
+		{
+			"name": "firefly/ff2650.visualization.impl.js",
+			"module": "sap/sac/df/firefly/ff2650.visualization.impl.js",
+			"size": 161844,
+			"required": [
+				"sap/sac/df/firefly/ff2610.visualization.internal.js"
+			]
+		},
+		{
+			"name": "firefly/ff2650.visualization.impl.js.map",
+			"size": 173584,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff2700.export-dbg.js",
+			"module": "sap/sac/df/firefly/ff2700.export.js",
+			"size": 24459,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0005.language.ext.js",
+				"sap/sac/df/firefly/ff0040.commons.js",
+				"sap/sac/df/firefly/ff0070.structures.js",
+				"sap/sac/df/firefly/ff2650.visualization.impl.js"
+			]
+		},
+		{
+			"name": "firefly/ff2700.export.js",
+			"module": "sap/sac/df/firefly/ff2700.export.js",
+			"size": 18303,
+			"required": [
+				"sap/sac/df/firefly/ff0005.language.ext.js",
+				"sap/sac/df/firefly/ff0040.commons.js",
+				"sap/sac/df/firefly/ff0070.structures.js",
+				"sap/sac/df/firefly/ff2650.visualization.impl.js"
+			]
+		},
+		{
+			"name": "firefly/ff2700.export.js.map",
+			"size": 21796,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff2710.export.native-dbg.js",
+			"module": "sap/sac/df/firefly/ff2710.export.native.js",
+			"size": 2016,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2700.export.js"
+			]
+		},
+		{
+			"name": "firefly/ff2710.export.native.js",
+			"module": "sap/sac/df/firefly/ff2710.export.native.js",
+			"size": 1582,
+			"required": [
+				"sap/sac/df/firefly/ff2700.export.js"
+			]
+		},
+		{
+			"name": "firefly/ff2710.export.native.js.map",
+			"size": 1624,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff3100.system.ui-dbg.js",
+			"module": "sap/sac/df/firefly/ff3100.system.ui.js",
+			"size": 866953,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2240.ui.program.js",
+				"sap/sac/df/firefly/ff2700.export.js"
+			]
+		},
+		{
+			"name": "firefly/ff3100.system.ui.js",
+			"module": "sap/sac/df/firefly/ff3100.system.ui.js",
+			"size": 662901,
+			"required": [
+				"sap/sac/df/firefly/ff2240.ui.program.js",
+				"sap/sac/df/firefly/ff2700.export.js"
+			]
+		},
+		{
+			"name": "firefly/ff3100.system.ui.js.map",
+			"size": 661895,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff3300.cell.engine-dbg.js",
+			"module": "sap/sac/df/firefly/ff3300.cell.engine.js",
+			"size": 58446,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2220.ui.tools.js",
+				"sap/sac/df/firefly/ff2600.visualization.abstract.js"
+			]
+		},
+		{
+			"name": "firefly/ff3300.cell.engine.js",
+			"module": "sap/sac/df/firefly/ff3300.cell.engine.js",
+			"size": 44048,
+			"required": [
+				"sap/sac/df/firefly/ff2220.ui.tools.js",
+				"sap/sac/df/firefly/ff2600.visualization.abstract.js"
+			]
+		},
+		{
+			"name": "firefly/ff3300.cell.engine.js.map",
+			"size": 46200,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff3400.contextmenu.engine-dbg.js",
+			"module": "sap/sac/df/firefly/ff3400.contextmenu.engine.js",
+			"size": 5949,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0200.io.js"
+			]
+		},
+		{
+			"name": "firefly/ff3400.contextmenu.engine.js",
+			"module": "sap/sac/df/firefly/ff3400.contextmenu.engine.js",
+			"size": 5039,
+			"required": [
+				"sap/sac/df/firefly/ff0200.io.js"
+			]
+		},
+		{
+			"name": "firefly/ff3400.contextmenu.engine.js.map",
+			"size": 4403,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff3410.contextmenu.engine.impl-dbg.js",
+			"module": "sap/sac/df/firefly/ff3410.contextmenu.engine.impl.js",
+			"size": 218544,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff3400.contextmenu.engine.js"
+			]
+		},
+		{
+			"name": "firefly/ff3410.contextmenu.engine.impl.js",
+			"module": "sap/sac/df/firefly/ff3410.contextmenu.engine.impl.js",
+			"size": 158998,
+			"required": [
+				"sap/sac/df/firefly/ff3400.contextmenu.engine.js"
+			]
+		},
+		{
+			"name": "firefly/ff3410.contextmenu.engine.impl.js.map",
+			"size": 165257,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff3500.sql-dbg.js",
+			"module": "sap/sac/df/firefly/ff3500.sql.js",
+			"size": 99753,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff0005.language.ext.js",
+				"sap/sac/df/firefly/ff2100.runtime.js"
+			]
+		},
+		{
+			"name": "firefly/ff3500.sql.js",
+			"module": "sap/sac/df/firefly/ff3500.sql.js",
+			"size": 75526,
+			"required": [
+				"sap/sac/df/firefly/ff0005.language.ext.js",
+				"sap/sac/df/firefly/ff2100.runtime.js"
+			]
+		},
+		{
+			"name": "firefly/ff3500.sql.js.map",
+			"size": 85207,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff4000.protocol.ina-dbg.js",
+			"module": "sap/sac/df/firefly/ff4000.protocol.ina.js",
+			"size": 130546,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2100.runtime.js"
+			]
+		},
+		{
+			"name": "firefly/ff4000.protocol.ina.js",
+			"module": "sap/sac/df/firefly/ff4000.protocol.ina.js",
+			"size": 121757,
+			"required": [
+				"sap/sac/df/firefly/ff2100.runtime.js"
+			]
+		},
+		{
+			"name": "firefly/ff4000.protocol.ina.js.map",
+			"size": 122055,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff4050.processor-dbg.js",
+			"module": "sap/sac/df/firefly/ff4050.processor.js",
+			"size": 203370,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff4000.protocol.ina.js"
+			]
+		},
+		{
+			"name": "firefly/ff4050.processor.js",
+			"module": "sap/sac/df/firefly/ff4050.processor.js",
+			"size": 140460,
+			"required": [
+				"sap/sac/df/firefly/ff4000.protocol.ina.js"
+			]
+		},
+		{
+			"name": "firefly/ff4050.processor.js.map",
+			"size": 158853,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff4200.olap.api-dbg.js",
+			"module": "sap/sac/df/firefly/ff4200.olap.api.js",
+			"size": 472942,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2100.runtime.js",
+				"sap/sac/df/firefly/ff2600.visualization.abstract.js"
+			]
+		},
+		{
+			"name": "firefly/ff4200.olap.api.js",
+			"module": "sap/sac/df/firefly/ff4200.olap.api.js",
+			"size": 384971,
+			"required": [
+				"sap/sac/df/firefly/ff2100.runtime.js",
+				"sap/sac/df/firefly/ff2600.visualization.abstract.js"
+			]
+		},
+		{
+			"name": "firefly/ff4200.olap.api.js.map",
+			"size": 371259,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff4205.olap.api.base-dbg.js",
+			"module": "sap/sac/df/firefly/ff4205.olap.api.base.js",
+			"size": 9531,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2610.visualization.internal.js",
+				"sap/sac/df/firefly/ff4200.olap.api.js"
+			]
+		},
+		{
+			"name": "firefly/ff4205.olap.api.base.js",
+			"module": "sap/sac/df/firefly/ff4205.olap.api.base.js",
+			"size": 7667,
+			"required": [
+				"sap/sac/df/firefly/ff2610.visualization.internal.js",
+				"sap/sac/df/firefly/ff4200.olap.api.js"
+			]
+		},
+		{
+			"name": "firefly/ff4205.olap.api.base.js.map",
+			"size": 7822,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff4220.olap.catalog.api-dbg.js",
+			"module": "sap/sac/df/firefly/ff4220.olap.catalog.api.js",
+			"size": 4293,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff4200.olap.api.js"
+			]
+		},
+		{
+			"name": "firefly/ff4220.olap.catalog.api.js",
+			"module": "sap/sac/df/firefly/ff4220.olap.catalog.api.js",
+			"size": 3533,
+			"required": [
+				"sap/sac/df/firefly/ff4200.olap.api.js"
+			]
+		},
+		{
+			"name": "firefly/ff4220.olap.catalog.api.js.map",
+			"size": 3491,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff4250.olap.resultset-dbg.js",
+			"module": "sap/sac/df/firefly/ff4250.olap.resultset.js",
+			"size": 429374,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2650.visualization.impl.js",
+				"sap/sac/df/firefly/ff4000.protocol.ina.js",
+				"sap/sac/df/firefly/ff4200.olap.api.js",
+				"sap/sac/df/firefly/ff4205.olap.api.base.js"
+			]
+		},
+		{
+			"name": "firefly/ff4250.olap.resultset.js",
+			"module": "sap/sac/df/firefly/ff4250.olap.resultset.js",
+			"size": 327557,
+			"required": [
+				"sap/sac/df/firefly/ff2650.visualization.impl.js",
+				"sap/sac/df/firefly/ff4000.protocol.ina.js",
+				"sap/sac/df/firefly/ff4200.olap.api.js",
+				"sap/sac/df/firefly/ff4205.olap.api.base.js"
+			]
+		},
+		{
+			"name": "firefly/ff4250.olap.resultset.js.map",
+			"size": 351330,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff4305.olap.model-dbg.js",
+			"module": "sap/sac/df/firefly/ff4305.olap.model.js",
+			"size": 3096453,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff4205.olap.api.base.js"
+			]
+		},
+		{
+			"name": "firefly/ff4305.olap.model.js",
+			"module": "sap/sac/df/firefly/ff4305.olap.model.js",
+			"size": 2232396,
+			"required": [
+				"sap/sac/df/firefly/ff4205.olap.api.base.js"
+			]
+		},
+		{
+			"name": "firefly/ff4305.olap.model.js.map",
+			"size": 2272855,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff4310.olap.impl-dbg.js",
+			"module": "sap/sac/df/firefly/ff4310.olap.impl.js",
+			"size": 881916,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff4000.protocol.ina.js",
+				"sap/sac/df/firefly/ff4205.olap.api.base.js",
+				"sap/sac/df/firefly/ff4250.olap.resultset.js",
+				"sap/sac/df/firefly/ff4305.olap.model.js"
+			]
+		},
+		{
+			"name": "firefly/ff4310.olap.impl.js",
+			"module": "sap/sac/df/firefly/ff4310.olap.impl.js",
+			"size": 609781,
+			"required": [
+				"sap/sac/df/firefly/ff4000.protocol.ina.js",
+				"sap/sac/df/firefly/ff4205.olap.api.base.js",
+				"sap/sac/df/firefly/ff4250.olap.resultset.js",
+				"sap/sac/df/firefly/ff4305.olap.model.js"
+			]
+		},
+		{
+			"name": "firefly/ff4310.olap.impl.js.map",
+			"size": 653917,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff4315.olap.ip.impl-dbg.js",
+			"module": "sap/sac/df/firefly/ff4315.olap.ip.impl.js",
+			"size": 262267,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff4310.olap.impl.js"
+			]
+		},
+		{
+			"name": "firefly/ff4315.olap.ip.impl.js",
+			"module": "sap/sac/df/firefly/ff4315.olap.ip.impl.js",
+			"size": 200633,
+			"required": [
+				"sap/sac/df/firefly/ff4310.olap.impl.js"
+			]
+		},
+		{
+			"name": "firefly/ff4315.olap.ip.impl.js.map",
+			"size": 192089,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff4330.olap.catalog.impl-dbg.js",
+			"module": "sap/sac/df/firefly/ff4330.olap.catalog.impl.js",
+			"size": 109405,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff4220.olap.catalog.api.js",
+				"sap/sac/df/firefly/ff4310.olap.impl.js"
+			]
+		},
+		{
+			"name": "firefly/ff4330.olap.catalog.impl.js",
+			"module": "sap/sac/df/firefly/ff4330.olap.catalog.impl.js",
+			"size": 79573,
+			"required": [
+				"sap/sac/df/firefly/ff4220.olap.catalog.api.js",
+				"sap/sac/df/firefly/ff4310.olap.impl.js"
+			]
+		},
+		{
+			"name": "firefly/ff4330.olap.catalog.impl.js.map",
+			"size": 85671,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff4340.olap.reference-dbg.js",
+			"module": "sap/sac/df/firefly/ff4340.olap.reference.js",
+			"size": 553379,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2220.ui.tools.js",
+				"sap/sac/df/firefly/ff4310.olap.impl.js"
+			]
+		},
+		{
+			"name": "firefly/ff4340.olap.reference.js",
+			"module": "sap/sac/df/firefly/ff4340.olap.reference.js",
+			"size": 360535,
+			"required": [
+				"sap/sac/df/firefly/ff2220.ui.tools.js",
+				"sap/sac/df/firefly/ff4310.olap.impl.js"
+			]
+		},
+		{
+			"name": "firefly/ff4340.olap.reference.js.map",
+			"size": 434069,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff4394.olap.serialization-dbg.js",
+			"module": "sap/sac/df/firefly/ff4394.olap.serialization.js",
+			"size": 815951,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff4310.olap.impl.js"
+			]
+		},
+		{
+			"name": "firefly/ff4394.olap.serialization.js",
+			"module": "sap/sac/df/firefly/ff4394.olap.serialization.js",
+			"size": 480067,
+			"required": [
+				"sap/sac/df/firefly/ff4310.olap.impl.js"
+			]
+		},
+		{
+			"name": "firefly/ff4394.olap.serialization.js.map",
+			"size": 580375,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff4400.olap.providers-dbg.js",
+			"module": "sap/sac/df/firefly/ff4400.olap.providers.js",
+			"size": 1244892,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff4394.olap.serialization.js"
+			]
+		},
+		{
+			"name": "firefly/ff4400.olap.providers.js",
+			"module": "sap/sac/df/firefly/ff4400.olap.providers.js",
+			"size": 776734,
+			"required": [
+				"sap/sac/df/firefly/ff4394.olap.serialization.js"
+			]
+		},
+		{
+			"name": "firefly/ff4400.olap.providers.js.map",
+			"size": 922765,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff4410.olap.ip.providers-dbg.js",
+			"module": "sap/sac/df/firefly/ff4410.olap.ip.providers.js",
+			"size": 109052,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff4315.olap.ip.impl.js",
+				"sap/sac/df/firefly/ff4400.olap.providers.js"
+			]
+		},
+		{
+			"name": "firefly/ff4410.olap.ip.providers.js",
+			"module": "sap/sac/df/firefly/ff4410.olap.ip.providers.js",
+			"size": 72653,
+			"required": [
+				"sap/sac/df/firefly/ff4315.olap.ip.impl.js",
+				"sap/sac/df/firefly/ff4400.olap.providers.js"
+			]
+		},
+		{
+			"name": "firefly/ff4410.olap.ip.providers.js.map",
+			"size": 78187,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff4500.olap.engine-dbg.js",
+			"module": "sap/sac/df/firefly/ff4500.olap.engine.js",
+			"size": 153058,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2100.runtime.js",
+				"sap/sac/df/firefly/ff3500.sql.js",
+				"sap/sac/df/firefly/ff4050.processor.js",
+				"sap/sac/df/firefly/ff4200.olap.api.js"
+			]
+		},
+		{
+			"name": "firefly/ff4500.olap.engine.js",
+			"module": "sap/sac/df/firefly/ff4500.olap.engine.js",
+			"size": 116892,
+			"required": [
+				"sap/sac/df/firefly/ff2100.runtime.js",
+				"sap/sac/df/firefly/ff3500.sql.js",
+				"sap/sac/df/firefly/ff4050.processor.js",
+				"sap/sac/df/firefly/ff4200.olap.api.js"
+			]
+		},
+		{
+			"name": "firefly/ff4500.olap.engine.js.map",
+			"size": 117636,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff5500.story-dbg.js",
+			"module": "sap/sac/df/firefly/ff5500.story.js",
+			"size": 273746,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2100.runtime.js",
+				"sap/sac/df/firefly/ff4000.protocol.ina.js"
+			]
+		},
+		{
+			"name": "firefly/ff5500.story.js",
+			"module": "sap/sac/df/firefly/ff5500.story.js",
+			"size": 207614,
+			"required": [
+				"sap/sac/df/firefly/ff2100.runtime.js",
+				"sap/sac/df/firefly/ff4000.protocol.ina.js"
+			]
+		},
+		{
+			"name": "firefly/ff5500.story.js.map",
+			"size": 213575,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff8000.quasar-dbg.js",
+			"module": "sap/sac/df/firefly/ff8000.quasar.js",
+			"size": 79755,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2260.ui.remote.js",
+				"sap/sac/df/firefly/ff4200.olap.api.js"
+			]
+		},
+		{
+			"name": "firefly/ff8000.quasar.js",
+			"module": "sap/sac/df/firefly/ff8000.quasar.js",
+			"size": 56115,
+			"required": [
+				"sap/sac/df/firefly/ff2260.ui.remote.js",
+				"sap/sac/df/firefly/ff4200.olap.api.js"
+			]
+		},
+		{
+			"name": "firefly/ff8000.quasar.js.map",
+			"size": 69334,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff8010.olap.ui-dbg.js",
+			"module": "sap/sac/df/firefly/ff8010.olap.ui.js",
+			"size": 2068626,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2200.ui.js",
+				"sap/sac/df/firefly/ff2240.ui.program.js",
+				"sap/sac/df/firefly/ff4200.olap.api.js",
+				"sap/sac/df/firefly/ff4220.olap.catalog.api.js",
+				"sap/sac/df/firefly/ff4305.olap.model.js"
+			]
+		},
+		{
+			"name": "firefly/ff8010.olap.ui.js",
+			"module": "sap/sac/df/firefly/ff8010.olap.ui.js",
+			"size": 1610800,
+			"required": [
+				"sap/sac/df/firefly/ff2200.ui.js",
+				"sap/sac/df/firefly/ff2240.ui.program.js",
+				"sap/sac/df/firefly/ff4200.olap.api.js",
+				"sap/sac/df/firefly/ff4220.olap.catalog.api.js",
+				"sap/sac/df/firefly/ff4305.olap.model.js"
+			]
+		},
+		{
+			"name": "firefly/ff8010.olap.ui.js.map",
+			"size": 1564886,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff8050.application.ui-dbg.js",
+			"module": "sap/sac/df/firefly/ff8050.application.ui.js",
+			"size": 2056500,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2650.visualization.impl.js",
+				"sap/sac/df/firefly/ff2710.export.native.js",
+				"sap/sac/df/firefly/ff3100.system.ui.js",
+				"sap/sac/df/firefly/ff3300.cell.engine.js",
+				"sap/sac/df/firefly/ff3410.contextmenu.engine.impl.js",
+				"sap/sac/df/firefly/ff4200.olap.api.js",
+				"sap/sac/df/firefly/ff4500.olap.engine.js",
+				"sap/sac/df/firefly/ff5500.story.js",
+				"sap/sac/df/firefly/ff8000.quasar.js",
+				"sap/sac/df/firefly/ff8010.olap.ui.js"
+			]
+		},
+		{
+			"name": "firefly/ff8050.application.ui.js",
+			"module": "sap/sac/df/firefly/ff8050.application.ui.js",
+			"size": 1586845,
+			"required": [
+				"sap/sac/df/firefly/ff2650.visualization.impl.js",
+				"sap/sac/df/firefly/ff2710.export.native.js",
+				"sap/sac/df/firefly/ff3100.system.ui.js",
+				"sap/sac/df/firefly/ff3300.cell.engine.js",
+				"sap/sac/df/firefly/ff3410.contextmenu.engine.impl.js",
+				"sap/sac/df/firefly/ff4200.olap.api.js",
+				"sap/sac/df/firefly/ff4500.olap.engine.js",
+				"sap/sac/df/firefly/ff5500.story.js",
+				"sap/sac/df/firefly/ff8000.quasar.js",
+				"sap/sac/df/firefly/ff8010.olap.ui.js"
+			]
+		},
+		{
+			"name": "firefly/ff8050.application.ui.js.map",
+			"size": 1411885,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff8090.poseidon-dbg.js",
+			"module": "sap/sac/df/firefly/ff8090.poseidon.js",
+			"size": 90495,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff3100.system.ui.js",
+				"sap/sac/df/firefly/ff8050.application.ui.js"
+			]
+		},
+		{
+			"name": "firefly/ff8090.poseidon.js",
+			"module": "sap/sac/df/firefly/ff8090.poseidon.js",
+			"size": 68195,
+			"required": [
+				"sap/sac/df/firefly/ff3100.system.ui.js",
+				"sap/sac/df/firefly/ff8050.application.ui.js"
+			]
+		},
+		{
+			"name": "firefly/ff8090.poseidon.js.map",
+			"size": 72178,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/ff8120.dragonfly-dbg.js",
+			"module": "sap/sac/df/firefly/ff8120.dragonfly.js",
+			"size": 1174,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/firefly/ff2210.ui.native.js",
+				"sap/sac/df/firefly/ff4330.olap.catalog.impl.js",
+				"sap/sac/df/firefly/ff4340.olap.reference.js",
+				"sap/sac/df/firefly/ff4410.olap.ip.providers.js",
+				"sap/sac/df/firefly/ff8090.poseidon.js"
+			]
+		},
+		{
+			"name": "firefly/ff8120.dragonfly.js",
+			"module": "sap/sac/df/firefly/ff8120.dragonfly.js",
+			"size": 1083,
+			"required": [
+				"sap/sac/df/firefly/ff2210.ui.native.js",
+				"sap/sac/df/firefly/ff4330.olap.catalog.impl.js",
+				"sap/sac/df/firefly/ff4340.olap.reference.js",
+				"sap/sac/df/firefly/ff4410.olap.ip.providers.js",
+				"sap/sac/df/firefly/ff8090.poseidon.js"
+			]
+		},
+		{
+			"name": "firefly/ff8120.dragonfly.js.map",
+			"size": 950,
+			"isDebug": true
+		},
+		{
+			"name": "firefly/library-dbg.js",
+			"module": "sap/sac/df/firefly/library.js",
+			"size": 543,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/firefly/ff2210.ui.native.js",
+				"sap/sac/df/firefly/ff4330.olap.catalog.impl.js",
+				"sap/sac/df/firefly/ff4340.olap.reference.js",
+				"sap/sac/df/firefly/ff4410.olap.ip.providers.js",
+				"sap/sac/df/firefly/ff8010.olap.ui.js",
+				"sap/sac/df/firefly/ff8050.application.ui.js",
+				"sap/sac/df/firefly/ff8090.poseidon.js"
+			]
+		},
+		{
+			"name": "firefly/library.js",
+			"module": "sap/sac/df/firefly/library.js",
+			"size": 490,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/firefly/ff2210.ui.native.js",
+				"sap/sac/df/firefly/ff4330.olap.catalog.impl.js",
+				"sap/sac/df/firefly/ff4340.olap.reference.js",
+				"sap/sac/df/firefly/ff4410.olap.ip.providers.js",
+				"sap/sac/df/firefly/ff8010.olap.ui.js",
+				"sap/sac/df/firefly/ff8050.application.ui.js",
+				"sap/sac/df/firefly/ff8090.poseidon.js"
+			]
+		},
+		{
+			"name": "firefly/library.js.map",
+			"size": 254,
+			"isDebug": true
+		},
+		{
+			"name": "i18n/localization.properties",
+			"module": "sap/sac/df/i18n/localization.properties",
+			"size": 95086,
+			"locale": "",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_ar.properties",
+			"module": "sap/sac/df/i18n/localization_ar.properties",
+			"size": 161102,
+			"locale": "ar",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_bg.properties",
+			"module": "sap/sac/df/i18n/localization_bg.properties",
+			"size": 196758,
+			"locale": "bg",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_ca.properties",
+			"module": "sap/sac/df/i18n/localization_ca.properties",
+			"size": 74915,
+			"locale": "ca",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_cs.properties",
+			"module": "sap/sac/df/i18n/localization_cs.properties",
+			"size": 83247,
+			"locale": "cs",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_cy.properties",
+			"module": "sap/sac/df/i18n/localization_cy.properties",
+			"size": 71507,
+			"locale": "cy",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_da.properties",
+			"module": "sap/sac/df/i18n/localization_da.properties",
+			"size": 71753,
+			"locale": "da",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_de.properties",
+			"module": "sap/sac/df/i18n/localization_de.properties",
+			"size": 75343,
+			"locale": "de",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_el.properties",
+			"module": "sap/sac/df/i18n/localization_el.properties",
+			"size": 197522,
+			"locale": "el",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_en.properties",
+			"module": "sap/sac/df/i18n/localization_en.properties",
+			"size": 67527,
+			"locale": "en",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_en_GB.properties",
+			"module": "sap/sac/df/i18n/localization_en_GB.properties",
+			"size": 67548,
+			"locale": "en_GB",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_en_US_sappsd.properties",
+			"module": "sap/sac/df/i18n/localization_en_US_sappsd.properties",
+			"size": 213209,
+			"locale": "en_US_sappsd",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_en_US_saprigi.properties",
+			"module": "sap/sac/df/i18n/localization_en_US_saprigi.properties",
+			"size": 476637,
+			"locale": "en_US_saprigi",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_en_US_saptrc.properties",
+			"module": "sap/sac/df/i18n/localization_en_US_saptrc.properties",
+			"size": 99374,
+			"locale": "en_US_saptrc",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_es.properties",
+			"module": "sap/sac/df/i18n/localization_es.properties",
+			"size": 75447,
+			"locale": "es",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_es_MX.properties",
+			"module": "sap/sac/df/i18n/localization_es_MX.properties",
+			"size": 75707,
+			"locale": "es_MX",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_et.properties",
+			"module": "sap/sac/df/i18n/localization_et.properties",
+			"size": 74176,
+			"locale": "et",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_fi.properties",
+			"module": "sap/sac/df/i18n/localization_fi.properties",
+			"size": 75843,
+			"locale": "fi",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_fr.properties",
+			"module": "sap/sac/df/i18n/localization_fr.properties",
+			"size": 80169,
+			"locale": "fr",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_fr_CA.properties",
+			"module": "sap/sac/df/i18n/localization_fr_CA.properties",
+			"size": 80214,
+			"locale": "fr_CA",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_hi.properties",
+			"module": "sap/sac/df/i18n/localization_hi.properties",
+			"size": 170482,
+			"locale": "hi",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_hr.properties",
+			"module": "sap/sac/df/i18n/localization_hr.properties",
+			"size": 74033,
+			"locale": "hr",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_hu.properties",
+			"module": "sap/sac/df/i18n/localization_hu.properties",
+			"size": 88946,
+			"locale": "hu",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_id.properties",
+			"module": "sap/sac/df/i18n/localization_id.properties",
+			"size": 70286,
+			"locale": "id",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_it.properties",
+			"module": "sap/sac/df/i18n/localization_it.properties",
+			"size": 72944,
+			"locale": "it",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_iw.properties",
+			"module": "sap/sac/df/i18n/localization_iw.properties",
+			"size": 137664,
+			"locale": "iw",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_ja.properties",
+			"module": "sap/sac/df/i18n/localization_ja.properties",
+			"size": 106325,
+			"locale": "ja",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_kk.properties",
+			"module": "sap/sac/df/i18n/localization_kk.properties",
+			"size": 186663,
+			"locale": "kk",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_ko.properties",
+			"module": "sap/sac/df/i18n/localization_ko.properties",
+			"size": 94623,
+			"locale": "ko",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_lt.properties",
+			"module": "sap/sac/df/i18n/localization_lt.properties",
+			"size": 81304,
+			"locale": "lt",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_lv.properties",
+			"module": "sap/sac/df/i18n/localization_lv.properties",
+			"size": 83618,
+			"locale": "lv",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_mk.properties",
+			"module": "sap/sac/df/i18n/localization_mk.properties",
+			"size": 170263,
+			"locale": "mk",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_ms.properties",
+			"module": "sap/sac/df/i18n/localization_ms.properties",
+			"size": 69815,
+			"locale": "ms",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_nl.properties",
+			"module": "sap/sac/df/i18n/localization_nl.properties",
+			"size": 71901,
+			"locale": "nl",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_no.properties",
+			"module": "sap/sac/df/i18n/localization_no.properties",
+			"size": 70719,
+			"locale": "no",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_pl.properties",
+			"module": "sap/sac/df/i18n/localization_pl.properties",
+			"size": 79506,
+			"locale": "pl",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_pt.properties",
+			"module": "sap/sac/df/i18n/localization_pt.properties",
+			"size": 76728,
+			"locale": "pt",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_pt_PT.properties",
+			"module": "sap/sac/df/i18n/localization_pt_PT.properties",
+			"size": 77395,
+			"locale": "pt_PT",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_ro.properties",
+			"module": "sap/sac/df/i18n/localization_ro.properties",
+			"size": 78546,
+			"locale": "ro",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_ru.properties",
+			"module": "sap/sac/df/i18n/localization_ru.properties",
+			"size": 192874,
+			"locale": "ru",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_sh.properties",
+			"module": "sap/sac/df/i18n/localization_sh.properties",
+			"size": 73894,
+			"locale": "sh",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_sk.properties",
+			"module": "sap/sac/df/i18n/localization_sk.properties",
+			"size": 83209,
+			"locale": "sk",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_sl.properties",
+			"module": "sap/sac/df/i18n/localization_sl.properties",
+			"size": 73047,
+			"locale": "sl",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_sr.properties",
+			"module": "sap/sac/df/i18n/localization_sr.properties",
+			"size": 181612,
+			"locale": "sr",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_sv.properties",
+			"module": "sap/sac/df/i18n/localization_sv.properties",
+			"size": 73535,
+			"locale": "sv",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_th.properties",
+			"module": "sap/sac/df/i18n/localization_th.properties",
+			"size": 173273,
+			"locale": "th",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_tr.properties",
+			"module": "sap/sac/df/i18n/localization_tr.properties",
+			"size": 81993,
+			"locale": "tr",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_uk.properties",
+			"module": "sap/sac/df/i18n/localization_uk.properties",
+			"size": 189626,
+			"locale": "uk",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_vi.properties",
+			"module": "sap/sac/df/i18n/localization_vi.properties",
+			"size": 111718,
+			"locale": "vi",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_zh_CN.properties",
+			"module": "sap/sac/df/i18n/localization_zh_CN.properties",
+			"size": 85222,
+			"locale": "zh_CN",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "i18n/localization_zh_TW.properties",
+			"module": "sap/sac/df/i18n/localization_zh_TW.properties",
+			"size": 84756,
+			"locale": "zh_TW",
+			"raw": "i18n/localization.properties"
+		},
+		{
+			"name": "inatile/InATile-dbg.js",
+			"module": "sap/sac/df/inatile/InATile.js",
+			"size": 11337,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/base/Log.js",
+				"sap/sac/df/inatile/InATileRenderer.js",
+				"sap/sac/df/library.js",
+				"sap/sac/df/olap/OlapModel.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/format/NumberFormat.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ushell/ui/tile/TileBase.js"
+			]
+		},
+		{
+			"name": "inatile/InATile.js",
+			"module": "sap/sac/df/inatile/InATile.js",
+			"size": 3451,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/base/Log.js",
+				"sap/sac/df/inatile/InATileRenderer.js",
+				"sap/sac/df/library.js",
+				"sap/sac/df/olap/OlapModel.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/format/NumberFormat.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ushell/ui/tile/TileBase.js"
+			]
+		},
+		{
+			"name": "inatile/InATile.js.map",
+			"size": 4853,
+			"isDebug": true
+		},
+		{
+			"name": "inatile/InATileRenderer-dbg.js",
+			"module": "sap/sac/df/inatile/InATileRenderer.js",
+			"size": 2465,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/types/WidgetType.js",
+				"sap/ui/core/Renderer.js",
+				"sap/ushell/library.js",
+				"sap/ushell/ui/tile/TileBaseRenderer.js"
+			]
+		},
+		{
+			"name": "inatile/InATileRenderer.js",
+			"module": "sap/sac/df/inatile/InATileRenderer.js",
+			"size": 1043,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/types/WidgetType.js",
+				"sap/ui/core/Renderer.js",
+				"sap/ushell/library.js",
+				"sap/ushell/ui/tile/TileBaseRenderer.js"
+			]
+		},
+		{
+			"name": "inatile/InATileRenderer.js.map",
+			"size": 1175,
+			"isDebug": true
+		},
+		{
+			"name": "inatile/MicroBarChart.fragment.xml",
+			"module": "sap/sac/df/inatile/MicroBarChart.fragment.xml",
+			"size": 612
+		},
+		{
+			"name": "library-dbg.js",
+			"module": "sap/sac/df/library.js",
+			"size": 2144,
+			"isDebug": true,
+			"required": [
+				"sap/f/library.js",
+				"sap/m/library.js",
+				"sap/sac/df/thirdparty/interact.js",
+				"sap/sac/df/types/NavigationCommandType.js",
+				"sap/sac/df/types/SystemType.js",
+				"sap/sac/df/utils/FpaIcons.js",
+				"sap/sac/grid/thirdparty/sac.internal.grid.main.1.3.2-853b6e9d44742cac02ebc475a5de75530af5bc2e.js",
+				"sap/sac/grid/thirdparty/sac.internal.grid.vendor.1.3.2-853b6e9d44742cac02ebc475a5de75530af5bc2e.js",
+				"sap/ui/core/library.js",
+				"sap/ui/layout/cssgrid/GridBasicLayout.js",
+				"sap/ui/layout/library.js",
+				"sap/ui/table/library.js"
+			]
+		},
+		{
+			"name": "library-preload.js",
+			"module": "sap/sac/df/library-preload.js",
+			"size": 194981,
+			"merged": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/base/Log.js",
+				"sap/base/util/deepEqual.js",
+				"sap/f/library.js",
+				"sap/m/MessageBox.js",
+				"sap/m/Token.js",
+				"sap/m/VBox.js",
+				"sap/m/library.js",
+				"sap/ovp/cards/custom/Component.js",
+				"sap/ovp/library.js",
+				"sap/sac/df/firefly/library.js",
+				"sap/sac/df/thirdparty/interact.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/utils/Utilities.js",
+				"sap/sac/grid/Cell.js",
+				"sap/sac/grid/CellType.js",
+				"sap/sac/grid/Format.js",
+				"sap/sac/grid/Grid.js",
+				"sap/sac/grid/thirdparty/sac.internal.grid.main.1.3.2-853b6e9d44742cac02ebc475a5de75530af5bc2e.js",
+				"sap/sac/grid/thirdparty/sac.internal.grid.vendor.1.3.2-853b6e9d44742cac02ebc475a5de75530af5bc2e.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/CustomData.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/Renderer.js",
+				"sap/ui/core/format/DateFormat.js",
+				"sap/ui/core/format/NumberFormat.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/layout/cssgrid/GridBasicLayout.js",
+				"sap/ui/layout/library.js",
+				"sap/ui/model/ChangeReason.js",
+				"sap/ui/model/Context.js",
+				"sap/ui/model/ListBinding.js",
+				"sap/ui/model/Model.js",
+				"sap/ui/model/PropertyBinding.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/model/resource/ResourceModel.js",
+				"sap/ui/table/library.js",
+				"sap/ushell/library.js",
+				"sap/ushell/ui/tile/TileBase.js",
+				"sap/ushell/ui/tile/TileBaseRenderer.js",
+				"sap/viz/library.js",
+				"sap/viz/ui5/controls/common/feeds/FeedItem.js"
+			],
+			"included": [
+				"sap/sac/df/DFKernel.js",
+				"sap/sac/df/DFProgram.js",
+				"sap/sac/df/FlexAnalysis.js",
+				"sap/sac/df/FlexAnalysisPanel.js",
+				"sap/sac/df/InACard/Component.js",
+				"sap/sac/df/InACard/controller/InACard.controller.js",
+				"sap/sac/df/PivotTable.js",
+				"sap/sac/df/controller/Pivot.controller.js",
+				"sap/sac/df/fa/FlexAnalysisContextMenuProvider.js",
+				"sap/sac/df/inatile/InATile.js",
+				"sap/sac/df/inatile/InATileRenderer.js",
+				"sap/sac/df/library.js",
+				"sap/sac/df/olap/DataProvider.js",
+				"sap/sac/df/olap/MultiDimDataProvider.js",
+				"sap/sac/df/olap/MultiDimModel.js",
+				"sap/sac/df/olap/OlapListBinding.js",
+				"sap/sac/df/olap/OlapListGridBinding.js",
+				"sap/sac/df/olap/OlapModel.js",
+				"sap/sac/df/olap/OlapPropertyBinding.js",
+				"sap/sac/df/olap/SystemLandscape.js",
+				"sap/sac/df/olap/calculateId.js",
+				"sap/sac/df/types/Axis.js",
+				"sap/sac/df/types/CellValueType.js",
+				"sap/sac/df/types/ComparisonOperator.js",
+				"sap/sac/df/types/DataSourceType.js",
+				"sap/sac/df/types/DimensionType.js",
+				"sap/sac/df/types/DisplayType.js",
+				"sap/sac/df/types/MemberType.js",
+				"sap/sac/df/types/NavigationCommandType.js",
+				"sap/sac/df/types/ProtocolType.js",
+				"sap/sac/df/types/SemanticRole.js",
+				"sap/sac/df/types/SortDirection.js",
+				"sap/sac/df/types/SortType.js",
+				"sap/sac/df/types/SystemType.js",
+				"sap/sac/df/types/ValueType.js",
+				"sap/sac/df/types/WidgetType.js",
+				"sap/sac/df/utils/ApplicationHelper.js",
+				"sap/sac/df/utils/ErrorHandler.js",
+				"sap/sac/df/utils/FpaIcons.js",
+				"sap/sac/df/utils/ListHelper.js",
+				"sap/sac/df/utils/ResourceBundle.js",
+				"sap/sac/df/utils/ResourceModel.js",
+				"sap/sac/df/utils/ResultSetHelper.js",
+				"sap/sac/df/utils/SyncActionHelper.js",
+				"sap/sac/df/utils/TokenHelper.js",
+				"sap/sac/df/InACard/fragment/InACard.fragment.xml",
+				"sap/sac/df/InACard/manifest.json",
+				"sap/sac/df/inatile/MicroBarChart.fragment.xml",
+				"sap/sac/df/manifest.json",
+				"sap/sac/df/view/Pivot.view.xml"
+			]
+		},
+		{
+			"name": "library-preload.js.map",
+			"size": 233112,
+			"isDebug": true
+		},
+		{
+			"name": "library.js",
+			"module": "sap/sac/df/library.js",
+			"size": 1155,
+			"required": [
+				"sap/f/library.js",
+				"sap/m/library.js",
+				"sap/sac/df/thirdparty/interact.js",
+				"sap/sac/df/types/NavigationCommandType.js",
+				"sap/sac/df/types/SystemType.js",
+				"sap/sac/df/utils/FpaIcons.js",
+				"sap/sac/grid/thirdparty/sac.internal.grid.main.1.3.2-853b6e9d44742cac02ebc475a5de75530af5bc2e.js",
+				"sap/sac/grid/thirdparty/sac.internal.grid.vendor.1.3.2-853b6e9d44742cac02ebc475a5de75530af5bc2e.js",
+				"sap/ui/core/library.js",
+				"sap/ui/layout/cssgrid/GridBasicLayout.js",
+				"sap/ui/layout/library.js",
+				"sap/ui/table/library.js"
+			]
+		},
+		{
+			"name": "library.js.map",
+			"size": 719,
+			"isDebug": true
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/sac/df/manifest.json",
+			"size": 2138
+		},
+		{
+			"name": "olap/DataProvider-dbg.js",
+			"module": "sap/sac/df/olap/DataProvider.js",
+			"size": 81055,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/types/Axis.js",
+				"sap/sac/df/types/ComparisonOperator.js",
+				"sap/sac/df/types/DimensionType.js",
+				"sap/sac/df/types/DisplayType.js",
+				"sap/sac/df/utils/ListHelper.js",
+				"sap/sac/df/utils/ResourceBundle.js",
+				"sap/sac/df/utils/ResultSetHelper.js",
+				"sap/sac/df/utils/SyncActionHelper.js",
+				"sap/sac/df/utils/TokenHelper.js",
+				"sap/sac/df/utils/Utilities.js",
+				"sap/sac/grid/CellType.js",
+				"sap/sac/grid/Format.js"
+			]
+		},
+		{
+			"name": "olap/DataProvider.js",
+			"module": "sap/sac/df/olap/DataProvider.js",
+			"size": 34934,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/types/Axis.js",
+				"sap/sac/df/types/ComparisonOperator.js",
+				"sap/sac/df/types/DimensionType.js",
+				"sap/sac/df/types/DisplayType.js",
+				"sap/sac/df/utils/ListHelper.js",
+				"sap/sac/df/utils/ResourceBundle.js",
+				"sap/sac/df/utils/ResultSetHelper.js",
+				"sap/sac/df/utils/SyncActionHelper.js",
+				"sap/sac/df/utils/TokenHelper.js",
+				"sap/sac/df/utils/Utilities.js",
+				"sap/sac/grid/CellType.js",
+				"sap/sac/grid/Format.js"
+			]
+		},
+		{
+			"name": "olap/DataProvider.js.map",
+			"size": 45779,
+			"isDebug": true
+		},
+		{
+			"name": "olap/MultiDimDataProvider-dbg.js",
+			"module": "sap/sac/df/olap/MultiDimDataProvider.js",
+			"size": 92422,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/firefly/library.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/types/Axis.js",
+				"sap/sac/df/types/ComparisonOperator.js",
+				"sap/sac/df/types/DimensionType.js",
+				"sap/sac/df/types/DisplayType.js",
+				"sap/sac/df/utils/ListHelper.js",
+				"sap/sac/df/utils/ResourceBundle.js",
+				"sap/sac/df/utils/ResultSetHelper.js",
+				"sap/sac/df/utils/SyncActionHelper.js",
+				"sap/sac/df/utils/TokenHelper.js",
+				"sap/sac/grid/CellType.js",
+				"sap/sac/grid/Format.js",
+				"sap/ui/core/format/DateFormat.js"
+			]
+		},
+		{
+			"name": "olap/MultiDimDataProvider.js",
+			"module": "sap/sac/df/olap/MultiDimDataProvider.js",
+			"size": 37426,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/firefly/library.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/types/Axis.js",
+				"sap/sac/df/types/ComparisonOperator.js",
+				"sap/sac/df/types/DimensionType.js",
+				"sap/sac/df/types/DisplayType.js",
+				"sap/sac/df/utils/ListHelper.js",
+				"sap/sac/df/utils/ResourceBundle.js",
+				"sap/sac/df/utils/ResultSetHelper.js",
+				"sap/sac/df/utils/SyncActionHelper.js",
+				"sap/sac/df/utils/TokenHelper.js",
+				"sap/sac/grid/CellType.js",
+				"sap/sac/grid/Format.js",
+				"sap/ui/core/format/DateFormat.js"
+			]
+		},
+		{
+			"name": "olap/MultiDimDataProvider.js.map",
+			"size": 50371,
+			"isDebug": true
+		},
+		{
+			"name": "olap/MultiDimModel-dbg.js",
+			"module": "sap/sac/df/olap/MultiDimModel.js",
+			"size": 26752,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/DFKernel.js",
+				"sap/sac/df/firefly/library.js",
+				"sap/sac/df/olap/MultiDimDataProvider.js",
+				"sap/sac/df/olap/OlapListBinding.js",
+				"sap/sac/df/olap/OlapListGridBinding.js",
+				"sap/sac/df/olap/OlapPropertyBinding.js",
+				"sap/sac/df/olap/SystemLandscape.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/types/ValueType.js",
+				"sap/sac/df/utils/ListHelper.js",
+				"sap/sac/df/utils/ResourceBundle.js",
+				"sap/sac/df/utils/ResultSetHelper.js",
+				"sap/sac/df/utils/SyncActionHelper.js",
+				"sap/ui/model/Context.js",
+				"sap/ui/model/Model.js"
+			]
+		},
+		{
+			"name": "olap/MultiDimModel.js",
+			"module": "sap/sac/df/olap/MultiDimModel.js",
+			"size": 8565,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/DFKernel.js",
+				"sap/sac/df/firefly/library.js",
+				"sap/sac/df/olap/MultiDimDataProvider.js",
+				"sap/sac/df/olap/OlapListBinding.js",
+				"sap/sac/df/olap/OlapListGridBinding.js",
+				"sap/sac/df/olap/OlapPropertyBinding.js",
+				"sap/sac/df/olap/SystemLandscape.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/types/ValueType.js",
+				"sap/sac/df/utils/ListHelper.js",
+				"sap/sac/df/utils/ResourceBundle.js",
+				"sap/sac/df/utils/ResultSetHelper.js",
+				"sap/sac/df/utils/SyncActionHelper.js",
+				"sap/ui/model/Context.js",
+				"sap/ui/model/Model.js"
+			]
+		},
+		{
+			"name": "olap/MultiDimModel.js.map",
+			"size": 12958,
+			"isDebug": true
+		},
+		{
+			"name": "olap/OlapListBinding-dbg.js",
+			"module": "sap/sac/df/olap/OlapListBinding.js",
+			"size": 7809,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/base/Log.js",
+				"sap/sac/df/olap/calculateId.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/ui/model/ChangeReason.js",
+				"sap/ui/model/ListBinding.js"
+			]
+		},
+		{
+			"name": "olap/OlapListBinding.js",
+			"module": "sap/sac/df/olap/OlapListBinding.js",
+			"size": 2662,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/base/Log.js",
+				"sap/sac/df/olap/calculateId.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/ui/model/ChangeReason.js",
+				"sap/ui/model/ListBinding.js"
+			]
+		},
+		{
+			"name": "olap/OlapListBinding.js.map",
+			"size": 4385,
+			"isDebug": true
+		},
+		{
+			"name": "olap/OlapListGridBinding-dbg.js",
+			"module": "sap/sac/df/olap/OlapListGridBinding.js",
+			"size": 4603,
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/sac/df/olap/calculateId.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/ui/model/ChangeReason.js",
+				"sap/ui/model/Context.js",
+				"sap/ui/model/ListBinding.js"
+			]
+		},
+		{
+			"name": "olap/OlapListGridBinding.js",
+			"module": "sap/sac/df/olap/OlapListGridBinding.js",
+			"size": 1867,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/sac/df/olap/calculateId.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/ui/model/ChangeReason.js",
+				"sap/ui/model/Context.js",
+				"sap/ui/model/ListBinding.js"
+			]
+		},
+		{
+			"name": "olap/OlapListGridBinding.js.map",
+			"size": 2593,
+			"isDebug": true
+		},
+		{
+			"name": "olap/OlapModel-dbg.js",
+			"module": "sap/sac/df/olap/OlapModel.js",
+			"size": 27961,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/firefly/library.js",
+				"sap/sac/df/olap/DataProvider.js",
+				"sap/sac/df/olap/OlapListBinding.js",
+				"sap/sac/df/olap/OlapListGridBinding.js",
+				"sap/sac/df/olap/OlapPropertyBinding.js",
+				"sap/sac/df/olap/SystemLandscape.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/types/ValueType.js",
+				"sap/sac/df/utils/ApplicationHelper.js",
+				"sap/sac/df/utils/ListHelper.js",
+				"sap/sac/df/utils/ResourceBundle.js",
+				"sap/sac/df/utils/ResultSetHelper.js",
+				"sap/sac/df/utils/SyncActionHelper.js",
+				"sap/sac/df/utils/Utilities.js",
+				"sap/ui/model/Context.js",
+				"sap/ui/model/Model.js"
+			]
+		},
+		{
+			"name": "olap/OlapModel.js",
+			"module": "sap/sac/df/olap/OlapModel.js",
+			"size": 10250,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/firefly/library.js",
+				"sap/sac/df/olap/DataProvider.js",
+				"sap/sac/df/olap/OlapListBinding.js",
+				"sap/sac/df/olap/OlapListGridBinding.js",
+				"sap/sac/df/olap/OlapPropertyBinding.js",
+				"sap/sac/df/olap/SystemLandscape.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/types/ValueType.js",
+				"sap/sac/df/utils/ApplicationHelper.js",
+				"sap/sac/df/utils/ListHelper.js",
+				"sap/sac/df/utils/ResourceBundle.js",
+				"sap/sac/df/utils/ResultSetHelper.js",
+				"sap/sac/df/utils/SyncActionHelper.js",
+				"sap/sac/df/utils/Utilities.js",
+				"sap/ui/model/Context.js",
+				"sap/ui/model/Model.js"
+			]
+		},
+		{
+			"name": "olap/OlapModel.js.map",
+			"size": 15003,
+			"isDebug": true
+		},
+		{
+			"name": "olap/OlapPropertyBinding-dbg.js",
+			"module": "sap/sac/df/olap/OlapPropertyBinding.js",
+			"size": 2691,
+			"isDebug": true,
+			"required": [
+				"sap/base/util/deepEqual.js",
+				"sap/sac/df/olap/calculateId.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/ui/model/ChangeReason.js",
+				"sap/ui/model/PropertyBinding.js"
+			]
+		},
+		{
+			"name": "olap/OlapPropertyBinding.js",
+			"module": "sap/sac/df/olap/OlapPropertyBinding.js",
+			"size": 1004,
+			"required": [
+				"sap/base/util/deepEqual.js",
+				"sap/sac/df/olap/calculateId.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/ui/model/ChangeReason.js",
+				"sap/ui/model/PropertyBinding.js"
+			]
+		},
+		{
+			"name": "olap/OlapPropertyBinding.js.map",
+			"size": 1526,
+			"isDebug": true
+		},
+		{
+			"name": "olap/SystemLandscape-dbg.js",
+			"module": "sap/sac/df/olap/SystemLandscape.js",
+			"size": 1034,
+			"isDebug": true
+		},
+		{
+			"name": "olap/SystemLandscape.js",
+			"module": "sap/sac/df/olap/SystemLandscape.js",
+			"size": 736
+		},
+		{
+			"name": "olap/SystemLandscape.js.map",
+			"size": 687,
+			"isDebug": true
+		},
+		{
+			"name": "olap/calculateId-dbg.js",
+			"module": "sap/sac/df/olap/calculateId.js",
+			"size": 263,
+			"isDebug": true
+		},
+		{
+			"name": "olap/calculateId.js",
+			"module": "sap/sac/df/olap/calculateId.js",
+			"size": 227
+		},
+		{
+			"name": "olap/calculateId.js.map",
+			"size": 213,
+			"isDebug": true
+		},
+		{
+			"name": "resources.json",
+			"size": 100469
+		},
+		{
+			"name": "themes/base/.theming",
+			"size": 64,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/FPA-icons.eot",
+			"size": 254902,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/FPA-icons.svg",
+			"size": 974456,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/FPA-icons.ttf",
+			"size": 254728,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/FPA-icons.woff",
+			"size": 254804,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/InATile.less",
+			"size": 224,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/css_variables.css",
+			"size": 156,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/css_variables.less",
+			"size": 240,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/css_variables.source.less",
+			"size": 135427,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/firefly.styles.css",
+			"size": 12485,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/firefly.styles.sapui5.css",
+			"size": 29226,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/fpaicon.styles.css",
+			"size": 27744,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-RTL.css",
+			"size": 55663,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library-parameters.json",
+			"module": "sap/sac/df/themes/base/library-parameters.json",
+			"size": 2,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.css",
+			"size": 55655,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.less",
+			"size": 70336,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library.source.less",
+			"size": 341,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library_skeleton-RTL.css",
+			"size": 56014,
+			"theme": "base"
+		},
+		{
+			"name": "themes/base/library_skeleton.css",
+			"size": 56006,
+			"theme": "base"
+		},
+		{
+			"name": "themes/sap_belize/.theming",
+			"size": 650,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/css_variables.css",
+			"size": 229,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/css_variables.less",
+			"size": 141637,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/css_variables.source.less",
+			"size": 141271,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-RTL.css",
+			"size": 84733,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library-parameters.json",
+			"module": "sap/sac/df/themes/sap_belize/library-parameters.json",
+			"size": 42,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.css",
+			"size": 84724,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.less",
+			"size": 429,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library.source.less",
+			"size": 243,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library_skeleton-RTL.css",
+			"size": 85391,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize/library_skeleton.css",
+			"size": 85382,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "themes/sap_belize_hcb/.theming",
+			"size": 93,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/css_variables.css",
+			"size": 156,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/css_variables.less",
+			"size": 135025,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/css_variables.source.less",
+			"size": 134651,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library-RTL.css",
+			"size": 55771,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library-parameter.json",
+			"module": "sap/sac/df/themes/sap_belize_hcb/library-parameter.json",
+			"size": 70,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library-parameters.json",
+			"module": "sap/sac/df/themes/sap_belize_hcb/library-parameters.json",
+			"size": 2,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library.css",
+			"size": 55763,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library.less",
+			"size": 441,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library.source.less",
+			"size": 251,
+			"designtime": true,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library_skeleton-RTL.css",
+			"size": 56122,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcb/library_skeleton.css",
+			"size": 56114,
+			"theme": "sap_belize_hcb"
+		},
+		{
+			"name": "themes/sap_belize_hcw/.theming",
+			"size": 93,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/css_variables.css",
+			"size": 156,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/css_variables.less",
+			"size": 135091,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/css_variables.source.less",
+			"size": 134717,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library-RTL.css",
+			"size": 55771,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library-parameter.json",
+			"module": "sap/sac/df/themes/sap_belize_hcw/library-parameter.json",
+			"size": 70,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library-parameters.json",
+			"module": "sap/sac/df/themes/sap_belize_hcw/library-parameters.json",
+			"size": 2,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library.css",
+			"size": 55763,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library.less",
+			"size": 441,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library.source.less",
+			"size": 251,
+			"designtime": true,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library_skeleton-RTL.css",
+			"size": 56122,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_hcw/library_skeleton.css",
+			"size": 56114,
+			"theme": "sap_belize_hcw"
+		},
+		{
+			"name": "themes/sap_belize_plus/.theming",
+			"size": 611,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/css_variables.css",
+			"size": 233,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/css_variables.less",
+			"size": 141647,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/css_variables.source.less",
+			"size": 141271,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-RTL.css",
+			"size": 85966,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library-parameters.json",
+			"module": "sap/sac/df/themes/sap_belize_plus/library-parameters.json",
+			"size": 46,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.css",
+			"size": 85957,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.less",
+			"size": 450,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library.source.less",
+			"size": 259,
+			"designtime": true,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library_skeleton-RTL.css",
+			"size": 86620,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_belize_plus/library_skeleton.css",
+			"size": 86611,
+			"theme": "sap_belize_plus"
+		},
+		{
+			"name": "themes/sap_bluecrystal/.theming",
+			"size": 137,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/css_variables.css",
+			"size": 156,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/css_variables.less",
+			"size": 151453,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/css_variables.source.less",
+			"size": 151077,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-RTL.css",
+			"size": 55771,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library-parameters.json",
+			"module": "sap/sac/df/themes/sap_bluecrystal/library-parameters.json",
+			"size": 2,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library.css",
+			"size": 55763,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library.less",
+			"size": 444,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library.source.less",
+			"size": 253,
+			"designtime": true,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library_skeleton-RTL.css",
+			"size": 56122,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_bluecrystal/library_skeleton.css",
+			"size": 56114,
+			"theme": "sap_bluecrystal"
+		},
+		{
+			"name": "themes/sap_fiori_3/.theming",
+			"size": 90,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/css_variables.css",
+			"size": 156,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/css_variables.less",
+			"size": 140429,
+			"designtime": true,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/css_variables.source.less",
+			"size": 140061,
+			"designtime": true,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library-RTL.css",
+			"size": 55771,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library-parameters.json",
+			"module": "sap/sac/df/themes/sap_fiori_3/library-parameters.json",
+			"size": 2,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library.css",
+			"size": 55763,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library.less",
+			"size": 432,
+			"designtime": true,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library.source.less",
+			"size": 245,
+			"designtime": true,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library_skeleton-RTL.css",
+			"size": 56122,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3/library_skeleton.css",
+			"size": 56114,
+			"theme": "sap_fiori_3"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/.theming",
+			"size": 95,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/css_variables.css",
+			"size": 156,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/css_variables.less",
+			"size": 137808,
+			"designtime": true,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/css_variables.source.less",
+			"size": 137430,
+			"designtime": true,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library-RTL.css",
+			"size": 55771,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library-parameter.json",
+			"module": "sap/sac/df/themes/sap_fiori_3_dark/library-parameter.json",
+			"size": 70,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library-parameters.json",
+			"module": "sap/sac/df/themes/sap_fiori_3_dark/library-parameters.json",
+			"size": 2,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library.css",
+			"size": 55763,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library.less",
+			"size": 447,
+			"designtime": true,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library.source.less",
+			"size": 255,
+			"designtime": true,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library_skeleton-RTL.css",
+			"size": 56122,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_dark/library_skeleton.css",
+			"size": 56114,
+			"theme": "sap_fiori_3_dark"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/.theming",
+			"size": 94,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/css_variables.css",
+			"size": 156,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/css_variables.less",
+			"size": 135032,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/css_variables.source.less",
+			"size": 134656,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library-RTL.css",
+			"size": 55771,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library-parameter.json",
+			"module": "sap/sac/df/themes/sap_fiori_3_hcb/library-parameter.json",
+			"size": 70,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library-parameters.json",
+			"module": "sap/sac/df/themes/sap_fiori_3_hcb/library-parameters.json",
+			"size": 2,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library.css",
+			"size": 55763,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library.less",
+			"size": 444,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library.source.less",
+			"size": 253,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library_skeleton-RTL.css",
+			"size": 56122,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcb/library_skeleton.css",
+			"size": 56114,
+			"theme": "sap_fiori_3_hcb"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/.theming",
+			"size": 94,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/css_variables.css",
+			"size": 156,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/css_variables.less",
+			"size": 135098,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/css_variables.source.less",
+			"size": 134722,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library-RTL.css",
+			"size": 55771,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library-parameters.json",
+			"module": "sap/sac/df/themes/sap_fiori_3_hcw/library-parameters.json",
+			"size": 2,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library.css",
+			"size": 55763,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library.less",
+			"size": 444,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library.source.less",
+			"size": 253,
+			"designtime": true,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library_skeleton-RTL.css",
+			"size": 56122,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_fiori_3_hcw/library_skeleton.css",
+			"size": 56114,
+			"theme": "sap_fiori_3_hcw"
+		},
+		{
+			"name": "themes/sap_hcb/.theming",
+			"size": 128,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/css_variables.css",
+			"size": 156,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/css_variables.less",
+			"size": 118534,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/css_variables.source.less",
+			"size": 118234,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-RTL.css",
+			"size": 55779,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library-parameters.json",
+			"module": "sap/sac/df/themes/sap_hcb/library-parameters.json",
+			"size": 2,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.css",
+			"size": 55771,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.less",
+			"size": 287,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library.source.less",
+			"size": 184,
+			"designtime": true,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library_skeleton-RTL.css",
+			"size": 56130,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_hcb/library_skeleton.css",
+			"size": 56122,
+			"theme": "sap_hcb"
+		},
+		{
+			"name": "themes/sap_horizon/.theming",
+			"size": 90,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/css_variables.css",
+			"size": 156,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/css_variables.less",
+			"size": 140512,
+			"designtime": true,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/css_variables.source.less",
+			"size": 140144,
+			"designtime": true,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/library-RTL.css",
+			"size": 55771,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/library-parameters.json",
+			"module": "sap/sac/df/themes/sap_horizon/library-parameters.json",
+			"size": 2,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/library.css",
+			"size": 55763,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/library.less",
+			"size": 432,
+			"designtime": true,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/library.source.less",
+			"size": 245,
+			"designtime": true,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/library_skeleton-RTL.css",
+			"size": 56122,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon/library_skeleton.css",
+			"size": 56114,
+			"theme": "sap_horizon"
+		},
+		{
+			"name": "themes/sap_horizon_dark/.theming",
+			"size": 95,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/css_variables.css",
+			"size": 156,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/css_variables.less",
+			"size": 137662,
+			"designtime": true,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/css_variables.source.less",
+			"size": 137284,
+			"designtime": true,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/library-RTL.css",
+			"size": 55771,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/library-parameters.json",
+			"module": "sap/sac/df/themes/sap_horizon_dark/library-parameters.json",
+			"size": 2,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/library.css",
+			"size": 55763,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/library.less",
+			"size": 447,
+			"designtime": true,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/library.source.less",
+			"size": 255,
+			"designtime": true,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/library_skeleton-RTL.css",
+			"size": 56122,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_dark/library_skeleton.css",
+			"size": 56114,
+			"theme": "sap_horizon_dark"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/.theming",
+			"size": 94,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/css_variables.css",
+			"size": 156,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/css_variables.less",
+			"size": 134463,
+			"designtime": true,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/css_variables.source.less",
+			"size": 134087,
+			"designtime": true,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/library-RTL.css",
+			"size": 55771,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/library-parameters.json",
+			"module": "sap/sac/df/themes/sap_horizon_hcb/library-parameters.json",
+			"size": 2,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/library.css",
+			"size": 55763,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/library.less",
+			"size": 444,
+			"designtime": true,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/library.source.less",
+			"size": 253,
+			"designtime": true,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/library_skeleton-RTL.css",
+			"size": 56122,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcb/library_skeleton.css",
+			"size": 56114,
+			"theme": "sap_horizon_hcb"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/.theming",
+			"size": 94,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/css_variables.css",
+			"size": 156,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/css_variables.less",
+			"size": 134509,
+			"designtime": true,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/css_variables.source.less",
+			"size": 134133,
+			"designtime": true,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/library-RTL.css",
+			"size": 55771,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/library-parameters.json",
+			"module": "sap/sac/df/themes/sap_horizon_hcw/library-parameters.json",
+			"size": 2,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/library.css",
+			"size": 55763,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/library.less",
+			"size": 444,
+			"designtime": true,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/library.source.less",
+			"size": 253,
+			"designtime": true,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/library_skeleton-RTL.css",
+			"size": 56122,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "themes/sap_horizon_hcw/library_skeleton.css",
+			"size": 56114,
+			"theme": "sap_horizon_hcw"
+		},
+		{
+			"name": "thirdparty/interact-dbg.js",
+			"module": "sap/sac/df/thirdparty/interact.js",
+			"size": 129039,
+			"format": "raw",
+			"isDebug": true
+		},
+		{
+			"name": "thirdparty/interact.js",
+			"module": "sap/sac/df/thirdparty/interact.js",
+			"size": 128971,
+			"format": "raw"
+		},
+		{
+			"name": "thirdparty/interact.js.map",
+			"size": 172037,
+			"isDebug": true
+		},
+		{
+			"name": "thirdparty/lodash-dbg.js",
+			"module": "sap/sac/df/thirdparty/lodash.js",
+			"size": 549353,
+			"isDebug": true
+		},
+		{
+			"name": "thirdparty/lodash.js",
+			"module": "sap/sac/df/thirdparty/lodash.js",
+			"size": 76416
+		},
+		{
+			"name": "thirdparty/lodash.js.map",
+			"size": 146693,
+			"isDebug": true
+		},
+		{
+			"name": "types/Axis-dbg.js",
+			"module": "sap/sac/df/types/Axis.js",
+			"size": 1036,
+			"isDebug": true
+		},
+		{
+			"name": "types/Axis.js",
+			"module": "sap/sac/df/types/Axis.js",
+			"size": 247
+		},
+		{
+			"name": "types/Axis.js.map",
+			"size": 258,
+			"isDebug": true
+		},
+		{
+			"name": "types/CellValueType-dbg.js",
+			"module": "sap/sac/df/types/CellValueType.js",
+			"size": 327,
+			"isDebug": true
+		},
+		{
+			"name": "types/CellValueType.js",
+			"module": "sap/sac/df/types/CellValueType.js",
+			"size": 258
+		},
+		{
+			"name": "types/CellValueType.js.map",
+			"size": 266,
+			"isDebug": true
+		},
+		{
+			"name": "types/ComparisonOperator-dbg.js",
+			"module": "sap/sac/df/types/ComparisonOperator.js",
+			"size": 2260,
+			"isDebug": true
+		},
+		{
+			"name": "types/ComparisonOperator.js",
+			"module": "sap/sac/df/types/ComparisonOperator.js",
+			"size": 671
+		},
+		{
+			"name": "types/ComparisonOperator.js.map",
+			"size": 699,
+			"isDebug": true
+		},
+		{
+			"name": "types/DataSourceType-dbg.js",
+			"module": "sap/sac/df/types/DataSourceType.js",
+			"size": 809,
+			"isDebug": true
+		},
+		{
+			"name": "types/DataSourceType.js",
+			"module": "sap/sac/df/types/DataSourceType.js",
+			"size": 313
+		},
+		{
+			"name": "types/DataSourceType.js.map",
+			"size": 329,
+			"isDebug": true
+		},
+		{
+			"name": "types/DimensionType-dbg.js",
+			"module": "sap/sac/df/types/DimensionType.js",
+			"size": 3142,
+			"isDebug": true
+		},
+		{
+			"name": "types/DimensionType.js",
+			"module": "sap/sac/df/types/DimensionType.js",
+			"size": 1251
+		},
+		{
+			"name": "types/DimensionType.js.map",
+			"size": 1124,
+			"isDebug": true
+		},
+		{
+			"name": "types/DisplayType-dbg.js",
+			"module": "sap/sac/df/types/DisplayType.js",
+			"size": 930,
+			"isDebug": true
+		},
+		{
+			"name": "types/DisplayType.js",
+			"module": "sap/sac/df/types/DisplayType.js",
+			"size": 265
+		},
+		{
+			"name": "types/DisplayType.js.map",
+			"size": 294,
+			"isDebug": true
+		},
+		{
+			"name": "types/MemberType-dbg.js",
+			"module": "sap/sac/df/types/MemberType.js",
+			"size": 3381,
+			"isDebug": true
+		},
+		{
+			"name": "types/MemberType.js",
+			"module": "sap/sac/df/types/MemberType.js",
+			"size": 1159
+		},
+		{
+			"name": "types/MemberType.js.map",
+			"size": 1091,
+			"isDebug": true
+		},
+		{
+			"name": "types/NavigationCommandType-dbg.js",
+			"module": "sap/sac/df/types/NavigationCommandType.js",
+			"size": 966,
+			"isDebug": true
+		},
+		{
+			"name": "types/NavigationCommandType.js",
+			"module": "sap/sac/df/types/NavigationCommandType.js",
+			"size": 378
+		},
+		{
+			"name": "types/NavigationCommandType.js.map",
+			"size": 379,
+			"isDebug": true
+		},
+		{
+			"name": "types/ProtocolType-dbg.js",
+			"module": "sap/sac/df/types/ProtocolType.js",
+			"size": 596,
+			"isDebug": true
+		},
+		{
+			"name": "types/ProtocolType.js",
+			"module": "sap/sac/df/types/ProtocolType.js",
+			"size": 239
+		},
+		{
+			"name": "types/ProtocolType.js.map",
+			"size": 259,
+			"isDebug": true
+		},
+		{
+			"name": "types/SemanticRole-dbg.js",
+			"module": "sap/sac/df/types/SemanticRole.js",
+			"size": 721,
+			"isDebug": true
+		},
+		{
+			"name": "types/SemanticRole.js",
+			"module": "sap/sac/df/types/SemanticRole.js",
+			"size": 269
+		},
+		{
+			"name": "types/SemanticRole.js.map",
+			"size": 286,
+			"isDebug": true
+		},
+		{
+			"name": "types/SortDirection-dbg.js",
+			"module": "sap/sac/df/types/SortDirection.js",
+			"size": 615,
+			"isDebug": true
+		},
+		{
+			"name": "types/SortDirection.js",
+			"module": "sap/sac/df/types/SortDirection.js",
+			"size": 257
+		},
+		{
+			"name": "types/SortDirection.js.map",
+			"size": 271,
+			"isDebug": true
+		},
+		{
+			"name": "types/SortType-dbg.js",
+			"module": "sap/sac/df/types/SortType.js",
+			"size": 714,
+			"isDebug": true
+		},
+		{
+			"name": "types/SortType.js",
+			"module": "sap/sac/df/types/SortType.js",
+			"size": 267
+		},
+		{
+			"name": "types/SortType.js.map",
+			"size": 275,
+			"isDebug": true
+		},
+		{
+			"name": "types/SystemType-dbg.js",
+			"module": "sap/sac/df/types/SystemType.js",
+			"size": 748,
+			"isDebug": true
+		},
+		{
+			"name": "types/SystemType.js",
+			"module": "sap/sac/df/types/SystemType.js",
+			"size": 243
+		},
+		{
+			"name": "types/SystemType.js.map",
+			"size": 268,
+			"isDebug": true
+		},
+		{
+			"name": "types/ValueType-dbg.js",
+			"module": "sap/sac/df/types/ValueType.js",
+			"size": 4642,
+			"isDebug": true
+		},
+		{
+			"name": "types/ValueType.js",
+			"module": "sap/sac/df/types/ValueType.js",
+			"size": 1267
+		},
+		{
+			"name": "types/ValueType.js.map",
+			"size": 1373,
+			"isDebug": true
+		},
+		{
+			"name": "types/WidgetType-dbg.js",
+			"module": "sap/sac/df/types/WidgetType.js",
+			"size": 834,
+			"isDebug": true
+		},
+		{
+			"name": "types/WidgetType.js",
+			"module": "sap/sac/df/types/WidgetType.js",
+			"size": 268
+		},
+		{
+			"name": "types/WidgetType.js.map",
+			"size": 304,
+			"isDebug": true
+		},
+		{
+			"name": "utils/ApplicationHelper-dbg.js",
+			"module": "sap/sac/df/utils/ApplicationHelper.js",
+			"size": 2727,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/thirdparty/lodash.js"
+			]
+		},
+		{
+			"name": "utils/ApplicationHelper.js",
+			"module": "sap/sac/df/utils/ApplicationHelper.js",
+			"size": 1354,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/thirdparty/lodash.js"
+			]
+		},
+		{
+			"name": "utils/ApplicationHelper.js.map",
+			"size": 2256,
+			"isDebug": true
+		},
+		{
+			"name": "utils/ErrorHandler-dbg.js",
+			"module": "sap/sac/df/utils/ErrorHandler.js",
+			"size": 957,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/MessageBox.js"
+			]
+		},
+		{
+			"name": "utils/ErrorHandler.js",
+			"module": "sap/sac/df/utils/ErrorHandler.js",
+			"size": 474,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/MessageBox.js"
+			]
+		},
+		{
+			"name": "utils/ErrorHandler.js.map",
+			"size": 769,
+			"isDebug": true
+		},
+		{
+			"name": "utils/FpaIcons-dbg.js",
+			"module": "sap/sac/df/utils/FpaIcons.js",
+			"size": 42005,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/IconPool.js"
+			]
+		},
+		{
+			"name": "utils/FpaIcons.js",
+			"module": "sap/sac/df/utils/FpaIcons.js",
+			"size": 32476,
+			"required": [
+				"sap/ui/core/IconPool.js"
+			]
+		},
+		{
+			"name": "utils/FpaIcons.js.map",
+			"size": 23040,
+			"isDebug": true
+		},
+		{
+			"name": "utils/ListHelper-dbg.js",
+			"module": "sap/sac/df/utils/ListHelper.js",
+			"size": 556,
+			"isDebug": true
+		},
+		{
+			"name": "utils/ListHelper.js",
+			"module": "sap/sac/df/utils/ListHelper.js",
+			"size": 361
+		},
+		{
+			"name": "utils/ListHelper.js.map",
+			"size": 480,
+			"isDebug": true
+		},
+		{
+			"name": "utils/ResourceBundle-dbg.js",
+			"module": "sap/sac/df/utils/ResourceBundle.js",
+			"size": 636,
+			"isDebug": true,
+			"required": [
+				"sap/sac/df/utils/ResourceModel.js"
+			]
+		},
+		{
+			"name": "utils/ResourceBundle.js",
+			"module": "sap/sac/df/utils/ResourceBundle.js",
+			"size": 398,
+			"required": [
+				"sap/sac/df/utils/ResourceModel.js"
+			]
+		},
+		{
+			"name": "utils/ResourceBundle.js.map",
+			"size": 532,
+			"isDebug": true
+		},
+		{
+			"name": "utils/ResourceModel-dbg.js",
+			"module": "sap/sac/df/utils/ResourceModel.js",
+			"size": 336,
+			"isDebug": true,
+			"required": [
+				"sap/ui/model/resource/ResourceModel.js"
+			]
+		},
+		{
+			"name": "utils/ResourceModel.js",
+			"module": "sap/sac/df/utils/ResourceModel.js",
+			"size": 291,
+			"required": [
+				"sap/ui/model/resource/ResourceModel.js"
+			]
+		},
+		{
+			"name": "utils/ResourceModel.js.map",
+			"size": 242,
+			"isDebug": true
+		},
+		{
+			"name": "utils/ResultSetHelper-dbg.js",
+			"module": "sap/sac/df/utils/ResultSetHelper.js",
+			"size": 21443,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/types/MemberType.js",
+				"sap/sac/df/types/ValueType.js",
+				"sap/sac/df/utils/ListHelper.js",
+				"sap/sac/df/utils/ResourceBundle.js"
+			]
+		},
+		{
+			"name": "utils/ResultSetHelper.js",
+			"module": "sap/sac/df/utils/ResultSetHelper.js",
+			"size": 9192,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/types/MemberType.js",
+				"sap/sac/df/types/ValueType.js",
+				"sap/sac/df/utils/ListHelper.js",
+				"sap/sac/df/utils/ResourceBundle.js"
+			]
+		},
+		{
+			"name": "utils/ResultSetHelper.js.map",
+			"size": 12516,
+			"isDebug": true
+		},
+		{
+			"name": "utils/SyncActionHelper-dbg.js",
+			"module": "sap/sac/df/utils/SyncActionHelper.js",
+			"size": 2082,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/utils/ListHelper.js"
+			]
+		},
+		{
+			"name": "utils/SyncActionHelper.js",
+			"module": "sap/sac/df/utils/SyncActionHelper.js",
+			"size": 1125,
+			"required": [
+				"sap/base/Log.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/utils/ListHelper.js"
+			]
+		},
+		{
+			"name": "utils/SyncActionHelper.js.map",
+			"size": 1550,
+			"isDebug": true
+		},
+		{
+			"name": "utils/TokenHelper-dbg.js",
+			"module": "sap/sac/df/utils/TokenHelper.js",
+			"size": 2973,
+			"isDebug": true,
+			"required": [
+				"sap/m/Token.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/types/ComparisonOperator.js",
+				"sap/ui/core/CustomData.js"
+			]
+		},
+		{
+			"name": "utils/TokenHelper.js",
+			"module": "sap/sac/df/utils/TokenHelper.js",
+			"size": 1498,
+			"required": [
+				"sap/m/Token.js",
+				"sap/sac/df/thirdparty/lodash.js",
+				"sap/sac/df/types/ComparisonOperator.js",
+				"sap/ui/core/CustomData.js"
+			]
+		},
+		{
+			"name": "utils/TokenHelper.js.map",
+			"size": 2203,
+			"isDebug": true
+		},
+		{
+			"name": "view/Pivot.view.xml",
+			"module": "sap/sac/df/view/Pivot.view.xml",
+			"size": 2023,
+			"required": [
+				"sap/sac/df/controller/Pivot.controller.js",
+				"sap/sac/grid/Cell.js",
+				"sap/sac/grid/Grid.js"
+			]
+		}
+	]
+}

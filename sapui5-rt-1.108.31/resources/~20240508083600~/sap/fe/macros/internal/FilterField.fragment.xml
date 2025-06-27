@@ -1,0 +1,60 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+	xmlns:mdc="sap.ui.mdc"
+	xmlns:macro="sap.fe.macros"
+	xmlns:log="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns:unittest="http://schemas.sap.com/sapui5/preprocessorextension/sap.fe.unittesting/1"
+	xmlns:customData="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	template:require="{
+							MODEL: 'sap/ui/model/odata/v4/AnnotationHelper',
+							COMMON: 'sap/fe/macros/CommonHelper',
+							FIELD: 'sap/fe/macros/field/FieldHelper',
+							FILTERFIELD: 'sap/fe/macros/filter/FilterFieldHelper',
+							ID: 'sap/fe/core/helpers/StableIdHelper',
+							Property: 'sap/fe/core/templating/PropertyFormatters',
+							FilterField: 'sap/fe/macros/filter/FilterFieldTemplating',
+							MACRO: 'sap/fe/macros/MacroTemplating'
+						 }"
+>
+	<template:if test="{property>@@COMMON.isPropertyFilterable}">
+		<template:with path="property>" helper="FIELD.valueHelpPropertyForFilterField" var="valueHelpProperty">
+			<mdc:FilterField
+				unittest:id="UnitTest::FilterField"
+				log:sourcePath="{property>@@Property.getPropertyPath}"
+				id="{= ID.generate([${this>idPrefix},${property>@@FIELD.propertyName}]) }"
+				delegate="{name: 'sap/fe/macros/field/FieldBaseDelegate', payload:{isFilterField:true}}"
+				label="{= ${property>@com.sap.vocabularies.Common.v1.Label} || ${property>@@FIELD.propertyName} }"
+				dataType="{path: 'property>$Type', formatter: 'FILTERFIELD.getDataType'}"
+				display="{property>@@FilterField.getFilterFieldDisplayFormat}"
+				maxConditions="{property>@@FILTERFIELD.maxConditions}"
+				fieldHelp="{parts : [{path: 'property>'}, {path: 'property>$Type'},{path: 'this>vhIdPrefix'},{path: 'property>@@Property.getRelativePropertyPath'},{path: 'valueHelpProperty>@@Property.getRelativePropertyPath'},{path: 'property>@com.sap.vocabularies.Common.v1.ValueListWithFixedValues'},{path: 'this>useSemanticDateRange'}], formatter: 'FIELD.getFieldHelpPropertyForFilterField'}"
+				conditions="{parts : [{path: 'property>'}, {path: 'contextPath>./'}], formatter: 'FILTERFIELD.getConditionsBinding'}"
+				dataTypeConstraints="{property>@@FILTERFIELD.constraints}"
+				dataTypeFormatOptions="{property>@@FILTERFIELD.formatOptions}"
+				required="{property>@@FILTERFIELD.isRequiredInFilter}"
+				operators="{parts : [{path: 'property>'}, {path: 'this>useSemanticDateRange'}, {path: 'this>settings'}, {path: 'contextPath>@@MACRO.getPath'}], formatter: 'FIELD.operators'}"
+			>
+				<template:if
+					test="{= !!${visualFilter>} &amp;&amp; (!${this>idPrefix} || (${this>idPrefix} &amp;&amp; (${this>idPrefix}.indexOf('Adaptation') === -1))) }"
+				>
+					<macro:VisualFilter
+						id="{= ID.generate([${this>idPrefix}, ${property>@@FIELD.propertyName}, 'VisualFilter']) }"
+						contextPath="{visualFilter>contextPath}"
+						metaPath="{visualFilter>presentationAnnotation}"
+						outParameter="{visualFilter>outParameter}"
+						inParameters="{visualFilter>inParameters}"
+						selectionVariantAnnotation="{visualFilter>selectionVariantAnnotation}"
+						multipleSelectionAllowed="{visualFilter>multipleSelectionAllowed}"
+						required="{visualFilter>required}"
+						requiredProperties="{visualFilter>requiredProperties}"
+						showOverlayInitially="{visualFilter>showOverlayInitially}"
+						renderLineChart="{visualFilter>renderLineChart}"
+						filterBarEntityType="{this>contextPath}"
+					/>
+				</template:if>
+			</mdc:FilterField>
+		</template:with>
+	</template:if>
+</core:FragmentDefinition>

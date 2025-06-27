@@ -1,0 +1,70 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:control="sap.fe.core.controls"
+	xmlns:macro="sap.fe.macros"
+	xmlns:customData="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns:log="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	template:require="{
+							FIELD: 'sap/fe/macros/field/FieldHelper',
+							UI: 'sap/fe/core/templating/UIFormatters'
+						 }"
+>
+	<control:ConditionalWrapper
+		id="{this>noWrapperId}"
+		core:require="{FieldRuntime: 'sap/fe/macros/field/FieldRuntime'}"
+		visible="{this>displayVisible}"
+		condition="{= FIELD.hasSemanticObjectTargets(${property>@@UI.getDataModelObjectPath}) }"
+	>
+		<control:contentTrue>
+			<Link
+				core:require="{FieldRuntime: 'sap/fe/macros/field/FieldRuntime', WSR: 'sap/base/strings/whitespaceReplacer'}"
+				text="{= ${this>formatOptions/retrieveTextFromValueList} ? FIELD.retrieveTextFromValueList( ${this>entitySet}, ${propertyPath>}, ${this>formatOptions} ) : ${this>text} }"
+				wrapping="{= ${this>wrap} || 'true' }"
+				press="FieldRuntime.pressLink"
+				ariaLabelledBy="{this>ariaLabelledBy}"
+				modelContextChange="{= FIELD.computeSemanticLinkModelContextChange(${semanticObjects>}, ${property>$Path@@UI.getDataModelObjectPath}) }"
+				emptyIndicatorMode="{this>emptyIndicatorMode}"
+			>
+				<dependents>
+					<template:if test="{property>@@FIELD.getNavigationEntity}">
+						<template:then>
+							<template:with path="property>" helper="FIELD.getNavigationEntity" var="entityType">
+								<macro:QuickViewForm
+									propertypath="{property>$Path}"
+									dataField="{dataField>}"
+									entityType="{entityType>}"
+									semanticObject="{this>semanticObject}"
+									contextPath="{entitySet>}"
+									hasQuickViewFacets="{this>hasQuickViewFacets}"
+									semanticObjectsToResolve="{semanticObjects>}"
+								/>
+							</template:with>
+						</template:then>
+						<template:else>
+							<macro:QuickViewForm
+								propertypath="{property>$Path}"
+								dataField="{dataField>}"
+								semanticObject="{this>semanticObject}"
+								hasQuickViewFacets="{this>hasQuickViewFacets}"
+								semanticObjectsToResolve="{semanticObjects>}"
+								contextPath="{entitySet>}"
+							/>
+						</template:else>
+					</template:if>
+				</dependents>
+			</Link>
+		</control:contentTrue>
+		<control:contentFalse>
+			<Text
+				core:require="{FieldRuntime: 'sap/fe/macros/field/FieldRuntime', WSR: 'sap/base/strings/whitespaceReplacer'}"
+				visible="{this>displayVisible}"
+				text="{this>text}"
+				wrapping="{= ${this>wrap} || 'false' }"
+				emptyIndicatorMode="{this>emptyIndicatorMode}"
+				renderWhitespace="true"
+			/>
+		</control:contentFalse>
+	</control:ConditionalWrapper>
+</core:FragmentDefinition>

@@ -1,0 +1,63 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"module": "sap/ovp/cards/error/Component.js",
+			"size": 921,
+			"isDebug": true,
+			"required": [
+				"sap/ovp/cards/generic/Component.js"
+			]
+		},
+		{
+			"name": "Component.js",
+			"module": "sap/ovp/cards/error/Component.js",
+			"size": 423,
+			"required": [
+				"sap/ovp/cards/generic/Component.js"
+			]
+		},
+		{
+			"name": "Component.js.map",
+			"size": 514,
+			"isDebug": true
+		},
+		{
+			"name": "Error-dbg.controller.js",
+			"module": "sap/ovp/cards/error/Error.controller.js",
+			"size": 2323,
+			"isDebug": true,
+			"required": [
+				"sap/ovp/cards/generic/Card.controller.js",
+				"sap/ovp/cards/ovpLogger.js"
+			]
+		},
+		{
+			"name": "Error.controller.js",
+			"module": "sap/ovp/cards/error/Error.controller.js",
+			"size": 1211,
+			"required": [
+				"sap/ovp/cards/generic/Card.controller.js",
+				"sap/ovp/cards/ovpLogger.js"
+			]
+		},
+		{
+			"name": "Error.controller.js.map",
+			"size": 1547,
+			"isDebug": true
+		},
+		{
+			"name": "Error.fragment.xml",
+			"module": "sap/ovp/cards/error/Error.fragment.xml",
+			"size": 419,
+			"required": [
+				"sap/m/MessagePage.js"
+			]
+		},
+		{
+			"name": "resources.json",
+			"size": 1231
+		}
+	]
+}

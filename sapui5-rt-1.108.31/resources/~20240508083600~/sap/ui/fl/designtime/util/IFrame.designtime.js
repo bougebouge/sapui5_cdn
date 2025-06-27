@@ -1,0 +1,7 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2009-2024 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/ui/rta/plugin/iframe/AddIFrameDialog","sap/m/library"],function(e){"use strict";function t(t){var i=new e;var r=t.get_settings();var a;return e.buildUrlBuilderParametersFor(t).then(function(e){a={parameters:e,frameUrl:r.url,frameWidth:r.width,frameHeight:r.height,useLegacyNavigation:r.useLegacyNavigation,updateMode:true};return i.open(a)}).then(function(e){if(!e){return[]}var i=[];var a=false;var n={url:r.url,height:r.height,width:r.width};if(e.frameHeight+e.frameHeightUnit!==r.height){a=true;n.height=e.frameHeight+e.frameHeightUnit}if(e.frameWidth+e.frameWidthUnit!==r.width){a=true;n.width=e.frameWidth+e.frameWidthUnit}if(e.frameUrl!==r.url){a=true;n.url=e.frameUrl}if(e.useLegacyNavigation!==!!r.useLegacyNavigation){a=true;n.useLegacyNavigation=e.useLegacyNavigation}if(a){i.push({selectorControl:t,changeSpecificData:{changeType:"updateIFrame",content:n}})}return i})}return{actions:{settings:function(){return{icon:"sap-icon://write-new",name:"CTX_EDIT_IFRAME",isEnabled:true,handler:t}},remove:{changeType:"hideControl"},reveal:{changeType:"unhideControl"}}}});
+//# sourceMappingURL=IFrame.designtime.js.map

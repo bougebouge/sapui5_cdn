@@ -1,0 +1,31 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:core="sap.ui.core"
+	xmlns:mdc="sap.ui.mdc"
+	xmlns:mdcField="sap.ui.mdc.field"
+	template:require="{
+							FIELD: 'sap/fe/macros/field/FieldHelper',
+							ID: 'sap/fe/core/helpers/StableIdHelper',
+							Property: 'sap/fe/core/templating/PropertyFormatters',
+							UI: 'sap/fe/core/templating/UIFormatters',
+							ValueHelpTemplating: 'sap/fe/macros/internal/valuehelp/ValueHelpTemplating'
+						 }"
+>
+	<template:with path="metaPath>Value" var="property">
+		<template:with path="property>" helper="FIELD.valueHelpProperty" var="valueHelpProperty">
+			<mdc:MultiValueField
+				delegate="{name: 'sap/fe/macros/internal/collectionField/MultiValueFieldDelegate'}"
+				id="{= ${this>_flexId} || (${this>idPrefix} ? ID.generate([${this>idPrefix}, 'CollectionField']) : undefined) }"
+				items="{this>collection}"
+				display="{this>displayMode}"
+				width="100%"
+				editMode="{this>editMode}"
+				fieldHelp="{= ValueHelpTemplating.generateID(${this>_vhFlexId},${this>vhIdPrefix},${property>@@Property.getRelativePropertyPath},${valueHelpProperty>@@Property.getRelativePropertyPath}) }"
+				ariaLabelledBy="{this>ariaLabelledBy}"
+				showEmptyIndicator="{this>formatOptions/showEmptyIndicator}"
+			>
+				<mdcField:MultiValueFieldItem key="{this>key}" description="{this>text}" />
+			</mdc:MultiValueField>
+		</template:with>
+	</template:with>
+</core:FragmentDefinition>

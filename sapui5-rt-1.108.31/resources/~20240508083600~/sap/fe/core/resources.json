@@ -1,0 +1,6633 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".library",
+			"size": 1931
+		},
+		{
+			"name": ".supportrc",
+			"size": 50
+		},
+		{
+			"name": ".theming",
+			"size": 95
+		},
+		{
+			"name": "ActionRuntime-dbg.js",
+			"module": "sap/fe/core/ActionRuntime.js",
+			"size": 20701,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/BindingToolkit.js"
+			]
+		},
+		{
+			"name": "ActionRuntime.js",
+			"module": "sap/fe/core/ActionRuntime.js",
+			"size": 2022,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/BindingToolkit.js"
+			]
+		},
+		{
+			"name": "ActionRuntime.js.map",
+			"size": 3259,
+			"isDebug": true
+		},
+		{
+			"name": "ActionRuntime.ts",
+			"size": 5511
+		},
+		{
+			"name": "AppComponent-dbg.js",
+			"module": "sap/fe/core/AppComponent.js",
+			"size": 54872,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/AppStateHandler.js",
+				"sap/fe/core/controllerextensions/routing/RouterProxy.js",
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/SemanticDateOperators.js",
+				"sap/fe/core/library.js",
+				"sap/fe/core/support/Diagnostics.js",
+				"sap/fe/macros/internal/valuehelp/ValueListHelper.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "AppComponent.js",
+			"module": "sap/fe/core/AppComponent.js",
+			"size": 7943,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/AppStateHandler.js",
+				"sap/fe/core/controllerextensions/routing/RouterProxy.js",
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/SemanticDateOperators.js",
+				"sap/fe/core/library.js",
+				"sap/fe/core/support/Diagnostics.js",
+				"sap/fe/macros/internal/valuehelp/ValueListHelper.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "AppComponent.js.map",
+			"size": 9342,
+			"isDebug": true
+		},
+		{
+			"name": "AppComponent.ts",
+			"size": 14755
+		},
+		{
+			"name": "AppStateHandler-dbg.js",
+			"module": "sap/fe/core/AppStateHandler.js",
+			"size": 23277,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/deepEqual.js",
+				"sap/fe/core/controllerextensions/BusyLocker.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/ToES6Promise.js",
+				"sap/fe/navigation/library.js",
+				"sap/ui/base/Object.js"
+			]
+		},
+		{
+			"name": "AppStateHandler.js",
+			"module": "sap/fe/core/AppStateHandler.js",
+			"size": 3723,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/deepEqual.js",
+				"sap/fe/core/controllerextensions/BusyLocker.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/ToES6Promise.js",
+				"sap/fe/navigation/library.js",
+				"sap/ui/base/Object.js"
+			]
+		},
+		{
+			"name": "AppStateHandler.js.map",
+			"size": 5076,
+			"isDebug": true
+		},
+		{
+			"name": "AppStateHandler.ts",
+			"size": 5322
+		},
+		{
+			"name": "BaseController-dbg.js",
+			"module": "sap/fe/core/BaseController.js",
+			"size": 8478,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/mvc/Controller.js"
+			]
+		},
+		{
+			"name": "BaseController.js",
+			"module": "sap/fe/core/BaseController.js",
+			"size": 1659,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/mvc/Controller.js"
+			]
+		},
+		{
+			"name": "BaseController.js.map",
+			"size": 2498,
+			"isDebug": true
+		},
+		{
+			"name": "BaseController.ts",
+			"size": 2042
+		},
+		{
+			"name": "CommonUtils-dbg.js",
+			"module": "sap/fe/core/CommonUtils.js",
+			"size": 388419,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/array/uniqueSort.js",
+				"sap/base/util/merge.js",
+				"sap/fe/core/controls/AnyElement.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/SemanticDateOperators.js",
+				"sap/fe/core/helpers/StableIdHelper.js",
+				"sap/fe/core/templating/FilterHelper.js",
+				"sap/fe/core/type/TypeUtil.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/XMLTemplateProcessor.js",
+				"sap/ui/core/util/XMLPreprocessor.js",
+				"sap/ui/mdc/condition/FilterOperatorUtil.js",
+				"sap/ui/mdc/condition/RangeOperator.js"
+			],
+			"condRequired": [
+				"sap/fe/macros/macroLibrary.js"
+			]
+		},
+		{
+			"name": "CommonUtils.js",
+			"module": "sap/fe/core/CommonUtils.js",
+			"size": 41980,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/array/uniqueSort.js",
+				"sap/base/util/merge.js",
+				"sap/fe/core/controls/AnyElement.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/SemanticDateOperators.js",
+				"sap/fe/core/helpers/StableIdHelper.js",
+				"sap/fe/core/templating/FilterHelper.js",
+				"sap/fe/core/type/TypeUtil.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/XMLTemplateProcessor.js",
+				"sap/ui/core/util/XMLPreprocessor.js",
+				"sap/ui/mdc/condition/FilterOperatorUtil.js",
+				"sap/ui/mdc/condition/RangeOperator.js"
+			],
+			"condRequired": [
+				"sap/fe/macros/macroLibrary.js"
+			]
+		},
+		{
+			"name": "CommonUtils.js.map",
+			"size": 64345,
+			"isDebug": true
+		},
+		{
+			"name": "CommonUtils.ts",
+			"size": 101260
+		},
+		{
+			"name": "ExtensionAPI-dbg.js",
+			"module": "sap/fe/core/ExtensionAPI.js",
+			"size": 31398,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "ExtensionAPI.js",
+			"module": "sap/fe/core/ExtensionAPI.js",
+			"size": 4182,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "ExtensionAPI.js.map",
+			"size": 5948,
+			"isDebug": true
+		},
+		{
+			"name": "ExtensionAPI.ts",
+			"size": 8649
+		},
+		{
+			"name": "PageController-dbg.js",
+			"module": "sap/fe/core/PageController.js",
+			"size": 24112,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/BaseController.js",
+				"sap/fe/core/ExtensionAPI.js",
+				"sap/fe/core/controllerextensions/EditFlow.js",
+				"sap/fe/core/controllerextensions/IntentBasedNavigation.js",
+				"sap/fe/core/controllerextensions/InternalEditFlow.js",
+				"sap/fe/core/controllerextensions/InternalIntentBasedNavigation.js",
+				"sap/fe/core/controllerextensions/InternalRouting.js",
+				"sap/fe/core/controllerextensions/MassEdit.js",
+				"sap/fe/core/controllerextensions/MessageHandler.js",
+				"sap/fe/core/controllerextensions/PageReady.js",
+				"sap/fe/core/controllerextensions/Paginator.js",
+				"sap/fe/core/controllerextensions/Placeholder.js",
+				"sap/fe/core/controllerextensions/Routing.js",
+				"sap/fe/core/controllerextensions/Share.js",
+				"sap/fe/core/controllerextensions/SideEffects.js",
+				"sap/fe/core/controllerextensions/ViewState.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/mvc/OverrideExecution.js"
+			]
+		},
+		{
+			"name": "PageController.js",
+			"module": "sap/fe/core/PageController.js",
+			"size": 5835,
+			"required": [
+				"sap/fe/core/BaseController.js",
+				"sap/fe/core/ExtensionAPI.js",
+				"sap/fe/core/controllerextensions/EditFlow.js",
+				"sap/fe/core/controllerextensions/IntentBasedNavigation.js",
+				"sap/fe/core/controllerextensions/InternalEditFlow.js",
+				"sap/fe/core/controllerextensions/InternalIntentBasedNavigation.js",
+				"sap/fe/core/controllerextensions/InternalRouting.js",
+				"sap/fe/core/controllerextensions/MassEdit.js",
+				"sap/fe/core/controllerextensions/MessageHandler.js",
+				"sap/fe/core/controllerextensions/PageReady.js",
+				"sap/fe/core/controllerextensions/Paginator.js",
+				"sap/fe/core/controllerextensions/Placeholder.js",
+				"sap/fe/core/controllerextensions/Routing.js",
+				"sap/fe/core/controllerextensions/Share.js",
+				"sap/fe/core/controllerextensions/SideEffects.js",
+				"sap/fe/core/controllerextensions/ViewState.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/mvc/OverrideExecution.js"
+			]
+		},
+		{
+			"name": "PageController.js.map",
+			"size": 7521,
+			"isDebug": true
+		},
+		{
+			"name": "PageController.ts",
+			"size": 5041
+		},
+		{
+			"name": "TemplateComponent-dbg.js",
+			"module": "sap/fe/core/TemplateComponent.js",
+			"size": 24776,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/mdc/p13n/StateUtil.js"
+			]
+		},
+		{
+			"name": "TemplateComponent.js",
+			"module": "sap/fe/core/TemplateComponent.js",
+			"size": 5573,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/mdc/p13n/StateUtil.js"
+			]
+		},
+		{
+			"name": "TemplateComponent.js.map",
+			"size": 7666,
+			"isDebug": true
+		},
+		{
+			"name": "TemplateComponent.ts",
+			"size": 5392
+		},
+		{
+			"name": "TemplateModel-dbg.js",
+			"module": "sap/fe/core/TemplateModel.js",
+			"size": 11160,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "TemplateModel.js",
+			"module": "sap/fe/core/TemplateModel.js",
+			"size": 1912,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "TemplateModel.js.map",
+			"size": 2667,
+			"isDebug": true
+		},
+		{
+			"name": "TemplateModel.ts",
+			"size": 2732
+		},
+		{
+			"name": "buildingBlocks/AttributeModel-dbg.js",
+			"module": "sap/fe/core/buildingBlocks/AttributeModel.js",
+			"size": 7694,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/ObjectPath.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "buildingBlocks/AttributeModel.js",
+			"module": "sap/fe/core/buildingBlocks/AttributeModel.js",
+			"size": 1349,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/ObjectPath.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "buildingBlocks/AttributeModel.js.map",
+			"size": 1882,
+			"isDebug": true
+		},
+		{
+			"name": "buildingBlocks/AttributeModel.ts",
+			"size": 1864
+		},
+		{
+			"name": "buildingBlocks/BuildingBlock-dbg.js",
+			"module": "sap/fe/core/buildingBlocks/BuildingBlock.js",
+			"size": 51022,
+			"isDebug": true,
+			"required": [
+				"sap/base/util/ObjectPath.js",
+				"sap/base/util/deepClone.js",
+				"sap/base/util/merge.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/buildingBlocks/BuildingBlockRuntime.js",
+				"sap/fe/core/converters/ConverterContext.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/StableIdHelper.js",
+				"sap/ui/base/ManagedObject.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/util/XMLPreprocessor.js"
+			]
+		},
+		{
+			"name": "buildingBlocks/BuildingBlock.js",
+			"module": "sap/fe/core/buildingBlocks/BuildingBlock.js",
+			"size": 5770,
+			"required": [
+				"sap/base/util/ObjectPath.js",
+				"sap/base/util/deepClone.js",
+				"sap/base/util/merge.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/buildingBlocks/BuildingBlockRuntime.js",
+				"sap/fe/core/converters/ConverterContext.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/StableIdHelper.js",
+				"sap/ui/base/ManagedObject.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/util/XMLPreprocessor.js"
+			]
+		},
+		{
+			"name": "buildingBlocks/BuildingBlock.js.map",
+			"size": 9226,
+			"isDebug": true
+		},
+		{
+			"name": "buildingBlocks/BuildingBlock.ts",
+			"size": 14541
+		},
+		{
+			"name": "buildingBlocks/BuildingBlockFormatter-dbg.js",
+			"module": "sap/fe/core/buildingBlocks/BuildingBlockFormatter.js",
+			"size": 792,
+			"isDebug": true
+		},
+		{
+			"name": "buildingBlocks/BuildingBlockFormatter.js",
+			"module": "sap/fe/core/buildingBlocks/BuildingBlockFormatter.js",
+			"size": 266
+		},
+		{
+			"name": "buildingBlocks/BuildingBlockFormatter.js.map",
+			"size": 264,
+			"isDebug": true
+		},
+		{
+			"name": "buildingBlocks/BuildingBlockFormatter.ts",
+			"size": 83
+		},
+		{
+			"name": "buildingBlocks/BuildingBlockRuntime-dbg.js",
+			"module": "sap/fe/core/buildingBlocks/BuildingBlockRuntime.js",
+			"size": 175065,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/deepClone.js",
+				"sap/base/util/uid.js",
+				"sap/fe/core/buildingBlocks/AttributeModel.js",
+				"sap/fe/core/buildingBlocks/TraceInfo.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/macros/ResourceModel.js",
+				"sap/ui/base/BindingParser.js",
+				"sap/ui/core/util/XMLPreprocessor.js"
+			]
+		},
+		{
+			"name": "buildingBlocks/BuildingBlockRuntime.js",
+			"module": "sap/fe/core/buildingBlocks/BuildingBlockRuntime.js",
+			"size": 21002,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/deepClone.js",
+				"sap/base/util/uid.js",
+				"sap/fe/core/buildingBlocks/AttributeModel.js",
+				"sap/fe/core/buildingBlocks/TraceInfo.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/macros/ResourceModel.js",
+				"sap/ui/base/BindingParser.js",
+				"sap/ui/core/util/XMLPreprocessor.js"
+			]
+		},
+		{
+			"name": "buildingBlocks/BuildingBlockRuntime.js.map",
+			"size": 33130,
+			"isDebug": true
+		},
+		{
+			"name": "buildingBlocks/BuildingBlockRuntime.ts",
+			"size": 41664
+		},
+		{
+			"name": "buildingBlocks/TraceInfo-dbg.js",
+			"module": "sap/fe/core/buildingBlocks/TraceInfo.js",
+			"size": 52761,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/base/ManagedObject.js",
+				"sap/ui/core/util/XMLPreprocessor.js"
+			]
+		},
+		{
+			"name": "buildingBlocks/TraceInfo.js",
+			"module": "sap/fe/core/buildingBlocks/TraceInfo.js",
+			"size": 5112,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/base/ManagedObject.js",
+				"sap/ui/core/util/XMLPreprocessor.js"
+			]
+		},
+		{
+			"name": "buildingBlocks/TraceInfo.js.map",
+			"size": 7796,
+			"isDebug": true
+		},
+		{
+			"name": "buildingBlocks/TraceInfo.ts",
+			"size": 13971
+		},
+		{
+			"name": "controllerextensions/BusyLocker-dbg.js",
+			"module": "sap/fe/core/controllerextensions/BusyLocker.js",
+			"size": 11399,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js"
+			]
+		},
+		{
+			"name": "controllerextensions/BusyLocker.js",
+			"module": "sap/fe/core/controllerextensions/BusyLocker.js",
+			"size": 1470,
+			"required": [
+				"sap/base/Log.js"
+			]
+		},
+		{
+			"name": "controllerextensions/BusyLocker.js.map",
+			"size": 2196,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/BusyLocker.ts",
+			"size": 2767
+		},
+		{
+			"name": "controllerextensions/EditFlow-dbg.js",
+			"module": "sap/fe/core/controllerextensions/EditFlow.js",
+			"size": 293705,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/ActionRuntime.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/BusyLocker.js",
+				"sap/fe/core/controllerextensions/collaboration/ActivitySync.js",
+				"sap/fe/core/controllerextensions/collaboration/CollaborationCommon.js",
+				"sap/fe/core/controllerextensions/editFlow/draft.js",
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/EditState.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/SemanticKeyHelper.js",
+				"sap/fe/core/library.js",
+				"sap/fe/templates/Feedback.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/message/Message.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js",
+				"sap/ui/model/odata/v4/ODataListBinding.js"
+			]
+		},
+		{
+			"name": "controllerextensions/EditFlow.js",
+			"module": "sap/fe/core/controllerextensions/EditFlow.js",
+			"size": 33859,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/ActionRuntime.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/BusyLocker.js",
+				"sap/fe/core/controllerextensions/collaboration/ActivitySync.js",
+				"sap/fe/core/controllerextensions/collaboration/CollaborationCommon.js",
+				"sap/fe/core/controllerextensions/editFlow/draft.js",
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/EditState.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/SemanticKeyHelper.js",
+				"sap/fe/core/library.js",
+				"sap/fe/templates/Feedback.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/message/Message.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js",
+				"sap/ui/model/odata/v4/ODataListBinding.js"
+			]
+		},
+		{
+			"name": "controllerextensions/EditFlow.js.map",
+			"size": 46009,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/EditFlow.ts",
+			"size": 77996
+		},
+		{
+			"name": "controllerextensions/IntentBasedNavigation-dbg.js",
+			"module": "sap/fe/core/controllerextensions/IntentBasedNavigation.js",
+			"size": 12688,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js"
+			]
+		},
+		{
+			"name": "controllerextensions/IntentBasedNavigation.js",
+			"module": "sap/fe/core/controllerextensions/IntentBasedNavigation.js",
+			"size": 2207,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js"
+			]
+		},
+		{
+			"name": "controllerextensions/IntentBasedNavigation.js.map",
+			"size": 3312,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/IntentBasedNavigation.ts",
+			"size": 3259
+		},
+		{
+			"name": "controllerextensions/InternalEditFlow-dbg.js",
+			"module": "sap/fe/core/controllerextensions/InternalEditFlow.js",
+			"size": 108937,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/BusyLocker.js",
+				"sap/fe/core/controllerextensions/collaboration/ActivitySync.js",
+				"sap/fe/core/controllerextensions/collaboration/CollaborationCommon.js",
+				"sap/fe/core/controllerextensions/editFlow/TransactionHelper.js",
+				"sap/fe/core/controllerextensions/editFlow/sticky.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/EditState.js",
+				"sap/fe/core/library.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/Text.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js"
+			]
+		},
+		{
+			"name": "controllerextensions/InternalEditFlow.js",
+			"module": "sap/fe/core/controllerextensions/InternalEditFlow.js",
+			"size": 16351,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/BusyLocker.js",
+				"sap/fe/core/controllerextensions/collaboration/ActivitySync.js",
+				"sap/fe/core/controllerextensions/collaboration/CollaborationCommon.js",
+				"sap/fe/core/controllerextensions/editFlow/TransactionHelper.js",
+				"sap/fe/core/controllerextensions/editFlow/sticky.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/EditState.js",
+				"sap/fe/core/library.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/Text.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js"
+			]
+		},
+		{
+			"name": "controllerextensions/InternalEditFlow.js.map",
+			"size": 20770,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/InternalEditFlow.ts",
+			"size": 27196
+		},
+		{
+			"name": "controllerextensions/InternalIntentBasedNavigation-dbg.js",
+			"module": "sap/fe/core/controllerextensions/InternalIntentBasedNavigation.js",
+			"size": 122456,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/merge.js",
+				"sap/fe/core/controllerextensions/editFlow/draft.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/KeepAliveHelper.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/navigation/SelectionVariant.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/XMLTemplateProcessor.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js",
+				"sap/ui/core/util/XMLPreprocessor.js",
+				"sap/ui/model/json/JSONModel.js"
+			],
+			"condRequired": [
+				"sap/m/MessageBox.js"
+			]
+		},
+		{
+			"name": "controllerextensions/InternalIntentBasedNavigation.js",
+			"module": "sap/fe/core/controllerextensions/InternalIntentBasedNavigation.js",
+			"size": 12626,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/merge.js",
+				"sap/fe/core/controllerextensions/editFlow/draft.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/KeepAliveHelper.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/navigation/SelectionVariant.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/XMLTemplateProcessor.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js",
+				"sap/ui/core/util/XMLPreprocessor.js",
+				"sap/ui/model/json/JSONModel.js"
+			],
+			"condRequired": [
+				"sap/m/MessageBox.js"
+			]
+		},
+		{
+			"name": "controllerextensions/InternalIntentBasedNavigation.js.map",
+			"size": 19225,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/InternalIntentBasedNavigation.ts",
+			"size": 33433
+		},
+		{
+			"name": "controllerextensions/InternalRouting-dbg.js",
+			"module": "sap/fe/core/controllerextensions/InternalRouting.js",
+			"size": 153884,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/BusyLocker.js",
+				"sap/fe/core/controllerextensions/editFlow/draft.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/EditState.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/SemanticKeyHelper.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js"
+			]
+		},
+		{
+			"name": "controllerextensions/InternalRouting.js",
+			"module": "sap/fe/core/controllerextensions/InternalRouting.js",
+			"size": 19404,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/BusyLocker.js",
+				"sap/fe/core/controllerextensions/editFlow/draft.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/EditState.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/SemanticKeyHelper.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js"
+			]
+		},
+		{
+			"name": "controllerextensions/InternalRouting.js.map",
+			"size": 25987,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/InternalRouting.ts",
+			"size": 40669
+		},
+		{
+			"name": "controllerextensions/KPIManagement-dbg.js",
+			"module": "sap/fe/core/controllerextensions/KPIManagement.js",
+			"size": 150067,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/formatters/TableFormatterTypes.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/m/Popover.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Locale.js",
+				"sap/ui/core/format/DateFormat.js",
+				"sap/ui/core/format/NumberFormat.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/Sorter.js",
+				"sap/ui/model/json/JSONModel.js"
+			],
+			"condRequired": [
+				"sap/ui/integration/Host.js",
+				"sap/ui/integration/widgets/Card.js"
+			]
+		},
+		{
+			"name": "controllerextensions/KPIManagement.js",
+			"module": "sap/fe/core/controllerextensions/KPIManagement.js",
+			"size": 18792,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/formatters/TableFormatterTypes.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/m/Popover.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Locale.js",
+				"sap/ui/core/format/DateFormat.js",
+				"sap/ui/core/format/NumberFormat.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/Sorter.js",
+				"sap/ui/model/json/JSONModel.js"
+			],
+			"condRequired": [
+				"sap/ui/integration/Host.js",
+				"sap/ui/integration/widgets/Card.js"
+			]
+		},
+		{
+			"name": "controllerextensions/KPIManagement.js.map",
+			"size": 24718,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/KPIManagement.ts",
+			"size": 39116
+		},
+		{
+			"name": "controllerextensions/MassEdit-dbg.js",
+			"module": "sap/fe/core/controllerextensions/MassEdit.js",
+			"size": 27045,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/MassEditHelper.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/m/MessageBox.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js"
+			]
+		},
+		{
+			"name": "controllerextensions/MassEdit.js",
+			"module": "sap/fe/core/controllerextensions/MassEdit.js",
+			"size": 4281,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/MassEditHelper.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/m/MessageBox.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js"
+			]
+		},
+		{
+			"name": "controllerextensions/MassEdit.js.map",
+			"size": 5998,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/MassEdit.ts",
+			"size": 6861
+		},
+		{
+			"name": "controllerextensions/MessageHandler-dbg.js",
+			"module": "sap/fe/core/controllerextensions/MessageHandler.js",
+			"size": 37032,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js"
+			]
+		},
+		{
+			"name": "controllerextensions/MessageHandler.js",
+			"module": "sap/fe/core/controllerextensions/MessageHandler.js",
+			"size": 4459,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js"
+			]
+		},
+		{
+			"name": "controllerextensions/MessageHandler.js.map",
+			"size": 6560,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/MessageHandler.ts",
+			"size": 10251
+		},
+		{
+			"name": "controllerextensions/PageReady-dbg.js",
+			"module": "sap/fe/core/controllerextensions/PageReady.js",
+			"size": 46877,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/pageReady/DataQueryWatcher.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/services/TemplatedViewServiceFactory.js",
+				"sap/ui/base/EventProvider.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js"
+			]
+		},
+		{
+			"name": "controllerextensions/PageReady.js",
+			"module": "sap/fe/core/controllerextensions/PageReady.js",
+			"size": 8942,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/pageReady/DataQueryWatcher.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/services/TemplatedViewServiceFactory.js",
+				"sap/ui/base/EventProvider.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js"
+			]
+		},
+		{
+			"name": "controllerextensions/PageReady.js.map",
+			"size": 11324,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/PageReady.ts",
+			"size": 10868
+		},
+		{
+			"name": "controllerextensions/Paginator-dbg.js",
+			"module": "sap/fe/core/controllerextensions/Paginator.js",
+			"size": 26083,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "controllerextensions/Paginator.js",
+			"module": "sap/fe/core/controllerextensions/Paginator.js",
+			"size": 4584,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "controllerextensions/Paginator.js.map",
+			"size": 6008,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/Paginator.ts",
+			"size": 6401
+		},
+		{
+			"name": "controllerextensions/Placeholder-dbg.js",
+			"module": "sap/fe/core/controllerextensions/Placeholder.js",
+			"size": 20542,
+			"isDebug": true,
+			"required": [
+				"sap/base/util/ObjectPath.js",
+				"sap/base/util/UriParameters.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/placeholder/library.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Placeholder.js",
+				"sap/ui/core/mvc/ControllerExtension.js"
+			]
+		},
+		{
+			"name": "controllerextensions/Placeholder.js",
+			"module": "sap/fe/core/controllerextensions/Placeholder.js",
+			"size": 4353,
+			"required": [
+				"sap/base/util/ObjectPath.js",
+				"sap/base/util/UriParameters.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/placeholder/library.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Placeholder.js",
+				"sap/ui/core/mvc/ControllerExtension.js"
+			]
+		},
+		{
+			"name": "controllerextensions/Placeholder.js.map",
+			"size": 5432,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/Placeholder.ts",
+			"size": 4489
+		},
+		{
+			"name": "controllerextensions/Routing-dbg.js",
+			"module": "sap/fe/core/controllerextensions/Routing.js",
+			"size": 17061,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js"
+			]
+		},
+		{
+			"name": "controllerextensions/Routing.js",
+			"module": "sap/fe/core/controllerextensions/Routing.js",
+			"size": 2301,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js"
+			]
+		},
+		{
+			"name": "controllerextensions/Routing.js.map",
+			"size": 3476,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/Routing.ts",
+			"size": 4768
+		},
+		{
+			"name": "controllerextensions/RoutingListener-dbg.js",
+			"module": "sap/fe/core/controllerextensions/RoutingListener.js",
+			"size": 704,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/controllerextensions/InternalRouting.js"
+			]
+		},
+		{
+			"name": "controllerextensions/RoutingListener.js",
+			"module": "sap/fe/core/controllerextensions/RoutingListener.js",
+			"size": 270,
+			"required": [
+				"sap/fe/core/controllerextensions/InternalRouting.js"
+			]
+		},
+		{
+			"name": "controllerextensions/RoutingListener.js.map",
+			"size": 211,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/RoutingListener.ts",
+			"size": 113
+		},
+		{
+			"name": "controllerextensions/Share-dbg.js",
+			"module": "sap/fe/core/controllerextensions/Share.js",
+			"size": 56435,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/ObjectPath.js",
+				"sap/base/util/extend.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/m/library.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/XMLTemplateProcessor.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js",
+				"sap/ui/core/routing/HashChanger.js",
+				"sap/ui/core/util/XMLPreprocessor.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "controllerextensions/Share.js",
+			"module": "sap/fe/core/controllerextensions/Share.js",
+			"size": 8147,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/ObjectPath.js",
+				"sap/base/util/extend.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/m/library.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/XMLTemplateProcessor.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js",
+				"sap/ui/core/routing/HashChanger.js",
+				"sap/ui/core/util/XMLPreprocessor.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "controllerextensions/Share.js.map",
+			"size": 11379,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/Share.ts",
+			"size": 13603
+		},
+		{
+			"name": "controllerextensions/SideEffects-dbg.js",
+			"module": "sap/fe/core/controllerextensions/SideEffects.js",
+			"size": 96639,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/macros/field/FieldRuntime.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/mvc/ControllerExtension.js"
+			]
+		},
+		{
+			"name": "controllerextensions/SideEffects.js",
+			"module": "sap/fe/core/controllerextensions/SideEffects.js",
+			"size": 11111,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/macros/field/FieldRuntime.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/mvc/ControllerExtension.js"
+			]
+		},
+		{
+			"name": "controllerextensions/SideEffects.js.map",
+			"size": 15939,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/SideEffects.ts",
+			"size": 26641
+		},
+		{
+			"name": "controllerextensions/ViewState-dbg.js",
+			"module": "sap/fe/core/controllerextensions/ViewState.js",
+			"size": 117400,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/merge.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/KeepAliveHelper.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/navigation/library.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js",
+				"sap/ui/fl/apply/api/ControlVariantApplyAPI.js",
+				"sap/ui/mdc/p13n/StateUtil.js"
+			]
+		},
+		{
+			"name": "controllerextensions/ViewState.js",
+			"module": "sap/fe/core/controllerextensions/ViewState.js",
+			"size": 16037,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/merge.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/KeepAliveHelper.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/navigation/library.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/OverrideExecution.js",
+				"sap/ui/fl/apply/api/ControlVariantApplyAPI.js",
+				"sap/ui/mdc/p13n/StateUtil.js"
+			]
+		},
+		{
+			"name": "controllerextensions/ViewState.js.map",
+			"size": 21354,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/ViewState.ts",
+			"size": 30175
+		},
+		{
+			"name": "controllerextensions/collaboration/ActivityBase-dbg.js",
+			"module": "sap/fe/core/controllerextensions/collaboration/ActivityBase.js",
+			"size": 15270,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/UriParameters.js",
+				"sap/fe/core/controllerextensions/collaboration/CollaborationCommon.js",
+				"sap/ui/core/ws/SapPcpWebSocket.js"
+			]
+		},
+		{
+			"name": "controllerextensions/collaboration/ActivityBase.js",
+			"module": "sap/fe/core/controllerextensions/collaboration/ActivityBase.js",
+			"size": 2090,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/UriParameters.js",
+				"sap/fe/core/controllerextensions/collaboration/CollaborationCommon.js",
+				"sap/ui/core/ws/SapPcpWebSocket.js"
+			]
+		},
+		{
+			"name": "controllerextensions/collaboration/ActivityBase.js.map",
+			"size": 3043,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/collaboration/ActivityBase.ts",
+			"size": 3934
+		},
+		{
+			"name": "controllerextensions/collaboration/ActivitySync-dbg.js",
+			"module": "sap/fe/core/controllerextensions/collaboration/ActivitySync.js",
+			"size": 48766,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/collaboration/ActivityBase.js",
+				"sap/fe/core/controllerextensions/collaboration/CollaborationCommon.js",
+				"sap/m/MessageBox.js"
+			]
+		},
+		{
+			"name": "controllerextensions/collaboration/ActivitySync.js",
+			"module": "sap/fe/core/controllerextensions/collaboration/ActivitySync.js",
+			"size": 6300,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/collaboration/ActivityBase.js",
+				"sap/fe/core/controllerextensions/collaboration/CollaborationCommon.js",
+				"sap/m/MessageBox.js"
+			]
+		},
+		{
+			"name": "controllerextensions/collaboration/ActivitySync.js.map",
+			"size": 10087,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/collaboration/ActivitySync.ts",
+			"size": 11971
+		},
+		{
+			"name": "controllerextensions/collaboration/CollaborationCommon-dbg.js",
+			"module": "sap/fe/core/controllerextensions/collaboration/CollaborationCommon.js",
+			"size": 17587,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Component.js",
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "controllerextensions/collaboration/CollaborationCommon.js",
+			"module": "sap/fe/core/controllerextensions/collaboration/CollaborationCommon.js",
+			"size": 2630,
+			"required": [
+				"sap/ui/core/Component.js",
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "controllerextensions/collaboration/CollaborationCommon.js.map",
+			"size": 3851,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/collaboration/CollaborationCommon.ts",
+			"size": 4347
+		},
+		{
+			"name": "controllerextensions/collaboration/Manage-dbg.js",
+			"module": "sap/fe/core/controllerextensions/collaboration/Manage.js",
+			"size": 36336,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/controllerextensions/collaboration/CollaborationCommon.js",
+				"sap/m/MessageToast.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/library.js"
+			]
+		},
+		{
+			"name": "controllerextensions/collaboration/Manage.js",
+			"module": "sap/fe/core/controllerextensions/collaboration/Manage.js",
+			"size": 5399,
+			"required": [
+				"sap/fe/core/controllerextensions/collaboration/CollaborationCommon.js",
+				"sap/m/MessageToast.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/library.js"
+			]
+		},
+		{
+			"name": "controllerextensions/collaboration/Manage.js.map",
+			"size": 6886,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/collaboration/Manage.ts",
+			"size": 9167
+		},
+		{
+			"name": "controllerextensions/collaboration/ManageDialog.fragment.xml",
+			"module": "sap/fe/core/controllerextensions/collaboration/ManageDialog.fragment.xml",
+			"size": 3763,
+			"required": [
+				"sap/fe/core/controllerextensions/collaboration/CollaborationCommon.js",
+				"sap/m/Avatar.js",
+				"sap/m/Button.js",
+				"sap/m/Column.js",
+				"sap/m/ColumnListItem.js",
+				"sap/m/Dialog.js",
+				"sap/m/HBox.js",
+				"sap/m/Label.js",
+				"sap/m/MessageStrip.js",
+				"sap/m/ObjectStatus.js",
+				"sap/m/SearchField.js",
+				"sap/m/Table.js",
+				"sap/m/Text.js",
+				"sap/m/Title.js",
+				"sap/m/Toolbar.js",
+				"sap/m/ToolbarSpacer.js",
+				"sap/m/VBox.js",
+				"sap/ui/mdc/Field.js"
+			]
+		},
+		{
+			"name": "controllerextensions/collaboration/UserDetails.fragment.xml",
+			"module": "sap/fe/core/controllerextensions/collaboration/UserDetails.fragment.xml",
+			"size": 471,
+			"required": [
+				"sap/f/Avatar.js",
+				"sap/m/HBox.js",
+				"sap/m/Label.js",
+				"sap/m/ResponsivePopover.js",
+				"sap/m/VBox.js"
+			]
+		},
+		{
+			"name": "controllerextensions/editFlow/TransactionHelper-dbg.js",
+			"module": "sap/fe/core/controllerextensions/editFlow/TransactionHelper.js",
+			"size": 276459,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/BusyLocker.js",
+				"sap/fe/core/controllerextensions/editFlow/draft.js",
+				"sap/fe/core/controllerextensions/editFlow/operations.js",
+				"sap/fe/core/controllerextensions/editFlow/sticky.js",
+				"sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+				"sap/fe/core/helpers/FPMHelper.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/ToES6Promise.js",
+				"sap/fe/core/library.js",
+				"sap/m/Button.js",
+				"sap/m/CheckBox.js",
+				"sap/m/Dialog.js",
+				"sap/m/MessageBox.js",
+				"sap/m/MessageToast.js",
+				"sap/m/Popover.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/XMLTemplateProcessor.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/util/XMLPreprocessor.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "controllerextensions/editFlow/TransactionHelper.js",
+			"module": "sap/fe/core/controllerextensions/editFlow/TransactionHelper.js",
+			"size": 32359,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/BusyLocker.js",
+				"sap/fe/core/controllerextensions/editFlow/draft.js",
+				"sap/fe/core/controllerextensions/editFlow/operations.js",
+				"sap/fe/core/controllerextensions/editFlow/sticky.js",
+				"sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+				"sap/fe/core/helpers/FPMHelper.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/ToES6Promise.js",
+				"sap/fe/core/library.js",
+				"sap/m/Button.js",
+				"sap/m/CheckBox.js",
+				"sap/m/Dialog.js",
+				"sap/m/MessageBox.js",
+				"sap/m/MessageToast.js",
+				"sap/m/Popover.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/XMLTemplateProcessor.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/util/XMLPreprocessor.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "controllerextensions/editFlow/TransactionHelper.js.map",
+			"size": 43451,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/editFlow/TransactionHelper.ts",
+			"size": 68148
+		},
+		{
+			"name": "controllerextensions/editFlow/draft-dbg.js",
+			"module": "sap/fe/core/controllerextensions/editFlow/draft.js",
+			"size": 109725,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/collaboration/ActivitySync.js",
+				"sap/fe/core/controllerextensions/editFlow/draftDataLossPopup.js",
+				"sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+				"sap/fe/core/operationsHelper.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/MessageBox.js",
+				"sap/m/Text.js",
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "controllerextensions/editFlow/draft.js",
+			"module": "sap/fe/core/controllerextensions/editFlow/draft.js",
+			"size": 11421,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/collaboration/ActivitySync.js",
+				"sap/fe/core/controllerextensions/editFlow/draftDataLossPopup.js",
+				"sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+				"sap/fe/core/operationsHelper.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/MessageBox.js",
+				"sap/m/Text.js",
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "controllerextensions/editFlow/draft.js.map",
+			"size": 15253,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/editFlow/draft.ts",
+			"size": 31366
+		},
+		{
+			"name": "controllerextensions/editFlow/draftDataLossPopup-dbg.js",
+			"module": "sap/fe/core/controllerextensions/editFlow/draftDataLossPopup.js",
+			"size": 41890,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/controllerextensions/collaboration/ActivitySync.js",
+				"sap/fe/core/controls/DataLossOrDraftDiscard/DataLossOrDraftDiscardHandler.js",
+				"sap/fe/core/helpers/EditState.js"
+			]
+		},
+		{
+			"name": "controllerextensions/editFlow/draftDataLossPopup.js",
+			"module": "sap/fe/core/controllerextensions/editFlow/draftDataLossPopup.js",
+			"size": 3863,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/controllerextensions/collaboration/ActivitySync.js",
+				"sap/fe/core/controls/DataLossOrDraftDiscard/DataLossOrDraftDiscardHandler.js",
+				"sap/fe/core/helpers/EditState.js"
+			]
+		},
+		{
+			"name": "controllerextensions/editFlow/draftDataLossPopup.js.map",
+			"size": 5753,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/editFlow/draftDataLossPopup.ts",
+			"size": 13163
+		},
+		{
+			"name": "controllerextensions/editFlow/operations-dbg.js",
+			"module": "sap/fe/core/controllerextensions/editFlow/operations.js",
+			"size": 293755,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/ActionRuntime.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/BusyLocker.js",
+				"sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+				"sap/fe/core/helpers/FPMHelper.js",
+				"sap/fe/core/helpers/StableIdHelper.js",
+				"sap/fe/core/library.js",
+				"sap/fe/core/operationsHelper.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/MessageBox.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/XMLTemplateProcessor.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/message/Message.js",
+				"sap/ui/core/util/XMLPreprocessor.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "controllerextensions/editFlow/operations.js",
+			"module": "sap/fe/core/controllerextensions/editFlow/operations.js",
+			"size": 29823,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/ActionRuntime.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/BusyLocker.js",
+				"sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+				"sap/fe/core/helpers/FPMHelper.js",
+				"sap/fe/core/helpers/StableIdHelper.js",
+				"sap/fe/core/library.js",
+				"sap/fe/core/operationsHelper.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/MessageBox.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/XMLTemplateProcessor.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/message/Message.js",
+				"sap/ui/core/util/XMLPreprocessor.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "controllerextensions/editFlow/operations.js.map",
+			"size": 43498,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/editFlow/operations.ts",
+			"size": 76987
+		},
+		{
+			"name": "controllerextensions/editFlow/sticky-dbg.js",
+			"module": "sap/fe/core/controllerextensions/editFlow/sticky.js",
+			"size": 25650,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/library.js",
+				"sap/fe/core/operationsHelper.js",
+				"sap/m/MessageBox.js",
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "controllerextensions/editFlow/sticky.js",
+			"module": "sap/fe/core/controllerextensions/editFlow/sticky.js",
+			"size": 3262,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/library.js",
+				"sap/fe/core/operationsHelper.js",
+				"sap/m/MessageBox.js",
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "controllerextensions/editFlow/sticky.js.map",
+			"size": 4107,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/editFlow/sticky.ts",
+			"size": 7135
+		},
+		{
+			"name": "controllerextensions/messageHandler/messageHandling-dbg.js",
+			"module": "sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+			"size": 92938,
+			"isDebug": true,
+			"required": [
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/FormattedText.js",
+				"sap/m/MessageBox.js",
+				"sap/m/MessageItem.js",
+				"sap/m/MessageToast.js",
+				"sap/m/MessageView.js",
+				"sap/m/Text.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/format/DateFormat.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/message/Message.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ui/model/json/JSONModel.js"
+			],
+			"condRequired": [
+				"sap/m/ButtonType.js"
+			]
+		},
+		{
+			"name": "controllerextensions/messageHandler/messageHandling.js",
+			"module": "sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+			"size": 10842,
+			"required": [
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/FormattedText.js",
+				"sap/m/MessageBox.js",
+				"sap/m/MessageItem.js",
+				"sap/m/MessageToast.js",
+				"sap/m/MessageView.js",
+				"sap/m/Text.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/format/DateFormat.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/message/Message.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ui/model/json/JSONModel.js"
+			],
+			"condRequired": [
+				"sap/m/ButtonType.js"
+			]
+		},
+		{
+			"name": "controllerextensions/messageHandler/messageHandling.js.map",
+			"size": 14676,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/messageHandler/messageHandling.ts",
+			"size": 25060
+		},
+		{
+			"name": "controllerextensions/pageReady/DataQueryWatcher-dbg.js",
+			"module": "sap/fe/core/controllerextensions/pageReady/DataQueryWatcher.js",
+			"size": 43550,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/macros/table/Utils.js"
+			]
+		},
+		{
+			"name": "controllerextensions/pageReady/DataQueryWatcher.js",
+			"module": "sap/fe/core/controllerextensions/pageReady/DataQueryWatcher.js",
+			"size": 6100,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/macros/table/Utils.js"
+			]
+		},
+		{
+			"name": "controllerextensions/pageReady/DataQueryWatcher.js.map",
+			"size": 7385,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/pageReady/DataQueryWatcher.ts",
+			"size": 11175
+		},
+		{
+			"name": "controllerextensions/routing/RouterProxy-dbg.js",
+			"module": "sap/fe/core/controllerextensions/routing/RouterProxy.js",
+			"size": 103111,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/Synchronization.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/thirdparty/URI.js"
+			]
+		},
+		{
+			"name": "controllerextensions/routing/RouterProxy.js",
+			"module": "sap/fe/core/controllerextensions/routing/RouterProxy.js",
+			"size": 11205,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/Synchronization.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/thirdparty/URI.js"
+			]
+		},
+		{
+			"name": "controllerextensions/routing/RouterProxy.js.map",
+			"size": 15079,
+			"isDebug": true
+		},
+		{
+			"name": "controllerextensions/routing/RouterProxy.ts",
+			"size": 28090
+		},
+		{
+			"name": "controls/ActionParameterDialog.fragment.xml",
+			"module": "sap/fe/core/controls/ActionParameterDialog.fragment.xml",
+			"size": 5567,
+			"required": [
+				"sap/ui/layout/form/SimpleForm.js"
+			],
+			"condRequired": [
+				"sap/fe/core/controls/ActionParameterDialogFieldValueHelp.fragment.xml",
+				"sap/fe/core/controls/ActionParameterDialogValueHelp.fragment.xml",
+				"sap/m/Label.js",
+				"sap/ui/mdc/Field.js",
+				"sap/ui/mdc/MultiValueField.js",
+				"sap/ui/mdc/field/MultiValueFieldItem.js"
+			]
+		},
+		{
+			"name": "controls/ActionParameterDialogFieldValueHelp.fragment.xml",
+			"module": "sap/fe/core/controls/ActionParameterDialogFieldValueHelp.fragment.xml",
+			"size": 1809,
+			"condRequired": [
+				"sap/ui/mdc/field/FieldValueHelp.js",
+				"sap/ui/mdc/field/FieldValueHelpMTableWrapper.js",
+				"sap/ui/mdc/field/FieldValueHelpMdcTableWrapper.js"
+			]
+		},
+		{
+			"name": "controls/ActionParameterDialogValueHelp.fragment.xml",
+			"module": "sap/fe/core/controls/ActionParameterDialogValueHelp.fragment.xml",
+			"size": 2010,
+			"condRequired": [
+				"sap/ui/mdc/ValueHelp.js",
+				"sap/ui/mdc/valuehelp/Dialog.js",
+				"sap/ui/mdc/valuehelp/Popover.js",
+				"sap/ui/mdc/valuehelp/content/MTable.js"
+			]
+		},
+		{
+			"name": "controls/ActionPartial.fragment.xml",
+			"module": "sap/fe/core/controls/ActionPartial.fragment.xml",
+			"size": 4000,
+			"required": [
+				"sap/base/strings/formatMessage.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js"
+			],
+			"condRequired": [
+				"sap/m/CustomListItem.js",
+				"sap/m/HBox.js",
+				"sap/m/List.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js"
+			]
+		},
+		{
+			"name": "controls/Any-dbg.js",
+			"module": "sap/fe/core/controls/Any.js",
+			"size": 3337,
+			"isDebug": true,
+			"required": [
+				"sap/ui/base/ManagedObject.js"
+			]
+		},
+		{
+			"name": "controls/Any.js",
+			"module": "sap/fe/core/controls/Any.js",
+			"size": 509,
+			"required": [
+				"sap/ui/base/ManagedObject.js"
+			]
+		},
+		{
+			"name": "controls/Any.js.map",
+			"size": 569,
+			"isDebug": true
+		},
+		{
+			"name": "controls/Any.ts",
+			"size": 952
+		},
+		{
+			"name": "controls/AnyElement-dbg.js",
+			"module": "sap/fe/core/controls/AnyElement.js",
+			"size": 2862,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "controls/AnyElement.js",
+			"module": "sap/fe/core/controls/AnyElement.js",
+			"size": 443,
+			"required": [
+				"sap/ui/core/Element.js"
+			]
+		},
+		{
+			"name": "controls/AnyElement.js.map",
+			"size": 504,
+			"isDebug": true
+		},
+		{
+			"name": "controls/AnyElement.ts",
+			"size": 826
+		},
+		{
+			"name": "controls/CommandExecution-dbg.js",
+			"module": "sap/fe/core/controls/CommandExecution.js",
+			"size": 9657,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/CommandExecution.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/core/Shortcut.js"
+			]
+		},
+		{
+			"name": "controls/CommandExecution.js",
+			"module": "sap/fe/core/controls/CommandExecution.js",
+			"size": 1555,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/CommandExecution.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/core/Shortcut.js"
+			]
+		},
+		{
+			"name": "controls/CommandExecution.js.map",
+			"size": 2337,
+			"isDebug": true
+		},
+		{
+			"name": "controls/CommandExecution.ts",
+			"size": 2356
+		},
+		{
+			"name": "controls/ConditionalWrapper-dbg.js",
+			"module": "sap/fe/core/controls/ConditionalWrapper.js",
+			"size": 14818,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/Control.js"
+			]
+		},
+		{
+			"name": "controls/ConditionalWrapper.js",
+			"module": "sap/fe/core/controls/ConditionalWrapper.js",
+			"size": 3830,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/Control.js"
+			]
+		},
+		{
+			"name": "controls/ConditionalWrapper.js.map",
+			"size": 5393,
+			"isDebug": true
+		},
+		{
+			"name": "controls/ConditionalWrapper.ts",
+			"size": 2529
+		},
+		{
+			"name": "controls/CustomFilterFieldContentWrapper-dbg.js",
+			"module": "sap/fe/core/controls/CustomFilterFieldContentWrapper.js",
+			"size": 40194,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/SemanticDateOperators.js",
+				"sap/ui/base/ManagedObjectObserver.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/mdc/condition/Condition.js",
+				"sap/ui/mdc/enum/ConditionValidated.js",
+				"sap/ui/mdc/field/ConditionsType.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "controls/CustomFilterFieldContentWrapper.js",
+			"module": "sap/fe/core/controls/CustomFilterFieldContentWrapper.js",
+			"size": 6134,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/SemanticDateOperators.js",
+				"sap/ui/base/ManagedObjectObserver.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/mdc/condition/Condition.js",
+				"sap/ui/mdc/enum/ConditionValidated.js",
+				"sap/ui/mdc/field/ConditionsType.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "controls/CustomFilterFieldContentWrapper.js.map",
+			"size": 8448,
+			"isDebug": true
+		},
+		{
+			"name": "controls/CustomFilterFieldContentWrapper.ts",
+			"size": 10097
+		},
+		{
+			"name": "controls/CustomQuickViewPage-dbg.js",
+			"module": "sap/fe/core/controls/CustomQuickViewPage.js",
+			"size": 18722,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/KeepAliveHelper.js",
+				"sap/fe/macros/DelegateUtil.js",
+				"sap/m/QuickViewPage.js"
+			]
+		},
+		{
+			"name": "controls/CustomQuickViewPage.js",
+			"module": "sap/fe/core/controls/CustomQuickViewPage.js",
+			"size": 3682,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/KeepAliveHelper.js",
+				"sap/fe/macros/DelegateUtil.js",
+				"sap/m/QuickViewPage.js"
+			]
+		},
+		{
+			"name": "controls/CustomQuickViewPage.js.map",
+			"size": 5425,
+			"isDebug": true
+		},
+		{
+			"name": "controls/CustomQuickViewPage.ts",
+			"size": 3850
+		},
+		{
+			"name": "controls/DataLossOrDraftDiscard/DataLossDraft.fragment.xml",
+			"module": "sap/fe/core/controls/DataLossOrDraftDiscard/DataLossDraft.fragment.xml",
+			"size": 2172,
+			"required": [
+				"sap/m/Button.js",
+				"sap/m/CustomListItem.js",
+				"sap/m/Dialog.js",
+				"sap/m/Label.js",
+				"sap/m/List.js",
+				"sap/m/Text.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/CustomData.js"
+			]
+		},
+		{
+			"name": "controls/DataLossOrDraftDiscard/DataLossOrDraftDiscardHandler-dbg.js",
+			"module": "sap/fe/core/controls/DataLossOrDraftDiscard/DataLossOrDraftDiscardHandler.js",
+			"size": 23364,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/XMLTemplateProcessor.js",
+				"sap/ui/core/util/XMLPreprocessor.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "controls/DataLossOrDraftDiscard/DataLossOrDraftDiscardHandler.js",
+			"module": "sap/fe/core/controls/DataLossOrDraftDiscard/DataLossOrDraftDiscardHandler.js",
+			"size": 2613,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/XMLTemplateProcessor.js",
+				"sap/ui/core/util/XMLPreprocessor.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "controls/DataLossOrDraftDiscard/DataLossOrDraftDiscardHandler.js.map",
+			"size": 3914,
+			"isDebug": true
+		},
+		{
+			"name": "controls/DataLossOrDraftDiscard/DataLossOrDraftDiscardHandler.ts",
+			"size": 6208
+		},
+		{
+			"name": "controls/FieldWrapper-dbg.js",
+			"module": "sap/fe/core/controls/FieldWrapper.js",
+			"size": 21002,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/Control.js"
+			]
+		},
+		{
+			"name": "controls/FieldWrapper.js",
+			"module": "sap/fe/core/controls/FieldWrapper.js",
+			"size": 4711,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/Control.js"
+			]
+		},
+		{
+			"name": "controls/FieldWrapper.js.map",
+			"size": 6546,
+			"isDebug": true
+		},
+		{
+			"name": "controls/FieldWrapper.ts",
+			"size": 3971
+		},
+		{
+			"name": "controls/FileWrapper-dbg.js",
+			"module": "sap/fe/core/controls/FileWrapper.js",
+			"size": 34591,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controls/FieldWrapper.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/macros/ResourceModel.js",
+				"sap/m/BusyDialog.js"
+			]
+		},
+		{
+			"name": "controls/FileWrapper.js",
+			"module": "sap/fe/core/controls/FileWrapper.js",
+			"size": 6669,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controls/FieldWrapper.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/macros/ResourceModel.js",
+				"sap/m/BusyDialog.js"
+			]
+		},
+		{
+			"name": "controls/FileWrapper.js.map",
+			"size": 9259,
+			"isDebug": true
+		},
+		{
+			"name": "controls/FileWrapper.ts",
+			"size": 7105
+		},
+		{
+			"name": "controls/FilterBar-dbg.js",
+			"module": "sap/fe/core/controls/FilterBar.js",
+			"size": 25245,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/controls/filterbar/FilterContainer.js",
+				"sap/fe/core/controls/filterbar/VisualFilterContainer.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/mdc/FilterBar.js",
+				"sap/ui/mdc/filterbar/aligned/FilterItemLayout.js"
+			]
+		},
+		{
+			"name": "controls/FilterBar.js",
+			"module": "sap/fe/core/controls/FilterBar.js",
+			"size": 4648,
+			"required": [
+				"sap/fe/core/controls/filterbar/FilterContainer.js",
+				"sap/fe/core/controls/filterbar/VisualFilterContainer.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/mdc/FilterBar.js",
+				"sap/ui/mdc/filterbar/aligned/FilterItemLayout.js"
+			]
+		},
+		{
+			"name": "controls/FilterBar.js.map",
+			"size": 6224,
+			"isDebug": true
+		},
+		{
+			"name": "controls/FilterBar.ts",
+			"size": 6066
+		},
+		{
+			"name": "controls/FormElementWrapper-dbg.js",
+			"module": "sap/fe/core/controls/FormElementWrapper.js",
+			"size": 10484,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/Control.js"
+			]
+		},
+		{
+			"name": "controls/FormElementWrapper.js",
+			"module": "sap/fe/core/controls/FormElementWrapper.js",
+			"size": 3083,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/Control.js"
+			]
+		},
+		{
+			"name": "controls/FormElementWrapper.js.map",
+			"size": 4164,
+			"isDebug": true
+		},
+		{
+			"name": "controls/FormElementWrapper.ts",
+			"size": 1622
+		},
+		{
+			"name": "controls/MassEditSelect-dbg.js",
+			"module": "sap/fe/core/controls/MassEditSelect.js",
+			"size": 3178,
+			"isDebug": true,
+			"required": [
+				"sap/m/Select.js",
+				"sap/m/SelectRenderer.js"
+			]
+		},
+		{
+			"name": "controls/MassEditSelect.js",
+			"module": "sap/fe/core/controls/MassEditSelect.js",
+			"size": 539,
+			"required": [
+				"sap/m/Select.js",
+				"sap/m/SelectRenderer.js"
+			]
+		},
+		{
+			"name": "controls/MassEditSelect.js.map",
+			"size": 625,
+			"isDebug": true
+		},
+		{
+			"name": "controls/MassEditSelect.ts",
+			"size": 905
+		},
+		{
+			"name": "controls/MultiValueParameterDelegate-dbg.js",
+			"module": "sap/fe/core/controls/MultiValueParameterDelegate.js",
+			"size": 6051,
+			"isDebug": true,
+			"required": [
+				"sap/ui/mdc/field/MultiValueFieldDelegate.js"
+			]
+		},
+		{
+			"name": "controls/MultiValueParameterDelegate.js",
+			"module": "sap/fe/core/controls/MultiValueParameterDelegate.js",
+			"size": 762,
+			"required": [
+				"sap/ui/mdc/field/MultiValueFieldDelegate.js"
+			]
+		},
+		{
+			"name": "controls/MultiValueParameterDelegate.js.map",
+			"size": 1350,
+			"isDebug": true
+		},
+		{
+			"name": "controls/MultiValueParameterDelegate.ts",
+			"size": 1368
+		},
+		{
+			"name": "controls/NonComputedVisibleKeyFieldsDialog.fragment.xml",
+			"module": "sap/fe/core/controls/NonComputedVisibleKeyFieldsDialog.fragment.xml",
+			"size": 4897,
+			"required": [
+				"sap/ui/layout/form/SimpleForm.js"
+			],
+			"condRequired": [
+				"sap/m/Label.js",
+				"sap/ui/mdc/Field.js",
+				"sap/ui/mdc/ValueHelp.js",
+				"sap/ui/mdc/field/FieldValueHelp.js",
+				"sap/ui/mdc/field/FieldValueHelpMTableWrapper.js",
+				"sap/ui/mdc/field/FieldValueHelpMdcTableWrapper.js",
+				"sap/ui/mdc/valuehelp/Dialog.js",
+				"sap/ui/mdc/valuehelp/Popover.js",
+				"sap/ui/mdc/valuehelp/content/MTable.js"
+			]
+		},
+		{
+			"name": "controls/filterbar/FilterContainer-dbg.js",
+			"module": "sap/fe/core/controls/filterbar/FilterContainer.js",
+			"size": 15460,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/mdc/filterbar/aligned/FilterContainer.js"
+			]
+		},
+		{
+			"name": "controls/filterbar/FilterContainer.js",
+			"module": "sap/fe/core/controls/filterbar/FilterContainer.js",
+			"size": 2544,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/mdc/filterbar/aligned/FilterContainer.js"
+			]
+		},
+		{
+			"name": "controls/filterbar/FilterContainer.js.map",
+			"size": 3679,
+			"isDebug": true
+		},
+		{
+			"name": "controls/filterbar/FilterContainer.ts",
+			"size": 3412
+		},
+		{
+			"name": "controls/filterbar/VisualFilter-dbg.js",
+			"module": "sap/fe/core/controls/filterbar/VisualFilter.js",
+			"size": 46722,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controls/filterbar/utils/VisualFilterUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/templating/FilterHelper.js",
+				"sap/fe/macros/CommonHelper.js",
+				"sap/fe/macros/filter/FilterUtils.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "controls/filterbar/VisualFilter.js",
+			"module": "sap/fe/core/controls/filterbar/VisualFilter.js",
+			"size": 7404,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controls/filterbar/utils/VisualFilterUtils.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/templating/FilterHelper.js",
+				"sap/fe/macros/CommonHelper.js",
+				"sap/fe/macros/filter/FilterUtils.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "controls/filterbar/VisualFilter.js.map",
+			"size": 9982,
+			"isDebug": true
+		},
+		{
+			"name": "controls/filterbar/VisualFilter.ts",
+			"size": 11257
+		},
+		{
+			"name": "controls/filterbar/VisualFilterContainer-dbg.js",
+			"module": "sap/fe/core/controls/filterbar/VisualFilterContainer.js",
+			"size": 19607,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/m/FlexBox.js",
+				"sap/m/HeaderContainer.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/library.js",
+				"sap/ui/mdc/filterbar/IFilterContainer.js"
+			]
+		},
+		{
+			"name": "controls/filterbar/VisualFilterContainer.js",
+			"module": "sap/fe/core/controls/filterbar/VisualFilterContainer.js",
+			"size": 3909,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/m/FlexBox.js",
+				"sap/m/HeaderContainer.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/library.js",
+				"sap/ui/mdc/filterbar/IFilterContainer.js"
+			]
+		},
+		{
+			"name": "controls/filterbar/VisualFilterContainer.js.map",
+			"size": 5863,
+			"isDebug": true
+		},
+		{
+			"name": "controls/filterbar/VisualFilterContainer.ts",
+			"size": 3987
+		},
+		{
+			"name": "controls/filterbar/utils/VisualFilterUtils-dbg.js",
+			"module": "sap/fe/core/controls/filterbar/utils/VisualFilterUtils.js",
+			"size": 48321,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/templating/FilterHelper.js",
+				"sap/ui/core/format/NumberFormat.js",
+				"sap/ui/mdc/condition/Condition.js",
+				"sap/ui/model/odata/type/DateTimeOffset.js"
+			]
+		},
+		{
+			"name": "controls/filterbar/utils/VisualFilterUtils.js",
+			"module": "sap/fe/core/controls/filterbar/utils/VisualFilterUtils.js",
+			"size": 4946,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/templating/FilterHelper.js",
+				"sap/ui/core/format/NumberFormat.js",
+				"sap/ui/mdc/condition/Condition.js",
+				"sap/ui/model/odata/type/DateTimeOffset.js"
+			]
+		},
+		{
+			"name": "controls/filterbar/utils/VisualFilterUtils.js.map",
+			"size": 7377,
+			"isDebug": true
+		},
+		{
+			"name": "controls/filterbar/utils/VisualFilterUtils.ts",
+			"size": 13166
+		},
+		{
+			"name": "controls/massEdit/MassEditDialog.fragment.xml",
+			"module": "sap/fe/core/controls/massEdit/MassEditDialog.fragment.xml",
+			"size": 1925,
+			"required": [
+				"sap/m/Text.js",
+				"sap/ui/layout/form/Form.js",
+				"sap/ui/layout/form/FormContainer.js",
+				"sap/ui/layout/form/ResponsiveGridLayout.js"
+			],
+			"condRequired": [
+				"sap/fe/core/controls/massEdit/MassEditField.fragment.xml",
+				"sap/ui/layout/form/FormElement.js"
+			]
+		},
+		{
+			"name": "controls/massEdit/MassEditField.fragment.xml",
+			"module": "sap/fe/core/controls/massEdit/MassEditField.fragment.xml",
+			"size": 4413,
+			"condRequired": [
+				"sap/fe/core/controls/MassEditSelect.js",
+				"sap/fe/core/controls/massEdit/MassEditHandlers.js",
+				"sap/m/ComboBox.js",
+				"sap/ui/core/Item.js",
+				"sap/ui/layout/GridData.js",
+				"sap/ui/mdc/Field.js"
+			]
+		},
+		{
+			"name": "controls/massEdit/MassEditHandlers-dbg.js",
+			"module": "sap/fe/core/controls/massEdit/MassEditHandlers.js",
+			"size": 83682,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/macros/internal/valuehelp/ValueListHelperNew.js",
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "controls/massEdit/MassEditHandlers.js",
+			"module": "sap/fe/core/controls/massEdit/MassEditHandlers.js",
+			"size": 9151,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/macros/internal/valuehelp/ValueListHelperNew.js",
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "controls/massEdit/MassEditHandlers.js.map",
+			"size": 12370,
+			"isDebug": true
+		},
+		{
+			"name": "controls/massEdit/MassEditHandlers.ts",
+			"size": 23131
+		},
+		{
+			"name": "converters/ConverterContext-dbg.js",
+			"module": "sap/fe/core/converters/ConverterContext.js",
+			"size": 55598,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/ManifestWrapper.js",
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/templating/DataModelPathHelper.js"
+			]
+		},
+		{
+			"name": "converters/ConverterContext.js",
+			"module": "sap/fe/core/converters/ConverterContext.js",
+			"size": 5766,
+			"required": [
+				"sap/fe/core/converters/ManifestWrapper.js",
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/templating/DataModelPathHelper.js"
+			]
+		},
+		{
+			"name": "converters/ConverterContext.js.map",
+			"size": 8127,
+			"isDebug": true
+		},
+		{
+			"name": "converters/ConverterContext.ts",
+			"size": 16095
+		},
+		{
+			"name": "converters/ManifestSettings-dbg.js",
+			"module": "sap/fe/core/converters/ManifestSettings.js",
+			"size": 21284,
+			"isDebug": true
+		},
+		{
+			"name": "converters/ManifestSettings.js",
+			"module": "sap/fe/core/converters/ManifestSettings.js",
+			"size": 1734
+		},
+		{
+			"name": "converters/ManifestSettings.js.map",
+			"size": 1760,
+			"isDebug": true
+		},
+		{
+			"name": "converters/ManifestSettings.ts",
+			"size": 11130
+		},
+		{
+			"name": "converters/ManifestWrapper-dbg.js",
+			"module": "sap/fe/core/converters/ManifestWrapper.js",
+			"size": 50232,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js"
+			]
+		},
+		{
+			"name": "converters/ManifestWrapper.js",
+			"module": "sap/fe/core/converters/ManifestWrapper.js",
+			"size": 6312,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js"
+			]
+		},
+		{
+			"name": "converters/ManifestWrapper.js.map",
+			"size": 8551,
+			"isDebug": true
+		},
+		{
+			"name": "converters/ManifestWrapper.ts",
+			"size": 13282
+		},
+		{
+			"name": "converters/MetaModelConverter-dbg.js",
+			"module": "sap/fe/core/converters/MetaModelConverter.js",
+			"size": 187446,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/common/AnnotationConverter.js",
+				"sap/fe/core/helpers/StableIdHelper.js"
+			]
+		},
+		{
+			"name": "converters/MetaModelConverter.js",
+			"module": "sap/fe/core/converters/MetaModelConverter.js",
+			"size": 22539,
+			"required": [
+				"sap/fe/core/converters/common/AnnotationConverter.js",
+				"sap/fe/core/helpers/StableIdHelper.js"
+			]
+		},
+		{
+			"name": "converters/MetaModelConverter.js.map",
+			"size": 33678,
+			"isDebug": true
+		},
+		{
+			"name": "converters/MetaModelConverter.ts",
+			"size": 47534
+		},
+		{
+			"name": "converters/TemplateConverter-dbg.js",
+			"module": "sap/fe/core/converters/TemplateConverter.js",
+			"size": 17686,
+			"isDebug": true,
+			"required": [
+				"sap/base/util/merge.js",
+				"sap/fe/core/converters/ConverterContext.js",
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/converters/templates/ListReportConverter.js",
+				"sap/fe/core/converters/templates/ObjectPageConverter.js"
+			]
+		},
+		{
+			"name": "converters/TemplateConverter.js",
+			"module": "sap/fe/core/converters/TemplateConverter.js",
+			"size": 2295,
+			"required": [
+				"sap/base/util/merge.js",
+				"sap/fe/core/converters/ConverterContext.js",
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/converters/templates/ListReportConverter.js",
+				"sap/fe/core/converters/templates/ObjectPageConverter.js"
+			]
+		},
+		{
+			"name": "converters/TemplateConverter.js.map",
+			"size": 3604,
+			"isDebug": true
+		},
+		{
+			"name": "converters/TemplateConverter.ts",
+			"size": 4706
+		},
+		{
+			"name": "converters/annotations/DataField-dbg.js",
+			"module": "sap/fe/core/converters/annotations/DataField.js",
+			"size": 64894,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/templating/DisplayModeFormatter.js",
+				"sap/fe/core/templating/PropertyHelper.js"
+			]
+		},
+		{
+			"name": "converters/annotations/DataField.js",
+			"module": "sap/fe/core/converters/annotations/DataField.js",
+			"size": 8280,
+			"required": [
+				"sap/fe/core/templating/DisplayModeFormatter.js",
+				"sap/fe/core/templating/PropertyHelper.js"
+			]
+		},
+		{
+			"name": "converters/annotations/DataField.js.map",
+			"size": 11730,
+			"isDebug": true
+		},
+		{
+			"name": "converters/annotations/DataField.ts",
+			"size": 17018
+		},
+		{
+			"name": "converters/common/AnnotationConverter-dbg.js",
+			"module": "sap/fe/core/converters/common/AnnotationConverter.js",
+			"size": 312598,
+			"isDebug": true
+		},
+		{
+			"name": "converters/common/AnnotationConverter.js",
+			"module": "sap/fe/core/converters/common/AnnotationConverter.js",
+			"size": 47614
+		},
+		{
+			"name": "converters/common/AnnotationConverter.js.map",
+			"size": 43448,
+			"isDebug": true
+		},
+		{
+			"name": "converters/controls/Common/Action-dbg.js",
+			"module": "sap/fe/core/converters/controls/Common/Action.js",
+			"size": 74090,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/helpers/BindingHelper.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/formatters/FPMFormatter.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/StableIdHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/Action.js",
+			"module": "sap/fe/core/converters/controls/Common/Action.js",
+			"size": 8910,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/helpers/BindingHelper.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/formatters/FPMFormatter.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/StableIdHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/Action.js.map",
+			"size": 14487,
+			"isDebug": true
+		},
+		{
+			"name": "converters/controls/Common/Action.ts",
+			"size": 20710
+		},
+		{
+			"name": "converters/controls/Common/Chart-dbg.js",
+			"module": "sap/fe/core/converters/controls/Common/Chart.js",
+			"size": 49017,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/annotations/DataField.js",
+				"sap/fe/core/converters/controls/Common/Action.js",
+				"sap/fe/core/converters/helpers/Aggregation.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/converters/helpers/Key.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/Chart.js",
+			"module": "sap/fe/core/converters/controls/Common/Chart.js",
+			"size": 7766,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/annotations/DataField.js",
+				"sap/fe/core/converters/controls/Common/Action.js",
+				"sap/fe/core/converters/helpers/Aggregation.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/converters/helpers/Key.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/Chart.js.map",
+			"size": 12298,
+			"isDebug": true
+		},
+		{
+			"name": "converters/controls/Common/Chart.ts",
+			"size": 11643
+		},
+		{
+			"name": "converters/controls/Common/Criticality-dbg.js",
+			"module": "sap/fe/core/converters/controls/Common/Criticality.js",
+			"size": 3997,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/formatters/TableFormatterTypes.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/Criticality.js",
+			"module": "sap/fe/core/converters/controls/Common/Criticality.js",
+			"size": 705,
+			"required": [
+				"sap/fe/core/formatters/TableFormatterTypes.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/Criticality.js.map",
+			"size": 671,
+			"isDebug": true
+		},
+		{
+			"name": "converters/controls/Common/Criticality.ts",
+			"size": 1113
+		},
+		{
+			"name": "converters/controls/Common/DataVisualization-dbg.js",
+			"module": "sap/fe/core/converters/controls/Common/DataVisualization.js",
+			"size": 41880,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/controls/Common/Chart.js",
+				"sap/fe/core/converters/controls/Common/Table.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/macros/CommonHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/DataVisualization.js",
+			"module": "sap/fe/core/converters/controls/Common/DataVisualization.js",
+			"size": 4931,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/controls/Common/Chart.js",
+				"sap/fe/core/converters/controls/Common/Table.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/macros/CommonHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/DataVisualization.js.map",
+			"size": 7361,
+			"isDebug": true
+		},
+		{
+			"name": "converters/controls/Common/DataVisualization.ts",
+			"size": 11635
+		},
+		{
+			"name": "converters/controls/Common/Form-dbg.js",
+			"module": "sap/fe/core/converters/controls/Common/Form.js",
+			"size": 44463,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/annotations/DataField.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/DataFieldHelper.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/converters/helpers/Key.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/StableIdHelper.js",
+				"sap/fe/core/templating/DataModelPathHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/Form.js",
+			"module": "sap/fe/core/converters/controls/Common/Form.js",
+			"size": 7210,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/annotations/DataField.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/DataFieldHelper.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/converters/helpers/Key.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/StableIdHelper.js",
+				"sap/fe/core/templating/DataModelPathHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/Form.js.map",
+			"size": 10067,
+			"isDebug": true
+		},
+		{
+			"name": "converters/controls/Common/Form.ts",
+			"size": 11532
+		},
+		{
+			"name": "converters/controls/Common/KPI-dbg.js",
+			"module": "sap/fe/core/converters/controls/Common/KPI.js",
+			"size": 70316,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/controls/Common/Criticality.js",
+				"sap/fe/core/converters/helpers/Aggregation.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/converters/helpers/SelectionVariantHelper.js",
+				"sap/fe/core/formatters/TableFormatterTypes.js",
+				"sap/fe/core/templating/PropertyHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/KPI.js",
+			"module": "sap/fe/core/converters/controls/Common/KPI.js",
+			"size": 9577,
+			"required": [
+				"sap/fe/core/converters/controls/Common/Criticality.js",
+				"sap/fe/core/converters/helpers/Aggregation.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/converters/helpers/SelectionVariantHelper.js",
+				"sap/fe/core/formatters/TableFormatterTypes.js",
+				"sap/fe/core/templating/PropertyHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/KPI.js.map",
+			"size": 12815,
+			"isDebug": true
+		},
+		{
+			"name": "converters/controls/Common/KPI.ts",
+			"size": 18997
+		},
+		{
+			"name": "converters/controls/Common/Table-dbg.js",
+			"module": "sap/fe/core/converters/controls/Common/Table.js",
+			"size": 471888,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/annotations/DataField.js",
+				"sap/fe/core/converters/controls/Common/Action.js",
+				"sap/fe/core/converters/controls/Common/Criticality.js",
+				"sap/fe/core/converters/controls/Common/table/StandardActions.js",
+				"sap/fe/core/converters/helpers/Aggregation.js",
+				"sap/fe/core/converters/helpers/BindingHelper.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/DataFieldHelper.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/converters/helpers/Key.js",
+				"sap/fe/core/formatters/TableFormatter.js",
+				"sap/fe/core/formatters/TableFormatterTypes.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/StableIdHelper.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/fe/core/templating/DisplayModeFormatter.js",
+				"sap/fe/core/templating/EntitySetHelper.js",
+				"sap/fe/core/templating/PropertyHelper.js",
+				"sap/fe/macros/internal/helpers/ActionHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/Table.js",
+			"module": "sap/fe/core/converters/controls/Common/Table.js",
+			"size": 55364,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/annotations/DataField.js",
+				"sap/fe/core/converters/controls/Common/Action.js",
+				"sap/fe/core/converters/controls/Common/Criticality.js",
+				"sap/fe/core/converters/controls/Common/table/StandardActions.js",
+				"sap/fe/core/converters/helpers/Aggregation.js",
+				"sap/fe/core/converters/helpers/BindingHelper.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/DataFieldHelper.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/converters/helpers/Key.js",
+				"sap/fe/core/formatters/TableFormatter.js",
+				"sap/fe/core/formatters/TableFormatterTypes.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/StableIdHelper.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/fe/core/templating/DisplayModeFormatter.js",
+				"sap/fe/core/templating/EntitySetHelper.js",
+				"sap/fe/core/templating/PropertyHelper.js",
+				"sap/fe/macros/internal/helpers/ActionHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/Table.js.map",
+			"size": 84806,
+			"isDebug": true
+		},
+		{
+			"name": "converters/controls/Common/Table.ts",
+			"size": 127491
+		},
+		{
+			"name": "converters/controls/Common/table/StandardActions-dbg.js",
+			"module": "sap/fe/core/converters/controls/Common/table/StandardActions.js",
+			"size": 90030,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/helpers/BindingHelper.js",
+				"sap/fe/core/formatters/TableFormatter.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/templating/DataModelPathHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/table/StandardActions.js",
+			"module": "sap/fe/core/converters/controls/Common/table/StandardActions.js",
+			"size": 8094,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/helpers/BindingHelper.js",
+				"sap/fe/core/formatters/TableFormatter.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/templating/DataModelPathHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/Common/table/StandardActions.js.map",
+			"size": 12905,
+			"isDebug": true
+		},
+		{
+			"name": "converters/controls/Common/table/StandardActions.ts",
+			"size": 26669
+		},
+		{
+			"name": "converters/controls/ListReport/FilterBar-dbg.js",
+			"module": "sap/fe/core/converters/controls/ListReport/FilterBar.js",
+			"size": 149060,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/controls/Common/DataVisualization.js",
+				"sap/fe/core/converters/controls/Common/Table.js",
+				"sap/fe/core/converters/controls/ListReport/VisualFilters.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/converters/helpers/Key.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/ModelHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/ListReport/FilterBar.js",
+			"module": "sap/fe/core/converters/controls/ListReport/FilterBar.js",
+			"size": 17505,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/controls/Common/DataVisualization.js",
+				"sap/fe/core/converters/controls/Common/Table.js",
+				"sap/fe/core/converters/controls/ListReport/VisualFilters.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/converters/helpers/Key.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/ModelHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/ListReport/FilterBar.js.map",
+			"size": 28146,
+			"isDebug": true
+		},
+		{
+			"name": "converters/controls/ListReport/FilterBar.ts",
+			"size": 38703
+		},
+		{
+			"name": "converters/controls/ListReport/VisualFilters-dbg.js",
+			"module": "sap/fe/core/converters/controls/ListReport/VisualFilters.js",
+			"size": 71001,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/helpers/Aggregation.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/fe/core/templating/FilterTemplating.js"
+			]
+		},
+		{
+			"name": "converters/controls/ListReport/VisualFilters.js",
+			"module": "sap/fe/core/converters/controls/ListReport/VisualFilters.js",
+			"size": 10764,
+			"required": [
+				"sap/fe/core/converters/helpers/Aggregation.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/fe/core/templating/FilterTemplating.js"
+			]
+		},
+		{
+			"name": "converters/controls/ListReport/VisualFilters.js.map",
+			"size": 16545,
+			"isDebug": true
+		},
+		{
+			"name": "converters/controls/ListReport/VisualFilters.ts",
+			"size": 15661
+		},
+		{
+			"name": "converters/controls/ObjectPage/Avatar-dbg.js",
+			"module": "sap/fe/core/converters/controls/ObjectPage/Avatar.js",
+			"size": 9543,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/BindingToolkit.js"
+			]
+		},
+		{
+			"name": "converters/controls/ObjectPage/Avatar.js",
+			"module": "sap/fe/core/converters/controls/ObjectPage/Avatar.js",
+			"size": 1485,
+			"required": [
+				"sap/fe/core/helpers/BindingToolkit.js"
+			]
+		},
+		{
+			"name": "converters/controls/ObjectPage/Avatar.js.map",
+			"size": 2171,
+			"isDebug": true
+		},
+		{
+			"name": "converters/controls/ObjectPage/Avatar.ts",
+			"size": 2284
+		},
+		{
+			"name": "converters/controls/ObjectPage/HeaderFacet-dbg.js",
+			"module": "sap/fe/core/converters/controls/ObjectPage/HeaderFacet.js",
+			"size": 79434,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/annotations/DataField.js",
+				"sap/fe/core/converters/controls/Common/Form.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/DataFieldHelper.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/converters/helpers/Key.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/StableIdHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/ObjectPage/HeaderFacet.js",
+			"module": "sap/fe/core/converters/controls/ObjectPage/HeaderFacet.js",
+			"size": 10976,
+			"required": [
+				"sap/fe/core/converters/annotations/DataField.js",
+				"sap/fe/core/converters/controls/Common/Form.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/DataFieldHelper.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/converters/helpers/Key.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/StableIdHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/ObjectPage/HeaderFacet.js.map",
+			"size": 15975,
+			"isDebug": true
+		},
+		{
+			"name": "converters/controls/ObjectPage/HeaderFacet.ts",
+			"size": 20633
+		},
+		{
+			"name": "converters/controls/ObjectPage/SubSection-dbg.js",
+			"module": "sap/fe/core/converters/controls/ObjectPage/SubSection.js",
+			"size": 113999,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/controls/Common/Action.js",
+				"sap/fe/core/converters/controls/Common/DataVisualization.js",
+				"sap/fe/core/converters/controls/Common/Form.js",
+				"sap/fe/core/converters/controls/ObjectPage/HeaderFacet.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/converters/helpers/Key.js",
+				"sap/fe/core/converters/objectPage/FormMenuActions.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/templating/PropertyHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/ObjectPage/SubSection.js",
+			"module": "sap/fe/core/converters/controls/ObjectPage/SubSection.js",
+			"size": 16158,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/controls/Common/Action.js",
+				"sap/fe/core/converters/controls/Common/DataVisualization.js",
+				"sap/fe/core/converters/controls/Common/Form.js",
+				"sap/fe/core/converters/controls/ObjectPage/HeaderFacet.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/converters/helpers/Key.js",
+				"sap/fe/core/converters/objectPage/FormMenuActions.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/templating/PropertyHelper.js"
+			]
+		},
+		{
+			"name": "converters/controls/ObjectPage/SubSection.js.map",
+			"size": 24086,
+			"isDebug": true
+		},
+		{
+			"name": "converters/controls/ObjectPage/SubSection.ts",
+			"size": 29714
+		},
+		{
+			"name": "converters/helpers/Aggregation-dbg.js",
+			"module": "sap/fe/core/converters/helpers/Aggregation.js",
+			"size": 37753,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ModelHelper.js"
+			]
+		},
+		{
+			"name": "converters/helpers/Aggregation.js",
+			"module": "sap/fe/core/converters/helpers/Aggregation.js",
+			"size": 5317,
+			"required": [
+				"sap/fe/core/helpers/ModelHelper.js"
+			]
+		},
+		{
+			"name": "converters/helpers/Aggregation.js.map",
+			"size": 6676,
+			"isDebug": true
+		},
+		{
+			"name": "converters/helpers/Aggregation.ts",
+			"size": 10286
+		},
+		{
+			"name": "converters/helpers/BindingHelper-dbg.js",
+			"module": "sap/fe/core/converters/helpers/BindingHelper.js",
+			"size": 14051,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/BindingToolkit.js"
+			]
+		},
+		{
+			"name": "converters/helpers/BindingHelper.js",
+			"module": "sap/fe/core/converters/helpers/BindingHelper.js",
+			"size": 1494,
+			"required": [
+				"sap/fe/core/helpers/BindingToolkit.js"
+			]
+		},
+		{
+			"name": "converters/helpers/BindingHelper.js.map",
+			"size": 2269,
+			"isDebug": true
+		},
+		{
+			"name": "converters/helpers/BindingHelper.ts",
+			"size": 3993
+		},
+		{
+			"name": "converters/helpers/ConfigurableObject-dbg.js",
+			"module": "sap/fe/core/converters/helpers/ConfigurableObject.js",
+			"size": 29906,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js"
+			]
+		},
+		{
+			"name": "converters/helpers/ConfigurableObject.js",
+			"module": "sap/fe/core/converters/helpers/ConfigurableObject.js",
+			"size": 2476,
+			"required": [
+				"sap/base/Log.js"
+			]
+		},
+		{
+			"name": "converters/helpers/ConfigurableObject.js.map",
+			"size": 4494,
+			"isDebug": true
+		},
+		{
+			"name": "converters/helpers/ConfigurableObject.ts",
+			"size": 8553
+		},
+		{
+			"name": "converters/helpers/DataFieldHelper-dbg.js",
+			"module": "sap/fe/core/converters/helpers/DataFieldHelper.js",
+			"size": 31835,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js"
+			]
+		},
+		{
+			"name": "converters/helpers/DataFieldHelper.js",
+			"module": "sap/fe/core/converters/helpers/DataFieldHelper.js",
+			"size": 6370,
+			"required": [
+				"sap/base/Log.js"
+			]
+		},
+		{
+			"name": "converters/helpers/DataFieldHelper.js.map",
+			"size": 7594,
+			"isDebug": true
+		},
+		{
+			"name": "converters/helpers/DataFieldHelper.ts",
+			"size": 6284
+		},
+		{
+			"name": "converters/helpers/ID-dbg.js",
+			"module": "sap/fe/core/converters/helpers/ID.js",
+			"size": 11128,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/StableIdHelper.js"
+			]
+		},
+		{
+			"name": "converters/helpers/ID.js",
+			"module": "sap/fe/core/converters/helpers/ID.js",
+			"size": 1755,
+			"required": [
+				"sap/fe/core/helpers/StableIdHelper.js"
+			]
+		},
+		{
+			"name": "converters/helpers/ID.js.map",
+			"size": 2564,
+			"isDebug": true
+		},
+		{
+			"name": "converters/helpers/ID.ts",
+			"size": 2597
+		},
+		{
+			"name": "converters/helpers/IssueManager-dbg.js",
+			"module": "sap/fe/core/converters/helpers/IssueManager.js",
+			"size": 7172,
+			"isDebug": true
+		},
+		{
+			"name": "converters/helpers/IssueManager.js",
+			"module": "sap/fe/core/converters/helpers/IssueManager.js",
+			"size": 1945
+		},
+		{
+			"name": "converters/helpers/IssueManager.js.map",
+			"size": 1415,
+			"isDebug": true
+		},
+		{
+			"name": "converters/helpers/IssueManager.ts",
+			"size": 1743
+		},
+		{
+			"name": "converters/helpers/Key-dbg.js",
+			"module": "sap/fe/core/converters/helpers/Key.js",
+			"size": 5841,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/StableIdHelper.js"
+			]
+		},
+		{
+			"name": "converters/helpers/Key.js",
+			"module": "sap/fe/core/converters/helpers/Key.js",
+			"size": 715,
+			"required": [
+				"sap/fe/core/helpers/StableIdHelper.js"
+			]
+		},
+		{
+			"name": "converters/helpers/Key.js.map",
+			"size": 910,
+			"isDebug": true
+		},
+		{
+			"name": "converters/helpers/Key.ts",
+			"size": 1591
+		},
+		{
+			"name": "converters/helpers/SelectionVariantHelper-dbg.js",
+			"module": "sap/fe/core/converters/helpers/SelectionVariantHelper.js",
+			"size": 10191,
+			"isDebug": true
+		},
+		{
+			"name": "converters/helpers/SelectionVariantHelper.js",
+			"module": "sap/fe/core/converters/helpers/SelectionVariantHelper.js",
+			"size": 1489
+		},
+		{
+			"name": "converters/helpers/SelectionVariantHelper.js.map",
+			"size": 1706,
+			"isDebug": true
+		},
+		{
+			"name": "converters/helpers/SelectionVariantHelper.ts",
+			"size": 2697
+		},
+		{
+			"name": "converters/objectPage/FormMenuActions-dbg.js",
+			"module": "sap/fe/core/converters/objectPage/FormMenuActions.js",
+			"size": 26707,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/helpers/Key.js"
+			]
+		},
+		{
+			"name": "converters/objectPage/FormMenuActions.js",
+			"module": "sap/fe/core/converters/objectPage/FormMenuActions.js",
+			"size": 3969,
+			"required": [
+				"sap/fe/core/converters/helpers/Key.js"
+			]
+		},
+		{
+			"name": "converters/objectPage/FormMenuActions.js.map",
+			"size": 5719,
+			"isDebug": true
+		},
+		{
+			"name": "converters/objectPage/FormMenuActions.ts",
+			"size": 6072
+		},
+		{
+			"name": "converters/objectPage/HeaderAndFooterAction-dbg.js",
+			"module": "sap/fe/core/converters/objectPage/HeaderAndFooterAction.js",
+			"size": 77237,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/controls/Common/Action.js",
+				"sap/fe/core/converters/helpers/BindingHelper.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/Key.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/templating/DataModelPathHelper.js"
+			]
+		},
+		{
+			"name": "converters/objectPage/HeaderAndFooterAction.js",
+			"module": "sap/fe/core/converters/objectPage/HeaderAndFooterAction.js",
+			"size": 9605,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/controls/Common/Action.js",
+				"sap/fe/core/converters/helpers/BindingHelper.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/Key.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/templating/DataModelPathHelper.js"
+			]
+		},
+		{
+			"name": "converters/objectPage/HeaderAndFooterAction.js.map",
+			"size": 14586,
+			"isDebug": true
+		},
+		{
+			"name": "converters/objectPage/HeaderAndFooterAction.ts",
+			"size": 19265
+		},
+		{
+			"name": "converters/templates/ListReportConverter-dbg.js",
+			"module": "sap/fe/core/converters/templates/ListReportConverter.js",
+			"size": 95379,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/controls/Common/Action.js",
+				"sap/fe/core/converters/controls/Common/DataVisualization.js",
+				"sap/fe/core/converters/controls/Common/KPI.js",
+				"sap/fe/core/converters/controls/ListReport/FilterBar.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/helpers/BindingToolkit.js"
+			]
+		},
+		{
+			"name": "converters/templates/ListReportConverter.js",
+			"module": "sap/fe/core/converters/templates/ListReportConverter.js",
+			"size": 11030,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/controls/Common/Action.js",
+				"sap/fe/core/converters/controls/Common/DataVisualization.js",
+				"sap/fe/core/converters/controls/Common/KPI.js",
+				"sap/fe/core/converters/controls/ListReport/FilterBar.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/helpers/BindingToolkit.js"
+			]
+		},
+		{
+			"name": "converters/templates/ListReportConverter.js.map",
+			"size": 17356,
+			"isDebug": true
+		},
+		{
+			"name": "converters/templates/ListReportConverter.ts",
+			"size": 27496
+		},
+		{
+			"name": "converters/templates/ObjectPageConverter-dbg.js",
+			"module": "sap/fe/core/converters/templates/ObjectPageConverter.js",
+			"size": 81209,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/controls/Common/Action.js",
+				"sap/fe/core/converters/controls/ObjectPage/Avatar.js",
+				"sap/fe/core/converters/controls/ObjectPage/HeaderFacet.js",
+				"sap/fe/core/converters/controls/ObjectPage/SubSection.js",
+				"sap/fe/core/converters/helpers/BindingHelper.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/converters/objectPage/HeaderAndFooterAction.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/templates/ObjectPage/ObjectPageTemplating.js"
+			]
+		},
+		{
+			"name": "converters/templates/ObjectPageConverter.js",
+			"module": "sap/fe/core/converters/templates/ObjectPageConverter.js",
+			"size": 9600,
+			"required": [
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/controls/Common/Action.js",
+				"sap/fe/core/converters/controls/ObjectPage/Avatar.js",
+				"sap/fe/core/converters/controls/ObjectPage/HeaderFacet.js",
+				"sap/fe/core/converters/controls/ObjectPage/SubSection.js",
+				"sap/fe/core/converters/helpers/BindingHelper.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/converters/objectPage/HeaderAndFooterAction.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/templates/ObjectPage/ObjectPageTemplating.js"
+			]
+		},
+		{
+			"name": "converters/templates/ObjectPageConverter.js.map",
+			"size": 15399,
+			"isDebug": true
+		},
+		{
+			"name": "converters/templates/ObjectPageConverter.ts",
+			"size": 22383
+		},
+		{
+			"name": "designtime/AppComponent-dbg.designtime.js",
+			"module": "sap/fe/core/designtime/AppComponent.designtime.js",
+			"size": 12660,
+			"isDebug": true,
+			"designtime": true
+		},
+		{
+			"name": "designtime/AppComponent.designtime.js",
+			"module": "sap/fe/core/designtime/AppComponent.designtime.js",
+			"size": 1999,
+			"designtime": true
+		},
+		{
+			"name": "designtime/AppComponent.designtime.js.map",
+			"size": 1895,
+			"isDebug": true,
+			"designtime": true
+		},
+		{
+			"name": "designtime/AppComponent.designtime.ts",
+			"size": 3237,
+			"designtime": true
+		},
+		{
+			"name": "designtime/library-preload.designtime.js",
+			"module": "sap/fe/core/designtime/library-preload.designtime.js",
+			"size": 2123,
+			"merged": true,
+			"designtime": true,
+			"included": [
+				"sap/fe/core/designtime/AppComponent.designtime.js"
+			]
+		},
+		{
+			"name": "designtime/library-preload.designtime.js.map",
+			"size": 1985,
+			"isDebug": true,
+			"designtime": true
+		},
+		{
+			"name": "formatters/CollaborationFormatter-dbg.js",
+			"module": "sap/fe/core/formatters/CollaborationFormatter.js",
+			"size": 10665,
+			"isDebug": true
+		},
+		{
+			"name": "formatters/CollaborationFormatter.js",
+			"module": "sap/fe/core/formatters/CollaborationFormatter.js",
+			"size": 1855
+		},
+		{
+			"name": "formatters/CollaborationFormatter.js.map",
+			"size": 2624,
+			"isDebug": true
+		},
+		{
+			"name": "formatters/CollaborationFormatter.ts",
+			"size": 2413
+		},
+		{
+			"name": "formatters/FPMFormatter-dbg.js",
+			"module": "sap/fe/core/formatters/FPMFormatter.js",
+			"size": 5369,
+			"isDebug": true,
+			"dynRequired": true
+		},
+		{
+			"name": "formatters/FPMFormatter.js",
+			"module": "sap/fe/core/formatters/FPMFormatter.js",
+			"size": 733,
+			"dynRequired": true
+		},
+		{
+			"name": "formatters/FPMFormatter.js.map",
+			"size": 1175,
+			"isDebug": true
+		},
+		{
+			"name": "formatters/FPMFormatter.ts",
+			"size": 1361
+		},
+		{
+			"name": "formatters/KPIFormatter-dbg.js",
+			"module": "sap/fe/core/formatters/KPIFormatter.js",
+			"size": 10587,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "formatters/KPIFormatter.js",
+			"module": "sap/fe/core/formatters/KPIFormatter.js",
+			"size": 1150,
+			"required": [
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "formatters/KPIFormatter.js.map",
+			"size": 1623,
+			"isDebug": true
+		},
+		{
+			"name": "formatters/KPIFormatter.ts",
+			"size": 3138
+		},
+		{
+			"name": "formatters/StandardFormatter-dbg.js",
+			"module": "sap/fe/core/formatters/StandardFormatter.js",
+			"size": 9862,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/controls/Any.js",
+				"sap/fe/core/helpers/BindingToolkit.js"
+			]
+		},
+		{
+			"name": "formatters/StandardFormatter.js",
+			"module": "sap/fe/core/formatters/StandardFormatter.js",
+			"size": 1431,
+			"required": [
+				"sap/fe/core/controls/Any.js",
+				"sap/fe/core/helpers/BindingToolkit.js"
+			]
+		},
+		{
+			"name": "formatters/StandardFormatter.js.map",
+			"size": 2242,
+			"isDebug": true
+		},
+		{
+			"name": "formatters/StandardFormatter.ts",
+			"size": 2439
+		},
+		{
+			"name": "formatters/TableFormatter-dbg.js",
+			"module": "sap/fe/core/formatters/TableFormatter.js",
+			"size": 27358,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/formatters/TableFormatterTypes.js"
+			]
+		},
+		{
+			"name": "formatters/TableFormatter.js",
+			"module": "sap/fe/core/formatters/TableFormatter.js",
+			"size": 3141,
+			"required": [
+				"sap/fe/core/formatters/TableFormatterTypes.js"
+			]
+		},
+		{
+			"name": "formatters/TableFormatter.js.map",
+			"size": 4428,
+			"isDebug": true
+		},
+		{
+			"name": "formatters/TableFormatter.ts",
+			"size": 7453
+		},
+		{
+			"name": "formatters/TableFormatterTypes-dbg.js",
+			"module": "sap/fe/core/formatters/TableFormatterTypes.js",
+			"size": 1177,
+			"isDebug": true
+		},
+		{
+			"name": "formatters/TableFormatterTypes.js",
+			"module": "sap/fe/core/formatters/TableFormatterTypes.js",
+			"size": 393
+		},
+		{
+			"name": "formatters/TableFormatterTypes.js.map",
+			"size": 396,
+			"isDebug": true
+		},
+		{
+			"name": "formatters/TableFormatterTypes.ts",
+			"size": 135
+		},
+		{
+			"name": "formatters/ValueFormatter-dbg.js",
+			"module": "sap/fe/core/formatters/ValueFormatter.js",
+			"size": 26757,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Core.js",
+				"sap/ui/core/format/DateFormat.js"
+			]
+		},
+		{
+			"name": "formatters/ValueFormatter.js",
+			"module": "sap/fe/core/formatters/ValueFormatter.js",
+			"size": 4139,
+			"required": [
+				"sap/ui/core/Core.js",
+				"sap/ui/core/format/DateFormat.js"
+			]
+		},
+		{
+			"name": "formatters/ValueFormatter.js.map",
+			"size": 4757,
+			"isDebug": true
+		},
+		{
+			"name": "formatters/ValueFormatter.ts",
+			"size": 6979
+		},
+		{
+			"name": "fpm/Component-dbg.js",
+			"module": "sap/fe/core/fpm/Component.js",
+			"size": 8944,
+			"isDebug": true,
+			"required": [
+				"sap/f/library.js",
+				"sap/fe/core/TemplateComponent.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/macros/library.js",
+				"sap/m/library.js",
+				"sap/ui/core/library.js",
+				"sap/ui/fl/library.js",
+				"sap/ui/layout/library.js",
+				"sap/ui/mdc/library.js"
+			]
+		},
+		{
+			"name": "fpm/Component.js",
+			"module": "sap/fe/core/fpm/Component.js",
+			"size": 2185,
+			"required": [
+				"sap/f/library.js",
+				"sap/fe/core/TemplateComponent.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/macros/library.js",
+				"sap/m/library.js",
+				"sap/ui/core/library.js",
+				"sap/ui/fl/library.js",
+				"sap/ui/layout/library.js",
+				"sap/ui/mdc/library.js"
+			]
+		},
+		{
+			"name": "fpm/Component.js.map",
+			"size": 3086,
+			"isDebug": true
+		},
+		{
+			"name": "fpm/Component.ts",
+			"size": 1747
+		},
+		{
+			"name": "fpm/manifest.json",
+			"module": "sap/fe/core/fpm/manifest.json",
+			"size": 1302
+		},
+		{
+			"name": "helpers/AnnotationEnum-dbg.js",
+			"module": "sap/fe/core/helpers/AnnotationEnum.js",
+			"size": 4083,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/AnnotationEnum.js",
+			"module": "sap/fe/core/helpers/AnnotationEnum.js",
+			"size": 1555
+		},
+		{
+			"name": "helpers/AnnotationEnum.js.map",
+			"size": 2392,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/AnnotationEnum.ts",
+			"size": 441
+		},
+		{
+			"name": "helpers/AppStartupHelper-dbg.js",
+			"module": "sap/fe/core/helpers/AppStartupHelper.js",
+			"size": 52107,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js"
+			]
+		},
+		{
+			"name": "helpers/AppStartupHelper.js",
+			"module": "sap/fe/core/helpers/AppStartupHelper.js",
+			"size": 4920,
+			"required": [
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js"
+			]
+		},
+		{
+			"name": "helpers/AppStartupHelper.js.map",
+			"size": 7091,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/AppStartupHelper.ts",
+			"size": 15053
+		},
+		{
+			"name": "helpers/BindingToolkit-dbg.js",
+			"module": "sap/fe/core/helpers/BindingToolkit.js",
+			"size": 231077,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/AnnotationEnum.js"
+			]
+		},
+		{
+			"name": "helpers/BindingToolkit.js",
+			"module": "sap/fe/core/helpers/BindingToolkit.js",
+			"size": 23384,
+			"required": [
+				"sap/fe/core/helpers/AnnotationEnum.js"
+			]
+		},
+		{
+			"name": "helpers/BindingToolkit.js.map",
+			"size": 35186,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/BindingToolkit.ts",
+			"size": 69457
+		},
+		{
+			"name": "helpers/ClassSupport-dbg.js",
+			"module": "sap/fe/core/helpers/ClassSupport.js",
+			"size": 55005,
+			"isDebug": true,
+			"required": [
+				"sap/base/util/ObjectPath.js",
+				"sap/base/util/merge.js",
+				"sap/base/util/uid.js",
+				"sap/ui/base/Metadata.js",
+				"sap/ui/core/mvc/ControllerMetadata.js"
+			]
+		},
+		{
+			"name": "helpers/ClassSupport.js",
+			"module": "sap/fe/core/helpers/ClassSupport.js",
+			"size": 5416,
+			"required": [
+				"sap/base/util/ObjectPath.js",
+				"sap/base/util/merge.js",
+				"sap/base/util/uid.js",
+				"sap/ui/base/Metadata.js",
+				"sap/ui/core/mvc/ControllerMetadata.js"
+			]
+		},
+		{
+			"name": "helpers/ClassSupport.js.map",
+			"size": 8472,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/ClassSupport.ts",
+			"size": 15907
+		},
+		{
+			"name": "helpers/DynamicAnnotationPathHelper-dbg.js",
+			"module": "sap/fe/core/helpers/DynamicAnnotationPathHelper.js",
+			"size": 7398,
+			"isDebug": true,
+			"required": [
+				"sap/ui/base/BindingParser.js"
+			]
+		},
+		{
+			"name": "helpers/DynamicAnnotationPathHelper.js",
+			"module": "sap/fe/core/helpers/DynamicAnnotationPathHelper.js",
+			"size": 872,
+			"required": [
+				"sap/ui/base/BindingParser.js"
+			]
+		},
+		{
+			"name": "helpers/DynamicAnnotationPathHelper.js.map",
+			"size": 1548,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/DynamicAnnotationPathHelper.ts",
+			"size": 1641
+		},
+		{
+			"name": "helpers/EditState-dbg.js",
+			"module": "sap/fe/core/helpers/EditState.js",
+			"size": 6359,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/EditState.js",
+			"module": "sap/fe/core/helpers/EditState.js",
+			"size": 502
+		},
+		{
+			"name": "helpers/EditState.js.map",
+			"size": 645,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/EditState.ts",
+			"size": 1840
+		},
+		{
+			"name": "helpers/ExcelFormatHelper-dbg.js",
+			"module": "sap/fe/core/helpers/ExcelFormatHelper.js",
+			"size": 6862,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/format/DateFormat.js"
+			]
+		},
+		{
+			"name": "helpers/ExcelFormatHelper.js",
+			"module": "sap/fe/core/helpers/ExcelFormatHelper.js",
+			"size": 809,
+			"required": [
+				"sap/ui/core/format/DateFormat.js"
+			]
+		},
+		{
+			"name": "helpers/ExcelFormatHelper.js.map",
+			"size": 1098,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/ExcelFormatHelper.ts",
+			"size": 1811
+		},
+		{
+			"name": "helpers/FPMHelper-dbg.js",
+			"module": "sap/fe/core/helpers/FPMHelper.js",
+			"size": 9759,
+			"isDebug": true,
+			"required": [
+				"sap/base/util/ObjectPath.js",
+				"sap/fe/core/CommonUtils.js"
+			],
+			"dynRequired": true
+		},
+		{
+			"name": "helpers/FPMHelper.js",
+			"module": "sap/fe/core/helpers/FPMHelper.js",
+			"size": 1184,
+			"required": [
+				"sap/base/util/ObjectPath.js",
+				"sap/fe/core/CommonUtils.js"
+			],
+			"dynRequired": true
+		},
+		{
+			"name": "helpers/FPMHelper.js.map",
+			"size": 1588,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/FPMHelper.ts",
+			"size": 2643
+		},
+		{
+			"name": "helpers/KeepAliveHelper-dbg.js",
+			"module": "sap/fe/core/helpers/KeepAliveHelper.js",
+			"size": 27288,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/helpers/KeepAliveRefreshTypes.js",
+				"sap/fe/core/helpers/ModelHelper.js"
+			]
+		},
+		{
+			"name": "helpers/KeepAliveHelper.js",
+			"module": "sap/fe/core/helpers/KeepAliveHelper.js",
+			"size": 2737,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/helpers/KeepAliveRefreshTypes.js",
+				"sap/fe/core/helpers/ModelHelper.js"
+			]
+		},
+		{
+			"name": "helpers/KeepAliveHelper.js.map",
+			"size": 4289,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/KeepAliveHelper.ts",
+			"size": 7721
+		},
+		{
+			"name": "helpers/KeepAliveRefreshTypes-dbg.js",
+			"module": "sap/fe/core/helpers/KeepAliveRefreshTypes.js",
+			"size": 2478,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/KeepAliveRefreshTypes.js",
+			"module": "sap/fe/core/helpers/KeepAliveRefreshTypes.js",
+			"size": 409
+		},
+		{
+			"name": "helpers/KeepAliveRefreshTypes.js.map",
+			"size": 419,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/KeepAliveRefreshTypes.ts",
+			"size": 815
+		},
+		{
+			"name": "helpers/LRMessageStrip-dbg.js",
+			"module": "sap/fe/core/helpers/LRMessageStrip.js",
+			"size": 30023,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Core.js",
+				"sap/ui/core/message/Message.js"
+			]
+		},
+		{
+			"name": "helpers/LRMessageStrip.js",
+			"module": "sap/fe/core/helpers/LRMessageStrip.js",
+			"size": 3721,
+			"required": [
+				"sap/ui/core/Core.js",
+				"sap/ui/core/message/Message.js"
+			]
+		},
+		{
+			"name": "helpers/LRMessageStrip.js.map",
+			"size": 4758,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/LRMessageStrip.ts",
+			"size": 8266
+		},
+		{
+			"name": "helpers/LoaderUtils-dbg.js",
+			"module": "sap/fe/core/helpers/LoaderUtils.js",
+			"size": 2437,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/LoaderUtils.js",
+			"module": "sap/fe/core/helpers/LoaderUtils.js",
+			"size": 508
+		},
+		{
+			"name": "helpers/LoaderUtils.js.map",
+			"size": 773,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/LoaderUtils.ts",
+			"size": 386
+		},
+		{
+			"name": "helpers/MassEditHelper-dbg.js",
+			"module": "sap/fe/core/helpers/MassEditHelper.js",
+			"size": 221547,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/TemplateModel.js",
+				"sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+				"sap/fe/core/controls/Any.js",
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/SideEffectsHelper.js",
+				"sap/fe/core/library.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/fe/core/templating/FieldControlHelper.js",
+				"sap/fe/core/templating/PropertyHelper.js",
+				"sap/fe/core/templating/UIFormatters.js",
+				"sap/fe/macros/field/FieldHelper.js",
+				"sap/fe/macros/field/FieldTemplating.js",
+				"sap/fe/macros/table/TableHelper.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/MessageToast.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/XMLTemplateProcessor.js",
+				"sap/ui/core/util/XMLPreprocessor.js",
+				"sap/ui/mdc/enum/EditMode.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "helpers/MassEditHelper.js",
+			"module": "sap/fe/core/helpers/MassEditHelper.js",
+			"size": 24375,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/TemplateModel.js",
+				"sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+				"sap/fe/core/controls/Any.js",
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/SideEffectsHelper.js",
+				"sap/fe/core/library.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/fe/core/templating/FieldControlHelper.js",
+				"sap/fe/core/templating/PropertyHelper.js",
+				"sap/fe/core/templating/UIFormatters.js",
+				"sap/fe/macros/field/FieldHelper.js",
+				"sap/fe/macros/field/FieldTemplating.js",
+				"sap/fe/macros/table/TableHelper.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/MessageToast.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/XMLTemplateProcessor.js",
+				"sap/ui/core/util/XMLPreprocessor.js",
+				"sap/ui/mdc/enum/EditMode.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "helpers/MassEditHelper.js.map",
+			"size": 37067,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/MassEditHelper.ts",
+			"size": 56970
+		},
+		{
+			"name": "helpers/MessageStrip-dbg.js",
+			"module": "sap/fe/core/helpers/MessageStrip.js",
+			"size": 11794,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/macros/DelegateUtil.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "helpers/MessageStrip.js",
+			"module": "sap/fe/core/helpers/MessageStrip.js",
+			"size": 1601,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/macros/DelegateUtil.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Core.js"
+			]
+		},
+		{
+			"name": "helpers/MessageStrip.js.map",
+			"size": 2240,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/MessageStrip.ts",
+			"size": 3173
+		},
+		{
+			"name": "helpers/ModelHelper-dbg.js",
+			"module": "sap/fe/core/helpers/ModelHelper.js",
+			"size": 66346,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/MetaModelConverter.js"
+			]
+		},
+		{
+			"name": "helpers/ModelHelper.js",
+			"module": "sap/fe/core/helpers/ModelHelper.js",
+			"size": 7028,
+			"required": [
+				"sap/fe/core/converters/MetaModelConverter.js"
+			]
+		},
+		{
+			"name": "helpers/ModelHelper.js.map",
+			"size": 10630,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/ModelHelper.ts",
+			"size": 18180
+		},
+		{
+			"name": "helpers/PasteHelper-dbg.js",
+			"module": "sap/fe/core/helpers/PasteHelper.js",
+			"size": 32961,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/MessageBox.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/util/PasteHelper.js"
+			]
+		},
+		{
+			"name": "helpers/PasteHelper.js",
+			"module": "sap/fe/core/helpers/PasteHelper.js",
+			"size": 4842,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/MessageBox.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/util/PasteHelper.js"
+			]
+		},
+		{
+			"name": "helpers/PasteHelper.js.map",
+			"size": 7470,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/PasteHelper.ts",
+			"size": 7707
+		},
+		{
+			"name": "helpers/SemanticDateOperators-dbg.js",
+			"module": "sap/fe/core/helpers/SemanticDateOperators.js",
+			"size": 40457,
+			"isDebug": true,
+			"required": [
+				"sap/ui/mdc/condition/FilterOperatorUtil.js",
+				"sap/ui/mdc/condition/Operator.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ui/model/ValidateException.js"
+			]
+		},
+		{
+			"name": "helpers/SemanticDateOperators.js",
+			"module": "sap/fe/core/helpers/SemanticDateOperators.js",
+			"size": 4878,
+			"required": [
+				"sap/ui/mdc/condition/FilterOperatorUtil.js",
+				"sap/ui/mdc/condition/Operator.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ui/model/ValidateException.js"
+			]
+		},
+		{
+			"name": "helpers/SemanticDateOperators.js.map",
+			"size": 7270,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/SemanticDateOperators.ts",
+			"size": 9975
+		},
+		{
+			"name": "helpers/SemanticKeyHelper-dbg.js",
+			"module": "sap/fe/core/helpers/SemanticKeyHelper.js",
+			"size": 10957,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js"
+			]
+		},
+		{
+			"name": "helpers/SemanticKeyHelper.js",
+			"module": "sap/fe/core/helpers/SemanticKeyHelper.js",
+			"size": 1495,
+			"required": [
+				"sap/base/Log.js"
+			]
+		},
+		{
+			"name": "helpers/SemanticKeyHelper.js.map",
+			"size": 2092,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/SemanticKeyHelper.ts",
+			"size": 2789
+		},
+		{
+			"name": "helpers/SideEffectsHelper-dbg.js",
+			"module": "sap/fe/core/helpers/SideEffectsHelper.js",
+			"size": 24241,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/SideEffectsHelper.js",
+			"module": "sap/fe/core/helpers/SideEffectsHelper.js",
+			"size": 2289
+		},
+		{
+			"name": "helpers/SideEffectsHelper.js.map",
+			"size": 3792,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/SideEffectsHelper.ts",
+			"size": 6128
+		},
+		{
+			"name": "helpers/StableIdHelper-dbg.js",
+			"module": "sap/fe/core/helpers/StableIdHelper.js",
+			"size": 31217,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/StableIdHelper.js",
+			"module": "sap/fe/core/helpers/StableIdHelper.js",
+			"size": 3902
+		},
+		{
+			"name": "helpers/StableIdHelper.js.map",
+			"size": 4453,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/StableIdHelper.ts",
+			"size": 8489
+		},
+		{
+			"name": "helpers/Synchronization-dbg.js",
+			"module": "sap/fe/core/helpers/Synchronization.js",
+			"size": 2675,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/Synchronization.js",
+			"module": "sap/fe/core/helpers/Synchronization.js",
+			"size": 566
+		},
+		{
+			"name": "helpers/Synchronization.js.map",
+			"size": 680,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/Synchronization.ts",
+			"size": 494
+		},
+		{
+			"name": "helpers/ToES6Promise-dbg.js",
+			"module": "sap/fe/core/helpers/ToES6Promise.js",
+			"size": 2466,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/ToES6Promise.js",
+			"module": "sap/fe/core/helpers/ToES6Promise.js",
+			"size": 513
+		},
+		{
+			"name": "helpers/ToES6Promise.js.map",
+			"size": 712,
+			"isDebug": true
+		},
+		{
+			"name": "helpers/ToES6Promise.ts",
+			"size": 457
+		},
+		{
+			"name": "jsx-runtime/Fragment-dbg.js",
+			"module": "sap/fe/core/jsx-runtime/Fragment.js",
+			"size": 747,
+			"isDebug": true
+		},
+		{
+			"name": "jsx-runtime/Fragment.js",
+			"module": "sap/fe/core/jsx-runtime/Fragment.js",
+			"size": 264
+		},
+		{
+			"name": "jsx-runtime/Fragment.js.map",
+			"size": 281,
+			"isDebug": true
+		},
+		{
+			"name": "jsx-runtime/Fragment.ts",
+			"size": 70
+		},
+		{
+			"name": "jsx-runtime/ViewLoader-dbg.js",
+			"module": "sap/fe/core/jsx-runtime/ViewLoader.js",
+			"size": 9370,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/jsx-runtime/jsx.js",
+				"sap/m/Page.js",
+				"sap/ui/base/ManagedObject.js",
+				"sap/ui/core/mvc/View.js"
+			],
+			"dynRequired": true
+		},
+		{
+			"name": "jsx-runtime/ViewLoader.js",
+			"module": "sap/fe/core/jsx-runtime/ViewLoader.js",
+			"size": 2625,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/jsx-runtime/jsx.js",
+				"sap/m/Page.js",
+				"sap/ui/base/ManagedObject.js",
+				"sap/ui/core/mvc/View.js"
+			],
+			"dynRequired": true
+		},
+		{
+			"name": "jsx-runtime/ViewLoader.js.map",
+			"size": 3982,
+			"isDebug": true
+		},
+		{
+			"name": "jsx-runtime/ViewLoader.tsx",
+			"size": 1488
+		},
+		{
+			"name": "jsx-runtime/jsx-control-dbg.js",
+			"module": "sap/fe/core/jsx-runtime/jsx-control.js",
+			"size": 14644,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/m/Text.js"
+			]
+		},
+		{
+			"name": "jsx-runtime/jsx-control.js",
+			"module": "sap/fe/core/jsx-runtime/jsx-control.js",
+			"size": 1479,
+			"required": [
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/m/Text.js"
+			]
+		},
+		{
+			"name": "jsx-runtime/jsx-control.js.map",
+			"size": 2720,
+			"isDebug": true
+		},
+		{
+			"name": "jsx-runtime/jsx-control.ts",
+			"size": 4012
+		},
+		{
+			"name": "jsx-runtime/jsx-dbg.js",
+			"module": "sap/fe/core/jsx-runtime/jsx.js",
+			"size": 3807,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/jsx-runtime/jsx-control.js",
+				"sap/fe/core/jsx-runtime/jsx-xml.js"
+			]
+		},
+		{
+			"name": "jsx-runtime/jsx-xml-dbg.js",
+			"module": "sap/fe/core/jsx-runtime/jsx-xml.js",
+			"size": 14859,
+			"isDebug": true
+		},
+		{
+			"name": "jsx-runtime/jsx-xml.js",
+			"module": "sap/fe/core/jsx-runtime/jsx-xml.js",
+			"size": 2193
+		},
+		{
+			"name": "jsx-runtime/jsx-xml.js.map",
+			"size": 3549,
+			"isDebug": true
+		},
+		{
+			"name": "jsx-runtime/jsx-xml.ts",
+			"size": 3482
+		},
+		{
+			"name": "jsx-runtime/jsx.js",
+			"module": "sap/fe/core/jsx-runtime/jsx.js",
+			"size": 422,
+			"required": [
+				"sap/fe/core/jsx-runtime/jsx-control.js",
+				"sap/fe/core/jsx-runtime/jsx-xml.js"
+			]
+		},
+		{
+			"name": "jsx-runtime/jsx.js.map",
+			"size": 538,
+			"isDebug": true
+		},
+		{
+			"name": "jsx-runtime/jsx.ts",
+			"size": 1372
+		},
+		{
+			"name": "jsx-runtime/jsxs-dbg.js",
+			"module": "sap/fe/core/jsx-runtime/jsxs.js",
+			"size": 571,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/jsx-runtime/jsx.js"
+			]
+		},
+		{
+			"name": "jsx-runtime/jsxs.js",
+			"module": "sap/fe/core/jsx-runtime/jsxs.js",
+			"size": 238,
+			"required": [
+				"sap/fe/core/jsx-runtime/jsx.js"
+			]
+		},
+		{
+			"name": "jsx-runtime/jsxs.js.map",
+			"size": 177,
+			"isDebug": true
+		},
+		{
+			"name": "jsx-runtime/jsxs.ts",
+			"size": 68
+		},
+		{
+			"name": "jsx-runtime/useMDXComponents-dbg.js",
+			"module": "sap/fe/core/jsx-runtime/useMDXComponents.js",
+			"size": 19428,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/buildingBlocks/BuildingBlockRuntime.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/jsx-runtime/ViewLoader.js",
+				"sap/fe/core/jsx-runtime/jsx.js",
+				"sap/fe/macros/macroLibrary.js",
+				"sap/m/FormattedText.js",
+				"sap/m/HBox.js",
+				"sap/m/Panel.js",
+				"sap/m/Title.js",
+				"sap/ui/codeeditor/CodeEditor.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/util/XMLPreprocessor.js"
+			]
+		},
+		{
+			"name": "jsx-runtime/useMDXComponents.js",
+			"module": "sap/fe/core/jsx-runtime/useMDXComponents.js",
+			"size": 2913,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/buildingBlocks/BuildingBlockRuntime.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/jsx-runtime/ViewLoader.js",
+				"sap/fe/core/jsx-runtime/jsx.js",
+				"sap/fe/macros/macroLibrary.js",
+				"sap/m/FormattedText.js",
+				"sap/m/HBox.js",
+				"sap/m/Panel.js",
+				"sap/m/Title.js",
+				"sap/ui/codeeditor/CodeEditor.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/util/XMLPreprocessor.js"
+			]
+		},
+		{
+			"name": "jsx-runtime/useMDXComponents.js.map",
+			"size": 4109,
+			"isDebug": true
+		},
+		{
+			"name": "jsx-runtime/useMDXComponents.tsx",
+			"size": 4583
+		},
+		{
+			"name": "library-dbg.js",
+			"module": "sap/fe/core/library.js",
+			"size": 33047,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/formatters/FPMFormatter.js",
+				"sap/fe/core/formatters/StandardFormatter.js",
+				"sap/fe/core/formatters/ValueFormatter.js",
+				"sap/fe/core/services/AsyncComponentServiceFactory.js",
+				"sap/fe/core/services/CacheHandlerServiceFactory.js",
+				"sap/fe/core/services/EnvironmentServiceFactory.js",
+				"sap/fe/core/services/NavigationServiceFactory.js",
+				"sap/fe/core/services/ResourceModelServiceFactory.js",
+				"sap/fe/core/services/RoutingServiceFactory.js",
+				"sap/fe/core/services/ShellServicesFactory.js",
+				"sap/fe/core/services/SideEffectsServiceFactory.js",
+				"sap/fe/core/services/TemplatedViewServiceFactory.js",
+				"sap/fe/core/type/DateTimeWithTimezone.js",
+				"sap/fe/core/type/Email.js",
+				"sap/fe/navigation/library.js",
+				"sap/fe/placeholder/library.js",
+				"sap/ui/base/DataType.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/service/ServiceFactoryRegistry.js",
+				"sap/ui/fl/library.js",
+				"sap/ui/mdc/library.js"
+			]
+		},
+		{
+			"name": "library-preload.js",
+			"module": "sap/fe/core/library-preload.js",
+			"size": 1099879,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/strings/formatMessage.js",
+				"sap/base/strings/hash.js",
+				"sap/base/util/ObjectPath.js",
+				"sap/base/util/UriParameters.js",
+				"sap/base/util/array/uniqueSort.js",
+				"sap/base/util/deepClone.js",
+				"sap/base/util/deepEqual.js",
+				"sap/base/util/extend.js",
+				"sap/base/util/merge.js",
+				"sap/base/util/uid.js",
+				"sap/f/Avatar.js",
+				"sap/f/FlexibleColumnLayout.js",
+				"sap/f/FlexibleColumnLayoutSemanticHelper.js",
+				"sap/f/library.js",
+				"sap/fe/macros/CommonHelper.js",
+				"sap/fe/macros/DelegateUtil.js",
+				"sap/fe/macros/ResourceModel.js",
+				"sap/fe/macros/field/FieldHelper.js",
+				"sap/fe/macros/field/FieldRuntime.js",
+				"sap/fe/macros/field/FieldTemplating.js",
+				"sap/fe/macros/filter/FilterUtils.js",
+				"sap/fe/macros/internal/helpers/ActionHelper.js",
+				"sap/fe/macros/internal/valuehelp/ValueListHelper.js",
+				"sap/fe/macros/internal/valuehelp/ValueListHelperNew.js",
+				"sap/fe/macros/library.js",
+				"sap/fe/macros/macroLibrary.js",
+				"sap/fe/macros/table/TableHelper.js",
+				"sap/fe/macros/table/TableSizeHelper.js",
+				"sap/fe/macros/table/Utils.js",
+				"sap/fe/navigation/NavigationHandler.js",
+				"sap/fe/navigation/SelectionVariant.js",
+				"sap/fe/navigation/library.js",
+				"sap/fe/placeholder/library.js",
+				"sap/fe/templates/Feedback.js",
+				"sap/fe/templates/ObjectPage/ObjectPageTemplating.js",
+				"sap/m/Avatar.js",
+				"sap/m/Bar.js",
+				"sap/m/BusyDialog.js",
+				"sap/m/Button.js",
+				"sap/m/CheckBox.js",
+				"sap/m/Column.js",
+				"sap/m/ColumnListItem.js",
+				"sap/m/CustomListItem.js",
+				"sap/m/Dialog.js",
+				"sap/m/FlexBox.js",
+				"sap/m/FormattedText.js",
+				"sap/m/HBox.js",
+				"sap/m/HeaderContainer.js",
+				"sap/m/Label.js",
+				"sap/m/Link.js",
+				"sap/m/List.js",
+				"sap/m/MessageBox.js",
+				"sap/m/MessageItem.js",
+				"sap/m/MessagePage.js",
+				"sap/m/MessageStrip.js",
+				"sap/m/MessageToast.js",
+				"sap/m/MessageView.js",
+				"sap/m/NavContainer.js",
+				"sap/m/ObjectStatus.js",
+				"sap/m/Page.js",
+				"sap/m/Panel.js",
+				"sap/m/Popover.js",
+				"sap/m/QuickViewPage.js",
+				"sap/m/ResponsivePopover.js",
+				"sap/m/SearchField.js",
+				"sap/m/Select.js",
+				"sap/m/SelectRenderer.js",
+				"sap/m/Table.js",
+				"sap/m/Text.js",
+				"sap/m/Title.js",
+				"sap/m/Toolbar.js",
+				"sap/m/ToolbarSpacer.js",
+				"sap/m/VBox.js",
+				"sap/m/library.js",
+				"sap/suite/ui/commons/collaboration/CollaborationHelper.js",
+				"sap/ui/Device.js",
+				"sap/ui/VersionInfo.js",
+				"sap/ui/base/BindingParser.js",
+				"sap/ui/base/DataType.js",
+				"sap/ui/base/EventProvider.js",
+				"sap/ui/base/ManagedObject.js",
+				"sap/ui/base/ManagedObjectObserver.js",
+				"sap/ui/base/Metadata.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/codeeditor/CodeEditor.js",
+				"sap/ui/core/CommandExecution.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/CustomData.js",
+				"sap/ui/core/Element.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/IconPool.js",
+				"sap/ui/core/Locale.js",
+				"sap/ui/core/Placeholder.js",
+				"sap/ui/core/Shortcut.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/XMLTemplateProcessor.js",
+				"sap/ui/core/cache/CacheManager.js",
+				"sap/ui/core/format/DateFormat.js",
+				"sap/ui/core/format/NumberFormat.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/message/Message.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/core/mvc/ControllerExtension.js",
+				"sap/ui/core/mvc/ControllerMetadata.js",
+				"sap/ui/core/mvc/OverrideExecution.js",
+				"sap/ui/core/mvc/View.js",
+				"sap/ui/core/routing/HashChanger.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js",
+				"sap/ui/core/service/ServiceFactoryRegistry.js",
+				"sap/ui/core/util/PasteHelper.js",
+				"sap/ui/core/util/XMLPreprocessor.js",
+				"sap/ui/core/ws/SapPcpWebSocket.js",
+				"sap/ui/fl/apply/api/ControlVariantApplyAPI.js",
+				"sap/ui/fl/library.js",
+				"sap/ui/layout/form/Form.js",
+				"sap/ui/layout/form/FormContainer.js",
+				"sap/ui/layout/form/ResponsiveGridLayout.js",
+				"sap/ui/layout/form/SimpleForm.js",
+				"sap/ui/layout/library.js",
+				"sap/ui/mdc/Field.js",
+				"sap/ui/mdc/FilterBar.js",
+				"sap/ui/mdc/condition/Condition.js",
+				"sap/ui/mdc/condition/FilterOperatorUtil.js",
+				"sap/ui/mdc/condition/Operator.js",
+				"sap/ui/mdc/condition/RangeOperator.js",
+				"sap/ui/mdc/enum/BaseType.js",
+				"sap/ui/mdc/enum/ConditionValidated.js",
+				"sap/ui/mdc/enum/EditMode.js",
+				"sap/ui/mdc/field/ConditionsType.js",
+				"sap/ui/mdc/field/MultiValueFieldDelegate.js",
+				"sap/ui/mdc/filterbar/IFilterContainer.js",
+				"sap/ui/mdc/filterbar/aligned/FilterContainer.js",
+				"sap/ui/mdc/filterbar/aligned/FilterItemLayout.js",
+				"sap/ui/mdc/library.js",
+				"sap/ui/mdc/odata/TypeUtil.js",
+				"sap/ui/mdc/p13n/StateUtil.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ui/model/Sorter.js",
+				"sap/ui/model/ValidateException.js",
+				"sap/ui/model/base/ManagedObjectModel.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/model/odata/type/DateTimeOffset.js",
+				"sap/ui/model/odata/type/DateTimeWithTimezone.js",
+				"sap/ui/model/odata/type/String.js",
+				"sap/ui/model/odata/v4/AnnotationHelper.js",
+				"sap/ui/model/odata/v4/ODataListBinding.js",
+				"sap/ui/model/odata/v4/ODataUtils.js",
+				"sap/ui/model/resource/ResourceModel.js",
+				"sap/ui/support/library.js",
+				"sap/ui/thirdparty/URI.js"
+			],
+			"condRequired": [
+				"sap/m/ButtonType.js",
+				"sap/m/ComboBox.js",
+				"sap/ui/core/Item.js",
+				"sap/ui/integration/Host.js",
+				"sap/ui/integration/widgets/Card.js",
+				"sap/ui/layout/GridData.js",
+				"sap/ui/layout/form/FormElement.js",
+				"sap/ui/mdc/MultiValueField.js",
+				"sap/ui/mdc/ValueHelp.js",
+				"sap/ui/mdc/field/FieldValueHelp.js",
+				"sap/ui/mdc/field/FieldValueHelpMTableWrapper.js",
+				"sap/ui/mdc/field/FieldValueHelpMdcTableWrapper.js",
+				"sap/ui/mdc/field/MultiValueFieldItem.js",
+				"sap/ui/mdc/valuehelp/Dialog.js",
+				"sap/ui/mdc/valuehelp/Popover.js",
+				"sap/ui/mdc/valuehelp/content/MTable.js"
+			],
+			"dynRequired": true,
+			"included": [
+				"sap/fe/core/ActionRuntime.js",
+				"sap/fe/core/AppComponent.js",
+				"sap/fe/core/AppStateHandler.js",
+				"sap/fe/core/BaseController.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/ExtensionAPI.js",
+				"sap/fe/core/PageController.js",
+				"sap/fe/core/TemplateComponent.js",
+				"sap/fe/core/TemplateModel.js",
+				"sap/fe/core/buildingBlocks/AttributeModel.js",
+				"sap/fe/core/buildingBlocks/BuildingBlock.js",
+				"sap/fe/core/buildingBlocks/BuildingBlockFormatter.js",
+				"sap/fe/core/buildingBlocks/BuildingBlockRuntime.js",
+				"sap/fe/core/buildingBlocks/TraceInfo.js",
+				"sap/fe/core/controllerextensions/BusyLocker.js",
+				"sap/fe/core/controllerextensions/EditFlow.js",
+				"sap/fe/core/controllerextensions/IntentBasedNavigation.js",
+				"sap/fe/core/controllerextensions/InternalEditFlow.js",
+				"sap/fe/core/controllerextensions/InternalIntentBasedNavigation.js",
+				"sap/fe/core/controllerextensions/InternalRouting.js",
+				"sap/fe/core/controllerextensions/KPIManagement.js",
+				"sap/fe/core/controllerextensions/MassEdit.js",
+				"sap/fe/core/controllerextensions/MessageHandler.js",
+				"sap/fe/core/controllerextensions/PageReady.js",
+				"sap/fe/core/controllerextensions/Paginator.js",
+				"sap/fe/core/controllerextensions/Placeholder.js",
+				"sap/fe/core/controllerextensions/Routing.js",
+				"sap/fe/core/controllerextensions/RoutingListener.js",
+				"sap/fe/core/controllerextensions/Share.js",
+				"sap/fe/core/controllerextensions/SideEffects.js",
+				"sap/fe/core/controllerextensions/ViewState.js",
+				"sap/fe/core/controllerextensions/collaboration/ActivityBase.js",
+				"sap/fe/core/controllerextensions/collaboration/ActivitySync.js",
+				"sap/fe/core/controllerextensions/collaboration/CollaborationCommon.js",
+				"sap/fe/core/controllerextensions/collaboration/Manage.js",
+				"sap/fe/core/controllerextensions/editFlow/TransactionHelper.js",
+				"sap/fe/core/controllerextensions/editFlow/draft.js",
+				"sap/fe/core/controllerextensions/editFlow/draftDataLossPopup.js",
+				"sap/fe/core/controllerextensions/editFlow/operations.js",
+				"sap/fe/core/controllerextensions/editFlow/sticky.js",
+				"sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+				"sap/fe/core/controllerextensions/pageReady/DataQueryWatcher.js",
+				"sap/fe/core/controllerextensions/routing/RouterProxy.js",
+				"sap/fe/core/controls/Any.js",
+				"sap/fe/core/controls/AnyElement.js",
+				"sap/fe/core/controls/CommandExecution.js",
+				"sap/fe/core/controls/ConditionalWrapper.js",
+				"sap/fe/core/controls/CustomFilterFieldContentWrapper.js",
+				"sap/fe/core/controls/CustomQuickViewPage.js",
+				"sap/fe/core/controls/DataLossOrDraftDiscard/DataLossOrDraftDiscardHandler.js",
+				"sap/fe/core/controls/FieldWrapper.js",
+				"sap/fe/core/controls/FileWrapper.js",
+				"sap/fe/core/controls/FilterBar.js",
+				"sap/fe/core/controls/FormElementWrapper.js",
+				"sap/fe/core/controls/MassEditSelect.js",
+				"sap/fe/core/controls/MultiValueParameterDelegate.js",
+				"sap/fe/core/controls/filterbar/FilterContainer.js",
+				"sap/fe/core/controls/filterbar/VisualFilter.js",
+				"sap/fe/core/controls/filterbar/VisualFilterContainer.js",
+				"sap/fe/core/controls/filterbar/utils/VisualFilterUtils.js",
+				"sap/fe/core/controls/massEdit/MassEditHandlers.js",
+				"sap/fe/core/converters/ConverterContext.js",
+				"sap/fe/core/converters/ManifestSettings.js",
+				"sap/fe/core/converters/ManifestWrapper.js",
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/converters/TemplateConverter.js",
+				"sap/fe/core/converters/annotations/DataField.js",
+				"sap/fe/core/converters/common/AnnotationConverter.js",
+				"sap/fe/core/converters/controls/Common/Action.js",
+				"sap/fe/core/converters/controls/Common/Chart.js",
+				"sap/fe/core/converters/controls/Common/Criticality.js",
+				"sap/fe/core/converters/controls/Common/DataVisualization.js",
+				"sap/fe/core/converters/controls/Common/Form.js",
+				"sap/fe/core/converters/controls/Common/KPI.js",
+				"sap/fe/core/converters/controls/Common/Table.js",
+				"sap/fe/core/converters/controls/Common/table/StandardActions.js",
+				"sap/fe/core/converters/controls/ListReport/FilterBar.js",
+				"sap/fe/core/converters/controls/ListReport/VisualFilters.js",
+				"sap/fe/core/converters/controls/ObjectPage/Avatar.js",
+				"sap/fe/core/converters/controls/ObjectPage/HeaderFacet.js",
+				"sap/fe/core/converters/controls/ObjectPage/SubSection.js",
+				"sap/fe/core/converters/helpers/Aggregation.js",
+				"sap/fe/core/converters/helpers/BindingHelper.js",
+				"sap/fe/core/converters/helpers/ConfigurableObject.js",
+				"sap/fe/core/converters/helpers/DataFieldHelper.js",
+				"sap/fe/core/converters/helpers/ID.js",
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/converters/helpers/Key.js",
+				"sap/fe/core/converters/helpers/SelectionVariantHelper.js",
+				"sap/fe/core/converters/objectPage/FormMenuActions.js",
+				"sap/fe/core/converters/objectPage/HeaderAndFooterAction.js",
+				"sap/fe/core/converters/templates/ListReportConverter.js",
+				"sap/fe/core/converters/templates/ObjectPageConverter.js",
+				"sap/fe/core/formatters/CollaborationFormatter.js",
+				"sap/fe/core/formatters/FPMFormatter.js",
+				"sap/fe/core/formatters/KPIFormatter.js",
+				"sap/fe/core/formatters/StandardFormatter.js",
+				"sap/fe/core/formatters/TableFormatter.js",
+				"sap/fe/core/formatters/TableFormatterTypes.js",
+				"sap/fe/core/formatters/ValueFormatter.js",
+				"sap/fe/core/fpm/Component.js",
+				"sap/fe/core/helpers/AnnotationEnum.js",
+				"sap/fe/core/helpers/AppStartupHelper.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/DynamicAnnotationPathHelper.js",
+				"sap/fe/core/helpers/EditState.js",
+				"sap/fe/core/helpers/ExcelFormatHelper.js",
+				"sap/fe/core/helpers/FPMHelper.js",
+				"sap/fe/core/helpers/KeepAliveHelper.js",
+				"sap/fe/core/helpers/KeepAliveRefreshTypes.js",
+				"sap/fe/core/helpers/LRMessageStrip.js",
+				"sap/fe/core/helpers/LoaderUtils.js",
+				"sap/fe/core/helpers/MassEditHelper.js",
+				"sap/fe/core/helpers/MessageStrip.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/PasteHelper.js",
+				"sap/fe/core/helpers/SemanticDateOperators.js",
+				"sap/fe/core/helpers/SemanticKeyHelper.js",
+				"sap/fe/core/helpers/SideEffectsHelper.js",
+				"sap/fe/core/helpers/StableIdHelper.js",
+				"sap/fe/core/helpers/Synchronization.js",
+				"sap/fe/core/helpers/ToES6Promise.js",
+				"sap/fe/core/jsx-runtime/Fragment.js",
+				"sap/fe/core/jsx-runtime/ViewLoader.js",
+				"sap/fe/core/jsx-runtime/jsx-control.js",
+				"sap/fe/core/jsx-runtime/jsx-xml.js",
+				"sap/fe/core/jsx-runtime/jsx.js",
+				"sap/fe/core/jsx-runtime/jsxs.js",
+				"sap/fe/core/jsx-runtime/useMDXComponents.js",
+				"sap/fe/core/library.js",
+				"sap/fe/core/manifestMerger/ChangePageConfiguration.js",
+				"sap/fe/core/operationsHelper.js",
+				"sap/fe/core/rootView/Fcl.controller.js",
+				"sap/fe/core/rootView/NavContainer.controller.js",
+				"sap/fe/core/rootView/RootViewBaseController.js",
+				"sap/fe/core/services/AsyncComponentServiceFactory.js",
+				"sap/fe/core/services/CacheHandlerServiceFactory.js",
+				"sap/fe/core/services/EnvironmentServiceFactory.js",
+				"sap/fe/core/services/NavigationServiceFactory.js",
+				"sap/fe/core/services/ResourceModelServiceFactory.js",
+				"sap/fe/core/services/RoutingServiceFactory.js",
+				"sap/fe/core/services/ShellServicesFactory.js",
+				"sap/fe/core/services/SideEffectsServiceFactory.js",
+				"sap/fe/core/services/TemplatedViewServiceFactory.js",
+				"sap/fe/core/services/view/TemplatingErrorPage.controller.js",
+				"sap/fe/core/support/CommonHelper.js",
+				"sap/fe/core/support/Diagnostics.js",
+				"sap/fe/core/templating/CommonFormatters.js",
+				"sap/fe/core/templating/CriticalityFormatters.js",
+				"sap/fe/core/templating/DataFieldFormatters.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/fe/core/templating/DisplayModeFormatter.js",
+				"sap/fe/core/templating/EntitySetHelper.js",
+				"sap/fe/core/templating/FieldControlHelper.js",
+				"sap/fe/core/templating/FilterHelper.js",
+				"sap/fe/core/templating/FilterTemplating.js",
+				"sap/fe/core/templating/PropertyFormatters.js",
+				"sap/fe/core/templating/PropertyHelper.js",
+				"sap/fe/core/templating/SemanticObjectHelper.js",
+				"sap/fe/core/templating/UIFormatters.js",
+				"sap/fe/core/type/DateTimeWithTimezone.js",
+				"sap/fe/core/type/Email.js",
+				"sap/fe/core/type/TypeUtil.js",
+				"sap/fe/core/controllerextensions/collaboration/ManageDialog.fragment.xml",
+				"sap/fe/core/controllerextensions/collaboration/UserDetails.fragment.xml",
+				"sap/fe/core/controls/ActionParameterDialog.fragment.xml",
+				"sap/fe/core/controls/ActionParameterDialogFieldValueHelp.fragment.xml",
+				"sap/fe/core/controls/ActionParameterDialogValueHelp.fragment.xml",
+				"sap/fe/core/controls/ActionPartial.fragment.xml",
+				"sap/fe/core/controls/DataLossOrDraftDiscard/DataLossDraft.fragment.xml",
+				"sap/fe/core/controls/NonComputedVisibleKeyFieldsDialog.fragment.xml",
+				"sap/fe/core/controls/massEdit/MassEditDialog.fragment.xml",
+				"sap/fe/core/controls/massEdit/MassEditField.fragment.xml",
+				"sap/fe/core/fpm/manifest.json",
+				"sap/fe/core/manifest.json",
+				"sap/fe/core/rootView/Fcl.view.xml",
+				"sap/fe/core/rootView/NavContainer.view.xml",
+				"sap/fe/core/services/view/TemplatingErrorPage.view.xml"
+			]
+		},
+		{
+			"name": "library-preload.js.map",
+			"size": 1511767,
+			"isDebug": true
+		},
+		{
+			"name": "library-preload.support.js",
+			"module": "sap/fe/core/library-preload.support.js",
+			"size": 7416,
+			"merged": true,
+			"support": true,
+			"required": [
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/support/CommonHelper.js"
+			],
+			"included": [
+				"sap/fe/core/library.support.js",
+				"sap/fe/core/support/AnnotationIssue.support.js",
+				"sap/fe/core/support/CollectionFacetMissingID.support.js",
+				"sap/fe/core/support/CollectionFacetUnsupportedLevel.support.js",
+				"sap/fe/core/support/InvalidAnnotationColumnKey.support.js"
+			]
+		},
+		{
+			"name": "library-preload.support.js.map",
+			"size": 10859,
+			"isDebug": true
+		},
+		{
+			"name": "library.js",
+			"module": "sap/fe/core/library.js",
+			"size": 3397,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/formatters/FPMFormatter.js",
+				"sap/fe/core/formatters/StandardFormatter.js",
+				"sap/fe/core/formatters/ValueFormatter.js",
+				"sap/fe/core/services/AsyncComponentServiceFactory.js",
+				"sap/fe/core/services/CacheHandlerServiceFactory.js",
+				"sap/fe/core/services/EnvironmentServiceFactory.js",
+				"sap/fe/core/services/NavigationServiceFactory.js",
+				"sap/fe/core/services/ResourceModelServiceFactory.js",
+				"sap/fe/core/services/RoutingServiceFactory.js",
+				"sap/fe/core/services/ShellServicesFactory.js",
+				"sap/fe/core/services/SideEffectsServiceFactory.js",
+				"sap/fe/core/services/TemplatedViewServiceFactory.js",
+				"sap/fe/core/type/DateTimeWithTimezone.js",
+				"sap/fe/core/type/Email.js",
+				"sap/fe/navigation/library.js",
+				"sap/fe/placeholder/library.js",
+				"sap/ui/base/DataType.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/service/ServiceFactoryRegistry.js",
+				"sap/ui/fl/library.js",
+				"sap/ui/mdc/library.js"
+			]
+		},
+		{
+			"name": "library.js.map",
+			"size": 3234,
+			"isDebug": true
+		},
+		{
+			"name": "library.support.js",
+			"module": "sap/fe/core/library.support.js",
+			"size": 3468,
+			"support": true,
+			"required": [
+				"sap/fe/core/support/AnnotationIssue.support.js",
+				"sap/fe/core/support/CollectionFacetMissingID.support.js",
+				"sap/fe/core/support/CollectionFacetUnsupportedLevel.support.js",
+				"sap/fe/core/support/InvalidAnnotationColumnKey.support.js"
+			]
+		},
+		{
+			"name": "library.support.ts",
+			"size": 904
+		},
+		{
+			"name": "library.ts",
+			"size": 9750
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/fe/core/manifest.json",
+			"size": 2245
+		},
+		{
+			"name": "manifestMerger/ChangePageConfiguration-dbg.js",
+			"module": "sap/fe/core/manifestMerger/ChangePageConfiguration.js",
+			"size": 8793,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/ObjectPath.js"
+			]
+		},
+		{
+			"name": "manifestMerger/ChangePageConfiguration.js",
+			"module": "sap/fe/core/manifestMerger/ChangePageConfiguration.js",
+			"size": 1369,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/ObjectPath.js"
+			]
+		},
+		{
+			"name": "manifestMerger/ChangePageConfiguration.js.map",
+			"size": 1973,
+			"isDebug": true
+		},
+		{
+			"name": "manifestMerger/ChangePageConfiguration.ts",
+			"size": 2015
+		},
+		{
+			"name": "messagebundle.properties",
+			"module": "sap/fe/core/messagebundle.properties",
+			"size": 23639,
+			"locale": "",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ar.properties",
+			"module": "sap/fe/core/messagebundle_ar.properties",
+			"size": 28381,
+			"locale": "ar",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_bg.properties",
+			"module": "sap/fe/core/messagebundle_bg.properties",
+			"size": 34799,
+			"locale": "bg",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ca.properties",
+			"module": "sap/fe/core/messagebundle_ca.properties",
+			"size": 13253,
+			"locale": "ca",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_cs.properties",
+			"module": "sap/fe/core/messagebundle_cs.properties",
+			"size": 14017,
+			"locale": "cs",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_cy.properties",
+			"module": "sap/fe/core/messagebundle_cy.properties",
+			"size": 13232,
+			"locale": "cy",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_da.properties",
+			"module": "sap/fe/core/messagebundle_da.properties",
+			"size": 12606,
+			"locale": "da",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_de.properties",
+			"module": "sap/fe/core/messagebundle_de.properties",
+			"size": 13797,
+			"locale": "de",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_el.properties",
+			"module": "sap/fe/core/messagebundle_el.properties",
+			"size": 36862,
+			"locale": "el",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_en.properties",
+			"module": "sap/fe/core/messagebundle_en.properties",
+			"size": 12066,
+			"locale": "en",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_en_GB.properties",
+			"module": "sap/fe/core/messagebundle_en_GB.properties",
+			"size": 12110,
+			"locale": "en_GB",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_en_US_sappsd.properties",
+			"module": "sap/fe/core/messagebundle_en_US_sappsd.properties",
+			"size": 40877,
+			"locale": "en_US_sappsd",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_en_US_saprigi.properties",
+			"module": "sap/fe/core/messagebundle_en_US_saprigi.properties",
+			"size": 61092,
+			"locale": "en_US_saprigi",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_en_US_saptrc.properties",
+			"module": "sap/fe/core/messagebundle_en_US_saptrc.properties",
+			"size": 16329,
+			"locale": "en_US_saptrc",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_es.properties",
+			"module": "sap/fe/core/messagebundle_es.properties",
+			"size": 13238,
+			"locale": "es",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_es_MX.properties",
+			"module": "sap/fe/core/messagebundle_es_MX.properties",
+			"size": 13254,
+			"locale": "es_MX",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_et.properties",
+			"module": "sap/fe/core/messagebundle_et.properties",
+			"size": 12785,
+			"locale": "et",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_fi.properties",
+			"module": "sap/fe/core/messagebundle_fi.properties",
+			"size": 14071,
+			"locale": "fi",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_fr.properties",
+			"module": "sap/fe/core/messagebundle_fr.properties",
+			"size": 14165,
+			"locale": "fr",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_fr_CA.properties",
+			"module": "sap/fe/core/messagebundle_fr_CA.properties",
+			"size": 14014,
+			"locale": "fr_CA",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_hi.properties",
+			"module": "sap/fe/core/messagebundle_hi.properties",
+			"size": 34393,
+			"locale": "hi",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_hr.properties",
+			"module": "sap/fe/core/messagebundle_hr.properties",
+			"size": 12936,
+			"locale": "hr",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_hu.properties",
+			"module": "sap/fe/core/messagebundle_hu.properties",
+			"size": 15079,
+			"locale": "hu",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_id.properties",
+			"module": "sap/fe/core/messagebundle_id.properties",
+			"size": 12412,
+			"locale": "id",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_it.properties",
+			"module": "sap/fe/core/messagebundle_it.properties",
+			"size": 12850,
+			"locale": "it",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_iw.properties",
+			"module": "sap/fe/core/messagebundle_iw.properties",
+			"size": 26291,
+			"locale": "iw",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ja.properties",
+			"module": "sap/fe/core/messagebundle_ja.properties",
+			"size": 21675,
+			"locale": "ja",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_kk.properties",
+			"module": "sap/fe/core/messagebundle_kk.properties",
+			"size": 33640,
+			"locale": "kk",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ko.properties",
+			"module": "sap/fe/core/messagebundle_ko.properties",
+			"size": 19944,
+			"locale": "ko",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_lt.properties",
+			"module": "sap/fe/core/messagebundle_lt.properties",
+			"size": 14072,
+			"locale": "lt",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_lv.properties",
+			"module": "sap/fe/core/messagebundle_lv.properties",
+			"size": 14558,
+			"locale": "lv",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_mk.properties",
+			"module": "sap/fe/core/messagebundle_mk.properties",
+			"size": 30447,
+			"locale": "mk",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ms.properties",
+			"module": "sap/fe/core/messagebundle_ms.properties",
+			"size": 12405,
+			"locale": "ms",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_nl.properties",
+			"module": "sap/fe/core/messagebundle_nl.properties",
+			"size": 12884,
+			"locale": "nl",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_no.properties",
+			"module": "sap/fe/core/messagebundle_no.properties",
+			"size": 12699,
+			"locale": "no",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_pl.properties",
+			"module": "sap/fe/core/messagebundle_pl.properties",
+			"size": 14019,
+			"locale": "pl",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_pt.properties",
+			"module": "sap/fe/core/messagebundle_pt.properties",
+			"size": 13681,
+			"locale": "pt",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_pt_PT.properties",
+			"module": "sap/fe/core/messagebundle_pt_PT.properties",
+			"size": 13430,
+			"locale": "pt_PT",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ro.properties",
+			"module": "sap/fe/core/messagebundle_ro.properties",
+			"size": 13996,
+			"locale": "ro",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_ru.properties",
+			"module": "sap/fe/core/messagebundle_ru.properties",
+			"size": 34611,
+			"locale": "ru",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_sh.properties",
+			"module": "sap/fe/core/messagebundle_sh.properties",
+			"size": 13105,
+			"locale": "sh",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_sk.properties",
+			"module": "sap/fe/core/messagebundle_sk.properties",
+			"size": 14398,
+			"locale": "sk",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_sl.properties",
+			"module": "sap/fe/core/messagebundle_sl.properties",
+			"size": 12614,
+			"locale": "sl",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_sr.properties",
+			"module": "sap/fe/core/messagebundle_sr.properties",
+			"size": 32537,
+			"locale": "sr",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_sv.properties",
+			"module": "sap/fe/core/messagebundle_sv.properties",
+			"size": 13051,
+			"locale": "sv",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_th.properties",
+			"module": "sap/fe/core/messagebundle_th.properties",
+			"size": 32879,
+			"locale": "th",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_tr.properties",
+			"module": "sap/fe/core/messagebundle_tr.properties",
+			"size": 14338,
+			"locale": "tr",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_uk.properties",
+			"module": "sap/fe/core/messagebundle_uk.properties",
+			"size": 33418,
+			"locale": "uk",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_vi.properties",
+			"module": "sap/fe/core/messagebundle_vi.properties",
+			"size": 21075,
+			"locale": "vi",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_zh_CN.properties",
+			"module": "sap/fe/core/messagebundle_zh_CN.properties",
+			"size": 15822,
+			"locale": "zh_CN",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "messagebundle_zh_TW.properties",
+			"module": "sap/fe/core/messagebundle_zh_TW.properties",
+			"size": 16080,
+			"locale": "zh_TW",
+			"raw": "messagebundle.properties"
+		},
+		{
+			"name": "operationsHelper-dbg.js",
+			"module": "sap/fe/core/operationsHelper.js",
+			"size": 37479,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+				"sap/fe/core/formatters/TableFormatterTypes.js",
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/MessageBox.js",
+				"sap/m/Title.js",
+				"sap/ui/core/message/Message.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "operationsHelper.js",
+			"module": "sap/fe/core/operationsHelper.js",
+			"size": 5268,
+			"required": [
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+				"sap/fe/core/formatters/TableFormatterTypes.js",
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/MessageBox.js",
+				"sap/m/Title.js",
+				"sap/ui/core/message/Message.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "operationsHelper.js.map",
+			"size": 7418,
+			"isDebug": true
+		},
+		{
+			"name": "operationsHelper.ts",
+			"size": 8632
+		},
+		{
+			"name": "resources.json",
+			"size": 187118
+		},
+		{
+			"name": "rootView/Fcl-dbg.controller.js",
+			"module": "sap/fe/core/rootView/Fcl.controller.js",
+			"size": 114463,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/f/FlexibleColumnLayoutSemanticHelper.js",
+				"sap/f/library.js",
+				"sap/fe/core/controllerextensions/ViewState.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/KeepAliveHelper.js",
+				"sap/fe/core/rootView/RootViewBaseController.js",
+				"sap/m/Link.js",
+				"sap/m/MessageBox.js",
+				"sap/m/MessagePage.js"
+			]
+		},
+		{
+			"name": "rootView/Fcl.controller.js",
+			"module": "sap/fe/core/rootView/Fcl.controller.js",
+			"size": 17425,
+			"required": [
+				"sap/base/Log.js",
+				"sap/f/FlexibleColumnLayoutSemanticHelper.js",
+				"sap/f/library.js",
+				"sap/fe/core/controllerextensions/ViewState.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/KeepAliveHelper.js",
+				"sap/fe/core/rootView/RootViewBaseController.js",
+				"sap/m/Link.js",
+				"sap/m/MessageBox.js",
+				"sap/m/MessagePage.js"
+			]
+		},
+		{
+			"name": "rootView/Fcl.controller.js.map",
+			"size": 21546,
+			"isDebug": true
+		},
+		{
+			"name": "rootView/Fcl.controller.ts",
+			"size": 28985
+		},
+		{
+			"name": "rootView/Fcl.view.xml",
+			"module": "sap/fe/core/rootView/Fcl.view.xml",
+			"size": 350,
+			"required": [
+				"sap/f/FlexibleColumnLayout.js",
+				"sap/fe/core/rootView/Fcl.controller.js"
+			]
+		},
+		{
+			"name": "rootView/NavContainer-dbg.controller.js",
+			"module": "sap/fe/core/rootView/NavContainer.controller.js",
+			"size": 28188,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/ViewState.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/KeepAliveHelper.js",
+				"sap/fe/core/rootView/RootViewBaseController.js",
+				"sap/m/Link.js",
+				"sap/m/MessageBox.js",
+				"sap/m/MessagePage.js"
+			]
+		},
+		{
+			"name": "rootView/NavContainer.controller.js",
+			"module": "sap/fe/core/rootView/NavContainer.controller.js",
+			"size": 4603,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/ViewState.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/KeepAliveHelper.js",
+				"sap/fe/core/rootView/RootViewBaseController.js",
+				"sap/m/Link.js",
+				"sap/m/MessageBox.js",
+				"sap/m/MessagePage.js"
+			]
+		},
+		{
+			"name": "rootView/NavContainer.controller.js.map",
+			"size": 6761,
+			"isDebug": true
+		},
+		{
+			"name": "rootView/NavContainer.controller.ts",
+			"size": 6680
+		},
+		{
+			"name": "rootView/NavContainer.view.xml",
+			"module": "sap/fe/core/rootView/NavContainer.view.xml",
+			"size": 202,
+			"required": [
+				"sap/fe/core/rootView/NavContainer.controller.js",
+				"sap/m/NavContainer.js"
+			]
+		},
+		{
+			"name": "rootView/RootViewBaseController-dbg.js",
+			"module": "sap/fe/core/rootView/RootViewBaseController.js",
+			"size": 76353,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/BaseController.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/Placeholder.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/macros/table/TableSizeHelper.js",
+				"sap/ui/base/BindingParser.js",
+				"sap/ui/core/routing/HashChanger.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/model/odata/v4/AnnotationHelper.js",
+				"sap/ui/thirdparty/URI.js"
+			]
+		},
+		{
+			"name": "rootView/RootViewBaseController.js",
+			"module": "sap/fe/core/rootView/RootViewBaseController.js",
+			"size": 10885,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/BaseController.js",
+				"sap/fe/core/CommonUtils.js",
+				"sap/fe/core/controllerextensions/Placeholder.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/macros/table/TableSizeHelper.js",
+				"sap/ui/base/BindingParser.js",
+				"sap/ui/core/routing/HashChanger.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/model/odata/v4/AnnotationHelper.js",
+				"sap/ui/thirdparty/URI.js"
+			]
+		},
+		{
+			"name": "rootView/RootViewBaseController.js.map",
+			"size": 15763,
+			"isDebug": true
+		},
+		{
+			"name": "rootView/RootViewBaseController.ts",
+			"size": 18790
+		},
+		{
+			"name": "services/AsyncComponentServiceFactory-dbg.js",
+			"module": "sap/fe/core/services/AsyncComponentServiceFactory.js",
+			"size": 8790,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js"
+			]
+		},
+		{
+			"name": "services/AsyncComponentServiceFactory.js",
+			"module": "sap/fe/core/services/AsyncComponentServiceFactory.js",
+			"size": 1474,
+			"required": [
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js"
+			]
+		},
+		{
+			"name": "services/AsyncComponentServiceFactory.js.map",
+			"size": 2316,
+			"isDebug": true
+		},
+		{
+			"name": "services/AsyncComponentServiceFactory.ts",
+			"size": 1910
+		},
+		{
+			"name": "services/CacheHandlerServiceFactory-dbg.js",
+			"module": "sap/fe/core/services/CacheHandlerServiceFactory.js",
+			"size": 32270,
+			"isDebug": true,
+			"required": [
+				"sap/base/strings/hash.js",
+				"sap/ui/core/cache/CacheManager.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js"
+			]
+		},
+		{
+			"name": "services/CacheHandlerServiceFactory.js",
+			"module": "sap/fe/core/services/CacheHandlerServiceFactory.js",
+			"size": 3636,
+			"required": [
+				"sap/base/strings/hash.js",
+				"sap/ui/core/cache/CacheManager.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js"
+			]
+		},
+		{
+			"name": "services/CacheHandlerServiceFactory.js.map",
+			"size": 5929,
+			"isDebug": true
+		},
+		{
+			"name": "services/CacheHandlerServiceFactory.ts",
+			"size": 8309
+		},
+		{
+			"name": "services/EnvironmentServiceFactory-dbg.js",
+			"module": "sap/fe/core/services/EnvironmentServiceFactory.js",
+			"size": 11957,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/ui/VersionInfo.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js"
+			]
+		},
+		{
+			"name": "services/EnvironmentServiceFactory.js",
+			"module": "sap/fe/core/services/EnvironmentServiceFactory.js",
+			"size": 2117,
+			"required": [
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/ui/VersionInfo.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js"
+			]
+		},
+		{
+			"name": "services/EnvironmentServiceFactory.js.map",
+			"size": 3035,
+			"isDebug": true
+		},
+		{
+			"name": "services/EnvironmentServiceFactory.ts",
+			"size": 2666
+		},
+		{
+			"name": "services/NavigationServiceFactory-dbg.js",
+			"module": "sap/fe/core/services/NavigationServiceFactory.js",
+			"size": 43212,
+			"isDebug": true,
+			"required": [
+				"sap/fe/navigation/NavigationHandler.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js"
+			]
+		},
+		{
+			"name": "services/NavigationServiceFactory.js",
+			"module": "sap/fe/core/services/NavigationServiceFactory.js",
+			"size": 3404,
+			"required": [
+				"sap/fe/navigation/NavigationHandler.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js"
+			]
+		},
+		{
+			"name": "services/NavigationServiceFactory.js.map",
+			"size": 5227,
+			"isDebug": true
+		},
+		{
+			"name": "services/NavigationServiceFactory.ts",
+			"size": 13211
+		},
+		{
+			"name": "services/ResourceModelServiceFactory-dbg.js",
+			"module": "sap/fe/core/services/ResourceModelServiceFactory.js",
+			"size": 13068,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js",
+				"sap/ui/model/resource/ResourceModel.js"
+			]
+		},
+		{
+			"name": "services/ResourceModelServiceFactory.js",
+			"module": "sap/fe/core/services/ResourceModelServiceFactory.js",
+			"size": 2112,
+			"required": [
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js",
+				"sap/ui/model/resource/ResourceModel.js"
+			]
+		},
+		{
+			"name": "services/ResourceModelServiceFactory.js.map",
+			"size": 3150,
+			"isDebug": true
+		},
+		{
+			"name": "services/ResourceModelServiceFactory.ts",
+			"size": 3187
+		},
+		{
+			"name": "services/RoutingServiceFactory-dbg.js",
+			"module": "sap/fe/core/services/RoutingServiceFactory.js",
+			"size": 139183,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/controllerextensions/BusyLocker.js",
+				"sap/fe/core/controllerextensions/Placeholder.js",
+				"sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+				"sap/fe/core/helpers/AppStartupHelper.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/EditState.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/SemanticKeyHelper.js",
+				"sap/suite/ui/commons/collaboration/CollaborationHelper.js",
+				"sap/ui/base/BindingParser.js",
+				"sap/ui/base/EventProvider.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js",
+				"sap/ui/model/odata/v4/ODataUtils.js"
+			]
+		},
+		{
+			"name": "services/RoutingServiceFactory.js",
+			"module": "sap/fe/core/services/RoutingServiceFactory.js",
+			"size": 18147,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/controllerextensions/BusyLocker.js",
+				"sap/fe/core/controllerextensions/Placeholder.js",
+				"sap/fe/core/controllerextensions/messageHandler/messageHandling.js",
+				"sap/fe/core/helpers/AppStartupHelper.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/fe/core/helpers/EditState.js",
+				"sap/fe/core/helpers/ModelHelper.js",
+				"sap/fe/core/helpers/SemanticKeyHelper.js",
+				"sap/suite/ui/commons/collaboration/CollaborationHelper.js",
+				"sap/ui/base/BindingParser.js",
+				"sap/ui/base/EventProvider.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js",
+				"sap/ui/model/odata/v4/ODataUtils.js"
+			]
+		},
+		{
+			"name": "services/RoutingServiceFactory.js.map",
+			"size": 25191,
+			"isDebug": true
+		},
+		{
+			"name": "services/RoutingServiceFactory.ts",
+			"size": 35481
+		},
+		{
+			"name": "services/ShellServicesFactory-dbg.js",
+			"module": "sap/fe/core/services/ShellServicesFactory.js",
+			"size": 87103,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js"
+			]
+		},
+		{
+			"name": "services/ShellServicesFactory.js",
+			"module": "sap/fe/core/services/ShellServicesFactory.js",
+			"size": 9231,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js"
+			]
+		},
+		{
+			"name": "services/ShellServicesFactory.js.map",
+			"size": 12423,
+			"isDebug": true
+		},
+		{
+			"name": "services/ShellServicesFactory.ts",
+			"size": 24985
+		},
+		{
+			"name": "services/SideEffectsServiceFactory-dbg.js",
+			"module": "sap/fe/core/services/SideEffectsServiceFactory.js",
+			"size": 87154,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js"
+			]
+		},
+		{
+			"name": "services/SideEffectsServiceFactory.js",
+			"module": "sap/fe/core/services/SideEffectsServiceFactory.js",
+			"size": 9212,
+			"required": [
+				"sap/base/Log.js",
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js"
+			]
+		},
+		{
+			"name": "services/SideEffectsServiceFactory.js.map",
+			"size": 13957,
+			"isDebug": true
+		},
+		{
+			"name": "services/SideEffectsServiceFactory.ts",
+			"size": 25013
+		},
+		{
+			"name": "services/TemplatedViewServiceFactory-dbg.js",
+			"module": "sap/fe/core/services/TemplatedViewServiceFactory.js",
+			"size": 66820,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/UriParameters.js",
+				"sap/fe/core/TemplateModel.js",
+				"sap/fe/core/helpers/DynamicAnnotationPathHelper.js",
+				"sap/fe/core/helpers/LoaderUtils.js",
+				"sap/ui/Device.js",
+				"sap/ui/VersionInfo.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/mvc/View.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js",
+				"sap/ui/core/service/ServiceFactoryRegistry.js",
+				"sap/ui/model/base/ManagedObjectModel.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "services/TemplatedViewServiceFactory.js",
+			"module": "sap/fe/core/services/TemplatedViewServiceFactory.js",
+			"size": 9366,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/UriParameters.js",
+				"sap/fe/core/TemplateModel.js",
+				"sap/fe/core/helpers/DynamicAnnotationPathHelper.js",
+				"sap/fe/core/helpers/LoaderUtils.js",
+				"sap/ui/Device.js",
+				"sap/ui/VersionInfo.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/mvc/View.js",
+				"sap/ui/core/service/Service.js",
+				"sap/ui/core/service/ServiceFactory.js",
+				"sap/ui/core/service/ServiceFactoryRegistry.js",
+				"sap/ui/model/base/ManagedObjectModel.js",
+				"sap/ui/model/json/JSONModel.js"
+			]
+		},
+		{
+			"name": "services/TemplatedViewServiceFactory.js.map",
+			"size": 13964,
+			"isDebug": true
+		},
+		{
+			"name": "services/TemplatedViewServiceFactory.ts",
+			"size": 16297
+		},
+		{
+			"name": "services/view/TemplatingErrorPage-dbg.controller.js",
+			"module": "sap/fe/core/services/view/TemplatingErrorPage.controller.js",
+			"size": 4509,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/controllerextensions/InternalRouting.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/mvc/Controller.js"
+			]
+		},
+		{
+			"name": "services/view/TemplatingErrorPage.controller.js",
+			"module": "sap/fe/core/services/view/TemplatingErrorPage.controller.js",
+			"size": 1906,
+			"required": [
+				"sap/fe/core/controllerextensions/InternalRouting.js",
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/mvc/Controller.js"
+			]
+		},
+		{
+			"name": "services/view/TemplatingErrorPage.controller.js.map",
+			"size": 2760,
+			"isDebug": true
+		},
+		{
+			"name": "services/view/TemplatingErrorPage.controller.ts",
+			"size": 431
+		},
+		{
+			"name": "services/view/TemplatingErrorPage.view.xml",
+			"module": "sap/fe/core/services/view/TemplatingErrorPage.view.xml",
+			"size": 344,
+			"required": [
+				"sap/fe/core/services/view/TemplatingErrorPage.controller.js",
+				"sap/m/MessagePage.js"
+			]
+		},
+		{
+			"name": "support/AnnotationIssue.support.js",
+			"module": "sap/fe/core/support/AnnotationIssue.support.js",
+			"size": 5894,
+			"support": true,
+			"required": [
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/support/CommonHelper.js"
+			]
+		},
+		{
+			"name": "support/AnnotationIssue.support.ts",
+			"size": 1507
+		},
+		{
+			"name": "support/CollectionFacetMissingID.support.js",
+			"module": "sap/fe/core/support/CollectionFacetMissingID.support.js",
+			"size": 3908,
+			"support": true,
+			"required": [
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/support/CommonHelper.js"
+			]
+		},
+		{
+			"name": "support/CollectionFacetMissingID.support.ts",
+			"size": 908
+		},
+		{
+			"name": "support/CollectionFacetUnsupportedLevel.support.js",
+			"module": "sap/fe/core/support/CollectionFacetUnsupportedLevel.support.js",
+			"size": 4104,
+			"support": true,
+			"required": [
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/support/CommonHelper.js"
+			]
+		},
+		{
+			"name": "support/CollectionFacetUnsupportedLevel.support.ts",
+			"size": 984
+		},
+		{
+			"name": "support/CommonHelper-dbg.js",
+			"module": "sap/fe/core/support/CommonHelper.js",
+			"size": 7738,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/ui/support/library.js"
+			]
+		},
+		{
+			"name": "support/CommonHelper.js",
+			"module": "sap/fe/core/support/CommonHelper.js",
+			"size": 1023,
+			"required": [
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/ui/support/library.js"
+			]
+		},
+		{
+			"name": "support/CommonHelper.js.map",
+			"size": 1656,
+			"isDebug": true
+		},
+		{
+			"name": "support/CommonHelper.ts",
+			"size": 1901
+		},
+		{
+			"name": "support/Diagnostics-dbg.js",
+			"module": "sap/fe/core/support/Diagnostics.js",
+			"size": 7512,
+			"isDebug": true
+		},
+		{
+			"name": "support/Diagnostics.js",
+			"module": "sap/fe/core/support/Diagnostics.js",
+			"size": 1017
+		},
+		{
+			"name": "support/Diagnostics.js.map",
+			"size": 1440,
+			"isDebug": true
+		},
+		{
+			"name": "support/Diagnostics.ts",
+			"size": 1890
+		},
+		{
+			"name": "support/InvalidAnnotationColumnKey.support.js",
+			"module": "sap/fe/core/support/InvalidAnnotationColumnKey.support.js",
+			"size": 4055,
+			"support": true,
+			"required": [
+				"sap/fe/core/converters/helpers/IssueManager.js",
+				"sap/fe/core/support/CommonHelper.js"
+			]
+		},
+		{
+			"name": "support/InvalidAnnotationColumnKey.support.ts",
+			"size": 971
+		},
+		{
+			"name": "templating/CommonFormatters-dbg.js",
+			"module": "sap/fe/core/templating/CommonFormatters.js",
+			"size": 14634,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/helpers/DataFieldHelper.js",
+				"sap/fe/core/formatters/ValueFormatter.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/fe/core/templating/PropertyHelper.js",
+				"sap/fe/core/templating/UIFormatters.js"
+			]
+		},
+		{
+			"name": "templating/CommonFormatters.js",
+			"module": "sap/fe/core/templating/CommonFormatters.js",
+			"size": 1706,
+			"required": [
+				"sap/fe/core/converters/helpers/DataFieldHelper.js",
+				"sap/fe/core/formatters/ValueFormatter.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/fe/core/templating/PropertyHelper.js",
+				"sap/fe/core/templating/UIFormatters.js"
+			]
+		},
+		{
+			"name": "templating/CommonFormatters.js.map",
+			"size": 2691,
+			"isDebug": true
+		},
+		{
+			"name": "templating/CommonFormatters.ts",
+			"size": 4285
+		},
+		{
+			"name": "templating/CriticalityFormatters-dbg.js",
+			"module": "sap/fe/core/templating/CriticalityFormatters.js",
+			"size": 30778,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/templating/DataModelPathHelper.js"
+			]
+		},
+		{
+			"name": "templating/CriticalityFormatters.js",
+			"module": "sap/fe/core/templating/CriticalityFormatters.js",
+			"size": 2732,
+			"required": [
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/templating/DataModelPathHelper.js"
+			]
+		},
+		{
+			"name": "templating/CriticalityFormatters.js.map",
+			"size": 3737,
+			"isDebug": true
+		},
+		{
+			"name": "templating/CriticalityFormatters.ts",
+			"size": 9033
+		},
+		{
+			"name": "templating/DataFieldFormatters-dbg.js",
+			"module": "sap/fe/core/templating/DataFieldFormatters.js",
+			"size": 10275,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/fe/core/templating/UIFormatters.js"
+			]
+		},
+		{
+			"name": "templating/DataFieldFormatters.js",
+			"module": "sap/fe/core/templating/DataFieldFormatters.js",
+			"size": 1582,
+			"required": [
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/fe/core/templating/UIFormatters.js"
+			]
+		},
+		{
+			"name": "templating/DataFieldFormatters.js.map",
+			"size": 1866,
+			"isDebug": true
+		},
+		{
+			"name": "templating/DataFieldFormatters.ts",
+			"size": 3030
+		},
+		{
+			"name": "templating/DataModelPathHelper-dbg.js",
+			"module": "sap/fe/core/templating/DataModelPathHelper.js",
+			"size": 67388,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/templating/PropertyHelper.js"
+			]
+		},
+		{
+			"name": "templating/DataModelPathHelper.js",
+			"module": "sap/fe/core/templating/DataModelPathHelper.js",
+			"size": 7587,
+			"required": [
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/templating/PropertyHelper.js"
+			]
+		},
+		{
+			"name": "templating/DataModelPathHelper.js.map",
+			"size": 11611,
+			"isDebug": true
+		},
+		{
+			"name": "templating/DataModelPathHelper.ts",
+			"size": 18365
+		},
+		{
+			"name": "templating/DisplayModeFormatter-dbg.js",
+			"module": "sap/fe/core/templating/DisplayModeFormatter.js",
+			"size": 17229,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/templating/PropertyHelper.js"
+			]
+		},
+		{
+			"name": "templating/DisplayModeFormatter.js",
+			"module": "sap/fe/core/templating/DisplayModeFormatter.js",
+			"size": 3531,
+			"required": [
+				"sap/fe/core/templating/PropertyHelper.js"
+			]
+		},
+		{
+			"name": "templating/DisplayModeFormatter.js.map",
+			"size": 2936,
+			"isDebug": true
+		},
+		{
+			"name": "templating/DisplayModeFormatter.ts",
+			"size": 4635
+		},
+		{
+			"name": "templating/EntitySetHelper-dbg.js",
+			"module": "sap/fe/core/templating/EntitySetHelper.js",
+			"size": 15588,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ModelHelper.js"
+			]
+		},
+		{
+			"name": "templating/EntitySetHelper.js",
+			"module": "sap/fe/core/templating/EntitySetHelper.js",
+			"size": 3098,
+			"required": [
+				"sap/fe/core/helpers/ModelHelper.js"
+			]
+		},
+		{
+			"name": "templating/EntitySetHelper.js.map",
+			"size": 4855,
+			"isDebug": true
+		},
+		{
+			"name": "templating/EntitySetHelper.ts",
+			"size": 2695
+		},
+		{
+			"name": "templating/FieldControlHelper-dbg.js",
+			"module": "sap/fe/core/templating/FieldControlHelper.js",
+			"size": 12661,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/BindingToolkit.js"
+			]
+		},
+		{
+			"name": "templating/FieldControlHelper.js",
+			"module": "sap/fe/core/templating/FieldControlHelper.js",
+			"size": 1456,
+			"required": [
+				"sap/fe/core/helpers/BindingToolkit.js"
+			]
+		},
+		{
+			"name": "templating/FieldControlHelper.js.map",
+			"size": 2112,
+			"isDebug": true
+		},
+		{
+			"name": "templating/FieldControlHelper.ts",
+			"size": 3435
+		},
+		{
+			"name": "templating/FilterHelper-dbg.js",
+			"module": "sap/fe/core/templating/FilterHelper.js",
+			"size": 54794,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/mdc/condition/Condition.js",
+				"sap/ui/mdc/enum/ConditionValidated.js"
+			]
+		},
+		{
+			"name": "templating/FilterHelper.js",
+			"module": "sap/fe/core/templating/FilterHelper.js",
+			"size": 7051,
+			"required": [
+				"sap/base/Log.js",
+				"sap/ui/mdc/condition/Condition.js",
+				"sap/ui/mdc/enum/ConditionValidated.js"
+			]
+		},
+		{
+			"name": "templating/FilterHelper.js.map",
+			"size": 10801,
+			"isDebug": true
+		},
+		{
+			"name": "templating/FilterHelper.ts",
+			"size": 14085
+		},
+		{
+			"name": "templating/FilterTemplating-dbg.js",
+			"module": "sap/fe/core/templating/FilterTemplating.js",
+			"size": 9698,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ModelHelper.js"
+			]
+		},
+		{
+			"name": "templating/FilterTemplating.js",
+			"module": "sap/fe/core/templating/FilterTemplating.js",
+			"size": 1351,
+			"required": [
+				"sap/fe/core/helpers/ModelHelper.js"
+			]
+		},
+		{
+			"name": "templating/FilterTemplating.js.map",
+			"size": 2398,
+			"isDebug": true
+		},
+		{
+			"name": "templating/FilterTemplating.ts",
+			"size": 2119
+		},
+		{
+			"name": "templating/PropertyFormatters-dbg.js",
+			"module": "sap/fe/core/templating/PropertyFormatters.js",
+			"size": 14821,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/fe/core/templating/PropertyHelper.js",
+				"sap/fe/core/templating/UIFormatters.js"
+			]
+		},
+		{
+			"name": "templating/PropertyFormatters.js",
+			"module": "sap/fe/core/templating/PropertyFormatters.js",
+			"size": 1973,
+			"required": [
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/fe/core/templating/PropertyHelper.js",
+				"sap/fe/core/templating/UIFormatters.js"
+			]
+		},
+		{
+			"name": "templating/PropertyFormatters.js.map",
+			"size": 2821,
+			"isDebug": true
+		},
+		{
+			"name": "templating/PropertyFormatters.ts",
+			"size": 4238
+		},
+		{
+			"name": "templating/PropertyHelper-dbg.js",
+			"module": "sap/fe/core/templating/PropertyHelper.js",
+			"size": 47411,
+			"isDebug": true
+		},
+		{
+			"name": "templating/PropertyHelper.js",
+			"module": "sap/fe/core/templating/PropertyHelper.js",
+			"size": 6824
+		},
+		{
+			"name": "templating/PropertyHelper.js.map",
+			"size": 11032,
+			"isDebug": true
+		},
+		{
+			"name": "templating/PropertyHelper.ts",
+			"size": 9922
+		},
+		{
+			"name": "templating/SemanticObjectHelper-dbg.js",
+			"module": "sap/fe/core/templating/SemanticObjectHelper.js",
+			"size": 5114,
+			"isDebug": true
+		},
+		{
+			"name": "templating/SemanticObjectHelper.js",
+			"module": "sap/fe/core/templating/SemanticObjectHelper.js",
+			"size": 672
+		},
+		{
+			"name": "templating/SemanticObjectHelper.js.map",
+			"size": 964,
+			"isDebug": true
+		},
+		{
+			"name": "templating/SemanticObjectHelper.ts",
+			"size": 1322
+		},
+		{
+			"name": "templating/UIFormatters-dbg.js",
+			"module": "sap/fe/core/templating/UIFormatters.js",
+			"size": 111822,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/converters/helpers/BindingHelper.js",
+				"sap/fe/core/formatters/ValueFormatter.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/fe/core/templating/DisplayModeFormatter.js",
+				"sap/fe/core/templating/FieldControlHelper.js",
+				"sap/fe/core/templating/PropertyHelper.js"
+			]
+		},
+		{
+			"name": "templating/UIFormatters.js",
+			"module": "sap/fe/core/templating/UIFormatters.js",
+			"size": 14491,
+			"required": [
+				"sap/fe/core/converters/MetaModelConverter.js",
+				"sap/fe/core/converters/helpers/BindingHelper.js",
+				"sap/fe/core/formatters/ValueFormatter.js",
+				"sap/fe/core/helpers/BindingToolkit.js",
+				"sap/fe/core/templating/DataModelPathHelper.js",
+				"sap/fe/core/templating/DisplayModeFormatter.js",
+				"sap/fe/core/templating/FieldControlHelper.js",
+				"sap/fe/core/templating/PropertyHelper.js"
+			]
+		},
+		{
+			"name": "templating/UIFormatters.js.map",
+			"size": 21865,
+			"isDebug": true
+		},
+		{
+			"name": "templating/UIFormatters.ts",
+			"size": 29554
+		},
+		{
+			"name": "type/DateTimeWithTimezone-dbg.js",
+			"module": "sap/fe/core/type/DateTimeWithTimezone.js",
+			"size": 4635,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/model/odata/type/DateTimeWithTimezone.js"
+			]
+		},
+		{
+			"name": "type/DateTimeWithTimezone.js",
+			"module": "sap/fe/core/type/DateTimeWithTimezone.js",
+			"size": 1000,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/model/odata/type/DateTimeWithTimezone.js"
+			]
+		},
+		{
+			"name": "type/DateTimeWithTimezone.js.map",
+			"size": 1519,
+			"isDebug": true
+		},
+		{
+			"name": "type/DateTimeWithTimezone.ts",
+			"size": 920
+		},
+		{
+			"name": "type/Email-dbg.js",
+			"module": "sap/fe/core/type/Email.js",
+			"size": 3483,
+			"isDebug": true,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/model/ValidateException.js",
+				"sap/ui/model/odata/type/String.js"
+			]
+		},
+		{
+			"name": "type/Email.js",
+			"module": "sap/fe/core/type/Email.js",
+			"size": 978,
+			"required": [
+				"sap/fe/core/helpers/ClassSupport.js",
+				"sap/ui/core/Core.js",
+				"sap/ui/model/ValidateException.js",
+				"sap/ui/model/odata/type/String.js"
+			]
+		},
+		{
+			"name": "type/Email.js.map",
+			"size": 1285,
+			"isDebug": true
+		},
+		{
+			"name": "type/Email.ts",
+			"size": 663
+		},
+		{
+			"name": "type/TypeUtil-dbg.js",
+			"module": "sap/fe/core/type/TypeUtil.js",
+			"size": 7898,
+			"isDebug": true,
+			"required": [
+				"sap/base/util/merge.js",
+				"sap/ui/mdc/enum/BaseType.js",
+				"sap/ui/mdc/odata/TypeUtil.js"
+			]
+		},
+		{
+			"name": "type/TypeUtil.js",
+			"module": "sap/fe/core/type/TypeUtil.js",
+			"size": 1202,
+			"required": [
+				"sap/base/util/merge.js",
+				"sap/ui/mdc/enum/BaseType.js",
+				"sap/ui/mdc/odata/TypeUtil.js"
+			]
+		},
+		{
+			"name": "type/TypeUtil.js.map",
+			"size": 1339,
+			"isDebug": true
+		},
+		{
+			"name": "type/TypeUtil.ts",
+			"size": 2138
+		}
+	]
+}

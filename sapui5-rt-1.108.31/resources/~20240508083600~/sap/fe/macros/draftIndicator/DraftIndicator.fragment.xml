@@ -1,0 +1,38 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+	template:require="{
+		FIELD: 'sap/fe/macros/field/FieldHelper',
+		ID: 'sap/fe/core/helpers/StableIdHelper',
+		FieldTemplating: 'sap/fe/macros/field/FieldTemplating'
+	}"
+>
+	<!--	{IsActiveEntity} true when there are unsaved changes by other users.
+		{HasDraftEntity} true when entity has draft state.
+-->
+	<template:if test="{= ${this>DraftIndicatorType} === 'IconAndText'}">
+		<template:then>
+			<ObjectMarker
+				core:require="{DraftIndicator: 'sap/fe/macros/draftIndicator/DraftIndicatorRuntime'}"
+				type="{= !%{IsActiveEntity} ? 'Draft' : (%{HasDraftEntity} ? (%{DraftAdministrativeData/InProcessByUser} ? 'LockedBy' : (%{DraftAdministrativeData/LastChangedByUser} ? 'UnsavedBy' : 'Unsaved')) : 'Flagged') }"
+				press="DraftIndicator.onDraftLinkPressed($event, '{entitySet>@sapui.name}','{this>indicatorType}')"
+				visibility="{= !%{HasDraftEntity} ? 'TextOnly' : 'IconAndText' }"
+				visible="{this>isDraftIndicatorVisible}"
+				additionalInfo="{path: 'entitySet>$Type', formatter: 'FieldTemplating.getBindingForDraftAdminBlockInline'}"
+				ariaLabelledBy="{= ${this>ariaLabelledBy}}"
+			/>
+		</template:then>
+		<template:else>
+			<ObjectMarker
+				core:require="{DraftIndicator: 'sap/fe/macros/draftIndicator/DraftIndicatorRuntime'}"
+				type="{= !%{IsActiveEntity} ? 'Draft' : (%{HasDraftEntity} ? (%{DraftAdministrativeData/InProcessByUser} ? 'Locked' : 'Unsaved') : 'Flagged') }"
+				press="DraftIndicator.onDraftLinkPressed($event, '{entitySet>@sapui.name}','{this>indicatorType}')"
+				visibility="IconOnly"
+				visible="{= !${ui>/isEditable} &amp;&amp; ${HasDraftEntity} &amp;&amp; !%{DraftAdministrativeData/DraftIsCreatedByMe}}"
+				class="${this>class}"
+				ariaLabelledBy="{= ${this>ariaLabelledBy}}"
+			/>
+		</template:else>
+	</template:if>
+</core:FragmentDefinition>

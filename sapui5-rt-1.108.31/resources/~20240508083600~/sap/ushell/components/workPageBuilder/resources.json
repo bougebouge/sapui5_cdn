@@ -1,0 +1,1031 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"module": "sap/ushell/components/workPageBuilder/Component.js",
+			"size": 1785,
+			"isDebug": true,
+			"required": [
+				"sap/f/library.js",
+				"sap/m/library.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/library.js",
+				"sap/ui/model/resource/ResourceModel.js",
+				"sap/ushell/components/workPageBuilder/view/WorkPageBuilder.view.xml"
+			]
+		},
+		{
+			"name": "Component-preload.js",
+			"module": "sap/ushell/components/workPageBuilder/Component-preload.js",
+			"size": 169355,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/strings/formatMessage.js",
+				"sap/base/util/ObjectPath.js",
+				"sap/base/util/deepExtend.js",
+				"sap/base/util/uid.js",
+				"sap/f/GridContainer.js",
+				"sap/f/GridContainerItemLayoutData.js",
+				"sap/f/GridContainerSettings.js",
+				"sap/f/GridList.js",
+				"sap/f/GridListItem.js",
+				"sap/f/library.js",
+				"sap/m/Avatar.js",
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/FlexItemData.js",
+				"sap/m/HBox.js",
+				"sap/m/IllustratedMessage.js",
+				"sap/m/IllustratedMessageSize.js",
+				"sap/m/IllustratedMessageType.js",
+				"sap/m/Input.js",
+				"sap/m/Label.js",
+				"sap/m/List.js",
+				"sap/m/NavContainer.js",
+				"sap/m/OverflowToolbar.js",
+				"sap/m/OverflowToolbarButton.js",
+				"sap/m/OverflowToolbarLayoutData.js",
+				"sap/m/Page.js",
+				"sap/m/SearchField.js",
+				"sap/m/StandardListItem.js",
+				"sap/m/Text.js",
+				"sap/m/Title.js",
+				"sap/m/ToolbarSpacer.js",
+				"sap/m/VBox.js",
+				"sap/m/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/ComponentContainer.js",
+				"sap/ui/core/Control.js",
+				"sap/ui/core/CustomData.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/Icon.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/library.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/integration/Host.js",
+				"sap/ui/integration/widgets/Card.js",
+				"sap/ui/layout/cssgrid/GridResponsiveLayout.js",
+				"sap/ui/layout/cssgrid/GridSettings.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/model/resource/ResourceModel.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/adapters/cdm/v3/_LaunchPage/readUtils.js",
+				"sap/ushell/adapters/cdm/v3/_LaunchPage/readVisualizations.js",
+				"sap/ushell/adapters/cdm/v3/utilsCdm.js",
+				"sap/ushell/components/contentFinderAppSearch/Component.js",
+				"sap/ushell/library.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/services/_VisualizationInstantiation/VizInstance.js",
+				"sap/ushell/services/_VisualizationInstantiation/VizInstanceCdm.js",
+				"sap/ushell/services/_VisualizationInstantiation/VizInstanceLink.js",
+				"sap/ushell/utils.js"
+			],
+			"included": [
+				"sap/ushell/components/workPageBuilder/Component.js",
+				"sap/ushell/components/workPageBuilder/controller/ContentFinderDialog.controller.js",
+				"sap/ushell/components/workPageBuilder/controller/ContentPicker.controller.js",
+				"sap/ushell/components/workPageBuilder/controller/WorkPageBuilder.controller.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPage.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageButton.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageCell.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageColumn.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageColumnRenderer.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageColumnResizer.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageRenderer.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageRow.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageRowRenderer.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageSection.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageWidgetContainer.js",
+				"sap/ushell/components/workPageBuilder/manifest.json",
+				"sap/ushell/components/workPageBuilder/resources/resources.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_ar.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_bg.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_ca.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_cs.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_cy.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_da.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_de.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_el.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_en.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_en_GB.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_en_US_sappsd.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_en_US_saprigi.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_en_US_saptrc.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_es.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_es_MX.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_et.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_fi.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_fr.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_fr_CA.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_hi.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_hr.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_hu.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_id.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_it.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_iw.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_ja.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_kk.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_ko.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_lt.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_lv.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_mk.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_ms.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_nl.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_no.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_pl.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_pt.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_pt_PT.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_ro.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_ru.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_sh.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_sk.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_sl.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_sr.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_sv.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_th.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_tr.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_uk.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_vi.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_zh_CN.properties",
+				"sap/ushell/components/workPageBuilder/resources/resources_zh_TW.properties",
+				"sap/ushell/components/workPageBuilder/view/ContentFinderDialog.fragment.xml",
+				"sap/ushell/components/workPageBuilder/view/ContentPicker.fragment.xml",
+				"sap/ushell/components/workPageBuilder/view/WorkPageBuilder.view.xml",
+				"sap/ushell/components/workPageBuilder/view/WorkPageRowDeleteDialog.fragment.xml"
+			]
+		},
+		{
+			"name": "Component-preload.js.map",
+			"size": 57017,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"module": "sap/ushell/components/workPageBuilder/Component.js",
+			"size": 495,
+			"required": [
+				"sap/f/library.js",
+				"sap/m/library.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/library.js",
+				"sap/ui/model/resource/ResourceModel.js",
+				"sap/ushell/components/workPageBuilder/view/WorkPageBuilder.view.xml"
+			]
+		},
+		{
+			"name": "Component.js.map",
+			"size": 634,
+			"isDebug": true
+		},
+		{
+			"name": "controller/ContentFinderDialog-dbg.controller.js",
+			"module": "sap/ushell/components/workPageBuilder/controller/ContentFinderDialog.controller.js",
+			"size": 28772,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/ObjectPath.js",
+				"sap/base/util/deepExtend.js",
+				"sap/base/util/uid.js",
+				"sap/m/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ushell/library.js",
+				"sap/ushell/resources.js"
+			]
+		},
+		{
+			"name": "controller/ContentFinderDialog.controller.js",
+			"module": "sap/ushell/components/workPageBuilder/controller/ContentFinderDialog.controller.js",
+			"size": 10616,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/ObjectPath.js",
+				"sap/base/util/deepExtend.js",
+				"sap/base/util/uid.js",
+				"sap/m/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ushell/library.js",
+				"sap/ushell/resources.js"
+			]
+		},
+		{
+			"name": "controller/ContentFinderDialog.controller.js.map",
+			"size": 11485,
+			"isDebug": true
+		},
+		{
+			"name": "controller/ContentPicker-dbg.controller.js",
+			"module": "sap/ushell/components/workPageBuilder/controller/ContentPicker.controller.js",
+			"size": 5513,
+			"isDebug": true,
+			"required": [
+				"sap/base/util/uid.js",
+				"sap/ui/core/CustomData.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ushell/EventHub.js"
+			]
+		},
+		{
+			"name": "controller/ContentPicker.controller.js",
+			"module": "sap/ushell/components/workPageBuilder/controller/ContentPicker.controller.js",
+			"size": 2510,
+			"required": [
+				"sap/base/util/uid.js",
+				"sap/ui/core/CustomData.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/model/Filter.js",
+				"sap/ui/model/FilterOperator.js",
+				"sap/ushell/EventHub.js"
+			]
+		},
+		{
+			"name": "controller/ContentPicker.controller.js.map",
+			"size": 3162,
+			"isDebug": true
+		},
+		{
+			"name": "controller/WorkPageBuilder-dbg.controller.js",
+			"module": "sap/ushell/components/workPageBuilder/controller/WorkPageBuilder.controller.js",
+			"size": 39951,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/ObjectPath.js",
+				"sap/base/util/uid.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/integration/Host.js",
+				"sap/ui/integration/widgets/Card.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageCell.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageSection.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageWidgetContainer.js"
+			],
+			"condRequired": [
+				"sap/ushell/components/workPageBuilder/controller/ContentFinderDialog.controller.js"
+			]
+		},
+		{
+			"name": "controller/WorkPageBuilder.controller.js",
+			"module": "sap/ushell/components/workPageBuilder/controller/WorkPageBuilder.controller.js",
+			"size": 11989,
+			"required": [
+				"sap/base/Log.js",
+				"sap/base/util/ObjectPath.js",
+				"sap/base/util/uid.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/integration/Host.js",
+				"sap/ui/integration/widgets/Card.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageCell.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageSection.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageWidgetContainer.js"
+			],
+			"condRequired": [
+				"sap/ushell/components/workPageBuilder/controller/ContentFinderDialog.controller.js"
+			]
+		},
+		{
+			"name": "controller/WorkPageBuilder.controller.js.map",
+			"size": 15358,
+			"isDebug": true
+		},
+		{
+			"name": "controls/WorkPage-dbg.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPage.js",
+			"size": 5065,
+			"isDebug": true,
+			"required": [
+				"sap/m/Button.js",
+				"sap/m/IllustratedMessage.js",
+				"sap/m/IllustratedMessageSize.js",
+				"sap/m/IllustratedMessageType.js",
+				"sap/ui/core/Control.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageRenderer.js",
+				"sap/ushell/utils.js"
+			]
+		},
+		{
+			"name": "controls/WorkPage.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPage.js",
+			"size": 1903,
+			"required": [
+				"sap/m/Button.js",
+				"sap/m/IllustratedMessage.js",
+				"sap/m/IllustratedMessageSize.js",
+				"sap/m/IllustratedMessageType.js",
+				"sap/ui/core/Control.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageRenderer.js",
+				"sap/ushell/utils.js"
+			]
+		},
+		{
+			"name": "controls/WorkPage.js.map",
+			"size": 2074,
+			"isDebug": true
+		},
+		{
+			"name": "controls/WorkPageButton-dbg.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageButton.js",
+			"size": 4203,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Icon.js"
+			]
+		},
+		{
+			"name": "controls/WorkPageButton.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageButton.js",
+			"size": 1372,
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/ui/core/Icon.js"
+			]
+		},
+		{
+			"name": "controls/WorkPageButton.js.map",
+			"size": 1697,
+			"isDebug": true
+		},
+		{
+			"name": "controls/WorkPageCell-dbg.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageCell.js",
+			"size": 2370,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Control.js"
+			]
+		},
+		{
+			"name": "controls/WorkPageCell.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageCell.js",
+			"size": 693,
+			"required": [
+				"sap/ui/core/Control.js"
+			]
+		},
+		{
+			"name": "controls/WorkPageCell.js.map",
+			"size": 852,
+			"isDebug": true
+		},
+		{
+			"name": "controls/WorkPageColumn-dbg.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageColumn.js",
+			"size": 11116,
+			"isDebug": true,
+			"required": [
+				"sap/m/Button.js",
+				"sap/ui/core/Control.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageButton.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageColumnRenderer.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageColumnResizer.js"
+			]
+		},
+		{
+			"name": "controls/WorkPageColumn.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageColumn.js",
+			"size": 3935,
+			"required": [
+				"sap/m/Button.js",
+				"sap/ui/core/Control.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageButton.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageColumnRenderer.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageColumnResizer.js"
+			]
+		},
+		{
+			"name": "controls/WorkPageColumn.js.map",
+			"size": 3946,
+			"isDebug": true
+		},
+		{
+			"name": "controls/WorkPageColumnRenderer-dbg.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageColumnRenderer.js",
+			"size": 3018,
+			"isDebug": true
+		},
+		{
+			"name": "controls/WorkPageColumnRenderer.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageColumnRenderer.js",
+			"size": 1082
+		},
+		{
+			"name": "controls/WorkPageColumnRenderer.js.map",
+			"size": 1540,
+			"isDebug": true
+		},
+		{
+			"name": "controls/WorkPageColumnResizer-dbg.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageColumnResizer.js",
+			"size": 4453,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Control.js"
+			]
+		},
+		{
+			"name": "controls/WorkPageColumnResizer.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageColumnResizer.js",
+			"size": 1385,
+			"required": [
+				"sap/ui/core/Control.js"
+			]
+		},
+		{
+			"name": "controls/WorkPageColumnResizer.js.map",
+			"size": 1654,
+			"isDebug": true
+		},
+		{
+			"name": "controls/WorkPageRenderer-dbg.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageRenderer.js",
+			"size": 1319,
+			"isDebug": true
+		},
+		{
+			"name": "controls/WorkPageRenderer.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageRenderer.js",
+			"size": 703
+		},
+		{
+			"name": "controls/WorkPageRenderer.js.map",
+			"size": 978,
+			"isDebug": true
+		},
+		{
+			"name": "controls/WorkPageRow-dbg.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageRow.js",
+			"size": 5599,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageButton.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageRowRenderer.js"
+			]
+		},
+		{
+			"name": "controls/WorkPageRow.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageRow.js",
+			"size": 1922,
+			"required": [
+				"sap/ui/core/Control.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageButton.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageRowRenderer.js"
+			]
+		},
+		{
+			"name": "controls/WorkPageRow.js.map",
+			"size": 1862,
+			"isDebug": true
+		},
+		{
+			"name": "controls/WorkPageRowRenderer-dbg.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageRowRenderer.js",
+			"size": 2317,
+			"isDebug": true
+		},
+		{
+			"name": "controls/WorkPageRowRenderer.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageRowRenderer.js",
+			"size": 914
+		},
+		{
+			"name": "controls/WorkPageRowRenderer.js.map",
+			"size": 1214,
+			"isDebug": true
+		},
+		{
+			"name": "controls/WorkPageSection-dbg.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageSection.js",
+			"size": 17233,
+			"isDebug": true,
+			"required": [
+				"sap/base/util/ObjectPath.js",
+				"sap/f/GridContainer.js",
+				"sap/f/GridContainerItemLayoutData.js",
+				"sap/f/GridContainerSettings.js",
+				"sap/m/Button.js",
+				"sap/m/VBox.js",
+				"sap/m/library.js",
+				"sap/ui/core/Control.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/adapters/cdm/v3/_LaunchPage/readUtils.js",
+				"sap/ushell/adapters/cdm/v3/_LaunchPage/readVisualizations.js",
+				"sap/ushell/adapters/cdm/v3/utilsCdm.js",
+				"sap/ushell/library.js",
+				"sap/ushell/services/_VisualizationInstantiation/VizInstance.js",
+				"sap/ushell/services/_VisualizationInstantiation/VizInstanceCdm.js",
+				"sap/ushell/services/_VisualizationInstantiation/VizInstanceLink.js"
+			]
+		},
+		{
+			"name": "controls/WorkPageSection.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageSection.js",
+			"size": 6281,
+			"required": [
+				"sap/base/util/ObjectPath.js",
+				"sap/f/GridContainer.js",
+				"sap/f/GridContainerItemLayoutData.js",
+				"sap/f/GridContainerSettings.js",
+				"sap/m/Button.js",
+				"sap/m/VBox.js",
+				"sap/m/library.js",
+				"sap/ui/core/Control.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/adapters/cdm/v3/_LaunchPage/readUtils.js",
+				"sap/ushell/adapters/cdm/v3/_LaunchPage/readVisualizations.js",
+				"sap/ushell/adapters/cdm/v3/utilsCdm.js",
+				"sap/ushell/library.js",
+				"sap/ushell/services/_VisualizationInstantiation/VizInstance.js",
+				"sap/ushell/services/_VisualizationInstantiation/VizInstanceCdm.js",
+				"sap/ushell/services/_VisualizationInstantiation/VizInstanceLink.js"
+			]
+		},
+		{
+			"name": "controls/WorkPageSection.js.map",
+			"size": 7690,
+			"isDebug": true
+		},
+		{
+			"name": "controls/WorkPageWidgetContainer-dbg.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageWidgetContainer.js",
+			"size": 4212,
+			"isDebug": true,
+			"required": [
+				"sap/m/Button.js",
+				"sap/ui/core/Control.js"
+			]
+		},
+		{
+			"name": "controls/WorkPageWidgetContainer.js",
+			"module": "sap/ushell/components/workPageBuilder/controls/WorkPageWidgetContainer.js",
+			"size": 1346,
+			"required": [
+				"sap/m/Button.js",
+				"sap/ui/core/Control.js"
+			]
+		},
+		{
+			"name": "controls/WorkPageWidgetContainer.js.map",
+			"size": 1595,
+			"isDebug": true
+		},
+		{
+			"name": "manifest.json",
+			"module": "sap/ushell/components/workPageBuilder/manifest.json",
+			"size": 1454
+		},
+		{
+			"name": "resources.json",
+			"size": 34946
+		},
+		{
+			"name": "resources/resources.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources.properties",
+			"size": 1592,
+			"locale": "",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_ar.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_ar.properties",
+			"size": 2568,
+			"locale": "ar",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_bg.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_bg.properties",
+			"size": 3291,
+			"locale": "bg",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_ca.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_ca.properties",
+			"size": 1364,
+			"locale": "ca",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_cs.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_cs.properties",
+			"size": 1405,
+			"locale": "cs",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_cy.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_cy.properties",
+			"size": 1250,
+			"locale": "cy",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_da.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_da.properties",
+			"size": 1286,
+			"locale": "da",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_de.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_de.properties",
+			"size": 1406,
+			"locale": "de",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_el.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_el.properties",
+			"size": 3167,
+			"locale": "el",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_en.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_en.properties",
+			"size": 1236,
+			"locale": "en",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_en_GB.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_en_GB.properties",
+			"size": 1236,
+			"locale": "en_GB",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_en_US_sappsd.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_en_US_sappsd.properties",
+			"size": 3815,
+			"locale": "en_US_sappsd",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_en_US_saprigi.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_en_US_saprigi.properties",
+			"size": 7566,
+			"locale": "en_US_saprigi",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_en_US_saptrc.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_en_US_saptrc.properties",
+			"size": 1762,
+			"locale": "en_US_saptrc",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_es.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_es.properties",
+			"size": 1399,
+			"locale": "es",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_es_MX.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_es_MX.properties",
+			"size": 1393,
+			"locale": "es_MX",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_et.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_et.properties",
+			"size": 1281,
+			"locale": "et",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_fi.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_fi.properties",
+			"size": 1342,
+			"locale": "fi",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_fr.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_fr.properties",
+			"size": 1375,
+			"locale": "fr",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_fr_CA.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_fr_CA.properties",
+			"size": 1380,
+			"locale": "fr_CA",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_hi.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_hi.properties",
+			"size": 2934,
+			"locale": "hi",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_hr.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_hr.properties",
+			"size": 1318,
+			"locale": "hr",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_hu.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_hu.properties",
+			"size": 1580,
+			"locale": "hu",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_id.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_id.properties",
+			"size": 1290,
+			"locale": "id",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_it.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_it.properties",
+			"size": 1285,
+			"locale": "it",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_iw.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_iw.properties",
+			"size": 2339,
+			"locale": "iw",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_ja.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_ja.properties",
+			"size": 2002,
+			"locale": "ja",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_kk.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_kk.properties",
+			"size": 2723,
+			"locale": "kk",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_ko.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_ko.properties",
+			"size": 1560,
+			"locale": "ko",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_lt.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_lt.properties",
+			"size": 1564,
+			"locale": "lt",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_lv.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_lv.properties",
+			"size": 1447,
+			"locale": "lv",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_mk.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_mk.properties",
+			"size": 2633,
+			"locale": "mk",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_ms.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_ms.properties",
+			"size": 1269,
+			"locale": "ms",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_nl.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_nl.properties",
+			"size": 1293,
+			"locale": "nl",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_no.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_no.properties",
+			"size": 1273,
+			"locale": "no",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_pl.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_pl.properties",
+			"size": 1375,
+			"locale": "pl",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_pt.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_pt.properties",
+			"size": 1413,
+			"locale": "pt",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_pt_PT.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_pt_PT.properties",
+			"size": 1435,
+			"locale": "pt_PT",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_ro.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_ro.properties",
+			"size": 1482,
+			"locale": "ro",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_ru.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_ru.properties",
+			"size": 2999,
+			"locale": "ru",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_sh.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_sh.properties",
+			"size": 1327,
+			"locale": "sh",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_sk.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_sk.properties",
+			"size": 1534,
+			"locale": "sk",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_sl.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_sl.properties",
+			"size": 1376,
+			"locale": "sl",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_sr.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_sr.properties",
+			"size": 2895,
+			"locale": "sr",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_sv.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_sv.properties",
+			"size": 1342,
+			"locale": "sv",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_th.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_th.properties",
+			"size": 2570,
+			"locale": "th",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_tr.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_tr.properties",
+			"size": 1456,
+			"locale": "tr",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_uk.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_uk.properties",
+			"size": 3048,
+			"locale": "uk",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_vi.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_vi.properties",
+			"size": 1739,
+			"locale": "vi",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_zh_CN.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_zh_CN.properties",
+			"size": 1570,
+			"locale": "zh_CN",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "resources/resources_zh_TW.properties",
+			"module": "sap/ushell/components/workPageBuilder/resources/resources_zh_TW.properties",
+			"size": 1496,
+			"locale": "zh_TW",
+			"raw": "resources/resources.properties"
+		},
+		{
+			"name": "view/ContentFinderDialog.fragment.xml",
+			"module": "sap/ushell/components/workPageBuilder/view/ContentFinderDialog.fragment.xml",
+			"size": 7953,
+			"required": [
+				"sap/base/strings/formatMessage.js",
+				"sap/f/GridList.js",
+				"sap/f/GridListItem.js",
+				"sap/m/Avatar.js",
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/FlexItemData.js",
+				"sap/m/HBox.js",
+				"sap/m/Label.js",
+				"sap/m/NavContainer.js",
+				"sap/m/OverflowToolbar.js",
+				"sap/m/Page.js",
+				"sap/m/Title.js",
+				"sap/m/ToolbarSpacer.js",
+				"sap/m/VBox.js",
+				"sap/ui/core/ComponentContainer.js",
+				"sap/ui/core/CustomData.js",
+				"sap/ui/layout/cssgrid/GridResponsiveLayout.js",
+				"sap/ui/layout/cssgrid/GridSettings.js",
+				"sap/ushell/components/contentFinderAppSearch/Component.js"
+			]
+		},
+		{
+			"name": "view/ContentPicker.fragment.xml",
+			"module": "sap/ushell/components/workPageBuilder/view/ContentPicker.fragment.xml",
+			"size": 1724,
+			"required": [
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/List.js",
+				"sap/m/OverflowToolbar.js",
+				"sap/m/SearchField.js",
+				"sap/m/StandardListItem.js",
+				"sap/m/Title.js",
+				"sap/m/ToolbarSpacer.js"
+			]
+		},
+		{
+			"name": "view/WorkPageBuilder.view.xml",
+			"module": "sap/ushell/components/workPageBuilder/view/WorkPageBuilder.view.xml",
+			"size": 4398,
+			"required": [
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/Input.js",
+				"sap/m/Label.js",
+				"sap/m/OverflowToolbar.js",
+				"sap/m/OverflowToolbarButton.js",
+				"sap/m/OverflowToolbarLayoutData.js",
+				"sap/m/Page.js",
+				"sap/m/Title.js",
+				"sap/m/ToolbarSpacer.js",
+				"sap/ushell/components/workPageBuilder/controller/WorkPageBuilder.controller.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPage.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageColumn.js",
+				"sap/ushell/components/workPageBuilder/controls/WorkPageRow.js"
+			]
+		},
+		{
+			"name": "view/WorkPageRowDeleteDialog.fragment.xml",
+			"module": "sap/ushell/components/workPageBuilder/view/WorkPageRowDeleteDialog.fragment.xml",
+			"size": 604,
+			"required": [
+				"sap/m/Button.js",
+				"sap/m/Dialog.js",
+				"sap/m/Text.js"
+			]
+		}
+	]
+}

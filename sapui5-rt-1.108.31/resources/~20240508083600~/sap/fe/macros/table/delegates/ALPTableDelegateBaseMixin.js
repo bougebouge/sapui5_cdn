@@ -1,0 +1,6 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *      (c) Copyright 2009-2021 SAP SE. All rights reserved
+ */
+sap.ui.define(["sap/base/util/deepClone","sap/fe/core/CommonUtils","sap/fe/macros/chart/ChartUtils","sap/fe/macros/DelegateUtil","sap/fe/macros/table/Utils","sap/ui/model/Filter"],function(e,t,a,n,i,r){"use strict";var l={_internalUpdateBindingInfo:function(l,o){var s,g;var f;var d={},v={};var c;Object.assign(o,e(n.getCustomData(l,"rowsBindingInfo")));if(l.getRowBinding()){o.suspended=false}var u=t.getTargetView(l);var p=(s=(g=u.getController()).getChartControl)===null||s===void 0?void 0:s.call(g);var C=a.getChartSelectionsExist(p,l);v=i.getAllFilterInfo(l);var h=v&&v.filters;f=v;if(C){d=a.getAllFilterInfo(p);c=d&&d.filters;f=d}var b=(h&&c?h.concat(c):c||h)||[];var m=b.length>0&&new r({filters:b,and:true});if(f.bindingPath){o.path=f.bindingPath}i.updateBindingInfo(o,f,m)},_getDelegateParentClass:function(){return undefined},rebind:function(e,t){var a=e.getBindingContext("pageInternal");var n=a.getProperty("".concat(a.getPath(),"/alpContentView"));if(n!=="Chart"){var i;(i=this._getDelegateParentClass())===null||i===void 0?void 0:i.rebind(e,t)}}};return l},false);
+//# sourceMappingURL=ALPTableDelegateBaseMixin.js.map

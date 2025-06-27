@@ -1,0 +1,35 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:mdc="sap.ui.mdc"
+	xmlns:mdcField="sap.ui.mdc.field"
+	xmlns:unittest="http://schemas.sap.com/sapui5/preprocessorextension/sap.fe.unittesting/1"
+	template:require="{
+		COMMON: 'sap/fe/macros/CommonHelper',
+		FIELD: 'sap/fe/macros/field/FieldHelper',
+		ID: 'sap/fe/core/helpers/StableIdHelper',
+		ValueHelpTemplating: 'sap/fe/macros/internal/valuehelp/ValueHelpTemplating',
+		Property: 'sap/fe/core/templating/PropertyFormatters'
+	}"
+>
+	<template:if test="{= FIELD.hasValueHelpAnnotation(${actionParameter>@}) }">
+		<mdc:dependents>
+			<mdcField:FieldValueHelp
+				unittest:id="ActionParameterDialogValuehelpExpressionTest"
+				id="{= ID.generate([${actionName>@sapui.name},${parameter>$Name}]) }"
+				delegate="{= FIELD.getFieldValueHelpDelegate(${action>$IsBound}, ${entitySet>@@COMMON.getContextPath}, ${actionName>@sapui.name}, ${parameter>$Name}) }"
+				noDialog="{= ${actionParameter>@com.sap.vocabularies.Common.v1.ValueListWithFixedValues} ? (${actionParameter>@com.sap.vocabularies.Common.v1.ValueListWithFixedValues} !== false) : false}"
+				validateInput="{= ValueHelpTemplating.requiresValidation(${actionParameter>@@Property.getProperty})}"
+				caseSensitive="{= ValueHelpTemplating.useCaseSensitiveFilterRequests(${actionParameter>@@Property.getPropertyObjectPath}, ${actionParameter>/@Org.OData.Capabilities.V1.FilterFunctions})}"
+			>
+				<mdcField:dialogContent>
+					<mdcField:FieldValueHelpMdcTableWrapper />
+				</mdcField:dialogContent>
+				<mdcField:suggestContent>
+					<mdcField:FieldValueHelpMTableWrapper />
+				</mdcField:suggestContent>
+			</mdcField:FieldValueHelp>
+		</mdc:dependents>
+	</template:if>
+</core:FragmentDefinition>

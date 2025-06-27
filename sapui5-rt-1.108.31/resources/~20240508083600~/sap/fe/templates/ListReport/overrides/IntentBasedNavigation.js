@@ -1,0 +1,6 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *      (c) Copyright 2009-2021 SAP SE. All rights reserved
+ */
+sap.ui.define(["sap/fe/core/CommonUtils"],function(t){"use strict";var e={adaptNavigationContext:function(e,r){var i=this.getView(),a=i.getController(),n=a._getFilterBarControl();if(n&&!e.isEmpty()){var o=i.getViewData(),l=o.fullContextPath;var s=Object.assign({},this.base.getView().getController().filterBarConditions);var g=[];if(o.contextPath){var f=i.getModel().getMetaModel(),c=t.getParameterInfo(f,o.contextPath),d=c.parameterProperties;g=d&&Object.keys(d)||[]}s=a._intentBasedNavigation.prepareFiltersForExternalNavigation(s,l,g);var v=a._getMultiModeControl();if(v){var p=v.getTabsModel();if(p){var u;var C=p.getProperty("/".concat((u=v.content)===null||u===void 0?void 0:u.getSelectedKey(),"/notApplicable/fields"));if(Array.isArray(C)&&C.length>0){C.forEach(function(t){delete s.filterConditions[t]})}}}t.addExternalStateFiltersToSelectionVariant(e,s,r,n);delete r.propertiesWithoutConflict}},getEntitySet:function(){return this.base.getCurrentEntitySet()}};return e},false);
+//# sourceMappingURL=IntentBasedNavigation.js.map

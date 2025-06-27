@@ -1,0 +1,3 @@
+// Copyright (c) 2009-2022 SAP SE, All Rights Reserved
+sap.ui.define(["sap/ui/core/Component","sap/ui/thirdparty/jquery","sap/base/Log"],function(e,jQuery,t){"use strict";return e.extend("sap.ushell.appRuntime.ui5.plugins.scriptAgent.Component",{metadata:{version:"1.0.0",dependencies:{libs:["sap.m"],components:[]}},init:function(){var e=this.getComponentData();try{jQuery.getScript(e.config.url)}catch(e){t.error(e)}}})});
+//# sourceMappingURL=Component.js.map

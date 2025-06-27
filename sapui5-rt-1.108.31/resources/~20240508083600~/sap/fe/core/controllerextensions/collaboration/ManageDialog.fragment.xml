@@ -1,0 +1,105 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:mdc="sap.ui.mdc"
+	xmlns:core="sap.ui.core"
+	xmlns:macro="sap.fe.macros"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	template:require="{
+		MODEL: 'sap/ui/model/odata/v4/AnnotationHelper',
+		COMMON: 'sap/fe/core/controllerextensions/collaboration/CollaborationCommon'
+	}"
+	core:require="{COMMON: 'sap/fe/core/controllerextensions/collaboration/CollaborationCommon'}"
+>
+	<Dialog
+		id="dialog"
+		title="{= COMMON.getText('C_COLLABORATIONDRAFT_INVITATION_DIALOG') + ' ' + ${contextPath>./@com.sap.vocabularies.UI.v1.HeaderInfo/TypeName} + ${contextPath>./@com.sap.vocabularies.UI.v1.HeaderInfo/Title/Value@@MODEL.format} }"
+		binding="{internal>collaboration}"
+	>
+		<VBox class="sapUiMediumMargin">
+			<VBox width="40em">
+				<MessageStrip
+					text="{= COMMON.getText('C_COLLABORATIONDRAFT_INVITATION_MESSAGESTRIP') }"
+					type="Information"
+					showIcon="true"
+					showCloseButton="false"
+					class="sapUiMediumMarginBottom"
+				/>
+			</VBox>
+
+			<Label text="{= COMMON.getText('C_COLLABORATIONDRAFT_INVITATION_INPUT_LABEL') }" />
+			<HBox class="sapUiMediumMarginBottom" width="100%" id="newUserBox">
+				<mdc:Field
+					id="UserID"
+					value="{internal>UserID}"
+					additionalValue="{internal>UserDescription}"
+					display="DescriptionValue"
+					width="37em"
+					required="true"
+					fieldHelp="userValueHelp"
+					placeholder="{= COMMON.getText('C_COLLABORATIONDRAFT_INVITATION_INPUT_PLACEHOLDER') }"
+					change=".addUserChanged"
+				>
+					<mdc:dependents>
+						<template:with path="contextPath>DraftAdministrativeData/DraftAdministrativeUser/UserID" var="vhProperty">
+							<macro:ValueHelp _flexId="userValueHelp" property="{vhProperty>}" />
+						</template:with>
+					</mdc:dependents>
+				</mdc:Field>
+				<Button
+					class="sapUiTinyMarginBegin"
+					text="{= COMMON.getText('C_COLLABORATIONDRAFT_INVITATION_DIALOG_ADD_USER') }"
+					press=".addUser"
+				/>
+			</HBox>
+
+			<Table id="userList" width="40em" items="{internal>invitedUsers}">
+				<headerToolbar>
+					<Toolbar width="100%">
+						<content>
+							<Title text="{= COMMON.getText('C_COLLABORATIONDRAFT_INVITATION_TABLE_TOOLBAR_TITLE') }" level="H3" />
+							<ToolbarSpacer />
+							<SearchField width="15em" />
+						</content>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="3em" />
+					<Column width="20em">
+						<Text text="{= COMMON.getText('C_COLLABORATIONDRAFT_INVITATION_TABLE_USER_COLUMN') }" />
+					</Column>
+					<Column width="17em">
+						<Text text="{= COMMON.getText('C_COLLABORATIONDRAFT_INVITATION_TABLE_USER_STATUS_COLUMN') }" />
+					</Column>
+					<Column width="5em" />
+				</columns>
+				<items>
+					<ColumnListItem vAlign="Middle" highlight="{= ${internal>transient} ? 'Information' : 'None' }">
+						<cells>
+							<Avatar displaySize="XS" backgroundColor="Accent{internal>color}" initials="{internal>initials}" />
+							<Text text="{internal>name}" />
+							<ObjectStatus
+								state="{path : 'internal>status', formatter: '.formatUserStatusColor'}"
+								text="{path : 'internal>status', formatter: '.formatUserStatus'}"
+							/>
+							<HBox>
+								<Button
+									icon="sap-icon://decline"
+									type="Transparent"
+									press=".removeUser"
+									visible="{= !!${internal>transient} }"
+								/>
+							</HBox>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</VBox>
+
+		<beginButton>
+			<Button text="{= COMMON.getText('C_COLLABORATIONDRAFT_INVITATION_DIALOG_CONFIRMATION') }" press=".share" type="Emphasized" />
+		</beginButton>
+		<endButton>
+			<Button text="{= COMMON.getText('C_COLLABORATIONDRAFT_INVITATION_DIALOG_CANCEL') }" press=".close" />
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

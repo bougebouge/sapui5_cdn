@@ -1,0 +1,4 @@
+:root{--_sap_me_function_lighten2175:#f2f2f2;--_sap_me_function_darken2175:#ccc;--_sap_me_function_mix2175:#f9eded}.sapContrast{--_sap_me_function_lighten2175:#577086;--_sap_me_function_darken2175:#394958;}
+
+/* Inline theming parameters */
+#sap-ui-theme-sap\.me{background-image:url('data:text/plain;utf-8,%7B%22default%22%3A%7B%7D%2C%22scopes%22%3A%7B%22sapContrast%22%3A%7B%7D%7D%7D')}

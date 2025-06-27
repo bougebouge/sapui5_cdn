@@ -1,0 +1,105 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 650,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "SearchBarChart.less",
+			"size": 714,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "SearchFacet.less",
+			"size": 350,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "SearchFacetDialog.less",
+			"size": 0,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "SearchFieldGroup.less",
+			"size": 660,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "SearchResultListItem.less",
+			"size": 276,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "SearchTileContainer.less",
+			"size": 0,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "css_variables.css",
+			"size": 1197,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "css_variables.less",
+			"size": 142817,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "css_variables.source.less",
+			"size": 142445,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 81344,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library-parameters.json",
+			"module": "sap/esh/search/ui/themes/sap_belize/library-parameters.json",
+			"size": 285,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library.css",
+			"size": 81338,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library.less",
+			"size": 2879,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library.source.less",
+			"size": 455,
+			"designtime": true,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library_skeleton-RTL.css",
+			"size": 83934,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "library_skeleton.css",
+			"size": 83928,
+			"theme": "sap_belize"
+		},
+		{
+			"name": "resources.json",
+			"size": 1839
+		}
+	]
+}

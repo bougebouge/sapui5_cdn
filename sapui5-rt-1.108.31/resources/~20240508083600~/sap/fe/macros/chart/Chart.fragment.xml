@@ -1,0 +1,230 @@
+<!--
+/**
+ * OData v4 Chart
+ * @param [id] ID of the chart
+ * @param [contextPath] Entity to which the chart is bound
+ * @param [metaPath] UI.PresentationVariant or UI.Chart
+ * @param [data] Binding of the chart
+ * @param [chartType] Chart type
+ * @param [height] Height of the chart
+ * @param [width] Width of the chart
+ * @param [selectionMode] Specifies the selection mode of the chart
+ * @param [personalization] Personalization settings
+ * @param [filter] Association to the filterbar
+ * @param [noDataText] Text to be provided when no data is available
+ * @param [chartDelegate] Delegate of the chart
+ * @param [vizProperties] Additional viz properties to be set on the chart
+ */
+-->
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:unittest="http://schemas.sap.com/sapui5/preprocessorextension/sap.fe.unittesting/1"
+	xmlns:mdc="sap.ui.mdc"
+	xmlns:chart="sap.ui.mdc.chart"
+	xmlns:mdcat="sap.ui.mdc.actiontoolbar"
+	xmlns:core="sap.ui.core"
+	xmlns:macro="sap.fe.macros.chart"
+	xmlns:internalMacro="sap.fe.macros.internal"
+	xmlns:macrodata="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	template:require="{
+							HELPER: 'sap/fe/macros/chart/ChartHelper',
+							ACTIONHELPER: 'sap/fe/macros/internal/helpers/ActionHelper',
+							COMMON: 'sap/fe/macros/CommonHelper',
+							MODEL: 'sap/ui/model/odata/v4/AnnotationHelper',
+							ID: 'sap/fe/core/helpers/StableIdHelper'
+						}"
+>
+	<!-- TODO: add operation available path to $select -->
+	<template:with path="contextPath>" helper="COMMON.getTargetCollection" var="targetCollection">
+		<template:with path="metaPath>" helper="COMMON.createPresentationPathContext" var="presentationPath">
+			<template:with path="metaPath>" helper="HELPER.getUiChart" var="chart">
+				<macro:ChartAPI id="{this>_apiId}" selectionChange="{this>selectionChange}" stateChange="{this>stateChange}">
+					<macro:layoutData>
+						<FlexItemData growFactor="1" shrinkFactor="1" />
+					</macro:layoutData>
+					<mdc:Chart
+						core:require="{API: 'sap/fe/macros/chart/ChartAPI'}"
+						binding="{= '{internal>controls/' + ${this>id} + '}' }"
+						unittest:id="ChartMacroFragment"
+						id="{this>_contentId}"
+						chartType="{= HELPER.formatChartType(${chart>ChartType})}"
+						sortConditions="{parts:[{path:'metaPath>'},{path:'presentationPath>'},{path:'chartDefinition>applySupported'}],formatter:'HELPER.getSortConditions'}"
+						header="{= ${chart>Title} }"
+						height="{this>height}"
+						width="{this>width}"
+						headerLevel="{this>headerLevel}"
+						p13nMode="{this>personalization}"
+						filter="{this>filter}"
+						noDataText="{this>noDataText}"
+						autoBindOnInit="{this>autoBindOnInit}"
+						delegate="{= ${this>chartDelegate} || '{name:\'sap/fe/macros/chart/ChartDelegate\', payload: {contextPath: \'' + ${contextPath>$@sapui.name} + '\', parameters:{$$groupId:\'$auto.Workers\'}, selectionMode: \'' + ${this>selectionMode} + '\'}}'}"
+						macrodata:targetCollectionPath="{contextPath>@@COMMON.getContextPath}"
+						macrodata:entitySet="{= ${targetCollection>$@sapui.name} }"
+						macrodata:entityType="{= ${contextPath>@@COMMON.getContextPath} + '/' }"
+						macrodata:operationAvailableMap="{= COMMON.stringifyCustomData(${chart>@@HELPER.getOperationAvailableMap})}"
+						macrodata:multiSelectDisabledActions="{= '' + ${chart>Actions@@ACTIONHELPER.getMultiSelectDisabledActions} + ''}"
+						macrodata:segmentedButtonId="{= ID.generate([${this>id}, 'SegmentedButton', 'TemplateContentView']) }"
+						macrodata:customAgg="{=COMMON.stringifyCustomData(${chartDefinition>customAgg})}"
+						macrodata:transAgg="{=COMMON.stringifyCustomData(${chartDefinition>transAgg})}"
+						macrodata:applySupported="{=COMMON.stringifyCustomData(${chartDefinition>applySupported})}"
+						macrodata:vizProperties="{this>vizProperties}"
+						macrodata:draftSupported="{this>draftSupported}"
+						macrodata:multiViews="{chartDefinition>multiViews}"
+						visible="{this>visible}"
+					>
+						<mdc:dependents>
+							<template:if test="{chartDefinition>commandActions}">
+								<template:repeat list="{chartDefinition>commandActions}" var="action">
+									<template:with path="action>annotationPath" var="dataField">
+										<template:with path="dataField>Action" helper="COMMON.getActionContext" var="actionContext">
+											<template:with
+												path="dataField>Action"
+												helper="COMMON.getPathToBoundActionOverload"
+												var="isBound"
+											>
+												<template:if
+													test="{= ${action>type} === 'ForAction' ? (${isBound>$IsBound} !== true || ${actionContext>@Org.OData.Core.V1.OperationAvailable} !== false) : true}"
+												>
+													<internalMacro:ActionCommand
+														action="{action>}"
+														onExecuteAction="{= HELPER.getPressEventForDataFieldForActionButton(${this>id},${dataField>},${chart>@@HELPER.getOperationAvailableMap})}"
+														onExecuteIBN="{= COMMON.getPressHandlerForDataFieldForIBN(${dataField>}, '${internal>selectedContexts}')}"
+														onExecuteManifest="{= COMMON.buildActionWrapper(${action>})}"
+														isIBNEnabled="{= ${action>enabled} !== undefined ? ${action>enabled} : ${dataField>RequiresContext} ? '{= %{internal>numberOfSelectedContexts} >= 1}' : undefined }"
+														isActionEnabled="{= ${action>enabled} !== undefined ? ${action>enabled} : HELPER.isDataFieldForActionButtonEnabled(${isBound>$IsBound},${dataField>Action},${this>contextPath},${chart>@@HELPER.getOperationAvailableMap}, ${action>enableOnSelect}) }"
+														visible="{= ${dataField>./@com.sap.vocabularies.UI.v1.Hidden} ? (${dataField>./@com.sap.vocabularies.UI.v1.Hidden/$Path} ? ${dataField>./@com.sap.vocabularies.UI.v1.Hidden/$Path@@HELPER.getHiddenPathExpressionForTableActionsAndIBN} : !${dataField>./@com.sap.vocabularies.UI.v1.Hidden}) : true}"
+													/>
+												</template:if>
+											</template:with>
+										</template:with>
+									</template:with>
+								</template:repeat>
+							</template:if>
+						</mdc:dependents>
+						<mdc:items>
+							<template:if test="{= ${chart>Dimensions} }">
+								<template:with path="chart>" helper="HELPER.formatDimensions" var="dimensions">
+									<template:repeat list="{dimensions>}" var="dimension">
+										<chart:Item
+											id="{= ID.generate([${this>id}, 'dimension', ${dimension>key}]) }"
+											name="_fe_groupable_{dimension>key}"
+											type="groupable"
+											label="{dimension>label}"
+											role="{dimension>role}"
+										/>
+									</template:repeat>
+								</template:with>
+							</template:if>
+							<template:if test="{this>measures}">
+								<template:with path="this>measures" helper="HELPER.formatMeasures" var="measures">
+									<template:repeat list="{measures>}" var="measure">
+										<chart:Item
+											id="{= ID.generate([${this>id},'measure', ${measure>key}]) }"
+											name="_fe_aggregatable_{measure>key}"
+											type="aggregatable"
+											label="{measure>label}"
+											role="{measure>role}"
+											dataPoint="{measure>dataPoint}"
+										/>
+									</template:repeat>
+								</template:with>
+							</template:if>
+						</mdc:items>
+						<template:if test="{this>actions}">
+							<mdc:actions>
+								<template:repeat list="{actions>}" var="action">
+									<template:with path="action>annotationPath" var="dataField">
+										<template:if test="{= ${action>type} === 'ForNavigation'}">
+											<template:then>
+												<mdcat:ActionToolbarAction>
+													<Button
+														unittest:id="DataFieldForIntentBasedNavigationButtonAction"
+														text="{dataField>Label}"
+														press="{= ${action>command} ? ('cmd:' + ${action>command}) : COMMON.getPressHandlerForDataFieldForIBN(${dataField>}, '${internal>selectedContexts}')}"
+														enabled="{= ${action>enabled} !== undefined ? ${action>enabled} : ${dataField>RequiresContext} ? '{= %{internal>numberOfSelectedContexts} >= 1}' : undefined }"
+														visible="{= ${dataField>./@com.sap.vocabularies.UI.v1.Hidden} ? (${dataField>./@com.sap.vocabularies.UI.v1.Hidden/$Path} ? ${dataField>./@com.sap.vocabularies.UI.v1.Hidden/$Path@@HELPER.getHiddenPathExpressionForTableActionsAndIBN} : !${dataField>./@com.sap.vocabularies.UI.v1.Hidden}) : true}"
+													/>
+												</mdcat:ActionToolbarAction>
+											</template:then>
+											<template:elseif test="{= ${action>type} === 'ForAction'}">
+												<template:with path="dataField>Action" helper="COMMON.getActionContext" var="actionContext">
+													<template:with
+														path="dataField>Action"
+														helper="COMMON.getPathToBoundActionOverload"
+														var="isBound"
+													>
+														<template:if
+															test="{= ${isBound>$IsBound} !== true || ${actionContext>@Org.OData.Core.V1.OperationAvailable} !== false }"
+														>
+															<mdcat:ActionToolbarAction>
+																<Button
+																	unittest:id="DataFieldForActionButtonAction"
+																	id="{= ID.generate([${this>id}, ${dataField>}])}"
+																	text="{dataField>Label}"
+																	ariaHasPopup="{actionContext>@@COMMON.isDialog}"
+																	press="{= ${action>command} ? ('cmd:' + ${action>command}) : HELPER.getPressEventForDataFieldForActionButton(${this>id},${dataField>},${chart>@@HELPER.getOperationAvailableMap})}"
+																	enabled="{= ${action>enabled} !== undefined ? ${action>enabled} : HELPER.isDataFieldForActionButtonEnabled(${isBound>$IsBound},${dataField>Action},${this>contextPath},${chart>@@HELPER.getOperationAvailableMap}, ${action>enableOnSelect}) }"
+																	visible="{= ${dataField>./@com.sap.vocabularies.UI.v1.Hidden} ? (${dataField>./@com.sap.vocabularies.UI.v1.Hidden/$Path} ? ${dataField>./@com.sap.vocabularies.UI.v1.Hidden/$Path@@HELPER.getHiddenPathExpressionForTableActionsAndIBN} : !${dataField>./@com.sap.vocabularies.UI.v1.Hidden}) : true}"
+																/>
+															</mdcat:ActionToolbarAction>
+														</template:if>
+													</template:with>
+												</template:with>
+											</template:elseif>
+										</template:if>
+									</template:with>
+								</template:repeat>
+								<template:if test="{this>onSegmentedButtonPressed}">
+									<mdcat:ActionToolbarAction layoutInformation="{
+										aggregationName: 'end',
+										alignment: 'End'
+									}">
+										<SegmentedButton
+											id="{= ID.generate([${this>id}, 'SegmentedButton', 'TemplateContentView']) }"
+											select="{this>onSegmentedButtonPressed}"
+											visible="{= ${pageInternal>alpContentView} !== 'Table' }"
+											selectedKey="{pageInternal>alpContentView}"
+										>
+											<items>
+												<template:if test="{= COMMON.isDesktop() }">
+													<SegmentedButtonItem
+														tooltip="{sap.fe.i18n>M_COMMON_HYBRID_SEGMENTED_BUTTON_ITEM_TOOLTIP}"
+														key="Hybrid"
+														icon="sap-icon://chart-table-view"
+													/>
+												</template:if>
+												<SegmentedButtonItem
+													tooltip="{sap.fe.i18n>M_COMMON_CHART_SEGMENTED_BUTTON_ITEM_TOOLTIP}"
+													key="Chart"
+													icon="sap-icon://bar-chart"
+												/>
+												<SegmentedButtonItem
+													tooltip="{sap.fe.i18n>M_COMMON_TABLE_SEGMENTED_BUTTON_ITEM_TOOLTIP}"
+													key="Table"
+													icon="sap-icon://table-view"
+												/>
+											</items>
+										</SegmentedButton>
+									</mdcat:ActionToolbarAction>
+								</template:if>
+							</mdc:actions>
+						</template:if>
+						<!-- <mdc:selectionDetailsActions>
+								<chart:SelectionDetailsActions>
+									<chart:detailsItemActions>
+									<template:repeat list="{path: 'actions>',
+										filters: [{
+										test: 'HELPER.getActionType'
+										}]}" var="action">
+											<core:Item key="{action>Label}" text="{action>Label}" />
+										</template:repeat>
+									</chart:detailsItemActions>
+								</chart:SelectionDetailsActions>
+							</mdc:selectionDetailsActions> -->
+					</mdc:Chart>
+				</macro:ChartAPI>
+			</template:with>
+		</template:with>
+	</template:with>
+</core:FragmentDefinition>

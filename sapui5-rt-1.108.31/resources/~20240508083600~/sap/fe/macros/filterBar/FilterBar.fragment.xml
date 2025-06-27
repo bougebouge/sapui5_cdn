@@ -1,0 +1,116 @@
+<core:FragmentDefinition
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	xmlns:core="sap.ui.core"
+	xmlns:mdc="sap.ui.mdc"
+	xmlns:control="sap.fe.core.controls"
+	xmlns="sap.m"
+	xmlns:macroFilterBar="sap.fe.macros.filterBar"
+	xmlns:macro="sap.fe.macros"
+	xmlns:internalMacro="sap.fe.macros.internal"
+	xmlns:log="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns:macroData="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	template:require="{
+		ID: 'sap/fe/core/helpers/StableIdHelper',
+		COMMON: 'sap/fe/macros/CommonHelper',
+		MACRO: 'sap/fe/macros/MacroTemplating'
+	}"
+>
+	<macroFilterBar:FilterBarAPI
+		id="{this>_apiId}"
+		metaPath="{metaPath>@@MACRO.getPath}"
+		contextPath="{contextPath>@@MACRO.getPath}"
+		search="{this>search}"
+		filterChanged="{this>filterChanged}"
+		internalSearch="{this>internalSearch}"
+		internalFilterChanged="{this>internalFilterChanged}"
+		stateChange="{this>stateChange}"
+	>
+		<!--
+			By using @FE, SAP Fiori elements introduces a dependency between the building block and our converters.
+			This dependency will be removed after the refactoring of the FilterBar
+		-->
+		<control:FilterBar
+			core:require="{API: 'sap/fe/macros/filterBar/FilterBarAPI'}"
+			id="{this>_contentId}"
+			liveMode="{this>liveMode}"
+			delegate="{= '{name:\'sap/fe/macros/filterBar/FilterBarDelegate\', payload: {entityTypePath: \'' + ${_internalContextPath>@@MACRO.getPath} + '\'} }' }"
+			variantBackreference="{this>variantBackreference}"
+			showAdaptFiltersButton="{this>showAdaptFiltersButton}"
+			p13nMode="{this>p13nMode}"
+			search="API.handleSearch($event)"
+			filtersChanged="API.handleFilterChanged($event)"
+			filterConditions="{this>filterConditions}"
+			suspendSelection="{this>suspendSelection}"
+			showMessages="{this>showMessages}"
+			toggleControl="{this>toggleControlId}"
+			initialLayout="{this>initialLayout}"
+			propertyInfo="{this>propertyInfo}"
+			macroData:localId="{this>id}"
+			visible="{this>visible}"
+			macroData:hideBasicSearch="{this>hideBasicSearch}"
+			macroData:showDraftEditState="{this>showDraftEditState}"
+			macroData:useSemanticDateRange="{this>useSemanticDateRange}"
+			macroData:entityType="{_internalContextPath>@@MACRO.getPath}"
+			macroData:parameters="{this>parameters}"
+		>
+			<control:dependents>
+				<!-- Create the value help dialogs for the FilterBar as dependents of the FilterBar -->
+				<template:repeat list="{path:'selectionFields>'}" var="item">
+					<template:if test="{= ${item>availability} === 'Default' &amp;&amp; ${item>template} === undefined}">
+						<macro:ValueHelp
+							idPrefix="{= ID.generate([${this>id}, 'FilterFieldValueHelp']) }"
+							conditionModel="$filters"
+							property="{item>annotationPath}"
+							filterFieldValueHelp="true"
+							useSemanticDateRange="{this>useSemanticDateRange}"
+						/>
+					</template:if>
+				</template:repeat>
+			</control:dependents>
+			<!--
+			The search field is enabled when
+			* it is not hidden using the property hideBasisSearch
+			* there is no SearchRestrictions
+			* the SearchRestrictions has Searchable === true
+			-->
+			<template:if test="{= !${this>hideBasicSearch} }">
+				<control:basicSearchField>
+					<mdc:FilterField
+						id="{= ID.generate([${this>id}, 'BasicSearchField']) }"
+						placeholder="{sap.fe.i18n>M_FILTERBAR_SEARCH}"
+						conditions="{$filters>/conditions/$search}"
+						dataType="sap.ui.model.odata.type.String"
+						maxConditions="1"
+					/>
+				</control:basicSearchField>
+			</template:if>
+			<control:filterItems>
+				<template:if test="{this>showDraftEditState}">
+					<!-- TODO if I don't put that into the condition model how can it be part of variants? Talk to filter bar team -->
+					<core:Fragment fragmentName="sap.fe.macros.filter.DraftEditState" type="XML" />
+				</template:if>
+				<template:repeat list="{path:'selectionFields>'}" var="item">
+					<template:if test="{= ${item>availability} === 'Default'}">
+						<template:if test="{= ${item>template} === undefined &amp;&amp; ${item>type} !== 'Slot'}">
+							<template:then>
+								<internalMacro:FilterField
+									idPrefix="{= ID.generate([${this>id}, 'FilterField', COMMON.getNavigationPath(${item>annotationPath})]) }"
+									vhIdPrefix="{= ID.generate([${this>id}, 'FilterFieldValueHelp']) }"
+									property="{item>annotationPath}"
+									_valueList="{_valueList>}"
+									contextPath="{_internalContextPath>}"
+									useSemanticDateRange="{this>useSemanticDateRange}"
+									settings="{= COMMON.stringifyCustomData(${item>settings}) }"
+									visualFilter="{item>visualFilter}"
+								/>
+							</template:then>
+							<template:else>
+								<core:Fragment fragmentName="sap.fe.macros.filter.CustomFilter" type="XML" />
+							</template:else>
+						</template:if>
+					</template:if>
+				</template:repeat>
+			</control:filterItems>
+		</control:FilterBar>
+	</macroFilterBar:FilterBarAPI>
+</core:FragmentDefinition>

@@ -1,0 +1,6 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *      (c) Copyright 2009-2021 SAP SE. All rights reserved
+ */
+sap.ui.define(["sap/base/Log","sap/base/util/ObjectPath","sap/ui/model/json/JSONModel"],function(e,t,n){"use strict";function r(e){if(e===void 0){throw new ReferenceError("this hasn't been initialised - super() hasn't been called")}return e}function i(e,t){e.prototype=Object.create(t.prototype);e.prototype.constructor=e;o(e,t)}function o(e,t){o=Object.setPrototypeOf?Object.setPrototypeOf.bind():function e(t,n){t.__proto__=n;return t};return o(e,t)}var u=function(n){i(o,n);function o(e,t,i){var o;o=n.call(this)||this;o.oNode=e;o.oProps=t;o.buildingBlockDefinition=i;r(o).$$valueAsPromise=true;return o}var u=o.prototype;u._getObject=function n(r,i){if(r===undefined||r===""){if(i!==undefined&&i.getPath()!=="/"){return this._getObject(i.getPath(r))}return this.oProps}if(r==="/undefinedValue"||r==="undefinedValue"){return undefined}var o=t.get(r.replace(/\//g,"."),this.oProps);if(o!==undefined){return o}if(this.oProps.hasOwnProperty(r)){return this.oProps[r]}if(r.indexOf(":")===-1&&r.indexOf("/")===-1){e.error("Missing property ".concat(r," on building block metadata ").concat(this.buildingBlockDefinition.name))}return this.oNode.getAttribute(r)};return o}(n);return u},false);
+//# sourceMappingURL=AttributeModel.js.map

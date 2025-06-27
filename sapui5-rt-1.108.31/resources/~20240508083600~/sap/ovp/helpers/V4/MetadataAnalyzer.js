@@ -1,0 +1,2 @@
+sap.ui.define([],function(){"use strict";function t(t,e){var n=t.getObject("/");for(var r in n){if(typeof n[r]==="object"&&n[r].$Type===e){return r}}}return{getEntitySetName:t}},true);
+//# sourceMappingURL=MetadataAnalyzer.js.map

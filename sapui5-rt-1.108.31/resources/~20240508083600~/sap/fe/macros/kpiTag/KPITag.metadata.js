@@ -1,0 +1,6 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *      (c) Copyright 2009-2021 SAP SE. All rights reserved
+ */
+sap.ui.define(["sap/fe/core/formatters/KPIFormatter","sap/fe/core/helpers/BindingToolkit","sap/fe/macros/MacroMetadata"],function(a,e,t){"use strict";var r=e.pathInModel;var i=e.formatResult;var o=e.compileExpression;var s=t.extend("sap.fe.macros.kpiTag.KPITag",{name:"KPITag",namespace:"sap.fe.macros",fragment:"sap.fe.macros.kpiTag.KPITag",metadata:{stereotype:"xmlmacro",properties:{id:{type:"string",required:true},hasUnit:{type:"boolean",required:false},metaPath:{type:"sap.ui.model.Context",required:true}},aggregations:{}},create:function(e){var t=e.metaPath.getProperty("Title");if(t){var s=t.match(/{(.*)>(.*)}/);var n;if(s){n=r(s[2],s[1])}else{n=t}var p=i([n],a.labelFormat);e.label=o(p);var c=i([n,r("/".concat(e.id,"/manifest/sap.card/data/json/mainValueUnscaled"),"kpiModel"),r("/".concat(e.id,"/manifest/sap.card/data/json/mainUnit"),"kpiModel"),r("/".concat(e.id,"/manifest/sap.card/data/json/mainCriticality"),"kpiModel"),e.hasUnit],a.tooltipFormat);e.tooltip=o(c)}return e}});return s},false);
+//# sourceMappingURL=KPITag.metadata.js.map

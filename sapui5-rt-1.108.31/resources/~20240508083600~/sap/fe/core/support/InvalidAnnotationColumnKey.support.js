@@ -1,0 +1,35 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *      (c) Copyright 2009-2021 SAP SE. All rights reserved
+ */
+sap.ui.define(["sap/fe/core/support/CommonHelper", "sap/fe/core/converters/helpers/IssueManager"], function (CommonHelper, IssueManager) {
+  "use strict";
+
+  var _exports = {};
+  var IssueCategory = IssueManager.IssueCategory;
+  var Audiences = CommonHelper.Audiences;
+  var getIssueByCategory = CommonHelper.getIssueByCategory;
+  var Categories = CommonHelper.Categories;
+  var oInvalidAnnotationColumnKey = {
+    id: "invalidAnnotationColumnKey",
+    title: "AnnotationColumnKey: Invalid Key",
+    minversion: "1.98",
+    audiences: [Audiences.Application],
+    categories: [Categories.Usage],
+    description: "The key of the annotation column is needed as a valid identifier in the application manifest.",
+    resolution: "A column key set in the application manifest must correspond to an existing annotation column.",
+    resolutionurls: [{
+      "text": "InvalidAnnotationColumnKey",
+      "href": "https://ui5.sap.com/#/topic/d525522c1bf54672ae4e02d66b38e60c"
+    }],
+    check: function (oIssueManager, oCoreFacade) {
+      getIssueByCategory(oIssueManager, oCoreFacade, IssueCategory.Manifest, "InvalidKey");
+    }
+  };
+  function getRules() {
+    return [oInvalidAnnotationColumnKey];
+  }
+  _exports.getRules = getRules;
+  return _exports;
+}, false);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJvSW52YWxpZEFubm90YXRpb25Db2x1bW5LZXkiLCJpZCIsInRpdGxlIiwibWludmVyc2lvbiIsImF1ZGllbmNlcyIsIkF1ZGllbmNlcyIsIkFwcGxpY2F0aW9uIiwiY2F0ZWdvcmllcyIsIkNhdGVnb3JpZXMiLCJVc2FnZSIsImRlc2NyaXB0aW9uIiwicmVzb2x1dGlvbiIsInJlc29sdXRpb251cmxzIiwiY2hlY2siLCJvSXNzdWVNYW5hZ2VyIiwib0NvcmVGYWNhZGUiLCJnZXRJc3N1ZUJ5Q2F0ZWdvcnkiLCJJc3N1ZUNhdGVnb3J5IiwiTWFuaWZlc3QiLCJnZXRSdWxlcyJdLCJzb3VyY2VSb290IjoiLiIsInNvdXJjZXMiOlsiSW52YWxpZEFubm90YXRpb25Db2x1bW5LZXkuc3VwcG9ydC50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDYXRlZ29yaWVzLCBnZXRJc3N1ZUJ5Q2F0ZWdvcnksIEF1ZGllbmNlcyB9IGZyb20gXCJzYXAvZmUvY29yZS9zdXBwb3J0L0NvbW1vbkhlbHBlclwiO1xuaW1wb3J0IHsgSXNzdWVDYXRlZ29yeSB9IGZyb20gXCJzYXAvZmUvY29yZS9jb252ZXJ0ZXJzL2hlbHBlcnMvSXNzdWVNYW5hZ2VyXCI7XG5jb25zdCBvSW52YWxpZEFubm90YXRpb25Db2x1bW5LZXkgPSB7XG5cdGlkOiBcImludmFsaWRBbm5vdGF0aW9uQ29sdW1uS2V5XCIsXG5cdHRpdGxlOiBcIkFubm90YXRpb25Db2x1bW5LZXk6IEludmFsaWQgS2V5XCIsXG5cdG1pbnZlcnNpb246IFwiMS45OFwiLFxuXHRhdWRpZW5jZXM6IFtBdWRpZW5jZXMuQXBwbGljYXRpb25dLFxuXHRjYXRlZ29yaWVzOiBbQ2F0ZWdvcmllcy5Vc2FnZV0sXG5cdGRlc2NyaXB0aW9uOiBcIlRoZSBrZXkgb2YgdGhlIGFubm90YXRpb24gY29sdW1uIGlzIG5lZWRlZCBhcyBhIHZhbGlkIGlkZW50aWZpZXIgaW4gdGhlIGFwcGxpY2F0aW9uIG1hbmlmZXN0LlwiLFxuXHRyZXNvbHV0aW9uOiBcIkEgY29sdW1uIGtleSBzZXQgaW4gdGhlIGFwcGxpY2F0aW9uIG1hbmlmZXN0IG11c3QgY29ycmVzcG9uZCB0byBhbiBleGlzdGluZyBhbm5vdGF0aW9uIGNvbHVtbi5cIixcblx0cmVzb2x1dGlvbnVybHM6IFt7IFwidGV4dFwiOiBcIkludmFsaWRBbm5vdGF0aW9uQ29sdW1uS2V5XCIsIFwiaHJlZlwiOiBcImh0dHBzOi8vdWk1LnNhcC5jb20vIy90b3BpYy9kNTI1NTIyYzFiZjU0NjcyYWU0ZTAyZDY2YjM4ZTYwY1wiIH1dLFxuXHRjaGVjazogZnVuY3Rpb24ob0lzc3VlTWFuYWdlcjogYW55LCBvQ29yZUZhY2FkZTogYW55IC8qb1Njb3BlOiBhbnkqLykge1xuXHRcdGdldElzc3VlQnlDYXRlZ29yeShvSXNzdWVNYW5hZ2VyLCBvQ29yZUZhY2FkZSwgSXNzdWVDYXRlZ29yeS5NYW5pZmVzdCwgXCJJbnZhbGlkS2V5XCIpO1xuXHR9XG59O1xuZXhwb3J0IGZ1bmN0aW9uIGdldFJ1bGVzKCkge1xuXHRyZXR1cm4gW29JbnZhbGlkQW5ub3RhdGlvbkNvbHVtbktleV07XG59XG4iXSwibWFwcGluZ3MiOiI7QUFBQTtBQUFBO0FBQUE7Ozs7Ozs7OztFQUVBLElBQU1BLDJCQUEyQixHQUFHO0lBQ25DQyxFQUFFLEVBQUUsNEJBQTRCO0lBQ2hDQyxLQUFLLEVBQUUsa0NBQWtDO0lBQ3pDQyxVQUFVLEVBQUUsTUFBTTtJQUNsQkMsU0FBUyxFQUFFLENBQUNDLFNBQVMsQ0FBQ0MsV0FBVyxDQUFDO0lBQ2xDQyxVQUFVLEVBQUUsQ0FBQ0MsVUFBVSxDQUFDQyxLQUFLLENBQUM7SUFDOUJDLFdBQVcsRUFBRSwrRkFBK0Y7SUFDNUdDLFVBQVUsRUFBRSxnR0FBZ0c7SUFDNUdDLGNBQWMsRUFBRSxDQUFDO01BQUUsTUFBTSxFQUFFLDRCQUE0QjtNQUFFLE1BQU0sRUFBRTtJQUErRCxDQUFDLENBQUM7SUFDbElDLEtBQUssRUFBRSxVQUFTQyxhQUFrQixFQUFFQyxXQUFnQixFQUFrQjtNQUNyRUMsa0JBQWtCLENBQUNGLGFBQWEsRUFBRUMsV0FBVyxFQUFFRSxhQUFhLENBQUNDLFFBQVEsRUFBRSxZQUFZLENBQUM7SUFDckY7RUFDRCxDQUFDO0VBQ00sU0FBU0MsUUFBUSxHQUFHO0lBQzFCLE9BQU8sQ0FBQ25CLDJCQUEyQixDQUFDO0VBQ3JDO0VBQUM7RUFBQTtBQUFBIn0=

@@ -1,0 +1,6 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *      (c) Copyright 2009-2021 SAP SE. All rights reserved
+ */
+sap.ui.define(["sap/base/util/ObjectPath","sap/fe/core/CommonUtils"],function(e,t){"use strict";var r={actionWrapper:function(r,n,o,i){return new Promise(function(a){var s=r.getSource?r.getSource():r.oSource,l=t.getTargetView(s),u=s.getBindingContext();var p;var f;if(i!==undefined){f=i.contexts||[]}else if(u!==undefined){f=[u]}else{f=[]}if(l.getControllerName()==="sap.fe.templates.ObjectPage.ObjectPageController"||l.getControllerName()==="sap.fe.templates.ListReport.ListReportController"){p=l.getController().getExtensionAPI()}if(n.startsWith("/extension/")){var c=e.get(n.replace(/\//g,".").substr(1),p);a(c[o](u,f))}else{sap.ui.require([n],function(e){a(e[o].bind(p)(u,f))})}})},validationWrapper:function(e,t,r,n,o){return new Promise(function(i){var a;if(n.getControllerName()==="sap.fe.templates.ObjectPage.ObjectPageController"||n.getControllerName()==="sap.fe.templates.ListReport.ListReportController"){a=n.getController().getExtensionAPI()}sap.ui.require([e],function(e){i(e[t].bind(a)(o,r))})})}};return r},false);
+//# sourceMappingURL=FPMHelper.js.map

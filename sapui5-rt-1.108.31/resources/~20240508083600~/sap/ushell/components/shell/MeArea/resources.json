@@ -1,0 +1,149 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "Component-dbg.js",
+			"module": "sap/ushell/components/shell/MeArea/Component.js",
+			"size": 2465,
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/UIComponent.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/components/applicationIntegration/AppLifeCycle.js",
+				"sap/ushell/components/shell/MeArea/MeArea.controller.js"
+			]
+		},
+		{
+			"name": "Component-preload.js",
+			"module": "sap/ushell/components/shell/MeArea/Component-preload.js",
+			"size": 9675,
+			"merged": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/List.js",
+				"sap/m/Popover.js",
+				"sap/m/StandardListItem.js",
+				"sap/m/Title.js",
+				"sap/m/Toolbar.js",
+				"sap/m/library.js",
+				"sap/ui/core/ElementMetadata.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/performance/Measurement.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/applicationIntegration/AppLifeCycle.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/QuickAccess.js",
+				"sap/ushell/ui/footerbar/AboutButton.js",
+				"sap/ushell/ui/footerbar/ContactSupportButton.js",
+				"sap/ushell/ui/launchpad/ActionItem.js"
+			],
+			"condRequired": [
+				"sap/m/MessageBox.js",
+				"sap/ushell/ui/launchpad/LoadingDialog.js"
+			],
+			"included": [
+				"sap/ushell/components/shell/MeArea/Component.js",
+				"sap/ushell/components/shell/MeArea/MeArea.controller.js",
+				"sap/ushell/components/shell/MeArea/MeAreaPopover.fragment.xml"
+			]
+		},
+		{
+			"name": "Component-preload.js.map",
+			"size": 10720,
+			"isDebug": true
+		},
+		{
+			"name": "Component.js",
+			"module": "sap/ushell/components/shell/MeArea/Component.js",
+			"size": 1275,
+			"required": [
+				"sap/ui/core/UIComponent.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/components/applicationIntegration/AppLifeCycle.js",
+				"sap/ushell/components/shell/MeArea/MeArea.controller.js"
+			]
+		},
+		{
+			"name": "Component.js.map",
+			"size": 1496,
+			"isDebug": true
+		},
+		{
+			"name": "MeArea-dbg.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/MeArea.controller.js",
+			"size": 16654,
+			"isDebug": true,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/StandardListItem.js",
+				"sap/m/library.js",
+				"sap/ui/core/ElementMetadata.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/performance/Measurement.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/QuickAccess.js",
+				"sap/ushell/ui/footerbar/AboutButton.js",
+				"sap/ushell/ui/footerbar/ContactSupportButton.js",
+				"sap/ushell/ui/launchpad/ActionItem.js"
+			],
+			"condRequired": [
+				"sap/m/MessageBox.js",
+				"sap/ushell/ui/launchpad/LoadingDialog.js"
+			]
+		},
+		{
+			"name": "MeArea.controller.js",
+			"module": "sap/ushell/components/shell/MeArea/MeArea.controller.js",
+			"size": 7418,
+			"required": [
+				"sap/base/Log.js",
+				"sap/m/StandardListItem.js",
+				"sap/m/library.js",
+				"sap/ui/core/ElementMetadata.js",
+				"sap/ui/core/Fragment.js",
+				"sap/ui/core/mvc/Controller.js",
+				"sap/ui/model/json/JSONModel.js",
+				"sap/ui/performance/Measurement.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/QuickAccess.js",
+				"sap/ushell/ui/footerbar/AboutButton.js",
+				"sap/ushell/ui/footerbar/ContactSupportButton.js",
+				"sap/ushell/ui/launchpad/ActionItem.js"
+			],
+			"condRequired": [
+				"sap/m/MessageBox.js",
+				"sap/ushell/ui/launchpad/LoadingDialog.js"
+			]
+		},
+		{
+			"name": "MeArea.controller.js.map",
+			"size": 8859,
+			"isDebug": true
+		},
+		{
+			"name": "MeAreaPopover.fragment.xml",
+			"module": "sap/ushell/components/shell/MeArea/MeAreaPopover.fragment.xml",
+			"size": 848,
+			"required": [
+				"sap/m/List.js",
+				"sap/m/Popover.js",
+				"sap/m/Title.js",
+				"sap/m/Toolbar.js"
+			]
+		},
+		{
+			"name": "resources.json",
+			"size": 4103
+		}
+	]
+}

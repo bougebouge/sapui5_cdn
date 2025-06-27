@@ -1,0 +1,6 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *      (c) Copyright 2009-2021 SAP SE. All rights reserved
+ */
+sap.ui.define(["sap/ui/core/Core"],function(e){"use strict";var r=function(e){if(e){var r=e.split(" ");var t;if(r.length===1){t=r[0].substring(0,3).toUpperCase()}else if(r.length===2){t=(r[0].substring(0,1)+r[1].substring(0,1)).toUpperCase()}else{t=(r[0].substring(0,1)+r[1].substring(0,1)+r[2].substring(0,1)).toUpperCase()}return t}else{return""}};r.__functionName="sap.fe.core.formatters.KPIFormatter#labelFormat";var t=function(r,t,a,s,n){var o=e.getLibraryResourceBundle("sap.fe.core");var i=s?"C_KPI_TOOLTIP_".concat(s.toUpperCase()):"C_KPI_TOOLTIP_NONE";var u;if(n==="true"){if(!a){u=o.getText("C_KPI_TOOLTIP_AMOUNT_MULTIUNIT")}else{u="".concat(t," ").concat(a)}}else{u=t}return o.getText(i,[r,u])};t.__functionName="sap.fe.core.formatters.KPIFormatter#tooltipFormat";var a=function(e){if(a.hasOwnProperty(e)){for(var r=arguments.length,t=new Array(r>1?r-1:0),s=1;s<r;s++){t[s-1]=arguments[s]}return a[e].apply(this,t)}else{return""}};a.labelFormat=r;a.tooltipFormat=t;return a},true);
+//# sourceMappingURL=KPIFormatter.js.map

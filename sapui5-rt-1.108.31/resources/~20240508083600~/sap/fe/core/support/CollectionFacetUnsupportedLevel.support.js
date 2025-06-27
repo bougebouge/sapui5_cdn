@@ -1,0 +1,35 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *      (c) Copyright 2009-2021 SAP SE. All rights reserved
+ */
+sap.ui.define(["sap/fe/core/support/CommonHelper", "sap/fe/core/converters/helpers/IssueManager"], function (CommonHelper, IssueManager) {
+  "use strict";
+
+  var _exports = {};
+  var IssueCategory = IssueManager.IssueCategory;
+  var Audiences = CommonHelper.Audiences;
+  var getIssueByCategory = CommonHelper.getIssueByCategory;
+  var Categories = CommonHelper.Categories;
+  var oCollectionFacetUnsupportedLevelIssue = {
+    id: "collectionFacetUnsupportedLevel",
+    title: "CollectionFacet: Unsupported Levels",
+    minversion: "1.80",
+    audiences: [Audiences.Application],
+    categories: [Categories.Usage],
+    description: "Collection facets at level 3 or lower (level 4, 5…) are not supported and will not be visible on the UI.",
+    resolution: "At level 3 you can only use reference facets, but not collection facets.",
+    resolutionurls: [{
+      "text": "CollectionFacets",
+      "href": "https://ui5.sap.com/#/topic/facfea09018d4376acaceddb7e3f03b6"
+    }],
+    check: function (oIssueManager, oCoreFacade) {
+      getIssueByCategory(oIssueManager, oCoreFacade, IssueCategory.Facets, "UnsupportedLevel");
+    }
+  };
+  function getRules() {
+    return [oCollectionFacetUnsupportedLevelIssue];
+  }
+  _exports.getRules = getRules;
+  return _exports;
+}, false);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJvQ29sbGVjdGlvbkZhY2V0VW5zdXBwb3J0ZWRMZXZlbElzc3VlIiwiaWQiLCJ0aXRsZSIsIm1pbnZlcnNpb24iLCJhdWRpZW5jZXMiLCJBdWRpZW5jZXMiLCJBcHBsaWNhdGlvbiIsImNhdGVnb3JpZXMiLCJDYXRlZ29yaWVzIiwiVXNhZ2UiLCJkZXNjcmlwdGlvbiIsInJlc29sdXRpb24iLCJyZXNvbHV0aW9udXJscyIsImNoZWNrIiwib0lzc3VlTWFuYWdlciIsIm9Db3JlRmFjYWRlIiwiZ2V0SXNzdWVCeUNhdGVnb3J5IiwiSXNzdWVDYXRlZ29yeSIsIkZhY2V0cyIsImdldFJ1bGVzIl0sInNvdXJjZVJvb3QiOiIuIiwic291cmNlcyI6WyJDb2xsZWN0aW9uRmFjZXRVbnN1cHBvcnRlZExldmVsLnN1cHBvcnQudHMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQ2F0ZWdvcmllcywgZ2V0SXNzdWVCeUNhdGVnb3J5LCBBdWRpZW5jZXMgfSBmcm9tIFwic2FwL2ZlL2NvcmUvc3VwcG9ydC9Db21tb25IZWxwZXJcIjtcbmltcG9ydCB7IElzc3VlQ2F0ZWdvcnkgfSBmcm9tIFwic2FwL2ZlL2NvcmUvY29udmVydGVycy9oZWxwZXJzL0lzc3VlTWFuYWdlclwiO1xuY29uc3Qgb0NvbGxlY3Rpb25GYWNldFVuc3VwcG9ydGVkTGV2ZWxJc3N1ZSA9IHtcblx0aWQ6IFwiY29sbGVjdGlvbkZhY2V0VW5zdXBwb3J0ZWRMZXZlbFwiLFxuXHR0aXRsZTogXCJDb2xsZWN0aW9uRmFjZXQ6IFVuc3VwcG9ydGVkIExldmVsc1wiLFxuXHRtaW52ZXJzaW9uOiBcIjEuODBcIixcblx0YXVkaWVuY2VzOiBbQXVkaWVuY2VzLkFwcGxpY2F0aW9uXSxcblx0Y2F0ZWdvcmllczogW0NhdGVnb3JpZXMuVXNhZ2VdLFxuXHRkZXNjcmlwdGlvbjogXCJDb2xsZWN0aW9uIGZhY2V0cyBhdCBsZXZlbCAzIG9yIGxvd2VyIChsZXZlbCA0LCA14oCmKSBhcmUgbm90IHN1cHBvcnRlZCBhbmQgd2lsbCBub3QgYmUgdmlzaWJsZSBvbiB0aGUgVUkuXCIsXG5cdHJlc29sdXRpb246IFwiQXQgbGV2ZWwgMyB5b3UgY2FuIG9ubHkgdXNlIHJlZmVyZW5jZSBmYWNldHMsIGJ1dCBub3QgY29sbGVjdGlvbiBmYWNldHMuXCIsXG5cdHJlc29sdXRpb251cmxzOiBbeyBcInRleHRcIjogXCJDb2xsZWN0aW9uRmFjZXRzXCIsIFwiaHJlZlwiOiBcImh0dHBzOi8vdWk1LnNhcC5jb20vIy90b3BpYy9mYWNmZWEwOTAxOGQ0Mzc2YWNhY2VkZGI3ZTNmMDNiNlwiIH1dLFxuXHRjaGVjazogZnVuY3Rpb24ob0lzc3VlTWFuYWdlcjogYW55LCBvQ29yZUZhY2FkZTogYW55IC8qb1Njb3BlOiBhbnkqLykge1xuXHRcdGdldElzc3VlQnlDYXRlZ29yeShvSXNzdWVNYW5hZ2VyLCBvQ29yZUZhY2FkZSwgSXNzdWVDYXRlZ29yeS5GYWNldHMsIFwiVW5zdXBwb3J0ZWRMZXZlbFwiKTtcblx0fVxufTtcbmV4cG9ydCBmdW5jdGlvbiBnZXRSdWxlcygpIHtcblx0cmV0dXJuIFtvQ29sbGVjdGlvbkZhY2V0VW5zdXBwb3J0ZWRMZXZlbElzc3VlXTtcbn1cbiJdLCJtYXBwaW5ncyI6IjtBQUFBO0FBQUE7QUFBQTs7Ozs7Ozs7O0VBRUEsSUFBTUEscUNBQXFDLEdBQUc7SUFDN0NDLEVBQUUsRUFBRSxpQ0FBaUM7SUFDckNDLEtBQUssRUFBRSxxQ0FBcUM7SUFDNUNDLFVBQVUsRUFBRSxNQUFNO0lBQ2xCQyxTQUFTLEVBQUUsQ0FBQ0MsU0FBUyxDQUFDQyxXQUFXLENBQUM7SUFDbENDLFVBQVUsRUFBRSxDQUFDQyxVQUFVLENBQUNDLEtBQUssQ0FBQztJQUM5QkMsV0FBVyxFQUFFLDBHQUEwRztJQUN2SEMsVUFBVSxFQUFFLDBFQUEwRTtJQUN0RkMsY0FBYyxFQUFFLENBQUM7TUFBRSxNQUFNLEVBQUUsa0JBQWtCO01BQUUsTUFBTSxFQUFFO0lBQStELENBQUMsQ0FBQztJQUN4SEMsS0FBSyxFQUFFLFVBQVNDLGFBQWtCLEVBQUVDLFdBQWdCLEVBQWtCO01BQ3JFQyxrQkFBa0IsQ0FBQ0YsYUFBYSxFQUFFQyxXQUFXLEVBQUVFLGFBQWEsQ0FBQ0MsTUFBTSxFQUFFLGtCQUFrQixDQUFDO0lBQ3pGO0VBQ0QsQ0FBQztFQUNNLFNBQVNDLFFBQVEsR0FBRztJQUMxQixPQUFPLENBQUNuQixxQ0FBcUMsQ0FBQztFQUMvQztFQUFDO0VBQUE7QUFBQSJ9
